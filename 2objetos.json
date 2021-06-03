@@ -1,0 +1,666 @@
+[
+  {
+    "id": [
+      "https://contrataciondelestado.es/sindicacion/datosAbiertosMenores/7480561"
+    ],
+    "link": [
+      {
+        "$": {
+          "href": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=juD9YDHPiwJvYnTkQN0%2FZA%3D%3D"
+        }
+      }
+    ],
+    "summary": [
+      {
+        "_": "Id licitación: ASUECO-2021/813; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 1789.41 EUR; Estado: RES",
+        "$": {
+          "type": "text"
+        }
+      }
+    ],
+    "title": [
+      "Servicio de reparación de anomalías en el sistema de alarma contra incendios en la Biblioteca Central"
+    ],
+    "updated": ["2021-05-03T13:43:11.187+02:00"],
+    "ContractFolderStatus": [
+      {
+        "cbc:ContractFolderID": ["ASUECO-2021/813"],
+        "cbc-place-ext:ContractFolderStatusCode": [
+          {
+            "_": "RES",
+            "$": {
+              "languageID": "es",
+              "listURI": "https://contrataciondelestado.es/codice/cl/2.04/SyndicationContractFolderStatusCode-2.04.gc"
+            }
+          }
+        ],
+        "cac-place-ext:LocatedContractingParty": [
+          {
+            "cbc:ContractingPartyTypeCode": [
+              {
+                "_": "3",
+                "$": {
+                  "listURI": "http://contrataciondelestado.es/codice/cl/1.04/ContractingAuthorityCode-1.04.gc"
+                }
+              }
+            ],
+            "cac:Party": [
+              {
+                "cbc:WebsiteURI": ["http://www.jerez.es"],
+                "cac:PartyIdentification": [
+                  {
+                    "cbc:ID": [
+                      {
+                        "_": "L01110201",
+                        "$": {
+                          "schemeName": "DIR3"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "cbc:ID": [
+                      {
+                        "_": "P1102000E",
+                        "$": {
+                          "schemeName": "NIF"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "cac:PartyName": [
+                  {
+                    "cbc:Name": [
+                      "Junta de Gobierno Local del Ayuntamiento de Jerez"
+                    ]
+                  }
+                ],
+                "cac:PostalAddress": [
+                  {
+                    "cbc:CityName": ["Jerez de la Frontera"],
+                    "cbc:PostalZone": ["11403"],
+                    "cac:AddressLine": [
+                      {
+                        "cbc:Line": ["Consistorio, S/N"]
+                      }
+                    ],
+                    "cac:Country": [
+                      {
+                        "cbc:IdentificationCode": [
+                          {
+                            "_": "ES",
+                            "$": {
+                              "listURI": "http://contrataciondelestado.es/codice/cl/2.08/CountryIdentificationCode-2.08.gc"
+                            }
+                          }
+                        ],
+                        "cbc:Name": ["España"]
+                      }
+                    ]
+                  }
+                ],
+                "cac:Contact": [
+                  {
+                    "cbc:Name": [
+                      "Junta de Gobierno Local del Ayuntamiento de Jerez"
+                    ],
+                    "cbc:Telephone": ["956149565"],
+                    "cbc:Telefax": ["956149722"],
+                    "cbc:ElectronicMail": [
+                      "contratacionadministrativa@aytojerez.es"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cac:ProcurementProject": [
+          {
+            "cbc:Name": [
+              "Servicio de reparación de anomalías en el sistema de alarma contra incendios en la Biblioteca Central"
+            ],
+            "cbc:TypeCode": [
+              {
+                "_": "2",
+                "$": {
+                  "listURI": "http://contrataciondelestado.es/codice/cl/2.08/ContractCode-2.08.gc"
+                }
+              }
+            ],
+            "cbc:SubTypeCode": [
+              {
+                "_": "27",
+                "$": {
+                  "listURI": "http://contrataciondelestado.es/codice/cl/1.04/ServiceContractCode-1.04.gc"
+                }
+              }
+            ],
+            "cac:BudgetAmount": [
+              {
+                "cbc:TotalAmount": [
+                  {
+                    "_": "2165.19",
+                    "$": {
+                      "currencyID": "EUR"
+                    }
+                  }
+                ],
+                "cbc:TaxExclusiveAmount": [
+                  {
+                    "_": "1789.41",
+                    "$": {
+                      "currencyID": "EUR"
+                    }
+                  }
+                ]
+              }
+            ],
+            "cac:RealizedLocation": [
+              {
+                "cbc:CountrySubentity": ["Cádiz"],
+                "cbc:CountrySubentityCode": [
+                  {
+                    "_": "ES612",
+                    "$": {
+                      "listURI": "http://contrataciondelestado.es/codice/cl/2.08/NUTS-2021.gc"
+                    }
+                  }
+                ],
+                "cac:Address": [
+                  {
+                    "cac:Country": [
+                      {
+                        "cbc:IdentificationCode": [
+                          {
+                            "_": "ES",
+                            "$": {
+                              "listURI": "http://contrataciondelestado.es/codice/cl/2.08/CountryIdentificationCode-2.08.gc"
+                            }
+                          }
+                        ],
+                        "cbc:Name": ["España"]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "cac:PlannedPeriod": [
+              {
+                "cbc:DurationMeasure": [
+                  {
+                    "_": "3",
+                    "$": {
+                      "unitCode": "DAY"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cac:TenderResult": [
+          {
+            "cbc:ResultCode": [
+              {
+                "_": "8",
+                "$": {
+                  "listURI": "http://contrataciondelestado.es/codice/cl/2.02/TenderResultCode-2.02.gc"
+                }
+              }
+            ],
+            "cbc:AwardDate": ["2021-04-29"],
+            "cbc:ReceivedTenderQuantity": ["1"],
+            "cac:WinningParty": [
+              {
+                "cac:PartyIdentification": [
+                  {
+                    "cbc:ID": [
+                      {
+                        "_": "B11604972",
+                        "$": {
+                          "schemeName": "NIF"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "cac:PartyName": [
+                  {
+                    "cbc:Name": ["SEVITAS, SL"]
+                  }
+                ]
+              }
+            ],
+            "cac:AwardedTenderedProject": [
+              {
+                "cac:LegalMonetaryTotal": [
+                  {
+                    "cbc:TaxExclusiveAmount": [
+                      {
+                        "_": "1789.41",
+                        "$": {
+                          "currencyID": "EUR"
+                        }
+                      }
+                    ],
+                    "cbc:PayableAmount": [
+                      {
+                        "_": "2165.19",
+                        "$": {
+                          "currencyID": "EUR"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cac:TenderingProcess": [
+          {
+            "cbc:ProcedureCode": [
+              {
+                "_": "6",
+                "$": {
+                  "listURI": "https://contrataciondelestado.es/codice/cl/2.07/SyndicationTenderingProcessCode-2.07.gc"
+                }
+              }
+            ],
+            "cbc:UrgencyCode": [
+              {
+                "_": "1",
+                "$": {
+                  "listURI": "http://contrataciondelestado.es/codice/cl/1.04/DiligenceTypeCode-1.04.gc"
+                }
+              }
+            ]
+          }
+        ],
+        "cac-place-ext:ValidNoticeInfo": [
+          {
+            "cbc-place-ext:NoticeTypeCode": [
+              {
+                "_": "DOC_CAN_ADJ",
+                "$": {
+                  "listURI": "http://contrataciondelestado.es/codice/cl/2.04/TenderingNoticeTypeCode-2.04.gc"
+                }
+              }
+            ],
+            "cac-place-ext:AdditionalPublicationStatus": [
+              {
+                "cbc-place-ext:PublicationMediaName": [
+                  "Perfil del Contratante"
+                ],
+                "cac-place-ext:AdditionalPublicationDocumentReference": [
+                  {
+                    "cbc:IssueDate": ["2021-05-03"]
+                  },
+                  {
+                    "cbc:DocumentTypeCode": [
+                      {
+                        "_": "ACTA_ADJ",
+                        "$": {
+                          "listURI": "http://contrataciondelestado.es/codice/cl/2.07/TenderingDocumentTypeCode-2.07.gc",
+                          "name": "Documento de Acta de Adjudicación"
+                        }
+                      }
+                    ],
+                    "cac:Attachment": [
+                      {
+                        "cac:ExternalReference": [
+                          {
+                            "cbc:URI": [
+                              "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=b3a7bdc3-eb2d-4a23-95dc-c7f97b71d3a4"
+                            ],
+                            "cbc:FileName": ["Certificado del asunto.pdf"]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": [
+      "https://contrataciondelestado.es/sindicacion/datosAbiertosMenores/7480630"
+    ],
+    "link": [
+      {
+        "$": {
+          "href": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=5NUlhtRCAP4BPRBxZ4nJ%2Fg%3D%3D"
+        }
+      }
+    ],
+    "summary": [
+      {
+        "_": "Id licitación: ASUECO-2021/779; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 2999.83 EUR; Estado: RES",
+        "$": {
+          "type": "text"
+        }
+      }
+    ],
+    "title": [
+      "Servicio para la contratación de un seguro de responsabilidad civil que de cobertura a las actividades y eventos deportivos organizados por el Servicio de Deportes durante una anualidad"
+    ],
+    "updated": ["2021-05-03T13:19:30.574+02:00"],
+    "ContractFolderStatus": [
+      {
+        "cbc:ContractFolderID": ["ASUECO-2021/779"],
+        "cbc-place-ext:ContractFolderStatusCode": [
+          {
+            "_": "RES",
+            "$": {
+              "languageID": "es",
+              "listURI": "https://contrataciondelestado.es/codice/cl/2.04/SyndicationContractFolderStatusCode-2.04.gc"
+            }
+          }
+        ],
+        "cac-place-ext:LocatedContractingParty": [
+          {
+            "cbc:ContractingPartyTypeCode": [
+              {
+                "_": "3",
+                "$": {
+                  "listURI": "http://contrataciondelestado.es/codice/cl/1.04/ContractingAuthorityCode-1.04.gc"
+                }
+              }
+            ],
+            "cac:Party": [
+              {
+                "cbc:WebsiteURI": ["http://www.jerez.es"],
+                "cac:PartyIdentification": [
+                  {
+                    "cbc:ID": [
+                      {
+                        "_": "L01110201",
+                        "$": {
+                          "schemeName": "DIR3"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "cbc:ID": [
+                      {
+                        "_": "P1102000E",
+                        "$": {
+                          "schemeName": "NIF"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "cac:PartyName": [
+                  {
+                    "cbc:Name": [
+                      "Junta de Gobierno Local del Ayuntamiento de Jerez"
+                    ]
+                  }
+                ],
+                "cac:PostalAddress": [
+                  {
+                    "cbc:CityName": ["Jerez de la Frontera"],
+                    "cbc:PostalZone": ["11403"],
+                    "cac:AddressLine": [
+                      {
+                        "cbc:Line": ["Consistorio, S/N"]
+                      }
+                    ],
+                    "cac:Country": [
+                      {
+                        "cbc:IdentificationCode": [
+                          {
+                            "_": "ES",
+                            "$": {
+                              "listURI": "http://contrataciondelestado.es/codice/cl/2.08/CountryIdentificationCode-2.08.gc"
+                            }
+                          }
+                        ],
+                        "cbc:Name": ["España"]
+                      }
+                    ]
+                  }
+                ],
+                "cac:Contact": [
+                  {
+                    "cbc:Name": [
+                      "Junta de Gobierno Local del Ayuntamiento de Jerez"
+                    ],
+                    "cbc:Telephone": ["956149565"],
+                    "cbc:Telefax": ["956149722"],
+                    "cbc:ElectronicMail": [
+                      "contratacionadministrativa@aytojerez.es"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cac:ProcurementProject": [
+          {
+            "cbc:Name": [
+              "Servicio para la contratación de un seguro de responsabilidad civil que de cobertura a las actividades y eventos deportivos organizados por el Servicio de Deportes durante una anualidad"
+            ],
+            "cbc:TypeCode": [
+              {
+                "_": "2",
+                "$": {
+                  "listURI": "http://contrataciondelestado.es/codice/cl/2.08/ContractCode-2.08.gc"
+                }
+              }
+            ],
+            "cbc:SubTypeCode": [
+              {
+                "_": "27",
+                "$": {
+                  "listURI": "http://contrataciondelestado.es/codice/cl/1.04/ServiceContractCode-1.04.gc"
+                }
+              }
+            ],
+            "cac:BudgetAmount": [
+              {
+                "cbc:TotalAmount": [
+                  {
+                    "_": "2999.83",
+                    "$": {
+                      "currencyID": "EUR"
+                    }
+                  }
+                ],
+                "cbc:TaxExclusiveAmount": [
+                  {
+                    "_": "2999.83",
+                    "$": {
+                      "currencyID": "EUR"
+                    }
+                  }
+                ]
+              }
+            ],
+            "cac:RealizedLocation": [
+              {
+                "cbc:CountrySubentity": ["Cádiz"],
+                "cbc:CountrySubentityCode": [
+                  {
+                    "_": "ES612",
+                    "$": {
+                      "listURI": "http://contrataciondelestado.es/codice/cl/2.08/NUTS-2021.gc"
+                    }
+                  }
+                ],
+                "cac:Address": [
+                  {
+                    "cac:Country": [
+                      {
+                        "cbc:IdentificationCode": [
+                          {
+                            "_": "ES",
+                            "$": {
+                              "listURI": "http://contrataciondelestado.es/codice/cl/2.08/CountryIdentificationCode-2.08.gc"
+                            }
+                          }
+                        ],
+                        "cbc:Name": ["España"]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "cac:PlannedPeriod": [
+              {
+                "cbc:DurationMeasure": [
+                  {
+                    "_": "1",
+                    "$": {
+                      "unitCode": "ANN"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cac:TenderResult": [
+          {
+            "cbc:ResultCode": [
+              {
+                "_": "8",
+                "$": {
+                  "listURI": "http://contrataciondelestado.es/codice/cl/2.02/TenderResultCode-2.02.gc"
+                }
+              }
+            ],
+            "cbc:AwardDate": ["2021-04-29"],
+            "cbc:ReceivedTenderQuantity": ["1"],
+            "cac:WinningParty": [
+              {
+                "cac:PartyIdentification": [
+                  {
+                    "cbc:ID": [
+                      {
+                        "_": "G08171407",
+                        "$": {
+                          "schemeName": "NIF"
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "cac:PartyName": [
+                  {
+                    "cbc:Name": [
+                      "FIATC MUTURA DE SEGUROS Y REASEGUROS A PRIMA FIJA"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "cac:AwardedTenderedProject": [
+              {
+                "cac:LegalMonetaryTotal": [
+                  {
+                    "cbc:TaxExclusiveAmount": [
+                      {
+                        "_": "2999.83",
+                        "$": {
+                          "currencyID": "EUR"
+                        }
+                      }
+                    ],
+                    "cbc:PayableAmount": [
+                      {
+                        "_": "2999.83",
+                        "$": {
+                          "currencyID": "EUR"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "cac:TenderingProcess": [
+          {
+            "cbc:ProcedureCode": [
+              {
+                "_": "6",
+                "$": {
+                  "listURI": "https://contrataciondelestado.es/codice/cl/2.07/SyndicationTenderingProcessCode-2.07.gc"
+                }
+              }
+            ],
+            "cbc:UrgencyCode": [
+              {
+                "_": "1",
+                "$": {
+                  "listURI": "http://contrataciondelestado.es/codice/cl/1.04/DiligenceTypeCode-1.04.gc"
+                }
+              }
+            ]
+          }
+        ],
+        "cac-place-ext:ValidNoticeInfo": [
+          {
+            "cbc-place-ext:NoticeTypeCode": [
+              {
+                "_": "DOC_CAN_ADJ",
+                "$": {
+                  "listURI": "http://contrataciondelestado.es/codice/cl/2.04/TenderingNoticeTypeCode-2.04.gc"
+                }
+              }
+            ],
+            "cac-place-ext:AdditionalPublicationStatus": [
+              {
+                "cbc-place-ext:PublicationMediaName": [
+                  "Perfil del Contratante"
+                ],
+                "cac-place-ext:AdditionalPublicationDocumentReference": [
+                  {
+                    "cbc:IssueDate": ["2021-05-03"]
+                  },
+                  {
+                    "cbc:DocumentTypeCode": [
+                      {
+                        "_": "ACTA_ADJ",
+                        "$": {
+                          "listURI": "http://contrataciondelestado.es/codice/cl/2.07/TenderingDocumentTypeCode-2.07.gc",
+                          "name": "Documento de Acta de Adjudicación"
+                        }
+                      }
+                    ],
+                    "cac:Attachment": [
+                      {
+                        "cac:ExternalReference": [
+                          {
+                            "cbc:URI": [
+                              "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=77b55a3d-6303-41df-895a-cf696c607b93"
+                            ],
+                            "cbc:FileName": ["Certificado.pdf"]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

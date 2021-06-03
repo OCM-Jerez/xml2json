@@ -1,0 +1,21 @@
+{
+  "name": "appxml2json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mam",
+  "license": "MIT",
+  "dependencies": {
+    "ngx-xml2json": "^1.0.2",
+    "node-fetch": "^2.6.1",
+    "xml-js": "^1.6.11",
+    "xml2js": "^0.4.23",
+    "xml2json": "^0.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
