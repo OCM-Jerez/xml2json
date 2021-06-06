@@ -1,10 +1,10 @@
 let fs = require("fs");
 let xml2js = require("xml2js");
-let fichero = __dirname + '/contratosMenoresPerfilesContratantes_20210504_041227'
+let fichero = __dirname + '/contratosMenoresPerfilesContratantes_20210513_041419_1'
 
 // No se pueden ehjecutar las dos funciones seguidas, hay que arreglar el json generado
 // parseXML2JSON();
-mapJSON();
+// mapJSON();
 
 function parseXML2JSON() {
   var parser = new xml2js.Parser();
@@ -25,7 +25,7 @@ function parseXML2JSON() {
 }
 
 function mapJSON() {
-  let lici = fs.readFileSync(__dirname + "/contratosMenoresPerfilesContratantes_20210504_041227.json");
+  let lici = fs.readFileSync(fichero +'.json');
 lici = JSON.parse(lici);
 
   const result = lici.map((elem) => {
@@ -62,3 +62,4 @@ function saveFile(result) {
     console.log('BORRAR NULL');
   });
 }
+

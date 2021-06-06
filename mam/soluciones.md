@@ -24,4 +24,11 @@ distritos.features = distritos.features.map((feat) => {
 });
 
 fs.writeFileSync('./distritosGanadores.json', JSON.stringify(distritos, null, 2));
-****************************************************************************************************************
+**********************************************************************************************
+
+
+Seleciona un zip y muestra los archivos que lo componen
+https://es.stackoverflow.com/questions/389695/leer-archivos-de-una-carpeta-en-javascript-y-angular
+https://stackblitz.com/edit/jzip-show-content
+
+

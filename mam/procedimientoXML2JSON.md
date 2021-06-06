@@ -1,5 +1,5 @@
-CRTL + ALT + B  para formatear como json LECUESTA MUCHO TIEMPO.
-Borrar todas estas lineas de inicio y dos }} al final. GRABAR
+CRTL + ALT + B  para formatear como json LE CUESTA MUCHO TIEMPO.
+Borrar todas estas lineas de inicio y dos }} al final. desde "entry": hasta el principio GRABAR
 
 {
     "feed": {
