@@ -3,10 +3,6 @@ let xml2js = require("xml2js");
 let fichero =
   __dirname + "/contratosMenoresPerfilesContratantes_20210519_041443";
 
-// No se pueden ejecutar las dos funciones seguidas, hay que arreglar el json generado
-// parseXML2JSON();
-mapJSON();
-
 async function parseXML2JSON() {
   var parser = new xml2js.Parser();
   fs.readFile(fichero + ".atom", function (err, data) {
@@ -14,15 +10,13 @@ async function parseXML2JSON() {
       fs.writeFile(fichero + ".json", JSON.stringify(result), function (err) {
         if (err) throw err;
         console.log(fichero + ".json", " saved!");
-        console.log("HAY QUE SEGUIR PROCEDIMIENTO PARA BORRAR LINEAS");
+        console.log("Paso 1 ¡Hecho!");
       });
     });
   });
 }
 
 async function mapJSON() {
-  //   await parseXML2JSON();
-
   let lici = fs.readFileSync(fichero + ".json");
   lici = JSON.parse(lici);
   let { entry } = lici.feed;
@@ -60,7 +54,11 @@ function saveFile(result) {
     function (err) {
       if (err) throw err;
       console.log(fichero + "map" + ".json", " saved!");
-      console.log("¡Hecho!");
+      console.log("Paso 2 ¡Hecho!");
     }
   );
 }
+
+// No se pueden ejecutar las dos funciones seguidas
+// parseXML2JSON();
+mapJSON();
