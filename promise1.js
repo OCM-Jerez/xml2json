@@ -65,97 +65,131 @@ function mapJSON() {
         )
       )
       .map((elem) => {
-        const item = {
-          link: elem.link[0].$.href,
-          summary: elem.summary[0]._,
-          title: elem.title[0],
-          updated: elem.updated[0],
-          ContractFolderID:
-            elem["cac-place-ext:ContractFolderStatus"][0][
-              "cbc:ContractFolderID"
-            ][0],
-          ContractFolderStatusCode:
-            elem["cac-place-ext:ContractFolderStatus"][0][
-              "cbc-place-ext:ContractFolderStatusCode"
-            ][0]._,
-          Name: elem["cac-place-ext:ContractFolderStatus"][0][
-            "cac:ProcurementProject"
-          ][0]["cbc:Name"][0],
-          TypeCode:
-            elem["cac-place-ext:ContractFolderStatus"][0][
+        // Cuando una licitación tiene varios concesionarios hay que recorrer el array y crear un objeto
+        // por cada uno de ellos.
+        ContractFolderID =
+          elem["cac-place-ext:ContractFolderStatus"][0][
+            "cbc:ContractFolderID"
+          ][0];
+
+        cuantosPartyIdentification =
+          elem["cac-place-ext:ContractFolderStatus"][0]["cac:TenderResult"];
+
+        cuantosArray = Object.keys(cuantosPartyIdentification).length;
+
+        // ASUECO-2020/2663 tiene 2 adjudicatarios.
+        // if (ContractFolderID == "ASUECO-2020/2663") {
+        //   console.log(
+        //     ContractFolderID,
+        //     cuantosPartyIdentification,
+        //     cuantosArray
+        //   );
+        // }
+
+        for (var i = 0; i < cuantosArray; i++) {
+          const item = {
+            link: elem.link[0].$.href,
+            summary: elem.summary[0]._,
+            title: elem.title[0],
+            updated: elem.updated[0],
+            ContractFolderID:
+              elem["cac-place-ext:ContractFolderStatus"][0][
+                "cbc:ContractFolderID"
+              ][0],
+            ContractFolderStatusCode:
+              elem["cac-place-ext:ContractFolderStatus"][0][
+                "cbc-place-ext:ContractFolderStatusCode"
+              ][0]._,
+            Name: elem["cac-place-ext:ContractFolderStatus"][0][
               "cac:ProcurementProject"
-            ][0]["cbc:TypeCode"][0]._,
-          SubTypeCode:
-            elem["cac-place-ext:ContractFolderStatus"][0][
-              "cac:ProcurementProject"
-            ][0]["cbc:SubTypeCode"][0]._,
-          TotalAmount:
-            Math.trunc(elem ["cac-place-ext:ContractFolderStatus"][0][
-              "cac:ProcurementProject"
-            ][0]["cac:BudgetAmount"][0]["cbc:TotalAmount"][0]._),
-          TaxExclusiveAmount:
-          Math.trunc(elem["cac-place-ext:ContractFolderStatus"][0][
-              "cac:ProcurementProject"
-            ][0]["cac:BudgetAmount"][0]["cbc:TaxExclusiveAmount"][0]._),
-        //   DurationMeasure:
-        //     elem["cac-place-ext:ContractFolderStatus"][0][
-        //       "cac:ProcurementProject"
-        //     ][0]["cac:PlannedPeriod"][0]["cbc:DurationMeasure"][0]._,
-        //   unitCode:
-        //     elem["cac-place-ext:ContractFolderStatus"][0][
-        //       "cac:ProcurementProject"
-        //     ][0]["cac:PlannedPeriod"][0]["cbc:DurationMeasure"][0].$.unitCode,
-          ResultCode:
-            elem["cac-place-ext:ContractFolderStatus"][0][
-              "cac:TenderResult"
-            ][0]["cbc:ResultCode"][0]._,
-          AwardDate:
-            elem["cac-place-ext:ContractFolderStatus"][0][
-              "cac:TenderResult"
-            ][0]["cbc:AwardDate"][0],
-          ReceivedTenderQuantity:
-            elem["cac-place-ext:ContractFolderStatus"][0][
-              "cac:TenderResult"
-            ][0]["cbc:ReceivedTenderQuantity"][0],
-          PartyIdentification:
-            elem["cac-place-ext:ContractFolderStatus"][0][
-              "cac:TenderResult"
-            ][0]["cac:WinningParty"][0]["cac:PartyIdentification"][0]
-            ["cbc:ID"][0]._,
-          PartyName:
-            elem["cac-place-ext:ContractFolderStatus"][0][
-              "cac:TenderResult"
-            ][0]["cac:WinningParty"][0]["cac:PartyName"][0]
-            ["cbc:Name"][0],
-          TaxExclusiveAmount1:
-          Math.trunc(elem["cac-place-ext:ContractFolderStatus"][0][
-              "cac:TenderResult"
-            ][0]["cac:AwardedTenderedProject"][0]["cac:LegalMonetaryTotal"][0][
-              "cbc:TaxExclusiveAmount"
-            ][0]._),
-          PayableAmount:
-          Math.trunc(elem["cac-place-ext:ContractFolderStatus"][0][
-              "cac:TenderResult"
-            ][0]["cac:AwardedTenderedProject"][0]["cac:LegalMonetaryTotal"][0][
-              "cbc:PayableAmount"
-            ][0]._),
-          ProcedureCode:
-            elem["cac-place-ext:ContractFolderStatus"][0][
-              "cac:TenderingProcess"
-            ][0]["cbc:ProcedureCode"][0]._,
-          UrgencyCode:
-            elem["cac-place-ext:ContractFolderStatus"][0][
-              "cac:TenderingProcess"
-            ][0]["cbc:UrgencyCode"][0]._,
+            ][0]["cbc:Name"][0],
+            TypeCode:
+              elem["cac-place-ext:ContractFolderStatus"][0][
+                "cac:ProcurementProject"
+              ][0]["cbc:TypeCode"][0]._,
+            SubTypeCode:
+              elem["cac-place-ext:ContractFolderStatus"][0][
+                "cac:ProcurementProject"
+              ][0]["cbc:SubTypeCode"][0]._,
+            TotalAmount: Math.trunc(
+              elem["cac-place-ext:ContractFolderStatus"][0][
+                "cac:ProcurementProject"
+              ][0]["cac:BudgetAmount"][0]["cbc:TotalAmount"][0]._
+            ),
+            TaxExclusiveAmount: Math.trunc(
+              elem["cac-place-ext:ContractFolderStatus"][0][
+                "cac:ProcurementProject"
+              ][0]["cac:BudgetAmount"][0]["cbc:TaxExclusiveAmount"][0]._
+            ),
+            //   DurationMeasure:
+            //     elem["cac-place-ext:ContractFolderStatus"][0][
+            //       "cac:ProcurementProject"
+            //     ][0]["cac:PlannedPeriod"][0]["cbc:DurationMeasure"][0]._,
+            //   unitCode:
+            //     elem["cac-place-ext:ContractFolderStatus"][0][
+            //       "cac:ProcurementProject"
+            //     ][0]["cac:PlannedPeriod"][0]["cbc:DurationMeasure"][0].$.unitCode,
+            ResultCode:
+              elem["cac-place-ext:ContractFolderStatus"][0][
+                "cac:TenderResult"
+              ][0]["cbc:ResultCode"][0]._,
+            AwardDate:
+              elem["cac-place-ext:ContractFolderStatus"][0][
+                "cac:TenderResult"
+              ][0]["cbc:AwardDate"][0],
+            ReceivedTenderQuantity:
+              elem["cac-place-ext:ContractFolderStatus"][0][
+                "cac:TenderResult"
+              ][0]["cbc:ReceivedTenderQuantity"][0],
+            PartyIdentification:
+              elem["cac-place-ext:ContractFolderStatus"][0][
+                "cac:TenderResult"
+              ][i]["cac:WinningParty"][0]["cac:PartyIdentification"][0][
+                "cbc:ID"
+              ][0]._,
+            PartyName:
+              elem["cac-place-ext:ContractFolderStatus"][0][
+                "cac:TenderResult"
+              ][i]["cac:WinningParty"][0]["cac:PartyName"][0]["cbc:Name"][0],
+            TaxExclusiveAmount1: Math.trunc(
+              elem["cac-place-ext:ContractFolderStatus"][0][
+                "cac:TenderResult"
+              ][0]["cac:AwardedTenderedProject"][0][
+                "cac:LegalMonetaryTotal"
+              ][0]["cbc:TaxExclusiveAmount"][0]._
+            ),
+            PayableAmount: Math.trunc(
+              elem["cac-place-ext:ContractFolderStatus"][0][
+                "cac:TenderResult"
+              ][0]["cac:AwardedTenderedProject"][0][
+                "cac:LegalMonetaryTotal"
+              ][0]["cbc:PayableAmount"][0]._
+            ),
+            ProcedureCode:
+              elem["cac-place-ext:ContractFolderStatus"][0][
+                "cac:TenderingProcess"
+              ][0]["cbc:ProcedureCode"][0]._,
+            UrgencyCode:
+              elem["cac-place-ext:ContractFolderStatus"][0][
+                "cac:TenderingProcess"
+              ][0]["cbc:UrgencyCode"][0]._,
             // listURI:
             // elem["cac-place-ext:ContractFolderStatus"][0][
             //   "cac:place-ext:ValidNoticeInfo"
             // ][0]["cac-place-ext:AdditionalPublicationStatus"][0][
             //   "cac-place-ext:AdditionalPublicationDocumentReference"
             // ][0]["cbc:DocumentTypeCode"][0].$.listURI
-        };
-        arrayFinal.push(item);
-        return item;
+          };
+
+          // if (ContractFolderID == "ASUECO-2020/2663") {
+          //   console.log(ContractFolderID, "Contador: ", cuantosArray, i);
+          // }
+
+          arrayFinal.push(item);
+          // return item;
+          
+        }
+
       });
   });
   saveFinalJson(arrayFinal);
