@@ -1,8 +1,3 @@
-// Leer ZIP
-// Extraer los fichero
-// Recorrer los ficeros.
-// C: /Users /pc /Google Drive /OCM /Plataforma de contratacion del sector publico /Datos abiertos /Contratos menores /2021
-
 const fs = require("fs");
 const xml2js = require("xml2js");
 const path = require("path");
@@ -11,7 +6,7 @@ const parserXml2js = new xml2js.Parser();
 // const fichero =
 //   __dirname + "/contratosMenoresPerfilesContratantes_20210519_041443";
 const ficheroZIP =
-  "C:/Users/pc/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Contratos menores/2021/contratosMenoresPerfilesContratantes_202105.zip";
+  "C:/Users/pc/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Contratos menores/2020/contratosMenoresPerfilesContratantes_2020.zip";
 
 async function extractZip() {
   //console.log(path.join(__dirname,'/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Contratos menores/2021'))
@@ -131,8 +126,7 @@ function saveFileJsonMap(result, nameFile) {
 
 async function ejecutaTodo() {
   try {
-    await extractZip();
-
+    // await extractZip();
     parseXML2JSON();
     mapJSON();
 

@@ -213,11 +213,11 @@ TypeCode:
 ??    Gestion de servicios públicos
 
 SubTypeCode
-1 = alquiler
+1 = Alquiler
 2 - Adquision
 
 UrgencyCode
-1 = ordinaria
+1 = Ordinaria
 2 = Urgente
 3 = Emergencia
 
@@ -234,7 +234,7 @@ Categorias:
   ...
 
 ProcedureCode
-  1 = Abierto
+  1  Abierto
   2 Restringido
   3 Negociado sin publicidad
   4 Negociado con publicidad 
