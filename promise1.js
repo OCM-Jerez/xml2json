@@ -65,8 +65,6 @@ function mapJSON() {
         )
       )
       .map((elem) => {
-        // Cuando una licitación tiene varios concesionarios hay que recorrer el array y crear un objeto
-        // por cada uno de ellos.
         ContractFolderID =
           elem["cac-place-ext:ContractFolderStatus"][0][
             "cbc:ContractFolderID"
@@ -76,16 +74,6 @@ function mapJSON() {
           elem["cac-place-ext:ContractFolderStatus"][0]["cac:TenderResult"];
 
         cuantosArray = Object.keys(cuantosPartyIdentification).length;
-
-        // ASUECO-2020/2663 tiene 2 adjudicatarios.
-        // if (ContractFolderID == "ASUECO-2020/2663") {
-        //   console.log(
-        //     ContractFolderID,
-        //     cuantosPartyIdentification,
-        //     cuantosArray
-        //   );
-        // }
-
         for (var i = 0; i < cuantosArray; i++) {
           const item = {
             link: elem.link[0].$.href,
@@ -142,15 +130,15 @@ function mapJSON() {
                 "cac:TenderResult"
               ][0]["cbc:ReceivedTenderQuantity"][0],
             PartyIdentification:
-              elem["cac-place-ext:ContractFolderStatus"][0][
-                "cac:TenderResult"
-              ][i]["cac:WinningParty"][0]["cac:PartyIdentification"][0][
+              elem["cac-place-ext:ContractFolderStatus"][0]["cac:TenderResult"][
+                i
+              ]["cac:WinningParty"][0]["cac:PartyIdentification"][0][
                 "cbc:ID"
               ][0]._,
             PartyName:
-              elem["cac-place-ext:ContractFolderStatus"][0][
-                "cac:TenderResult"
-              ][i]["cac:WinningParty"][0]["cac:PartyName"][0]["cbc:Name"][0],
+              elem["cac-place-ext:ContractFolderStatus"][0]["cac:TenderResult"][
+                i
+              ]["cac:WinningParty"][0]["cac:PartyName"][0]["cbc:Name"][0],
             TaxExclusiveAmount1: Math.trunc(
               elem["cac-place-ext:ContractFolderStatus"][0][
                 "cac:TenderResult"
@@ -181,15 +169,8 @@ function mapJSON() {
             // ][0]["cbc:DocumentTypeCode"][0].$.listURI
           };
 
-          // if (ContractFolderID == "ASUECO-2020/2663") {
-          //   console.log(ContractFolderID, "Contador: ", cuantosArray, i);
-          // }
-
           arrayFinal.push(item);
-          // return item;
-          
         }
-
       });
   });
   saveFinalJson(arrayFinal);
@@ -209,20 +190,6 @@ function saveFinalJson(arrayFinal) {
     }
   );
 }
-
-// function saveFileJsonMap(result, nameFile) {
-//   const fileNameJson = nameFile.replace(".json", "map.json");
-
-//   fs.writeFile(
-//     "./extracted/jsonMap/" + fileNameJson,
-//     JSON.stringify(result),
-//     function (err) {
-//       if (err) throw err;
-//       console.log(`${fileNameJson} saved`);
-//       console.log("Paso 2 ¡Hecho!");
-//     }
-//   );
-// }
 
 async function ejecutaTodo() {
   try {
