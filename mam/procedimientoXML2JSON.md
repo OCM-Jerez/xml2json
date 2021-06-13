@@ -206,46 +206,6 @@ Guardar.
 
 
 
-TypeCode:
-1 = Suministros
-2 = Servicios
-3 = Obras
-??    Gestion de servicios públicos
-
-SubTypeCode
-1 = Alquiler
-2 - Adquision
-
-UrgencyCode
-1 = Ordinaria
-2 = Urgente
-3 = Emergencia
-
-
-
-En la pagina de Gobierto
-https://gobiernoabierto.getafe.es/visualizaciones/contratos
-tienen:
-Categorias:
-  Construccion y mantenimiento
-  Arquitectura e ingenieria
-  Transporte
-  ...
-  ...
-
-ProcedureCode
-  1  Abierto
-  2 Restringido
-  3 Negociado sin publicidad
-  4 Negociado con publicidad 
-  5 Diálogo competitivo
-  6 Contrato menor
-  7 Derivado de acuerdo marco
-Entidades:
-
-
-
-
 
 
 
