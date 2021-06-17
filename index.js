@@ -14,6 +14,7 @@ async function extractZip() {
   }
 
   const count = await zip.extract(null, "./extracted");
+  console.log("************** extractZip ********************");
   console.log(`Extracted ${count} entries`);
   await zip.close();
   return Promise.resolve(true);
@@ -24,7 +25,7 @@ function readFiles(pathSearch) {
 }
 
 async function parseXML2JSON() {
-  console.log("**************parseXML2JSON********************");
+  console.log("************** parseXML2JSON inicio ********************");
   const archivos = readFiles("./extracted/");
 
   if (!fs.existsSync("./extracted/json")) {
@@ -49,14 +50,19 @@ async function parseXML2JSON() {
 }
 
 function mapJSON() {
+  console.log("************** mapJSON inicio ********************");
   const archivos = readFiles("./extracted/json/");
   if (!fs.existsSync("./extracted/jsonMap")) {
     fs.mkdirSync("extracted/jsonMap");
   }
   const arrayFinal = [];
+  let contador =1;
+  const count = 569;
 
   archivos.forEach((fichero) => {
     const liciJson = fs.readFileSync("./extracted/json/" + fichero);
+    console.log(`${contador}/${count} ${fichero}`);
+    contador ++
     const liciObject = JSON.parse(liciJson);
     const result = liciObject.feed.entry
       .filter((itemFilter) =>
@@ -72,9 +78,64 @@ function mapJSON() {
 
         cuantosPartyIdentification =
           elem["cac-place-ext:ContractFolderStatus"][0]["cac:TenderResult"];
+                  
+
 
         cuantosArray = Object.keys(cuantosPartyIdentification).length;
         for (var i = 0; i < cuantosArray; i++) {
+
+          let DurationMeasure = "";
+          const existDurationMeasure =
+            elem["cac-place-ext:ContractFolderStatus"][0][
+              "cac:ProcurementProject"
+            ][0]["cac:PlannedPeriod"][0]["cbc:DurationMeasure"];
+
+          if (existDurationMeasure) {
+            DurationMeasure = existDurationMeasure[0]._;
+          }
+
+          let unitCode = "";
+          const existUnitcode =
+            elem["cac-place-ext:ContractFolderStatus"][0][
+              "cac:ProcurementProject"
+            ][0]["cac:PlannedPeriod"][0]["cbc:DurationMeasure"];
+
+          if (existUnitcode) {
+            unitCode = existUnitcode[0].$.unitCode;
+          }
+
+          // let listURI = "";
+          // console.log(i);
+          // const existListURI =
+          // elem["cac-place-ext:ContractFolderStatus"][0][
+          //     "cac:place-ext:ValidNoticeInfo"
+          //   ][0]["cac-place-ext:AdditionalPublicationStatus"][0][
+          //     "cac-place-ext:AdditionalPublicationDocumentReference"
+          //   ][0]["cbc:DocumentTypeCode"];
+
+          //   console.log(existListURI);
+
+          // if (existListURI) {
+          //   listURI = existListURI[0].$.listURI;
+          // }
+
+          //   DurationMeasure:
+          //     elem["cac-place-ext:ContractFolderStatus"][0][
+          //       "cac:ProcurementProject"
+          //     ][0]["cac:PlannedPeriod"][0]["cbc:DurationMeasure"][0]._,
+
+          //   unitCode:
+          //     elem["cac-place-ext:ContractFolderStatus"][0][
+          //       "cac:ProcurementProject"
+          //     ][0]["cac:PlannedPeriod"][0]["cbc:DurationMeasure"][0].$.unitCode,
+
+          // listURI:
+          // elem["cac-place-ext:ContractFolderStatus"][0][
+          //   "cac:place-ext:ValidNoticeInfo"
+          // ][0]["cac-place-ext:AdditionalPublicationStatus"][0][
+          //   "cac-place-ext:AdditionalPublicationDocumentReference"
+          // ][0]["cbc:DocumentTypeCode"][0].$.listURI
+
           const item = {
             link: elem.link[0].$.href,
             summary: elem.summary[0]._,
@@ -109,15 +170,9 @@ function mapJSON() {
                 "cac:ProcurementProject"
               ][0]["cac:BudgetAmount"][0]["cbc:TaxExclusiveAmount"][0]._
             ),
-            //   DurationMeasure:
-            //     elem["cac-place-ext:ContractFolderStatus"][0][
-            //       "cac:ProcurementProject"
-            //     ][0]["cac:PlannedPeriod"][0]["cbc:DurationMeasure"][0]._,
-            //   unitCode:
-            //     elem["cac-place-ext:ContractFolderStatus"][0][
-            //       "cac:ProcurementProject"
-            //     ][0]["cac:PlannedPeriod"][0]["cbc:DurationMeasure"][0].$.unitCode,
-            ResultCode:
+              DurationMeasure: DurationMeasure,
+              unitCode: unitCode, 
+                ResultCode:
               elem["cac-place-ext:ContractFolderStatus"][0][
                 "cac:TenderResult"
               ][0]["cbc:ResultCode"][0]._,
@@ -161,12 +216,7 @@ function mapJSON() {
               elem["cac-place-ext:ContractFolderStatus"][0][
                 "cac:TenderingProcess"
               ][0]["cbc:UrgencyCode"][0]._,
-            // listURI:
-            // elem["cac-place-ext:ContractFolderStatus"][0][
-            //   "cac:place-ext:ValidNoticeInfo"
-            // ][0]["cac-place-ext:AdditionalPublicationStatus"][0][
-            //   "cac-place-ext:AdditionalPublicationDocumentReference"
-            // ][0]["cbc:DocumentTypeCode"][0].$.listURI
+              // listURI: listURI
           };
 
           arrayFinal.push(item);
@@ -185,16 +235,16 @@ function saveFinalJson(arrayFinal) {
     JSON.stringify(arrayFinal),
     function (err) {
       if (err) throw err;
-      console.log(`${fileNameJson} saved`);
-      console.log("Paso 2 ¡Hecho!");
+      // console.log(`${fileNameJson} saved`);
+      console.log("************** TERMINADO ********************");
     }
   );
 }
 
 async function ejecutaTodo() {
   try {
-    // await extractZip();
-    // parseXML2JSON();
+    await extractZip();
+    parseXML2JSON();
     mapJSON();
   } catch (error) {
     console.error(error);
