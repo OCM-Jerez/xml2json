@@ -1,0 +1,895 @@
+{
+    "id": [
+        "https://contrataciondelestado.es/sindicacion/licitacionesPerfilContratante/4453704"
+    ],
+    "link": [
+        {
+            "$": {
+                "href": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=Nk5hv63TzRSmq21uxhbaVQ%3D%3D"
+            }
+        }
+    ],
+    "summary": [
+        {
+            "_": "Id licitación: 1003219007100; Órgano de Contratación: Subdirección General de Adquisiciones de Armamento y Material DGAM; Importe: 6611570.25 EUR; Estado: EV",
+            "$": {
+                "type": "text"
+            }
+        }
+    ],
+    "title": [
+        "Adquisición de simuladores de I&A para Pizarro VCI/C Fase I y II "
+    ],
+    "updated": [
+        "2020-01-02T14:00:40.564+01:00"
+    ],
+    "cac-place-ext:ContractFolderStatus": [
+        {
+            "cbc:ContractFolderID": [
+                "1003219007100"
+            ],
+            "cbc-place-ext:ContractFolderStatusCode": [
+                {
+                    "_": "EV",
+                    "$": {
+                        "languageID": "es",
+                        "listURI": "https://contrataciondelestado.es/codice/cl/2.04/SyndicationContractFolderStatusCode-2.04.gc"
+                    }
+                }
+            ],
+            "cac-place-ext:LocatedContractingParty": [
+                {
+                    "cbc:ContractingPartyTypeCode": [
+                        {
+                            "_": "1",
+                            "$": {
+                                "listURI": "http://contrataciondelestado.es/codice/cl/1.04/ContractingAuthorityCode-1.04.gc"
+                            }
+                        }
+                    ],
+                    "cac:Party": [
+                        {
+                            "cac:PartyIdentification": [
+                                {
+                                    "cbc:ID": [
+                                        {
+                                            "_": "E04973401",
+                                            "$": {
+                                                "schemeName": "DIR3"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "cbc:ID": [
+                                        {
+                                            "_": "S2822002H",
+                                            "$": {
+                                                "schemeName": "NIF"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ],
+                            "cac:PartyName": [
+                                {
+                                    "cbc:Name": [
+                                        "Subdirección General de Adquisiciones de Armamento y Material DGAM"
+                                    ]
+                                }
+                            ],
+                            "cac:PostalAddress": [
+                                {
+                                    "cbc:CityName": [
+                                        "Madrid"
+                                    ],
+                                    "cbc:PostalZone": [
+                                        "28071"
+                                    ],
+                                    "cac:AddressLine": [
+                                        {
+                                            "cbc:Line": [
+                                                "Paseo de la Castellana, 109"
+                                            ]
+                                        }
+                                    ],
+                                    "cac:Country": [
+                                        {
+                                            "cbc:IdentificationCode": [
+                                                {
+                                                    "_": "ES",
+                                                    "$": {
+                                                        "listURI": "http://docs.oasis-open.org/ubl/os-ubl-2.0/cl/gc/default/CountryIdentificationCode-2.0.gc"
+                                                    }
+                                                }
+                                            ],
+                                            "cbc:Name": [
+                                                "España"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "cac:Contact": [
+                                {
+                                    "cbc:Name": [
+                                        "Subdirección General de Adquisiciones de Armamento y Material DGAM"
+                                    ],
+                                    "cbc:Telephone": [
+                                        "913955369"
+                                    ],
+                                    "cbc:Telefax": [
+                                        "913955117"
+                                    ],
+                                    "cbc:ElectronicMail": [
+                                        "sdg_adquisiciones@mde.es"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "cac:ProcurementProject": [
+                {
+                    "cbc:Name": [
+                        "Adquisición de simuladores de I&A para Pizarro VCI/C Fase I y II "
+                    ],
+                    "cbc:TypeCode": [
+                        {
+                            "_": "1",
+                            "$": {
+                                "listURI": "http://contrataciondelestado.es/codice/cl/2.08/ContractCode-2.08.gc"
+                            }
+                        }
+                    ],
+                    "cbc:SubTypeCode": [
+                        {
+                            "_": "2",
+                            "$": {
+                                "listURI": "http://contrataciondelestado.es/codice/cl/1.04/GoodsContractCode-1.04.gc"
+                            }
+                        }
+                    ],
+                    "cac:BudgetAmount": [
+                        {
+                            "cbc:EstimatedOverallContractAmount": [
+                                {
+                                    "_": "7933884.3",
+                                    "$": {
+                                        "currencyID": "EUR"
+                                    }
+                                }
+                            ],
+                            "cbc:TotalAmount": [
+                                {
+                                    "_": "8000000",
+                                    "$": {
+                                        "currencyID": "EUR"
+                                    }
+                                }
+                            ],
+                            "cbc:TaxExclusiveAmount": [
+                                {
+                                    "_": "6611570.25",
+                                    "$": {
+                                        "currencyID": "EUR"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "cac:RequiredCommodityClassification": [
+                        {
+                            "cbc:ItemClassificationCode": [
+                                {
+                                    "_": "35740000",
+                                    "$": {
+                                        "listURI": "http://contrataciondelestado.es/codice/cl/1.04/CPV2007-1.04.gc"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "cac:RealizedLocation": [
+                        {
+                            "cbc:CountrySubentity": [
+                                "Madrid"
+                            ],
+                            "cbc:CountrySubentityCode": [
+                                {
+                                    "_": "ES300",
+                                    "$": {
+                                        "listURI": "http://contrataciondelestado.es/codice/cl/2.06/NUTS-2016.gc"
+                                    }
+                                }
+                            ],
+                            "cac:Address": [
+                                {
+                                    "cac:Country": [
+                                        {
+                                            "cbc:IdentificationCode": [
+                                                {
+                                                    "_": "ES",
+                                                    "$": {
+                                                        "listURI": "http://docs.oasis-open.org/ubl/os-ubl-2.0/cl/gc/default/CountryIdentificationCode-2.0.gc"
+                                                    }
+                                                }
+                                            ],
+                                            "cbc:Name": [
+                                                "España"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "cac:PlannedPeriod": [
+                        {
+                            "cbc:StartDate": [
+                                "2019-03-01"
+                            ],
+                            "cbc:EndDate": [
+                                "2021-11-01"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "cac:TenderingTerms": [
+                {
+                    "cbc:RequiredCurriculaIndicator": [
+                        "false"
+                    ],
+                    "cac:RequiredFinancialGuarantee": [
+                        {
+                            "cbc:GuaranteeTypeCode": [
+                                {
+                                    "_": "2",
+                                    "$": {
+                                        "listURI": "http://contrataciondelestado.es/codice/cl/1.04/GuaranteeTypeCode-1.04.gc"
+                                    }
+                                }
+                            ],
+                            "cbc:AmountRate": [
+                                "5"
+                            ]
+                        }
+                    ],
+                    "cac:ProcurementLegislationDocumentReference": [
+                        {
+                            "cbc:ID": [
+                                "2009/81/EC"
+                            ]
+                        }
+                    ],
+                    "cac:TendererQualificationRequest": [
+                        {
+                            "cac:TechnicalEvaluationCriteria": [
+                                {
+                                    "cbc:EvaluationCriteriaTypeCode": [
+                                        {
+                                            "_": "XSR-MUESTRAS",
+                                            "$": {
+                                                "listURI": "http://contrataciondelestado.es/codice/cl/2.0/TechnicalCapabilityTypeCode-2.0.gc"
+                                            }
+                                        }
+                                    ],
+                                    "cbc:Description": [
+                                        "Según lo estipulado en la cláusula 15 del PCAP."
+                                    ]
+                                },
+                                {
+                                    "cbc:EvaluationCriteriaTypeCode": [
+                                        {
+                                            "_": "XSX-CERTCALIDAD",
+                                            "$": {
+                                                "listURI": "http://contrataciondelestado.es/codice/cl/2.0/TechnicalCapabilityTypeCode-2.0.gc"
+                                            }
+                                        }
+                                    ],
+                                    "cbc:Description": [
+                                        "Según lo estipulado en la cláusula 15 del PCAP."
+                                    ]
+                                },
+                                {
+                                    "cbc:EvaluationCriteriaTypeCode": [
+                                        {
+                                            "_": "OSR-COMPTASK",
+                                            "$": {
+                                                "listURI": "http://contrataciondelestado.es/codice/cl/2.0/TechnicalCapabilityTypeCode-2.0.gc"
+                                            }
+                                        }
+                                    ],
+                                    "cbc:Description": [
+                                        "Según lo estipulado en la cláusula 15 del PCAP."
+                                    ]
+                                },
+                                {
+                                    "cbc:EvaluationCriteriaTypeCode": [
+                                        {
+                                            "_": "OSR-TECH",
+                                            "$": {
+                                                "listURI": "http://contrataciondelestado.es/codice/cl/2.0/TechnicalCapabilityTypeCode-2.0.gc"
+                                            }
+                                        }
+                                    ],
+                                    "cbc:Description": [
+                                        "Según lo estipulado en la cláusula 15 del PCAP."
+                                    ]
+                                },
+                                {
+                                    "cbc:EvaluationCriteriaTypeCode": [
+                                        {
+                                            "_": "XSR-CALIDAD",
+                                            "$": {
+                                                "listURI": "http://contrataciondelestado.es/codice/cl/2.0/TechnicalCapabilityTypeCode-2.0.gc"
+                                            }
+                                        }
+                                    ],
+                                    "cbc:Description": [
+                                        "Según lo estipulado en la cláusula 15 del PCAP."
+                                    ]
+                                },
+                                {
+                                    "cbc:EvaluationCriteriaTypeCode": [
+                                        {
+                                            "_": "ZZZ",
+                                            "$": {
+                                                "listURI": "http://contrataciondelestado.es/codice/cl/2.0/TechnicalCapabilityTypeCode-2.0.gc"
+                                            }
+                                        }
+                                    ],
+                                    "cbc:Description": [
+                                        "Según lo estipulado en la cláusula 15 del PCAP."
+                                    ]
+                                }
+                            ],
+                            "cac:FinancialEvaluationCriteria": [
+                                {
+                                    "cbc:EvaluationCriteriaTypeCode": [
+                                        {
+                                            "_": "5",
+                                            "$": {
+                                                "listURI": "http://contrataciondelestado.es/codice/cl/2.0/FinancialCapabilityTypeCode-2.0.gc"
+                                            }
+                                        }
+                                    ],
+                                    "cbc:Description": [
+                                        "Según lo estipulado en la cláusula 15 del PCAP."
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "cac:AllowedSubcontractTerms": [
+                        {
+                            "cbc:Description": [
+                                "Según lo estipulado en la cláusula 37 del PCAP."
+                            ]
+                        }
+                    ],
+                    "cac:AwardingTerms": [
+                        {
+                            "cac:AwardingCriteria": [
+                                {
+                                    "cbc:Description": [
+                                        "valoracion tecnica"
+                                    ],
+                                    "cbc:WeightNumeric": [
+                                        "2.5"
+                                    ]
+                                },
+                                {
+                                    "cbc:Description": [
+                                        "valoracion tecnica criterio subjetivo"
+                                    ],
+                                    "cbc:WeightNumeric": [
+                                        "37.5"
+                                    ]
+                                },
+                                {
+                                    "cbc:Description": [
+                                        "valoracion econocmica"
+                                    ],
+                                    "cbc:WeightNumeric": [
+                                        "60"
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "cac:Language": [
+                        {
+                            "cbc:ID": [
+                                "es"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "cac:TenderingProcess": [
+                {
+                    "cbc:ProcedureCode": [
+                        {
+                            "_": "4",
+                            "$": {
+                                "listURI": "https://contrataciondelestado.es/codice/cl/2.07/SyndicationTenderingProcessCode-2.07.gc"
+                            }
+                        }
+                    ],
+                    "cbc:UrgencyCode": [
+                        {
+                            "_": "1",
+                            "$": {
+                                "listURI": "http://contrataciondelestado.es/codice/cl/1.04/DiligenceTypeCode-1.04.gc"
+                            }
+                        }
+                    ],
+                    "cbc:SubmissionMethodCode": [
+                        {
+                            "_": "1",
+                            "$": {
+                                "listURI": "http://contrataciondelestado.es/codice/cl/1.04/TenderDeliveryCode-1.04.gc"
+                            }
+                        }
+                    ],
+                    "cac:DocumentAvailabilityPeriod": [
+                        {
+                            "cbc:EndDate": [
+                                "2020-03-25"
+                            ],
+                            "cbc:EndTime": [
+                                "14:00:00"
+                            ]
+                        }
+                    ],
+                    "cac:TenderSubmissionDeadlinePeriod": [
+                        {
+                            "cbc:EndDate": [
+                                "2020-07-01"
+                            ],
+                            "cbc:EndTime": [
+                                "23:59:00"
+                            ]
+                        }
+                    ],
+                    "cac:EconomicOperatorShortList": [
+                        {
+                            "cbc:LimitationDescription": [
+                                "Según lo estipulado en la cláusula 14 del PCAP."
+                            ],
+                            "cbc:MaximumQuantity": [
+                                "6"
+                            ],
+                            "cbc:MinimumQuantity": [
+                                "3"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "cac:LegalDocumentReference": [
+                {
+                    "cbc:ID": [
+                        "1003219007100.pdf"
+                    ],
+                    "cac:Attachment": [
+                        {
+                            "cac:ExternalReference": [
+                                {
+                                    "cbc:URI": [
+                                        "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=5340e193-322a-4d37-abad-f394adf7b728"
+                                    ],
+                                    "cbc:DocumentHash": [
+                                        "nAXrNwE9N8oMtasQfvAN8N4qBqs="
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "cac:TechnicalDocumentReference": [
+                {
+                    "cbc:ID": [
+                        "PPT 1003219007100.pdf"
+                    ],
+                    "cac:Attachment": [
+                        {
+                            "cac:ExternalReference": [
+                                {
+                                    "cbc:URI": [
+                                        "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=e62249f6-04e0-4821-96f4-a2c75f34dd7c"
+                                    ],
+                                    "cbc:DocumentHash": [
+                                        "B1/3YCGil5fWiBKiP2a9QcZreVo="
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "cac:AdditionalDocumentReference": [
+                {
+                    "cbc:ID": [
+                        "Modelo A proposicion.docx"
+                    ],
+                    "cac:Attachment": [
+                        {
+                            "cac:ExternalReference": [
+                                {
+                                    "cbc:URI": [
+                                        "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=1d0d0d0e-97f8-4b4a-8eb3-380a3e878672"
+                                    ],
+                                    "cbc:DocumentHash": [
+                                        "3lwBE8Jrld97+ECowx3e+ksQQZw="
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "cbc:ID": [
+                        "Anexo B DEUC.docx"
+                    ],
+                    "cac:Attachment": [
+                        {
+                            "cac:ExternalReference": [
+                                {
+                                    "cbc:URI": [
+                                        "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=5bf8dcd6-0955-49f4-966a-bd38a9c5c2bf"
+                                    ],
+                                    "cbc:DocumentHash": [
+                                        "pIUCyWa+FUrQRGbZoK17NRQY4Ow="
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "cac-place-ext:ValidNoticeInfo": [
+                {
+                    "cbc-place-ext:NoticeTypeCode": [
+                        {
+                            "_": "DOC_CN",
+                            "$": {
+                                "listURI": "http://contrataciondelestado.es/codice/cl/2.04/TenderingNoticeTypeCode-2.04.gc"
+                            }
+                        }
+                    ],
+                    "cac-place-ext:AdditionalPublicationStatus": [
+                        {
+                            "cbc-place-ext:PublicationMediaName": [
+                                "BOE"
+                            ],
+                            "cac-place-ext:AdditionalPublicationDocumentReference": [
+                                {
+                                    "cbc:IssueDate": [
+                                        "2020-01-25"
+                                    ]
+                                },
+                                {
+                                    "cbc:IssueDate": [
+                                        "2019-12-20"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "cbc-place-ext:PublicationMediaName": [
+                                "DOUE"
+                            ],
+                            "cac-place-ext:AdditionalPublicationDocumentReference": [
+                                {
+                                    "cbc:IssueDate": [
+                                        "2019-12-24"
+                                    ]
+                                }
+                            ],
+                            "cac-place-ext:AdditionalPublicationRequest": [
+                                {
+                                    "cbc:AgencyID": [
+                                        "DOUE"
+                                    ],
+                                    "cbc-place-ext:SendDate": [
+                                        "2019-12-20+01:00"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "cbc-place-ext:NoticeTypeCode": [
+                        {
+                            "_": "DOC_CD",
+                            "$": {
+                                "listURI": "http://contrataciondelestado.es/codice/cl/2.04/TenderingNoticeTypeCode-2.04.gc"
+                            }
+                        }
+                    ],
+                    "cac-place-ext:AdditionalPublicationStatus": [
+                        {
+                            "cbc-place-ext:PublicationMediaName": [
+                                "Perfil del Contratante"
+                            ],
+                            "cac-place-ext:AdditionalPublicationDocumentReference": [
+                                {
+                                    "cbc:IssueDate": [
+                                        "2019-12-23"
+                                    ]
+                                },
+                                {
+                                    "cbc:IssueDate": [
+                                        "2020-01-02"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "cbc-place-ext:NoticeTypeCode": [
+                        {
+                            "_": "DOC_CN",
+                            "$": {
+                                "listURI": "http://contrataciondelestado.es/codice/cl/2.04/TenderingNoticeTypeCode-2.04.gc"
+                            }
+                        }
+                    ],
+                    "cac-place-ext:AdditionalPublicationStatus": [
+                        {
+                            "cbc-place-ext:PublicationMediaName": [
+                                "Perfil del Contratante"
+                            ],
+                            "cac-place-ext:AdditionalPublicationDocumentReference": [
+                                {
+                                    "cbc:IssueDate": [
+                                        "2019-12-23"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "cac-place-ext:GeneralDocument": [
+                {
+                    "cac-place-ext:GeneralDocumentDocumentReference": [
+                        {
+                            "cbc:ID": [
+                                "0d3d64c6-2de3-4f1f-84ae-74dbfc6da3f0"
+                            ],
+                            "cac:Attachment": [
+                                {
+                                    "cac:ExternalReference": [
+                                        {
+                                            "cbc:URI": [
+                                                "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=0d3d64c6-2de3-4f1f-84ae-74dbfc6da3f0"
+                                            ],
+                                            "cbc:FileName": [
+                                                "Preguntas y respuestas"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "cac-place-ext:GeneralDocumentDocumentReference": [
+                        {
+                            "cbc:ID": [
+                                "4bbc54da-cdb5-4b36-b2e0-2e8a04136368"
+                            ],
+                            "cac:Attachment": [
+                                {
+                                    "cac:ExternalReference": [
+                                        {
+                                            "cbc:URI": [
+                                                "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=4bbc54da-cdb5-4b36-b2e0-2e8a04136368"
+                                            ],
+                                            "cbc:FileName": [
+                                                "Comunicación del Secretario de la Mesa"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "cac-place-ext:GeneralDocumentDocumentReference": [
+                        {
+                            "cbc:ID": [
+                                "cd9e4446-4c22-4f80-88f5-1f8701572420"
+                            ],
+                            "cac:Attachment": [
+                                {
+                                    "cac:ExternalReference": [
+                                        {
+                                            "cbc:URI": [
+                                                "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=cd9e4446-4c22-4f80-88f5-1f8701572420"
+                                            ],
+                                            "cbc:FileName": [
+                                                "Preguntas y respuestas"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "cac-place-ext:GeneralDocumentDocumentReference": [
+                        {
+                            "cbc:ID": [
+                                "1a41abf3-b6b5-4ba6-bf93-5fda6b30b6e8"
+                            ],
+                            "cac:Attachment": [
+                                {
+                                    "cac:ExternalReference": [
+                                        {
+                                            "cbc:URI": [
+                                                "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=1a41abf3-b6b5-4ba6-bf93-5fda6b30b6e8"
+                                            ],
+                                            "cbc:FileName": [
+                                                "Preguntas y respuestas "
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "cac-place-ext:GeneralDocumentDocumentReference": [
+                        {
+                            "cbc:ID": [
+                                "d0f97350-ff6e-44ca-804f-68d16585c65e"
+                            ],
+                            "cac:Attachment": [
+                                {
+                                    "cac:ExternalReference": [
+                                        {
+                                            "cbc:URI": [
+                                                "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=d0f97350-ff6e-44ca-804f-68d16585c65e"
+                                            ],
+                                            "cbc:FileName": [
+                                                "Resolución de modificación de error material"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "cac-place-ext:GeneralDocumentDocumentReference": [
+                        {
+                            "cbc:ID": [
+                                "d62f737d-a069-4faf-909a-96aba49cd6fe"
+                            ],
+                            "cac:Attachment": [
+                                {
+                                    "cac:ExternalReference": [
+                                        {
+                                            "cbc:URI": [
+                                                "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=d62f737d-a069-4faf-909a-96aba49cd6fe"
+                                            ],
+                                            "cbc:FileName": [
+                                                "Preguntas y respuestas"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "cac-place-ext:GeneralDocumentDocumentReference": [
+                        {
+                            "cbc:ID": [
+                                "cac4a583-bcbd-4d80-9078-d7654a980082"
+                            ],
+                            "cac:Attachment": [
+                                {
+                                    "cac:ExternalReference": [
+                                        {
+                                            "cbc:URI": [
+                                                "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=cac4a583-bcbd-4d80-9078-d7654a980082"
+                                            ],
+                                            "cbc:FileName": [
+                                                "Resolución de error material"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "cac-place-ext:GeneralDocumentDocumentReference": [
+                        {
+                            "cbc:ID": [
+                                "c311d24b-654c-41aa-937c-1607ae2cb7c4"
+                            ],
+                            "cac:Attachment": [
+                                {
+                                    "cac:ExternalReference": [
+                                        {
+                                            "cbc:URI": [
+                                                "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=c311d24b-654c-41aa-937c-1607ae2cb7c4"
+                                            ],
+                                            "cbc:FileName": [
+                                                " Preguntas y respuestas "
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "cac-place-ext:GeneralDocumentDocumentReference": [
+                        {
+                            "cbc:ID": [
+                                "2b19c4c1-cf30-4a4e-a1ed-5e9cec8e033e"
+                            ],
+                            "cac:Attachment": [
+                                {
+                                    "cac:ExternalReference": [
+                                        {
+                                            "cbc:URI": [
+                                                "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2b19c4c1-cf30-4a4e-a1ed-5e9cec8e033e"
+                                            ],
+                                            "cbc:FileName": [
+                                                "Información licitación"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "cac-place-ext:GeneralDocumentDocumentReference": [
+                        {
+                            "cbc:ID": [
+                                "fb28ed50-6904-475c-985f-4c15b14acd94"
+                            ],
+                            "cac:Attachment": [
+                                {
+                                    "cac:ExternalReference": [
+                                        {
+                                            "cbc:URI": [
+                                                "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=fb28ed50-6904-475c-985f-4c15b14acd94"
+                                            ],
+                                            "cbc:FileName": [
+                                                "Preguntas y respuestas"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

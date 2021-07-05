@@ -1,0 +1,426 @@
+{
+    "id": [
+        "https://contrataciondelestado.es/sindicacion/PlataformasAgregadasSinMenores/6840065"
+    ],
+    "link": [
+        {
+            "$": {
+                "href": "https://hacienda.navarra.es/sicpportal/mtoAnunciosModalidad.aspx?cod=2012310903432D62A559"
+            }
+        }
+    ],
+    "summary": [
+        {
+            "_": "Id licitación: 3125_CON_SERVICIOS2020/13; Órgano de Contratación: Ayuntamiento del Valle de Egüés; Importe: 10500,00 EUR; Estado: En Plazo",
+            "$": {
+                "type": "text"
+            }
+        }
+    ],
+    "title": [
+        "servicios para la conservación, mantenimiento y reparación de las instalaciones (de titularidad municipal) del sistema de impulsión de agua no potable, desde el rio Arga, a los estanques de la Ciudad de la Innovación y la Ecociudad de Sarriguren"
+    ],
+    "updated": [
+        "2021-01-01T01:00:11.417+01:00"
+    ],
+    "cac-place-ext:ContractFolderStatus": [
+        {
+            "cbc:ContractFolderID": [
+                "3125_CON_SERVICIOS2020/13"
+            ],
+            "cbc-place-ext:ContractFolderStatusCode": [
+                {
+                    "_": "PUB",
+                    "$": {
+                        "languageID": "es",
+                        "listURI": "https://contrataciondelestado.es/codice/cl/2.04/SyndicationContractFolderStatusCode-2.04.gc"
+                    }
+                }
+            ],
+            "cac-place-ext:LocatedContractingParty": [
+                {
+                    "cac:Party": [
+                        {
+                            "cac:PartyName": [
+                                {
+                                    "cbc:Name": [
+                                        "Alcaldía"
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "cac-place-ext:ParentLocatedParty": [
+                        {
+                            "cac:PartyName": [
+                                {
+                                    "cbc:Name": [
+                                        "Ayuntamiento del Valle de Egüés"
+                                    ]
+                                }
+                            ],
+                            "cac-place-ext:ParentLocatedParty": [
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "cac:ProcurementProject": [
+                {
+                    "cbc:Name": [
+                        "servicios para la conservación, mantenimiento y reparación de las instalaciones (de titularidad municipal) del sistema de impulsión de agua no potable, desde el rio Arga, a los estanques de la Ciudad de la Innovación y la Ecociudad de Sarriguren"
+                    ],
+                    "cbc:TypeCode": [
+                        {
+                            "_": "2",
+                            "$": {
+                                "listURI": "http://contrataciondelestado.es/codice/cl/2.08/ContractCode-2.08.gc"
+                            }
+                        }
+                    ],
+                    "cac:BudgetAmount": [
+                        {
+                            "cbc:EstimatedOverallContractAmount": [
+                                {
+                                    "_": "42000",
+                                    "$": {
+                                        "currencyID": "EUR"
+                                    }
+                                }
+                            ],
+                            "cbc:TaxExclusiveAmount": [
+                                {
+                                    "_": "10500",
+                                    "$": {
+                                        "currencyID": "EUR"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "cac:RequiredCommodityClassification": [
+                        {
+                            "cbc:ItemClassificationCode": [
+                                {
+                                    "_": "41120000",
+                                    "$": {
+                                        "listURI": "http://contrataciondelestado.es/codice/cl/1.04/CPV2007-1.04.gc"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "cac:RealizedLocation": [
+                        {
+                            "cbc:CountrySubentityCode": [
+                                {
+                                    "_": "ES220",
+                                    "$": {
+                                        "listURI": "http://contrataciondelestado.es/codice/cl/2.06/NUTS-2016.gc"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "cac:PlannedPeriod": [
+                        {
+                            "cbc:DurationMeasure": [
+                                {
+                                    "_": "2",
+                                    "$": {
+                                        "unitCode": "ANN"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "cac:TenderingProcess": [
+                {
+                    "cbc:ProcedureCode": [
+                        {
+                            "_": "1",
+                            "$": {
+                                "listURI": "https://contrataciondelestado.es/codice/cl/2.07/SyndicationTenderingProcessCode-2.07.gc"
+                            }
+                        }
+                    ],
+                    "cac:TenderSubmissionDeadlinePeriod": [
+                        {
+                            "cbc:EndDate": [
+                                "2021-01-20"
+                            ],
+                            "cbc:EndTime": [
+                                "23:59:00"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "cac-place-ext:ValidNoticeInfo": [
+                {
+                    "cbc-place-ext:NoticeTypeCode": [
+                        {
+                            "_": "DOC_CN",
+                            "$": {
+                                "listURI": "http://contrataciondelestado.es/codice/cl/2.04/TenderingNoticeTypeCode-2.04.gc"
+                            }
+                        }
+                    ],
+                    "cac-place-ext:AdditionalPublicationStatus": [
+                        {
+                            "cbc-place-ext:PublicationMediaName": [
+                                "Perfil del contratante"
+                            ],
+                            "cac-place-ext:AdditionalPublicationDocumentReference": [
+                                {
+                                    "cbc:IssueDate": [
+                                        "2021-01-01"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+
+{
+    "id": [
+        "https://contrataciondelestado.es/sindicacion/PlataformasAgregadasSinMenores/4454187"
+    ],
+    "link": [
+        {
+            "$": {
+                "href": "https://www.contratacion.euskadi.eus/w32-kpeperfi/es/contenidos/anuncio_contratacion/expjaso26405/es_doc/es_arch_expjaso26405.html"
+            }
+        }
+    ],
+    "summary": [
+        {
+            "_": "Id licitación: 2019/51-HH-ZE;  Órgano de Contratación: Diputado/a Foral de Medio Ambiente y Obras Hidráulicas\t;  Importe: 63000.00EUR;  Estado: PUB",
+            "$": {
+                "type": "text"
+            }
+        }
+    ],
+    "title": [
+        "Servicios de asistencia técnica para la dinamización y potenciación del Clúster Guipuzcoano de la moda GK Green Fashion de la Dirección General de Medio  Ambiente"
+    ],
+    "updated": [
+        "2020-01-02T09:40:30.842+01:00"
+    ],
+    "cac-place-ext:ContractFolderStatus": [
+        {
+            "cbc:ContractFolderID": [
+                "2019/51-HH-ZE"
+            ],
+            "cbc-place-ext:ContractFolderStatusCode": [
+                {
+                    "_": "PUB",
+                    "$": {
+                        "languageID": "es",
+                        "listURI": "https://contrataciondelestado.es/codice/cl/2.04/SyndicationContractFolderStatusCode-2.04.gc"
+                    }
+                }
+            ],
+            "cac-place-ext:LocatedContractingParty": [
+                {
+                    "cac:Party": [
+                        {
+                            "cac:PartyName": [
+                                {
+                                    "cbc:Name": [
+                                        "Diputado/a Foral de Medio Ambiente y Obras Hidráulicas"
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "cac-place-ext:ParentLocatedParty": [
+                        {
+                            "cac:PartyName": [
+                                {
+                                    "cbc:Name": [
+                                        "Diputación Foral de Gipuzkoa"
+                                    ]
+                                }
+                            ],
+                            "cac-place-ext:ParentLocatedParty": [
+                                {
+                                    "cac:PartyName": [
+                                        {
+                                            "cbc:Name": [
+                                                "Departamento de Medio Ambiente y Obras Hidráulicas "
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "cac:ProcurementProject": [
+                {
+                    "cbc:Name": [
+                        "Servicios de asistencia técnica para la dinamización y potenciación del Clúster Guipuzcoano de la moda GK Green Fashion de la Dirección General de Medio  Ambiente"
+                    ],
+                    "cbc:TypeCode": [
+                        {
+                            "_": "2",
+                            "$": {
+                                "listURI": "http://contrataciondelestado.es/codice/cl/2.08/ContractCode-2.08.gc"
+                            }
+                        }
+                    ],
+                    "cac:BudgetAmount": [
+                        {
+                            "cbc:EstimatedOverallContractAmount": [
+                                {
+                                    "_": "252000",
+                                    "$": {
+                                        "currencyID": "EUR"
+                                    }
+                                }
+                            ],
+                            "cbc:TaxExclusiveAmount": [
+                                {
+                                    "_": "63000",
+                                    "$": {
+                                        "currencyID": "EUR"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "cac:RequiredCommodityClassification": [
+                        {
+                            "cbc:ItemClassificationCode": [
+                                {
+                                    "_": "79416000",
+                                    "$": {
+                                        "listURI": "http://contrataciondelestado.es/codice/cl/1.04/CPV2007-1.04.gc"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "cac:RealizedLocation": [
+                        {
+                            "cbc:CountrySubentityCode": [
+                                {
+                                    "_": "ES212",
+                                    "$": {
+                                        "listURI": "http://contrataciondelestado.es/codice/cl/2.06/NUTS-2016.gc"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "cac:PlannedPeriod": [
+                        {
+                            "cbc:DurationMeasure": [
+                                {
+                                    "_": "1",
+                                    "$": {
+                                        "unitCode": "ANN"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "cac:TenderingProcess": [
+                {
+                    "cbc:ProcedureCode": [
+                        {
+                            "_": "1",
+                            "$": {
+                                "listURI": "https://contrataciondelestado.es/codice/cl/2.07/SyndicationTenderingProcessCode-2.07.gc"
+                            }
+                        }
+                    ],
+                    "cac:TenderSubmissionDeadlinePeriod": [
+                        {
+                            "cbc:EndDate": [
+                                "2020-01-23"
+                            ],
+                            "cbc:EndTime": [
+                                "14:30:00"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "cac:LegalDocumentReference": [
+                {
+                    "cbc:ID": [
+                        "PCAP - cas.pdf"
+                    ],
+                    "cac:Attachment": [
+                        {
+                            "cac:ExternalReference": [
+                                {
+                                    "cbc:URI": [
+                                        "https://contratacion.euskadi.eus/w32-kpeperfi/es/v79aWar/comunJSP/v79aMostrarAdjunto.do?&idUnico=expjaso26405&fichero=clausulas_admin_particulares1.pdf&tipoAnuncio=A&idOrigen=26405&origen=JASO&R01HNoPortal=true"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "cac:TechnicalDocumentReference": [
+                {
+                    "cbc:ID": [
+                        "1 PPT AT Dinam GK Green Fashion 2020.doc"
+                    ],
+                    "cac:Attachment": [
+                        {
+                            "cac:ExternalReference": [
+                                {
+                                    "cbc:URI": [
+                                        "https://contratacion.euskadi.eus/w32-kpeperfi/es/v79aWar/comunJSP/v79aMostrarAdjunto.do?&idUnico=expjaso26405&fichero=pliego_bases_tecnicas1.doc&tipoAnuncio=A&idOrigen=26405&origen=JASO&R01HNoPortal=true"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "cac-place-ext:ValidNoticeInfo": [
+                {
+                    "cbc-place-ext:NoticeTypeCode": [
+                        {
+                            "_": "DOC_CN",
+                            "$": {
+                                "listURI": "http://contrataciondelestado.es/codice/cl/2.04/TenderingNoticeTypeCode-2.04.gc"
+                            }
+                        }
+                    ],
+                    "cac-place-ext:AdditionalPublicationStatus": [
+                        {
+                            "cbc-place-ext:PublicationMediaName": [
+                                "Perfil del contratante"
+                            ],
+                            "cac-place-ext:AdditionalPublicationDocumentReference": [
+                                {
+                                    "cbc:IssueDate": [
+                                        "2019-12-23"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

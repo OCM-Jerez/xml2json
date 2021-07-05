@@ -1,0 +1,1145 @@
+   {
+                "id": [
+                    "https://contrataciondelestado.es/sindicacion/licitacionesPerfilContratante/4479308"
+                ],
+                "link": [
+                    {
+                        "$": {
+                            "href": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=3FTfp6h%2Be2F7h85%2Fpmmsfw%3D%3D"
+                        }
+                    }
+                ],
+                "summary": [
+                    {
+                        "_": "Id licitación: 30/2019/27009; Órgano de Contratación: Concejalía Delegada de Hacienda, Régimen Interior e Igualdad del Ayuntamiento de Arganda del Rey ; Importe: 123966.94 EUR; Estado: RES",
+                        "$": {
+                            "type": "text"
+                        }
+                    }
+                ],
+                "title": [
+                    "Obras de reforma de la instalación de la calefacción del CEIP Miguel Hernández"
+                ],
+                "updated": [
+                    "2020-01-03T13:03:42.460+01:00"
+                ],
+                "cac-place-ext:ContractFolderStatus": [
+                    {
+                        "cbc:ContractFolderID": [
+                            "30/2019/27009"
+                        ],
+                        "cbc-place-ext:ContractFolderStatusCode": [
+                            {
+                                "_": "RES",
+                                "$": {
+                                    "languageID": "es",
+                                    "listURI": "https://contrataciondelestado.es/codice/cl/2.04/SyndicationContractFolderStatusCode-2.04.gc"
+                                }
+                            }
+                        ],
+                        "cac-place-ext:LocatedContractingParty": [
+                            {
+                                "cbc:ContractingPartyTypeCode": [
+                                    {
+                                        "_": "3",
+                                        "$": {
+                                            "listURI": "http://contrataciondelestado.es/codice/cl/1.04/ContractingAuthorityCode-1.04.gc"
+                                        }
+                                    }
+                                ],
+                                "cac:Party": [
+                                    {
+                                        "cbc:WebsiteURI": [
+                                            "http://www.ayto-arganda.es"
+                                        ],
+                                        "cac:PartyIdentification": [
+                                            {
+                                                "cbc:ID": [
+                                                    {
+                                                        "_": "L01280148",
+                                                        "$": {
+                                                            "schemeName": "DIR3"
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "cbc:ID": [
+                                                    {
+                                                        "_": "P2801400I",
+                                                        "$": {
+                                                            "schemeName": "NIF"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "cac:PartyName": [
+                                            {
+                                                "cbc:Name": [
+                                                    "Concejalía Delegada de Hacienda, Régimen Interior e Igualdad del Ayuntamiento de Arganda del Rey "
+                                                ]
+                                            }
+                                        ],
+                                        "cac:PostalAddress": [
+                                            {
+                                                "cbc:CityName": [
+                                                    "Arganda del Rey"
+                                                ],
+                                                "cbc:PostalZone": [
+                                                    "28500"
+                                                ],
+                                                "cac:AddressLine": [
+                                                    {
+                                                        "cbc:Line": [
+                                                            "Plaza de la Constitución, 1"
+                                                        ]
+                                                    }
+                                                ],
+                                                "cac:Country": [
+                                                    {
+                                                        "cbc:IdentificationCode": [
+                                                            {
+                                                                "_": "ES",
+                                                                "$": {
+                                                                    "listURI": "http://docs.oasis-open.org/ubl/os-ubl-2.0/cl/gc/default/CountryIdentificationCode-2.0.gc"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "cbc:Name": [
+                                                            "España"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "cac:Contact": [
+                                            {
+                                                "cbc:Name": [
+                                                    "Concejalía Delegada de Hacienda, Régimen Interior e Igualdad del Ayuntamiento de Arganda del Rey "
+                                                ],
+                                                "cbc:Telephone": [
+                                                    "918711344"
+                                                ],
+                                                "cbc:Telefax": [
+                                                    "918716312"
+                                                ],
+                                                "cbc:ElectronicMail": [
+                                                    "contratacion@ayto-arganda.es"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "cac:ProcurementProject": [
+                            {
+                                "cbc:Name": [
+                                    "Obras de reforma de la instalación de la calefacción del CEIP Miguel Hernández"
+                                ],
+                                "cbc:TypeCode": [
+                                    {
+                                        "_": "3",
+                                        "$": {
+                                            "listURI": "http://contrataciondelestado.es/codice/cl/2.08/ContractCode-2.08.gc"
+                                        }
+                                    }
+                                ],
+                                "cbc:SubTypeCode": [
+                                    {
+                                        "_": "4533",
+                                        "$": {
+                                            "listURI": "http://contrataciondelestado.es/codice/cl/1.04/WorksContractCode-1.04.gc"
+                                        }
+                                    }
+                                ],
+                                "cac:BudgetAmount": [
+                                    {
+                                        "cbc:EstimatedOverallContractAmount": [
+                                            {
+                                                "_": "123966.94",
+                                                "$": {
+                                                    "currencyID": "EUR"
+                                                }
+                                            }
+                                        ],
+                                        "cbc:TotalAmount": [
+                                            {
+                                                "_": "150000",
+                                                "$": {
+                                                    "currencyID": "EUR"
+                                                }
+                                            }
+                                        ],
+                                        "cbc:TaxExclusiveAmount": [
+                                            {
+                                                "_": "123966.94",
+                                                "$": {
+                                                    "currencyID": "EUR"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "cac:RequiredCommodityClassification": [
+                                    {
+                                        "cbc:ItemClassificationCode": [
+                                            {
+                                                "_": "45331100",
+                                                "$": {
+                                                    "listURI": "http://contrataciondelestado.es/codice/cl/1.04/CPV2007-1.04.gc"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "cbc:ItemClassificationCode": [
+                                            {
+                                                "_": "45331110",
+                                                "$": {
+                                                    "listURI": "http://contrataciondelestado.es/codice/cl/1.04/CPV2007-1.04.gc"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "cbc:ItemClassificationCode": [
+                                            {
+                                                "_": "45331000",
+                                                "$": {
+                                                    "listURI": "http://contrataciondelestado.es/codice/cl/1.04/CPV2007-1.04.gc"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "cac:RealizedLocation": [
+                                    {
+                                        "cbc:CountrySubentity": [
+                                            "Comunidad de Madrid"
+                                        ],
+                                        "cbc:CountrySubentityCode": [
+                                            {
+                                                "_": "ES30",
+                                                "$": {
+                                                    "listURI": "http://contrataciondelestado.es/codice/cl/2.06/NUTS-2016.gc"
+                                                }
+                                            }
+                                        ],
+                                        "cac:Address": [
+                                            {
+                                                "cbc:CityName": [
+                                                    "Arganda del Rey"
+                                                ],
+                                                "cbc:PostalZone": [
+                                                    "28500"
+                                                ],
+                                                "cac:Country": [
+                                                    {
+                                                        "cbc:IdentificationCode": [
+                                                            {
+                                                                "_": "ES",
+                                                                "$": {
+                                                                    "listURI": "http://docs.oasis-open.org/ubl/os-ubl-2.0/cl/gc/default/CountryIdentificationCode-2.0.gc"
+                                                                }
+                                                            }
+                                                        ],
+                                                        "cbc:Name": [
+                                                            "España"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "cac:PlannedPeriod": [
+                                    {
+                                        "cbc:DurationMeasure": [
+                                            {
+                                                "_": "1",
+                                                "$": {
+                                                    "unitCode": "MON"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "cac:TenderResult": [
+                            {
+                                "cbc:ResultCode": [
+                                    {
+                                        "_": "8",
+                                        "$": {
+                                            "listURI": "http://contrataciondelestado.es/codice/cl/2.02/TenderResultCode-2.02.gc"
+                                        }
+                                    }
+                                ],
+                                "cbc:Description": [
+                                    "Mejor relación calidad-precio"
+                                ],
+                                "cbc:AwardDate": [
+                                    "2020-02-27"
+                                ],
+                                "cbc:ReceivedTenderQuantity": [
+                                    "7"
+                                ],
+                                "cbc:StartDate": [
+                                    "2020-03-11"
+                                ],
+                                "cac:Contract": [
+                                    {
+                                        "cbc:ID": [
+                                            "30/2019/27009"
+                                        ],
+                                        "cbc:IssueDate": [
+                                            "2020-03-10"
+                                        ]
+                                    }
+                                ],
+                                "cac:WinningParty": [
+                                    {
+                                        "cac:PartyIdentification": [
+                                            {
+                                                "cbc:ID": [
+                                                    {
+                                                        "_": "B18943845",
+                                                        "$": {
+                                                            "schemeName": "NIF"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "cac:PartyName": [
+                                            {
+                                                "cbc:Name": [
+                                                    "Vivendio Sostenibilidad Energética, S.L."
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "cac:AwardedTenderedProject": [
+                                    {
+                                        "cac:LegalMonetaryTotal": [
+                                            {
+                                                "cbc:TaxExclusiveAmount": [
+                                                    {
+                                                        "_": "107191.47",
+                                                        "$": {
+                                                            "currencyID": "EUR"
+                                                        }
+                                                    }
+                                                ],
+                                                "cbc:PayableAmount": [
+                                                    {
+                                                        "_": "129701.68",
+                                                        "$": {
+                                                            "currencyID": "EUR"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "cac:TenderingTerms": [
+                            {
+                                "cbc:RequiredCurriculaIndicator": [
+                                    "false"
+                                ],
+                                "cbc:VariantConstraintIndicator": [
+                                    "false"
+                                ],
+                                "cac:RequiredFinancialGuarantee": [
+                                    {
+                                        "cbc:GuaranteeTypeCode": [
+                                            {
+                                                "_": "2",
+                                                "$": {
+                                                    "listURI": "http://contrataciondelestado.es/codice/cl/1.04/GuaranteeTypeCode-1.04.gc"
+                                                }
+                                            }
+                                        ],
+                                        "cbc:AmountRate": [
+                                            "5"
+                                        ]
+                                    }
+                                ],
+                                "cac:TendererQualificationRequest": [
+                                    {
+                                        "cac:RequiredBusinessClassificationScheme": [
+                                            {
+                                                "cbc:ID": [
+                                                    "RequiredBusinessProfileCode"
+                                                ],
+                                                "cac:ClassificationCategory": [
+                                                    {
+                                                        "cbc:CodeValue": [
+                                                            "J2-2"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "cac:TechnicalEvaluationCriteria": [
+                                            {
+                                                "cbc:EvaluationCriteriaTypeCode": [
+                                                    {
+                                                        "_": "OSR-COMPTASK",
+                                                        "$": {
+                                                            "listURI": "http://contrataciondelestado.es/codice/cl/2.0/TechnicalCapabilityTypeCode-2.0.gc"
+                                                        }
+                                                    }
+                                                ],
+                                                "cbc:Description": [
+                                                    "2 contratos de similares características"
+                                                ]
+                                            }
+                                        ],
+                                        "cac:FinancialEvaluationCriteria": [
+                                            {
+                                                "cbc:EvaluationCriteriaTypeCode": [
+                                                    {
+                                                        "_": "5",
+                                                        "$": {
+                                                            "listURI": "http://contrataciondelestado.es/codice/cl/2.0/FinancialCapabilityTypeCode-2.0.gc"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ],
+                                        "cac:SpecificTendererRequirement": [
+                                            {
+                                                "cbc:RequirementTypeCode": [
+                                                    {
+                                                        "_": "1",
+                                                        "$": {
+                                                            "listURI": "http://contrataciondelestado.es/codice/cl/2.0/DeclarationTypeCode-2.0.gc"
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "cac:AllowedSubcontractTerms": [
+                                    {
+                                        "cbc:Rate": [
+                                            "60"
+                                        ],
+                                        "cbc:Description": [
+                                            "Conforme al art. 215.1. y 2 de la Ley 9/2017"
+                                        ]
+                                    }
+                                ],
+                                "cac:AwardingTerms": [
+                                    {
+                                        "cac:AwardingCriteria": [
+                                            {
+                                                "cbc:Description": [
+                                                    "Aumento elementos de radiador"
+                                                ],
+                                                "cbc:WeightNumeric": [
+                                                    "10"
+                                                ]
+                                            },
+                                            {
+                                                "cbc:Description": [
+                                                    "Plazo de garantía"
+                                                ],
+                                                "cbc:WeightNumeric": [
+                                                    "15"
+                                                ]
+                                            },
+                                            {
+                                                "cbc:Description": [
+                                                    "Certificados de calidad"
+                                                ],
+                                                "cbc:WeightNumeric": [
+                                                    "20"
+                                                ]
+                                            },
+                                            {
+                                                "cbc:Description": [
+                                                    "Oferta Económica"
+                                                ],
+                                                "cbc:WeightNumeric": [
+                                                    "55"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "cac:Language": [
+                                    {
+                                        "cbc:ID": [
+                                            "es"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "cac:TenderingProcess": [
+                            {
+                                "cbc:ProcedureCode": [
+                                    {
+                                        "_": "9",
+                                        "$": {
+                                            "listURI": "https://contrataciondelestado.es/codice/cl/2.07/SyndicationTenderingProcessCode-2.07.gc"
+                                        }
+                                    }
+                                ],
+                                "cbc:UrgencyCode": [
+                                    {
+                                        "_": "1",
+                                        "$": {
+                                            "listURI": "http://contrataciondelestado.es/codice/cl/1.04/DiligenceTypeCode-1.04.gc"
+                                        }
+                                    }
+                                ],
+                                "cbc:SubmissionMethodCode": [
+                                    {
+                                        "_": "1",
+                                        "$": {
+                                            "listURI": "http://contrataciondelestado.es/codice/cl/1.04/TenderDeliveryCode-1.04.gc"
+                                        }
+                                    }
+                                ],
+                                "cac:DocumentAvailabilityPeriod": [
+                                    {
+                                        "cbc:EndDate": [
+                                            "2020-01-23"
+                                        ],
+                                        "cbc:EndTime": [
+                                            "14:30:00"
+                                        ]
+                                    }
+                                ],
+                                "cac:TenderSubmissionDeadlinePeriod": [
+                                    {
+                                        "cbc:EndDate": [
+                                            "2020-01-23"
+                                        ],
+                                        "cbc:EndTime": [
+                                            "14:30:00"
+                                        ]
+                                    }
+                                ],
+                                "cac:AuctionTerms": [
+                                    {
+                                        "cbc:AuctionConstraintIndicator": [
+                                            "false"
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "cac:LegalDocumentReference": [
+                            {
+                                "cbc:ID": [
+                                    "Pl-Adv-obra-CEI-Miguel Hdez.pdf"
+                                ],
+                                "cac:Attachment": [
+                                    {
+                                        "cac:ExternalReference": [
+                                            {
+                                                "cbc:URI": [
+                                                    "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=3400ef16-fc37-491e-bf16-be958cda318c"
+                                                ],
+                                                "cbc:DocumentHash": [
+                                                    "qdIA9sYYaAJsd6gNrQyFUIR92kI="
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "cac:TechnicalDocumentReference": [
+                            {
+                                "cbc:ID": [
+                                    "1 - MEMORIA_A3.pdf"
+                                ],
+                                "cac:Attachment": [
+                                    {
+                                        "cac:ExternalReference": [
+                                            {
+                                                "cbc:URI": [
+                                                    "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=caaa55b3-85b0-4399-b6fc-0df320190264"
+                                                ],
+                                                "cbc:DocumentHash": [
+                                                    "+QUHytjz1qSqObrbVz1dN3zlguI="
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "cac:AdditionalDocumentReference": [
+                            {
+                                "cbc:ID": [
+                                    "ANEJO SERVICIOS AFECTADOS.pdf"
+                                ],
+                                "cac:Attachment": [
+                                    {
+                                        "cac:ExternalReference": [
+                                            {
+                                                "cbc:URI": [
+                                                    "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=6ad00c36-594f-430e-ac0e-9d6d7b104555"
+                                                ],
+                                                "cbc:DocumentHash": [
+                                                    "SxhFxDT6HygMpwkcRrP9JfQOsMA="
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "cbc:ID": [
+                                    "ANEJO REPORTAJE FOTOGRAFICO.pdf"
+                                ],
+                                "cac:Attachment": [
+                                    {
+                                        "cac:ExternalReference": [
+                                            {
+                                                "cbc:URI": [
+                                                    "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2243c064-faa3-4695-9e8a-7a1cf05652f9"
+                                                ],
+                                                "cbc:DocumentHash": [
+                                                    "YSd+Xx2vyz2lu6roSYeu0KmANsk="
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "cbc:ID": [
+                                    "ANEJO PLAN DE OBRA.pdf"
+                                ],
+                                "cac:Attachment": [
+                                    {
+                                        "cac:ExternalReference": [
+                                            {
+                                                "cbc:URI": [
+                                                    "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=636a0af7-6eb1-41d7-a3fb-b9fd8cb1f411"
+                                                ],
+                                                "cbc:DocumentHash": [
+                                                    "4/Y7XiSZap7Bn0Lw+NlJT9VPOwM="
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "cbc:ID": [
+                                    "ANEJO JUSTIFICACION DE PRECIOS.pdf"
+                                ],
+                                "cac:Attachment": [
+                                    {
+                                        "cac:ExternalReference": [
+                                            {
+                                                "cbc:URI": [
+                                                    "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=c412fb77-1295-4819-bede-d7061d7465d7"
+                                                ],
+                                                "cbc:DocumentHash": [
+                                                    "J/N/+j8iW1koLkXy5ae6LVoxshg="
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "cbc:ID": [
+                                    "ANEJO CALCULO CALEFACCION.pdf"
+                                ],
+                                "cac:Attachment": [
+                                    {
+                                        "cac:ExternalReference": [
+                                            {
+                                                "cbc:URI": [
+                                                    "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=e589d63e-1810-4d02-91e2-1c09c69adfdd"
+                                                ],
+                                                "cbc:DocumentHash": [
+                                                    "HpHEocluxL/xl6Zst95Lb9/UG2I="
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "cbc:ID": [
+                                    "ANEJO GESTION DE RESIDUOS.pdf"
+                                ],
+                                "cac:Attachment": [
+                                    {
+                                        "cac:ExternalReference": [
+                                            {
+                                                "cbc:URI": [
+                                                    "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=8fd1b15b-093d-41c9-abf6-1c944b8b46e7"
+                                                ],
+                                                "cbc:DocumentHash": [
+                                                    "4b6CteWDTzpJ4y1X69fXQhSYecE="
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "cbc:ID": [
+                                    "A3 -  Indice general.pdf"
+                                ],
+                                "cac:Attachment": [
+                                    {
+                                        "cac:ExternalReference": [
+                                            {
+                                                "cbc:URI": [
+                                                    "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=1354bb28-c850-4f0d-8613-5edc15eda0ef"
+                                                ],
+                                                "cbc:DocumentHash": [
+                                                    "AWRFojPfoCzAwARKJNbqhteb6H8="
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "cbc:ID": [
+                                    "ANEJO CONTROL DE CALIDAD.pdf"
+                                ],
+                                "cac:Attachment": [
+                                    {
+                                        "cac:ExternalReference": [
+                                            {
+                                                "cbc:URI": [
+                                                    "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=d44ad410-df3e-4fd3-b6e2-e53109651501"
+                                                ],
+                                                "cbc:DocumentHash": [
+                                                    "bNmXmOBJfVWnUC/wgDQn+OUiak8="
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "cbc:ID": [
+                                    "PRESUPUESTO.pdf"
+                                ],
+                                "cac:Attachment": [
+                                    {
+                                        "cac:ExternalReference": [
+                                            {
+                                                "cbc:URI": [
+                                                    "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=057886d5-1a81-411b-a5db-a49d704b1186"
+                                                ],
+                                                "cbc:DocumentHash": [
+                                                    "B80LJ3Ki8f2IBbyQqPPviPS9Prg="
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "cbc:ID": [
+                                    "3-PLIEGO DE PRESCRIPCIONES TECNICAS.pdf"
+                                ],
+                                "cac:Attachment": [
+                                    {
+                                        "cac:ExternalReference": [
+                                            {
+                                                "cbc:URI": [
+                                                    "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=7ad97e42-09f0-4ee2-9fc7-cd11ea7a6cba"
+                                                ],
+                                                "cbc:DocumentHash": [
+                                                    "LAu3V9mJ/gKWopbB6gNRq3vz+nY="
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "cbc:ID": [
+                                    "ESTUDIO BASICO DE SEGURIDAD Y SALUD.pdf"
+                                ],
+                                "cac:Attachment": [
+                                    {
+                                        "cac:ExternalReference": [
+                                            {
+                                                "cbc:URI": [
+                                                    "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=0ed0d389-826c-4f83-8037-22905fbeab19"
+                                                ],
+                                                "cbc:DocumentHash": [
+                                                    "GmxlA+Fr995IpcTLhh0o9tE/uWE="
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "cbc:ID": [
+                                    "190701_PLANOS A3.pdf"
+                                ],
+                                "cac:Attachment": [
+                                    {
+                                        "cac:ExternalReference": [
+                                            {
+                                                "cbc:URI": [
+                                                    "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=0b2dc032-0a2a-45b1-be74-be464d45db1c"
+                                                ],
+                                                "cbc:DocumentHash": [
+                                                    "2g4sznLi+VowLCO4XUp5CDnpi+Y="
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "cbc:ID": [
+                                    "190701_PLANOS A1.pdf"
+                                ],
+                                "cac:Attachment": [
+                                    {
+                                        "cac:ExternalReference": [
+                                            {
+                                                "cbc:URI": [
+                                                    "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=1c52845c-eb65-413e-adb8-3c024e328759"
+                                                ],
+                                                "cbc:DocumentHash": [
+                                                    "S9BhKWfsrRoEgBJs6K4ob3AUbxA="
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "cbc:ID": [
+                                    "1 - MEMORIA_A3.pdf"
+                                ],
+                                "cac:Attachment": [
+                                    {
+                                        "cac:ExternalReference": [
+                                            {
+                                                "cbc:URI": [
+                                                    "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2392632d-4ecd-4411-905d-3192dc58a3d0"
+                                                ],
+                                                "cbc:DocumentHash": [
+                                                    "+QUHytjz1qSqObrbVz1dN3zlguI="
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "cbc:ID": [
+                                    "CEIP Miguel Hernandez _ Firmado.pdf"
+                                ],
+                                "cac:Attachment": [
+                                    {
+                                        "cac:ExternalReference": [
+                                            {
+                                                "cbc:URI": [
+                                                    "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=11e63453-f490-4c9d-b25f-76d6a5628460"
+                                                ],
+                                                "cbc:DocumentHash": [
+                                                    "qWphBT9gx/2p21NX7TF/WJl5ttM="
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "cac-place-ext:ValidNoticeInfo": [
+                            {
+                                "cbc-place-ext:NoticeTypeCode": [
+                                    {
+                                        "_": "DOC_CAN_ADJ",
+                                        "$": {
+                                            "listURI": "http://contrataciondelestado.es/codice/cl/2.04/TenderingNoticeTypeCode-2.04.gc"
+                                        }
+                                    }
+                                ],
+                                "cac-place-ext:AdditionalPublicationStatus": [
+                                    {
+                                        "cbc-place-ext:PublicationMediaName": [
+                                            "Perfil del Contratante"
+                                        ],
+                                        "cac-place-ext:AdditionalPublicationDocumentReference": [
+                                            {
+                                                "cbc:IssueDate": [
+                                                    "2020-03-12"
+                                                ]
+                                            },
+                                            {
+                                                "cbc:DocumentTypeCode": [
+                                                    {
+                                                        "_": "ACTA_ADJ",
+                                                        "$": {
+                                                            "listURI": "http://contrataciondelestado.es/codice/cl/2.06/TenderingDocumentTypeCode-2.06.gc",
+                                                            "name": "Documento de Acta de Adjudicación"
+                                                        }
+                                                    }
+                                                ],
+                                                "cac:Attachment": [
+                                                    {
+                                                        "cac:ExternalReference": [
+                                                            {
+                                                                "cbc:URI": [
+                                                                    "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=eaa465c3-e29b-4633-bf34-59f5c362affc"
+                                                                ],
+                                                                "cbc:FileName": [
+                                                                    "Resol_adj_Calef_Miguel_Hdez.pdf"
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "cbc-place-ext:NoticeTypeCode": [
+                                    {
+                                        "_": "DOC_CD",
+                                        "$": {
+                                            "listURI": "http://contrataciondelestado.es/codice/cl/2.04/TenderingNoticeTypeCode-2.04.gc"
+                                        }
+                                    }
+                                ],
+                                "cac-place-ext:AdditionalPublicationStatus": [
+                                    {
+                                        "cbc-place-ext:PublicationMediaName": [
+                                            "Perfil del Contratante"
+                                        ],
+                                        "cac-place-ext:AdditionalPublicationDocumentReference": [
+                                            {
+                                                "cbc:IssueDate": [
+                                                    "2020-01-03"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "cbc-place-ext:NoticeTypeCode": [
+                                    {
+                                        "_": "DOC_CN",
+                                        "$": {
+                                            "listURI": "http://contrataciondelestado.es/codice/cl/2.04/TenderingNoticeTypeCode-2.04.gc"
+                                        }
+                                    }
+                                ],
+                                "cac-place-ext:AdditionalPublicationStatus": [
+                                    {
+                                        "cbc-place-ext:PublicationMediaName": [
+                                            "Perfil del Contratante"
+                                        ],
+                                        "cac-place-ext:AdditionalPublicationDocumentReference": [
+                                            {
+                                                "cbc:IssueDate": [
+                                                    "2020-01-03"
+                                                ]
+                                            },
+                                            {
+                                                "cbc:IssueDate": [
+                                                    "2020-01-21"
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "cbc-place-ext:NoticeTypeCode": [
+                                    {
+                                        "_": "DOC_FORM",
+                                        "$": {
+                                            "listURI": "http://contrataciondelestado.es/codice/cl/2.04/TenderingNoticeTypeCode-2.04.gc"
+                                        }
+                                    }
+                                ],
+                                "cac-place-ext:AdditionalPublicationStatus": [
+                                    {
+                                        "cbc-place-ext:PublicationMediaName": [
+                                            "Perfil del Contratante"
+                                        ],
+                                        "cac-place-ext:AdditionalPublicationDocumentReference": [
+                                            {
+                                                "cbc:IssueDate": [
+                                                    "2020-03-12"
+                                                ]
+                                            },
+                                            {
+                                                "cbc:DocumentTypeCode": [
+                                                    {
+                                                        "_": "ACTA_FORM",
+                                                        "$": {
+                                                            "listURI": "http://contrataciondelestado.es/codice/cl/2.06/TenderingDocumentTypeCode-2.06.gc",
+                                                            "name": "Documento de Acta de Formalización"
+                                                        }
+                                                    }
+                                                ],
+                                                "cac:Attachment": [
+                                                    {
+                                                        "cac:ExternalReference": [
+                                                            {
+                                                                "cbc:URI": [
+                                                                    "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=2f279348-bf59-4dcc-b857-1c6a0960c8c8"
+                                                                ],
+                                                                "cbc:FileName": [
+                                                                    "Contrato_firmado_Calef_Miguel_Hdez_Censurado.pdf"
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ],
+                        "cac-place-ext:GeneralDocument": [
+                            {
+                                "cac-place-ext:GeneralDocumentDocumentReference": [
+                                    {
+                                        "cbc:ID": [
+                                            "0eb53aea-7a76-41a7-814c-f3c2df648ce6"
+                                        ],
+                                        "cac:Attachment": [
+                                            {
+                                                "cac:ExternalReference": [
+                                                    {
+                                                        "cbc:URI": [
+                                                            "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=0eb53aea-7a76-41a7-814c-f3c2df648ce6"
+                                                        ],
+                                                        "cbc:FileName": [
+                                                            "Actos públicos informativos ó de apertura de ofertas"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "cac-place-ext:GeneralDocumentDocumentReference": [
+                                    {
+                                        "cbc:ID": [
+                                            "fc18bc8f-6e5a-4a02-928a-2a9417cfc9e5"
+                                        ],
+                                        "cac:Attachment": [
+                                            {
+                                                "cac:ExternalReference": [
+                                                    {
+                                                        "cbc:URI": [
+                                                            "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=fc18bc8f-6e5a-4a02-928a-2a9417cfc9e5"
+                                                        ],
+                                                        "cbc:FileName": [
+                                                            "Actos públicos informativos ó de apertura de ofertas"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "cac-place-ext:GeneralDocumentDocumentReference": [
+                                    {
+                                        "cbc:ID": [
+                                            "30392cda-4fb6-44ea-96cb-cea350f116f7"
+                                        ],
+                                        "cac:Attachment": [
+                                            {
+                                                "cac:ExternalReference": [
+                                                    {
+                                                        "cbc:URI": [
+                                                            "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=30392cda-4fb6-44ea-96cb-cea350f116f7"
+                                                        ],
+                                                        "cbc:FileName": [
+                                                            "Memoria justificativa"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "cac-place-ext:GeneralDocumentDocumentReference": [
+                                    {
+                                        "cbc:ID": [
+                                            "d145bb20-c607-4bcc-ad4f-4de44f856b60"
+                                        ],
+                                        "cac:Attachment": [
+                                            {
+                                                "cac:ExternalReference": [
+                                                    {
+                                                        "cbc:URI": [
+                                                            "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=d145bb20-c607-4bcc-ad4f-4de44f856b60"
+                                                        ],
+                                                        "cbc:FileName": [
+                                                            "Informe de insuficiencia de medios"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "cac-place-ext:GeneralDocumentDocumentReference": [
+                                    {
+                                        "cbc:ID": [
+                                            "333dedf9-f832-48cf-b63c-12c9eafcb1e4"
+                                        ],
+                                        "cac:Attachment": [
+                                            {
+                                                "cac:ExternalReference": [
+                                                    {
+                                                        "cbc:URI": [
+                                                            "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?srv=cmpnt&cmpntname=GetDocumentsById&source=library&DocumentIdParam=333dedf9-f832-48cf-b63c-12c9eafcb1e4"
+                                                        ],
+                                                        "cbc:FileName": [
+                                                            "Acuerdo de iniciación del expediente"
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }

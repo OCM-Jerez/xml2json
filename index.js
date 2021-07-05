@@ -4,7 +4,7 @@ const path = require("path");
 const StreamZip = require("node-stream-zip");
 const parserXml2js = new xml2js.Parser();
 const ficheroZIP =
-  "C:/Users/pc/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Contratos menores/2020/contratosMenoresPerfilesContratantes_2020.zip";
+  "C:/Users/pc/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Contratos menores/2021/contratosMenoresPerfilesContratantes_202106.zip";
 
 async function extractZip() {
   const zip = new StreamZip.async({ file: ficheroZIP });
