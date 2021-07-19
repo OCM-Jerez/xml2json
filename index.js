@@ -4,7 +4,7 @@ const path = require("path");
 const StreamZip = require("node-stream-zip");
 const parserXml2js = new xml2js.Parser();
 const ficheroZIP =
-  "C:/Users/pc/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Contratos menores/2021/contratosMenoresPerfilesContratantes_202106.zip";
+  "C:/Users/usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/contratos menores/2020/contratosMenoresPerfilesContratantes_2020.zip";
 
 async function extractZip() {
   const zip = new StreamZip.async({ file: ficheroZIP });
@@ -56,29 +56,29 @@ function mapJSON() {
     fs.mkdirSync("extracted/jsonMap");
   }
   const arrayFinal = [];
-  let contador =1;
+  let contador = 1;
   const count = 569;
 
   archivos.forEach((fichero) => {
     const liciJson = fs.readFileSync("./extracted/json/" + fichero);
     console.log(`${contador}/${count} ${fichero}`);
-    contador ++
+    contador++
     const liciObject = JSON.parse(liciJson);
     const result = liciObject.feed.entry
-      .filter((itemFilter) =>
-        itemFilter.summary[0]._.match(
-          /Junta de Gobierno Local del Ayuntamiento de Jerez/g
-        )
-      )
+      // .filter((itemFilter) =>
+      //   itemFilter.summary[0]._.match(
+      //     /Junta de Gobierno Local del Ayuntamiento de Jerez/g
+      //   )
+      // )
       .map((elem) => {
         ContractFolderID =
           elem["cac-place-ext:ContractFolderStatus"][0][
-            "cbc:ContractFolderID"
+          "cbc:ContractFolderID"
           ][0];
 
         cuantosPartyIdentification =
           elem["cac-place-ext:ContractFolderStatus"][0]["cac:TenderResult"];
-                  
+
 
 
         cuantosArray = Object.keys(cuantosPartyIdentification).length;
@@ -87,7 +87,7 @@ function mapJSON() {
           let DurationMeasure = "";
           const existDurationMeasure =
             elem["cac-place-ext:ContractFolderStatus"][0][
-              "cac:ProcurementProject"
+            "cac:ProcurementProject"
             ][0]["cac:PlannedPeriod"][0]["cbc:DurationMeasure"];
 
           if (existDurationMeasure) {
@@ -97,7 +97,7 @@ function mapJSON() {
           let unitCode = "";
           const existUnitcode =
             elem["cac-place-ext:ContractFolderStatus"][0][
-              "cac:ProcurementProject"
+            "cac:ProcurementProject"
             ][0]["cac:PlannedPeriod"][0]["cbc:DurationMeasure"];
 
           if (existUnitcode) {
@@ -143,7 +143,7 @@ function mapJSON() {
             updated: elem.updated[0],
             ContractFolderID:
               elem["cac-place-ext:ContractFolderStatus"][0][
-                "cbc:ContractFolderID"
+              "cbc:ContractFolderID"
               ][0],
             ContractFolderStatusCode:
               elem["cac-place-ext:ContractFolderStatus"][0][
@@ -156,33 +156,33 @@ function mapJSON() {
               elem["cac-place-ext:ContractFolderStatus"][0][
                 "cac:ProcurementProject"
               ][0]["cbc:TypeCode"][0]._,
-            SubTypeCode:
-              elem["cac-place-ext:ContractFolderStatus"][0][
-                "cac:ProcurementProject"
-              ][0]["cbc:SubTypeCode"][0]._,
-            TotalAmount: Math.trunc(
-              elem["cac-place-ext:ContractFolderStatus"][0][
-                "cac:ProcurementProject"
-              ][0]["cac:BudgetAmount"][0]["cbc:TotalAmount"][0]._
-            ),
+            // SubTypeCode:
+            //   elem["cac-place-ext:ContractFolderStatus"][0][
+            //     "cac:ProcurementProject"
+            //   ][0]["cbc:SubTypeCode"][0]._,
+            // TotalAmount: Math.trunc(
+            //   elem["cac-place-ext:ContractFolderStatus"][0][
+            //     "cac:ProcurementProject"
+            //   ][0]["cac:BudgetAmount"][0]["cbc:TotalAmount"][0]._
+            // ),
             TaxExclusiveAmount: Math.trunc(
               elem["cac-place-ext:ContractFolderStatus"][0][
                 "cac:ProcurementProject"
               ][0]["cac:BudgetAmount"][0]["cbc:TaxExclusiveAmount"][0]._
             ),
-              DurationMeasure: DurationMeasure,
-              unitCode: unitCode, 
-                ResultCode:
+            DurationMeasure: DurationMeasure,
+            unitCode: unitCode,
+            ResultCode:
               elem["cac-place-ext:ContractFolderStatus"][0][
                 "cac:TenderResult"
               ][0]["cbc:ResultCode"][0]._,
             AwardDate:
               elem["cac-place-ext:ContractFolderStatus"][0][
-                "cac:TenderResult"
+              "cac:TenderResult"
               ][0]["cbc:AwardDate"][0],
             ReceivedTenderQuantity:
               elem["cac-place-ext:ContractFolderStatus"][0][
-                "cac:TenderResult"
+              "cac:TenderResult"
               ][0]["cbc:ReceivedTenderQuantity"][0],
             PartyIdentification:
               elem["cac-place-ext:ContractFolderStatus"][0]["cac:TenderResult"][
@@ -192,7 +192,7 @@ function mapJSON() {
               ][0]._,
             PartyName:
               elem["cac-place-ext:ContractFolderStatus"][0]["cac:TenderResult"][
-                i
+              i
               ]["cac:WinningParty"][0]["cac:PartyName"][0]["cbc:Name"][0],
             TaxExclusiveAmount1: Math.trunc(
               elem["cac-place-ext:ContractFolderStatus"][0][
@@ -212,11 +212,11 @@ function mapJSON() {
               elem["cac-place-ext:ContractFolderStatus"][0][
                 "cac:TenderingProcess"
               ][0]["cbc:ProcedureCode"][0]._,
-            UrgencyCode:
-              elem["cac-place-ext:ContractFolderStatus"][0][
-                "cac:TenderingProcess"
-              ][0]["cbc:UrgencyCode"][0]._,
-              // listURI: listURI
+            // UrgencyCode:
+            //   elem["cac-place-ext:ContractFolderStatus"][0][
+            //     "cac:TenderingProcess"
+            //   ][0]["cbc:UrgencyCode"][0]._,
+            // listURI: listURI
           };
 
           arrayFinal.push(item);

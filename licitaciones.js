@@ -11,7 +11,9 @@ totalLines = 0;
 
 const ficheroZIP =
   //   "C:/Users/pc/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Contratos menores/2020/contratosMenoresPerfilesContratantes_2020.zip";
-  "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2021/licitacionesPerfilesContratanteCompleto3_202106.zip";
+  // "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2021/licitacionesPerfilesContratanteCompleto3_202106.zip";
+  "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2020/PlataformasAgregadasSinMenores_2020.zip";
+
 // "C:/Users/Usuario/Google Drive/Node.js/xml2json/PlataformasAgregadasSinMenores_2020.zip"
 async function extractZip() {
   const start = Date.now()
@@ -118,11 +120,11 @@ function mapJSON() {
     contador++
     const liciObject = JSON.parse(liciJson);
     const result = liciObject.feed.entry
-      .filter((itemFilter) =>
-        itemFilter.summary[0]._.match(
-          /Junta de Gobierno Local del Ayuntamiento de Jerez/g
-        )
-      )
+      // .filter((itemFilter) =>
+      //   itemFilter.summary[0]._.match(
+      //     /Junta de Gobierno Local del Ayuntamiento de Jerez/g
+      //   )
+      // )
       .map((elem) => {
         //TODO! ¿pARA QUE SIRVEN ESTAS LINEAS?
         ContractFolderID =
@@ -309,10 +311,10 @@ function mapJSON() {
                   "cac:ProcurementProject"
                 ][0]["cbc:TypeCode"][0]._,
 
-              SubTypeCode:
-                elem["cac-place-ext:ContractFolderStatus"][0][
-                  "cac:ProcurementProject"
-                ][0]["cbc:SubTypeCode"][0]._,
+              // SubTypeCode:
+              //   elem["cac-place-ext:ContractFolderStatus"][0][
+              //     "cac:ProcurementProject"
+              //   ][0]["cbc:SubTypeCode"][0]._,
 
               TotalAmount:
                 Math.trunc(
