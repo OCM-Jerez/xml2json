@@ -1,3 +1,4 @@
 {
-    "json.maxItemsComputed": 250000
+    "json.maxItemsComputed": 250000,
+    "explorer.compactFolders": false
 }

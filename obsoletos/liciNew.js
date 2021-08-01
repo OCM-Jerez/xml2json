@@ -150,17 +150,16 @@ function mapJSON() {
 
                     if (cacTenderResult) {
                         const arrayTenderResult = [];
+                        // Ver ejemplo.atom a partir linea 7511
                         cuantosArray = Object.keys(cacTenderResult).length;
                         for (var i = 0; i < cuantosArray; i++) {
 
                             let durationMeasure = "Sin dato";
                             let unitCode = "Sin dato";
-
                             const cacProcurementProject = contractFolderStatus["cac:ProcurementProject"] && contractFolderStatus["cac:ProcurementProject"][0] ? contractFolderStatus["cac:ProcurementProject"][0] : null;
                             const cacPlannedPeriod = cacProcurementProject ? cacProcurementProject["cac:PlannedPeriod"] : null;
                             const cbcDurationMeasure = cacPlannedPeriod ? cacPlannedPeriod[0]["cbc:DurationMeasure"] : null;
                             const valuesDurationMeasure = cbcDurationMeasure ? cbcDurationMeasure[0] : null;
-
 
                             if (valuesDurationMeasure) {
                                 durationMeasure = valuesDurationMeasure["._"];
@@ -280,7 +279,6 @@ function mapJSON() {
                             let awardDate = cacTenderResult[0]["cbc:AwardDate"] ? cacTenderResult[0]["cbc:AwardDate"][0] : "Sin dato";
                             let receivedTenderQuantity = cacTenderResult[0]["cbc:ReceivedTenderQuantity"] ? cacTenderResult[0]["cbc:ReceivedTenderQuantity"][0] : "Sin dato";
 
-
                             // if (contractFolderStatus[
                             //     "cac:TenderResult"
                             // ] && contractFolderStatus[
@@ -320,9 +318,7 @@ function mapJSON() {
                             const cbcName = cacProcurementProject && cacProcurementProject["cbc:Name"] ? cacProcurementProject["cbc:Name"][0] : "Sin dato";
                             const cbcTypeCode = cacProcurementProject && cacProcurementProject["cbc:TypeCode"] ? cacProcurementProject["cbc:TypeCode"][0]._ : "Sin dato";
                             const cbcSubTypeCode = cacProcurementProject && cacProcurementProject["cbc:SubTypeCode"] ? cacProcurementProject["cbc:SubTypeCode"][0]._ : "Sin dato";
-
                             const cbcBudgetAmount = cacProcurementProject && cacProcurementProject["cbc:BudgetAmount"] ? cacProcurementProject["cbc:BudgetAmount"] : null;
-
                             const cbcTotalAmount = "Sin dato";
                             const cbcTaxExclusiveAmount = "Sin dato";
 
@@ -335,20 +331,12 @@ function mapJSON() {
                                 ? contractFolderStatus["cac:TenderingProcess"][0]["cbc:UrgencyCode"]._
                                 : "Sin dato"
 
-
                             const item = {
-
                                 ContractFolderStatusCode: cbcContractFolderStatusCode,
-
                                 Name: cbcName,
-
                                 TypeCode: cbcTypeCode,
-
                                 SubTypeCode: cbcSubTypeCode,
-
                                 TotalAmount: cbcTotalAmount,
-
-
                                 TaxExclusiveAmount: cbcTaxExclusiveAmount,
                                 DurationMeasure: durationMeasure,
                                 unitCode: unitCode,
@@ -358,9 +346,7 @@ function mapJSON() {
                                 PartyIdentification: partyIdentification,
                                 PartyName: partyName,
                                 PayableAmount: payableAmount,
-
                                 UrgencyCode: cbcUrgencyCode,
-
                                 listURI: listURI
                             };
 

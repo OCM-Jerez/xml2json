@@ -1,0 +1,569 @@
+[
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=w9lUVga3NWMBPRBxZ4nJ%2Fg%3D%3D",
+        "summary": "Id licitación: 1321; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 961.71 EUR; Estado: ADJ",
+        "title": "Suministro de tóner y tambores para impresoras de los distritos del Ayuntamiento de Jerez.",
+        "updated": "2021-07-01T11:00:58.526+02:00",
+        "ContractFolderID": "1321",
+        "ContractFolderStatusCode": "ADJ",
+        "Name": "Suministro de tóner y tambores para impresoras de los distritos del Ayuntamiento de Jerez.",
+        "TypeCode": "1",
+        "SubTypeCode": "1",
+        "TotalAmount": 1163,
+        "TaxExclusiveAmount": 961,
+        "DurationMeasure": "10",
+        "unitCode": "MON",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2021-06-24",
+                "ReceivedTenderQuantity": "11",
+                "PartyIdentification": "B37522448",
+                "PartyName": "Ecotisa Una Tinta de Impresion S.L.U.",
+                "TaxExclusiveAmount": 466,
+                "PayableAmount": 563
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=xhOR1J3Gi4DnSoTX3z%2F7wA%3D%3D",
+        "summary": "Id licitación: ASUECO-2021/1401; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 413119.39 EUR; Estado: PUB",
+        "title": "Refuerzo de firmes 2021,  Actuación financiada por el Plan Extraordinario de Inversiones de Diputación 2021 (Plan Dipu-INVER 2021)",
+        "updated": "2021-07-02T09:51:26.403+02:00",
+        "ContractFolderID": "ASUECO-2021/1401",
+        "ContractFolderStatusCode": "PUB",
+        "Name": "Refuerzo de firmes 2021,  Actuación financiada por el Plan Extraordinario de Inversiones de Diputación 2021 (Plan Dipu-INVER 2021)",
+        "TypeCode": "3",
+        "SubTypeCode": "4523",
+        "TotalAmount": 499874,
+        "TaxExclusiveAmount": 413119,
+        "DurationMeasure": "3",
+        "unitCode": "MON"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=FLXNUYgqbS57h85%2Fpmmsfw%3D%3D",
+        "summary": "Id licitación: 1333; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 575482 EUR; Estado: RES",
+        "title": "Suministro por precios unitarios y por lotes (2), de vestuario, calzado, complementos y útiles diversos para el personal del Ayuntamiento de Jerez",
+        "updated": "2021-07-09T09:38:26.080+02:00",
+        "ContractFolderID": "1333",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Suministro por precios unitarios y por lotes (2), de vestuario, calzado, complementos y útiles diversos para el personal del Ayuntamiento de Jerez",
+        "TypeCode": "1",
+        "SubTypeCode": "2",
+        "TotalAmount": 696333,
+        "TaxExclusiveAmount": 575482,
+        "DurationMeasure": "4",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "3",
+                "AwardDate": "2021-07-01",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            },
+            {
+                "ResultCode": "3",
+                "AwardDate": "2021-07-01",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=FLXNUYgqbS57h85%2Fpmmsfw%3D%3D",
+        "summary": "Id licitación: 1333; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 575482 EUR; Estado: RES",
+        "title": "Suministro por precios unitarios y por lotes (2), de vestuario, calzado, complementos y útiles diversos para el personal del Ayuntamiento de Jerez",
+        "updated": "2021-07-08T15:42:49.355+02:00",
+        "ContractFolderID": "1333",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Suministro por precios unitarios y por lotes (2), de vestuario, calzado, complementos y útiles diversos para el personal del Ayuntamiento de Jerez",
+        "TypeCode": "1",
+        "SubTypeCode": "2",
+        "TotalAmount": 696333,
+        "TaxExclusiveAmount": 575482,
+        "DurationMeasure": "4",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "3",
+                "AwardDate": "2021-07-01",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            },
+            {
+                "ResultCode": "3",
+                "AwardDate": "2021-07-01",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=3xXjmF4qF0iXQV0WE7lYPw%3D%3D",
+        "summary": "Id licitación: ASUECO-2021/1525; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 439136.71 EUR; Estado: PUB",
+        "title": "Acondicionamiento de infraestructuras en el Parque La Granja y en parcelas de equipamiento público.\n",
+        "updated": "2021-07-12T14:22:36.847+02:00",
+        "ContractFolderID": "ASUECO-2021/1525",
+        "ContractFolderStatusCode": "PUB",
+        "Name": "Acondicionamiento de infraestructuras en el Parque La Granja y en parcelas de equipamiento público.\n",
+        "TypeCode": "3",
+        "SubTypeCode": "4500",
+        "TotalAmount": 531355,
+        "TaxExclusiveAmount": 439136,
+        "DurationMeasure": "4",
+        "unitCode": "MON"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=uD%2Fzyx3t9CKiEJrVRqloyA%3D%3D",
+        "summary": "Id licitación: ASUECO-2019/901; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 190981.11 EUR; Estado: RES",
+        "title": "Rehabilitación del Tabanco del Duque como equipamiento público, 1ª fase.  Actuación cofinanciada por el Fondo Europeo de Desarrollo Regional en el marco del Programa Operativo Plurirregional de España 2014-2020",
+        "updated": "2021-07-12T13:09:51.810+02:00",
+        "ContractFolderID": "ASUECO-2019/901",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Rehabilitación del Tabanco del Duque como equipamiento público, 1ª fase.  Actuación cofinanciada por el Fondo Europeo de Desarrollo Regional en el marco del Programa Operativo Plurirregional de España 2014-2020",
+        "TypeCode": "3",
+        "SubTypeCode": "4500",
+        "TotalAmount": 231087,
+        "TaxExclusiveAmount": 190981,
+        "DurationMeasure": "135",
+        "unitCode": "DAY",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-06-02",
+                "ReceivedTenderQuantity": "3",
+                "PartyIdentification": "B11918984",
+                "PartyName": "EJOC2004 S.L.",
+                "TaxExclusiveAmount": 165879,
+                "PayableAmount": 200713
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=f0P%2BgW9%2FEnPnSoTX3z%2F7wA%3D%3D",
+        "summary": "Id licitación: 1336; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 5062.79 EUR; Estado: ADJ",
+        "title": "Cine en mi Barrio Distritos Urbanos año 2021",
+        "updated": "2021-07-13T08:34:17.264+02:00",
+        "ContractFolderID": "1336",
+        "ContractFolderStatusCode": "ADJ",
+        "Name": "Cine en mi Barrio Distritos Urbanos año 2021",
+        "TypeCode": "2",
+        "SubTypeCode": "27",
+        "TotalAmount": 6125,
+        "TaxExclusiveAmount": 5062,
+        "DurationMeasure": "Sin dato",
+        "unitCode": "Sin dato",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2021-07-08",
+                "ReceivedTenderQuantity": "2",
+                "PartyIdentification": "B72391295",
+                "PartyName": "AQUAVIVAX ACTIVIDADES Y EVENTOS SL",
+                "TaxExclusiveAmount": 3997,
+                "PayableAmount": 4836
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=VE7%2BmeKHYZqmq21uxhbaVQ%3D%3D",
+        "summary": "Id licitación: 1333 NSP; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 575482 EUR; Estado: EV",
+        "title": "Suministro por precios unitarios y por lotes (2), de vestuario, calzado, complementos y útiles diversos para el personal del Ayuntamiento de Jerez",
+        "updated": "2021-07-14T12:40:57.252+02:00",
+        "ContractFolderID": "1333 NSP",
+        "ContractFolderStatusCode": "EV",
+        "Name": "Suministro por precios unitarios y por lotes (2), de vestuario, calzado, complementos y útiles diversos para el personal del Ayuntamiento de Jerez",
+        "TypeCode": "1",
+        "SubTypeCode": "2",
+        "TotalAmount": 696333,
+        "TaxExclusiveAmount": 575482,
+        "DurationMeasure": "4",
+        "unitCode": "ANN"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=TQGtCPT0yO4SugstABGr5A%3D%3D",
+        "summary": "Id licitación: 1335/NSP; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 29218.9 EUR; Estado: RES",
+        "title": "Servicio de Intérpretes de Lengua de Signos  Española para Atención de Personas Sordas, con Discapacidad Auditiva  y Sordociegas en el Ayuntamiento de Jerez”",
+        "updated": "2021-07-14T08:07:30.067+02:00",
+        "ContractFolderID": "1335/NSP",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Servicio de Intérpretes de Lengua de Signos  Española para Atención de Personas Sordas, con Discapacidad Auditiva  y Sordociegas en el Ayuntamiento de Jerez”",
+        "TypeCode": "2",
+        "SubTypeCode": "25",
+        "TotalAmount": 35354,
+        "TaxExclusiveAmount": 29218,
+        "DurationMeasure": "4",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "3",
+                "AwardDate": "2021-07-08",
+                "ReceivedTenderQuantity": "0",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=uu%2Fm1m8wGOmiEJrVRqloyA%3D%3D",
+        "summary": "Id licitación: ASUECO-2021/659; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 158847.95 EUR; Estado: RES",
+        "title": "Ordenación de equipamiento público en Barriada Torresblancas.\r\n",
+        "updated": "2021-07-15T08:15:02.110+02:00",
+        "ContractFolderID": "ASUECO-2021/659",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Ordenación de equipamiento público en Barriada Torresblancas.\r\n",
+        "TypeCode": "3",
+        "SubTypeCode": "4500",
+        "TotalAmount": 192206,
+        "TaxExclusiveAmount": 158847,
+        "DurationMeasure": "3",
+        "unitCode": "MON",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2021-06-17",
+                "ReceivedTenderQuantity": "4",
+                "PartyIdentification": "A11613528",
+                "PartyName": "MANUEL ALBA, S.A.",
+                "TaxExclusiveAmount": 124616,
+                "PayableAmount": 150785
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=5mEpHv1S72Muf4aBO%2BvQlQ%3D%3D",
+        "summary": "Id licitación: ASUECO-2021/1591; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 332517.42 EUR; Estado: PUB",
+        "title": "Reparación de acerados en Bda. Las Torres.",
+        "updated": "2021-07-19T13:46:40.396+02:00",
+        "ContractFolderID": "ASUECO-2021/1591",
+        "ContractFolderStatusCode": "PUB",
+        "Name": "Reparación de acerados en Bda. Las Torres.",
+        "TypeCode": "3",
+        "SubTypeCode": "4500",
+        "TotalAmount": 402346,
+        "TaxExclusiveAmount": 332517,
+        "DurationMeasure": "5",
+        "unitCode": "MON"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=SZR6uYKTaXguf4aBO%2BvQlQ%3D%3D",
+        "summary": "Id licitación: 1337; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 10722.93 EUR; Estado: ADJ",
+        "title": "Servicio de Talleres de Circo Social en Distrito Sur.",
+        "updated": "2021-07-19T13:06:07.322+02:00",
+        "ContractFolderID": "1337",
+        "ContractFolderStatusCode": "ADJ",
+        "Name": "Servicio de Talleres de Circo Social en Distrito Sur.",
+        "TypeCode": "2",
+        "SubTypeCode": "27",
+        "TotalAmount": 12974,
+        "TaxExclusiveAmount": 10722,
+        "DurationMeasure": "5",
+        "unitCode": "MON",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2021-07-15",
+                "ReceivedTenderQuantity": "2",
+                "PartyIdentification": "B11949658",
+                "PartyName": "EDUCACIÓN, OCIO Y TIEMPO LIBRE LA FÁBRICA",
+                "TaxExclusiveAmount": 8780,
+                "PayableAmount": 10624
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=GYDCbnh9yIFvYnTkQN0%2FZA%3D%3D",
+        "summary": "Id licitación: 1328; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 89869.07 EUR; Estado: ADJ",
+        "title": "Servicio de Mantenimiento Técnico y Conservación de Equipos de Producción de Agua Caliente Sanitaria en Instalaciones Deportivas (Lote 1) y Sistemas de Calefacción en Centros Educativos (Lote 2), pertenecientes al Ayuntamiento de Jerez de la Frontera.",
+        "updated": "2021-07-20T11:43:43.565+02:00",
+        "ContractFolderID": "1328",
+        "ContractFolderStatusCode": "ADJ",
+        "Name": "Servicio de Mantenimiento Técnico y Conservación de Equipos de Producción de Agua Caliente Sanitaria en Instalaciones Deportivas (Lote 1) y Sistemas de Calefacción en Centros Educativos (Lote 2), pertenecientes al Ayuntamiento de Jerez de la Frontera.",
+        "TypeCode": "2",
+        "SubTypeCode": "1",
+        "TotalAmount": 108741,
+        "TaxExclusiveAmount": 89869,
+        "DurationMeasure": "2",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2021-07-15",
+                "ReceivedTenderQuantity": "4",
+                "PartyIdentification": "A28233922",
+                "PartyName": "VEOLIA SERVICIOS LECAM S.A.U.",
+                "TaxExclusiveAmount": 25246,
+                "PayableAmount": 30547
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2021-07-15",
+                "ReceivedTenderQuantity": "4",
+                "PartyIdentification": "A28233922",
+                "PartyName": "VEOLIA SERVICIOS LECAM S.A.U.",
+                "TaxExclusiveAmount": 35673,
+                "PayableAmount": 43164
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=blCN2UVsTjGiEJrVRqloyA%3D%3D",
+        "summary": "Id licitación: 1320; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 309000 EUR; Estado: ADJ",
+        "title": "Suministro e instalación del equipamiento para la renovación de los Museos de las Atalayas. Actuación cofinanciada por el fondo europeo de desarrollo regional en el marco del programa operativo de crecimiento sostenible 2014-2020.",
+        "updated": "2021-07-20T13:27:59.945+02:00",
+        "ContractFolderID": "1320",
+        "ContractFolderStatusCode": "ADJ",
+        "Name": "Suministro e instalación del equipamiento para la renovación de los Museos de las Atalayas. Actuación cofinanciada por el fondo europeo de desarrollo regional en el marco del programa operativo de crecimiento sostenible 2014-2020.",
+        "TypeCode": "1",
+        "SubTypeCode": "2",
+        "TotalAmount": 373890,
+        "TaxExclusiveAmount": 309000,
+        "DurationMeasure": "3",
+        "unitCode": "MON",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2021-06-03",
+                "ReceivedTenderQuantity": "2",
+                "PartyIdentification": "B91546747",
+                "PartyName": "DISPLAYS SOLUTIONS SLU",
+                "TaxExclusiveAmount": 280000,
+                "PayableAmount": 338800
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=BBc5RQy1yhRvYnTkQN0%2FZA%3D%3D",
+        "summary": "Id licitación: 1345; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 38430 EUR; Estado: PUB",
+        "title": "Servicio para el Diseño, Realización, Dirección y Gestión del Festival Internacional de títeres de Jerez",
+        "updated": "2021-07-20T12:51:23.432+02:00",
+        "ContractFolderID": "1345",
+        "ContractFolderStatusCode": "PUB",
+        "Name": "Servicio para el Diseño, Realización, Dirección y Gestión del Festival Internacional de títeres de Jerez",
+        "TypeCode": "2",
+        "SubTypeCode": "26",
+        "TotalAmount": 46500,
+        "TaxExclusiveAmount": 38430,
+        "DurationMeasure": "1",
+        "unitCode": "ANN"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=%2BzhzCohyGNQuf4aBO%2BvQlQ%3D%3D",
+        "summary": "Id licitación: 1344; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 25289.26 EUR; Estado: PUB",
+        "title": "Suministro de un vehículo turismo híbrido con transf9ormación policial, destinado al Servicio de Policía Local.",
+        "updated": "2021-07-22T13:44:14.201+02:00",
+        "ContractFolderID": "1344",
+        "ContractFolderStatusCode": "PUB",
+        "Name": "Suministro de un vehículo turismo híbrido con transf9ormación policial, destinado al Servicio de Policía Local.",
+        "TypeCode": "1",
+        "SubTypeCode": "1",
+        "TotalAmount": 30600,
+        "TaxExclusiveAmount": 25289,
+        "DurationMeasure": "2",
+        "unitCode": "MON"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=meq6VDiMPK6mq21uxhbaVQ%3D%3D",
+        "summary": "Id licitación: 1318; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 240656 EUR; Estado: ADJ",
+        "title": "Suministro, bajo la modalidad de arrendamiento no financiero, de equipos desfibriladores semiautomáticos externos a instalar en determinados establecimientos públicos que dependen competencialmente del Ayuntamiento de Jerez",
+        "updated": "2021-07-22T09:25:51.747+02:00",
+        "ContractFolderID": "1318",
+        "ContractFolderStatusCode": "ADJ",
+        "Name": "Suministro, bajo la modalidad de arrendamiento no financiero, de equipos desfibriladores semiautomáticos externos a instalar en determinados establecimientos públicos que dependen competencialmente del Ayuntamiento de Jerez",
+        "TypeCode": "1",
+        "SubTypeCode": "1",
+        "TotalAmount": 291193,
+        "TaxExclusiveAmount": 240656,
+        "DurationMeasure": "4",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2021-07-15",
+                "ReceivedTenderQuantity": "6",
+                "PartyIdentification": "B65005498",
+                "PartyName": "CARYOSA HYGIENIC SOLUTIONS, SL",
+                "TaxExclusiveAmount": 100781,
+                "PayableAmount": 121945
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=h3M7EVDnIdmrz3GQd5r6SQ%3D%3D",
+        "summary": "Id licitación: 1322 NSP; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 27360 EUR; Estado: ADJ",
+        "title": "Suministro de dos vehículos en modalidad de renting para el Servicio de Informática",
+        "updated": "2021-07-23T12:05:47.476+02:00",
+        "ContractFolderID": "1322 NSP",
+        "ContractFolderStatusCode": "ADJ",
+        "Name": "Suministro de dos vehículos en modalidad de renting para el Servicio de Informática",
+        "TypeCode": "2",
+        "SubTypeCode": "27",
+        "TotalAmount": 33105,
+        "TaxExclusiveAmount": 27360,
+        "DurationMeasure": "36",
+        "unitCode": "MON",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2021-07-22",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "B93243939",
+                "PartyName": "LAS CLARAS AUTOMOCION S.L",
+                "TaxExclusiveAmount": 27324,
+                "PayableAmount": 33062
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=blCN2UVsTjGiEJrVRqloyA%3D%3D",
+        "summary": "Id licitación: 1320; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 309000 EUR; Estado: RES",
+        "title": "Suministro e instalación del equipamiento para la renovación de los Museos de las Atalayas. Actuación cofinanciada por el fondo europeo de desarrollo regional en el marco del programa operativo de crecimiento sostenible 2014-2020.",
+        "updated": "2021-07-23T09:41:18.850+02:00",
+        "ContractFolderID": "1320",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Suministro e instalación del equipamiento para la renovación de los Museos de las Atalayas. Actuación cofinanciada por el fondo europeo de desarrollo regional en el marco del programa operativo de crecimiento sostenible 2014-2020.",
+        "TypeCode": "1",
+        "SubTypeCode": "2",
+        "TotalAmount": 373890,
+        "TaxExclusiveAmount": 309000,
+        "DurationMeasure": "3",
+        "unitCode": "MON",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2021-06-03",
+                "ReceivedTenderQuantity": "2",
+                "PartyIdentification": "B91546747",
+                "PartyName": "DISPLAYS SOLUTIONS SLU",
+                "TaxExclusiveAmount": 280000,
+                "PayableAmount": 338800
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=blCN2UVsTjGiEJrVRqloyA%3D%3D",
+        "summary": "Id licitación: 1320; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 309000 EUR; Estado: RES",
+        "title": "Suministro e instalación del equipamiento para la renovación de los Museos de las Atalayas. Actuación cofinanciada por el fondo europeo de desarrollo regional en el marco del programa operativo de crecimiento sostenible 2014-2020.",
+        "updated": "2021-07-22T15:41:06.322+02:00",
+        "ContractFolderID": "1320",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Suministro e instalación del equipamiento para la renovación de los Museos de las Atalayas. Actuación cofinanciada por el fondo europeo de desarrollo regional en el marco del programa operativo de crecimiento sostenible 2014-2020.",
+        "TypeCode": "1",
+        "SubTypeCode": "2",
+        "TotalAmount": 373890,
+        "TaxExclusiveAmount": 309000,
+        "DurationMeasure": "3",
+        "unitCode": "MON",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2021-06-03",
+                "ReceivedTenderQuantity": "2",
+                "PartyIdentification": "B91546747",
+                "PartyName": "DISPLAYS SOLUTIONS SLU",
+                "TaxExclusiveAmount": 280000,
+                "PayableAmount": 338800
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=JmmyJJOQMwF7h85%2Fpmmsfw%3D%3D",
+        "summary": "Id licitación: 06/21; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 103404.38 EUR; Estado: PUB",
+        "title": "Venta Forzosa Finca Rayón 3",
+        "updated": "2021-07-26T13:06:59.409+02:00",
+        "ContractFolderID": "06/21",
+        "ContractFolderStatusCode": "PUB",
+        "Name": "Venta Forzosa Finca Rayón 3",
+        "TypeCode": "8",
+        "SubTypeCode": "Sin dato",
+        "TotalAmount": 103404,
+        "TaxExclusiveAmount": 103404,
+        "DurationMeasure": "4",
+        "unitCode": "MON"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=mhv3x4er96yXQV0WE7lYPw%3D%3D",
+        "summary": "Id licitación: ASUECO-2021/1645; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 344636.66 EUR; Estado: PUB",
+        "title": "Ordenación de equipamiento público en calle California y espacio libre público en calle Alvar Núñez.",
+        "updated": "2021-07-27T13:13:09.495+02:00",
+        "ContractFolderID": "ASUECO-2021/1645",
+        "ContractFolderStatusCode": "PUB",
+        "Name": "Ordenación de equipamiento público en calle California y espacio libre público en calle Alvar Núñez.",
+        "TypeCode": "3",
+        "SubTypeCode": "4500",
+        "TotalAmount": 417010,
+        "TaxExclusiveAmount": 344636,
+        "DurationMeasure": "4",
+        "unitCode": "MON"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=vnHvFkd%2BG%2BcSugstABGr5A%3D%3D",
+        "summary": "Id licitación: 1347; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 14876.03 EUR; Estado: PUB",
+        "title": "Servicio para el Desarrollo del P^royecto Educativo 50/50 en 8 Colegios de Educación Primaria de la Ciudad de Jerez.",
+        "updated": "2021-07-27T11:56:20.740+02:00",
+        "ContractFolderID": "1347",
+        "ContractFolderStatusCode": "PUB",
+        "Name": "Servicio para el Desarrollo del P^royecto Educativo 50/50 en 8 Colegios de Educación Primaria de la Ciudad de Jerez.",
+        "TypeCode": "2",
+        "SubTypeCode": "1",
+        "TotalAmount": 18000,
+        "TaxExclusiveAmount": 14876,
+        "DurationMeasure": "9",
+        "unitCode": "MON"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=mhv3x4er96yXQV0WE7lYPw%3D%3D",
+        "summary": "Id licitación: ASUECO-2021/1645; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 344636.66 EUR; Estado: PUB",
+        "title": "Ordenación de equipamiento público en calle California y espacio libre público en calle Alvar Núñez.",
+        "updated": "2021-07-29T08:22:33.560+02:00",
+        "ContractFolderID": "ASUECO-2021/1645",
+        "ContractFolderStatusCode": "PUB",
+        "Name": "Ordenación de equipamiento público en calle California y espacio libre público en calle Alvar Núñez.",
+        "TypeCode": "3",
+        "SubTypeCode": "4500",
+        "TotalAmount": 417010,
+        "TaxExclusiveAmount": 344636,
+        "DurationMeasure": "4",
+        "unitCode": "MON"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=NSZRpAPInijnSoTX3z%2F7wA%3D%3D",
+        "summary": "Id licitación: 04/21; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 48051.22 EUR; Estado: ADJ",
+        "title": "Venta forzosa inmueble sito en calle Molino de Viento n.º 7 de Jerez de la Frontera",
+        "updated": "2021-07-29T14:30:39.001+02:00",
+        "ContractFolderID": "04/21",
+        "ContractFolderStatusCode": "ADJ",
+        "Name": "Venta forzosa inmueble sito en calle Molino de Viento n.º 7 de Jerez de la Frontera",
+        "TypeCode": "8",
+        "SubTypeCode": "Sin dato",
+        "TotalAmount": 48051,
+        "TaxExclusiveAmount": 48051,
+        "DurationMeasure": "4",
+        "unitCode": "MON",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2021-07-01",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "31646401B",
+                "PartyName": "Eva Serna Donaire",
+                "TaxExclusiveAmount": 50005,
+                "PayableAmount": 50005
+            }
+        ]
+    }
+]

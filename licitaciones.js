@@ -10,383 +10,345 @@ timeMapJSON = 0;
 totalLines = 0;
 
 const ficheroZIP =
-  //   "C:/Users/pc/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Contratos menores/2020/contratosMenoresPerfilesContratantes_2020.zip";
-  // "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2021/licitacionesPerfilesContratanteCompleto3_202106.zip";
-  "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2020/PlataformasAgregadasSinMenores_2020.zip";
-
+    "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2021/licitacionesPerfilesContratanteCompleto3_202107.zip";
+// "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Contratos menores/2020/contratosMenoresPerfilesContratantes_2020.zip";
+// "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2021/licitacionesPerfilesContratanteCompleto3_202106.zip";
+// "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2020/PlataformasAgregadasSinMenores_2020.zip";
 // "C:/Users/Usuario/Google Drive/Node.js/xml2json/PlataformasAgregadasSinMenores_2020.zip"
+
 async function extractZip() {
-  const start = Date.now()
-  const zip = new StreamZip.async({ file: ficheroZIP });
+    const start = Date.now()
+    const zip = new StreamZip.async({ file: ficheroZIP });
 
-  if (!fs.existsSync("./extracted")) {
-    fs.mkdirSync("extracted");
-  }
+    if (!fs.existsSync("./extracted")) {
+        fs.mkdirSync("extracted");
+    }
 
-  if (!fs.existsSync("./extracted/atom")) {
-    fs.mkdirSync("extracted/atom");
-  }
+    if (!fs.existsSync("./extracted/atom")) {
+        fs.mkdirSync("extracted/atom");
+    }
 
-  zip.on('extract', (entry, file) => {
-    console.log(`Extracted ${entry.name} to ${file}`);
-  });
+    if (!fs.existsSync("./resultados")) {
+        fs.mkdirSync("resultados");
+    }
 
-  this.countFiles = await zip.extract(null, "./extracted/atom");
+    zip.on('extract', (entry, file) => {
+        console.log(`Extracted ${entry.name} to ${file}`);
+    });
 
-  console.log("************** extractZip ********************");
-  console.log(`Extracted ${this.countFiles} entries`);
-  const stop = Date.now()
-  this.timeExtractZip = ((stop - start) / 60000).toFixed(2)
-  console.log(`Time Taken to execute = ${this.timeExtractZip} minutes`);
-  await zip.close();
-  return Promise.resolve(true);
+    this.countFiles = await zip.extract(null, "./extracted/atom");
+
+    console.log("************** extractZip ********************");
+    // console.log(`Extracted ${this.countFiles} entries`);
+    const stop = Date.now()
+    this.timeExtractZip = ((stop - start) / 60000).toFixed(2)
+    // console.log(`Time Taken to execute = ${this.timeExtractZip} minutes`);
+    await zip.close();
+    return Promise.resolve(true);
 }
 
 function readFiles(pathSearch) {
-  return fs.readdirSync(pathSearch);
+    return fs.readdirSync(pathSearch);
 }
 
 async function readLines(name) {
-  const pathAtom = __dirname + '/extracted/atom/' + name;
-
-  return new Promise((resolve, reject) => {
-
-    const readInterface = readLineFile.createInterface({
-      input: fs.createReadStream(pathAtom),
-      ouput: process.stdout,
-      console: false
+    const pathAtom = __dirname + '/extracted/atom/' + name;
+    return new Promise((resolve, reject) => {
+        const readInterface = readLineFile.createInterface({
+            input: fs.createReadStream(pathAtom),
+            ouput: process.stdout,
+            console: false
+        })
+        let count = 0;
+        readInterface.on('line', function (line) {
+            count++;
+        })
+        readInterface.on('close', function () {
+            resolve(count);
+        })
     })
-
-    let count = 0;
-
-    readInterface.on('line', function (line) {
-      count++;
-    })
-
-    readInterface.on('close', function () {
-      resolve(count);
-    })
-  })
-
 }
 
 async function parseXML2JSON() {
-  console.log("************** parseXML2JSON inicio ********************");
-  const start = Date.now()
-  const archivos = readFiles("./extracted/atom/");
-  let contador = 1;
-  if (!fs.existsSync("./extracted/json")) {
-    fs.mkdirSync("extracted/json");
-  }
-
-  for (const fichero of archivos) {
-    const pathFile = "./extracted/atom/" + fichero;
-    if (fs.existsSync(pathFile) && fs.lstatSync(pathFile).isFile()) {
-      const countLines = await readLines(fichero);
-
-      console.log(`${contador}/${this.countFiles} ${fichero} / lineas ${new Intl.NumberFormat('es-Es').format(countLines)}`);
-      //console.log(`${contador}/${this.countFiles} ${fichero} `);
-
-      totalLines = totalLines + countLines;
-      contador++
-      const dataXml = fs.readFileSync(pathFile);
-      parserXml2js.parseString(dataXml, function (err, result) {
-        if (err) {
-          throw err;
-        }
-        const dataJson = JSON.stringify(result);
-        const fileNameJson = fichero.replace(".atom", ".json");
-        fs.writeFileSync(`./extracted/json/${fileNameJson}`, dataJson);
-      });
+    console.log("************** parseXML2JSON inicio ********************");
+    const start = Date.now()
+    const archivos = readFiles("./extracted/atom/");
+    let contador = 1;
+    if (!fs.existsSync("./extracted/json")) {
+        fs.mkdirSync("extracted/json");
     }
-  }
 
-  const stop = Date.now()
-  this.timeParseXML2JSON = ((stop - start) / 60000).toFixed(2)
-  console.log(`Time Taken to execute = ${this.timeParseXML2JSON} minutes`);
+    for (const fichero of archivos) {
+        const pathFile = "./extracted/atom/" + fichero;
+        if (fs.existsSync(pathFile) && fs.lstatSync(pathFile).isFile()) {
+            const countLines = await readLines(fichero);
+            console.log(`${contador}/${this.countFiles} ${fichero} / lineas ${new Intl.NumberFormat('es-Es').format(countLines)}`);
+            totalLines = totalLines + countLines;
+            contador++
+            const dataXml = fs.readFileSync(pathFile);
+            parserXml2js.parseString(dataXml, function (err, result) {
+                if (err) {
+                    throw err;
+                }
+                const dataJson = JSON.stringify(result);
+                const fileNameJson = fichero.replace(".atom", ".json");
+                fs.writeFileSync(`./extracted/json/${fileNameJson}`, dataJson);
+            });
+        }
+    }
+
+    const stop = Date.now()
+    this.timeParseXML2JSON = ((stop - start) / 60000).toFixed(2)
+    console.log(`Time Taken to execute = ${this.timeParseXML2JSON} minutes`);
 }
 
 function mapJSON() {
-  console.log("************** mapJSON inicio ********************");
-  const start = Date.now()
-  const archivos = readFiles("./extracted/json/");
-  const arrayFinal = [];
-  let contador = 1;
+    console.log("************** mapJSON inicio ********************");
+    const start = Date.now()
+    const archivos = readFiles("./extracted/json/");
+    const arrayFinal = [];
+    let contador = 1;
 
-  archivos.forEach((fichero) => {
-    const liciJson = fs.readFileSync("./extracted/json/" + fichero);
-    console.log(`${contador}/${this.countFiles} ${fichero}`);
-    // console.log(`${contador}/522 ${fichero}`);
-    contador++
-    const liciObject = JSON.parse(liciJson);
-    const result = liciObject.feed.entry
-      // .filter((itemFilter) =>
-      //   itemFilter.summary[0]._.match(
-      //     /Junta de Gobierno Local del Ayuntamiento de Jerez/g
-      //   )
-      // )
-      .map((elem) => {
-        //TODO! ¿pARA QUE SIRVEN ESTAS LINEAS?
-        ContractFolderID =
-          elem["cac-place-ext:ContractFolderStatus"][0][
-          "cbc:ContractFolderID"
-          ][0];
+    archivos.forEach((fichero) => {
+        const liciJson = fs.readFileSync("./extracted/json/" + fichero);
+        console.log(`${contador}/${this.countFiles} ${fichero}`);
+        contador++
+        const liciObject = JSON.parse(liciJson);
+        liciObject.feed.entry
+            .filter((itemFilter) =>
+                itemFilter.summary[0]._.match(
+                    /Junta de Gobierno Local del Ayuntamiento de Jerez/g
+                )
+            )
+            .forEach((elem) => {
+                const itemArray = {
+                    link:
+                        elem.link[0].$.href,
 
-        cuantosPartyIdentification =
-          elem["cac-place-ext:ContractFolderStatus"][0]["cac:TenderResult"];
+                    summary:
+                        elem.summary[0]._,
 
-        if (cuantosPartyIdentification) {
-          cuantosArray = Object.keys(cuantosPartyIdentification).length;
-          for (var i = 0; i < cuantosArray; i++) {
+                    title:
+                        elem.title[0],
 
-            let durationMeasure = "sin datos";
-            const existDurationMeasure =
-              elem["cac-place-ext:ContractFolderStatus"][0][
-              "cac:ProcurementProject"
-              ][0]["cac:PlannedPeriod"][0]["cbc:DurationMeasure"];
-
-            if (existDurationMeasure) {
-              durationMeasure = existDurationMeasure[0]._;
-            }
-
-            let unitCode = "sin datos";
-            const existUnitcode =
-              elem["cac-place-ext:ContractFolderStatus"][0][
-              "cac:ProcurementProject"
-              ][0]["cac:PlannedPeriod"][0]["cbc:DurationMeasure"];
-
-            if (existUnitcode) {
-              unitCode = existUnitcode[0].$.unitCode;
-            }
-
-            let listURI = "sin datos";
-
-            if (elem["cac-place-ext:ContractFolderStatus"] && elem["cac-place-ext:ContractFolderStatus"][0][
-              "cac:place-ext:ValidNoticeInfo"
-            ] && elem["cac-place-ext:ContractFolderStatus"][0][
-            "cac:place-ext:ValidNoticeInfo"
-            ][0]["cac-place-ext:AdditionalPublicationStatus"] && [0]["cac-place-ext:AdditionalPublicationStatus"][0][
-              "cac-place-ext:AdditionalPublicationDocumentReference"
-              ]) {
-              listURI = elem["cac-place-ext:ContractFolderStatus"][0][
-                "cac:place-ext:ValidNoticeInfo"
-              ][0]["cac-place-ext:AdditionalPublicationStatus"][0][
-                "cac-place-ext:AdditionalPublicationDocumentReference"
-              ][0]["cbc:DocumentTypeCode"][0].$.listURI
-            }
-
-            let partyIdentification = "sin dato";
-            let partyName = "sin datos";
-
-            if (elem["cac-place-ext:ContractFolderStatus"][0]["cac:TenderResult"][
-              i
-            ] && elem["cac-place-ext:ContractFolderStatus"][0]["cac:TenderResult"][
-            i
-            ]["cac:WinningParty"] && elem["cac-place-ext:ContractFolderStatus"][0]["cac:TenderResult"][
-            i
-            ]["cac:WinningParty"]) {
-
-              if (elem["cac-place-ext:ContractFolderStatus"][0]["cac:TenderResult"][
-                i
-              ]["cac:WinningParty"][0]["cac:PartyIdentification"] && elem["cac-place-ext:ContractFolderStatus"][0]["cac:TenderResult"][
-              i
-              ]["cac:WinningParty"][0]["cac:PartyIdentification"][0][
-                "cbc:ID"
-                ]) {
-                partyIdentification = elem["cac-place-ext:ContractFolderStatus"][0]["cac:TenderResult"][
-                  i
-                ]["cac:WinningParty"][0]["cac:PartyIdentification"][0][
-                  "cbc:ID"
-                ][0]._
-              }
-
-              if (elem["cac-place-ext:ContractFolderStatus"][0]["cac:TenderResult"][
-                i
-              ]["cac:WinningParty"][0]["cac:PartyName"] && elem["cac-place-ext:ContractFolderStatus"][0]["cac:TenderResult"][
-              i
-              ]["cac:WinningParty"][0]["cac:PartyName"][0][
-                "cbc:Name"
-                ]) {
-
-                // console.log(JSON.stringify(elem));
-                partyName = elem["cac-place-ext:ContractFolderStatus"][0]["cac:TenderResult"][
-                  i
-                ]["cac:WinningParty"][0]["cac:PartyName"][0][
-                  "cbc:Name"
-                ][0]
-              }
-
-            }
-
-            let payableAmount = "sin dato";
-            if (elem["cac-place-ext:ContractFolderStatus"][0][
-              "cac:TenderResult"
-            ] && elem["cac-place-ext:ContractFolderStatus"][0][
-            "cac:TenderResult"
-            ][0]["cac:AwardedTenderedProject"] && elem["cac-place-ext:ContractFolderStatus"][0][
-            "cac:TenderResult"
-            ][0]["cac:AwardedTenderedProject"][0][
-              "cac:LegalMonetaryTotal"
-              ] && elem["cac-place-ext:ContractFolderStatus"][0][
-              "cac:TenderResult"
-              ][0]["cac:AwardedTenderedProject"][0][
-              "cac:LegalMonetaryTotal"] && [0]["cbc:PayableAmount"]
-            ) {
-              payableAmount = Math.trunc(
-                elem["cac-place-ext:ContractFolderStatus"][0][
-                  "cac:TenderResult"
-                ][0]["cac:AwardedTenderedProject"][0][
-                  "cac:LegalMonetaryTotal"
-                ][0]["cbc:PayableAmount"][0]._
-              );
-            }
-
-            let resultCode = "sin dato";
-            let awardDate = "sin dato";
-            let receivedTenderQuantity = "sin dato";
-
-            if (elem["cac-place-ext:ContractFolderStatus"][0][
-              "cac:TenderResult"
-            ] && elem["cac-place-ext:ContractFolderStatus"][0][
-              "cac:TenderResult"
-              ]) {
-
-              const tender = elem["cac-place-ext:ContractFolderStatus"][0][
-                "cac:TenderResult"
-              ][0]["cbc:ResultCode"];
-
-              if (tender) {
-                resultCode = tender[0]._;
-              }
-
-              const award = elem["cac-place-ext:ContractFolderStatus"][0][
-                "cac:TenderResult"
-              ][0]["cbc:AwardDate"];
-
-              if (award) {
-                awardDate = award[0];
-              }
+                    updated:
+                        elem.updated[0],
+                };
 
 
-              const quantity = elem["cac-place-ext:ContractFolderStatus"][0][
-                "cac:TenderResult"
-              ][0]["cbc:ReceivedTenderQuantity"];
+                const contractFolderStatus = elem["cac-place-ext:ContractFolderStatus"][0];
+                const cacTenderResult = contractFolderStatus && contractFolderStatus["cac:TenderResult"] ? contractFolderStatus["cac:TenderResult"] : null;
 
-              if (quantity) {
-                receivedTenderQuantity = quantity[0];
-              }
+                if (contractFolderStatus) {
+                    itemArray.ContractFolderID = contractFolderStatus["cbc:ContractFolderID"][0];
 
-            }
+                    let durationMeasure = "Sin dato";
+                    let unitCode = "Sin dato";
 
-            const item = {
-              link:
-                elem.link[0].$.href,
+                    const cacProcurementProject = contractFolderStatus["cac:ProcurementProject"] && contractFolderStatus["cac:ProcurementProject"][0] ? contractFolderStatus["cac:ProcurementProject"][0] : null;
+                    const cacPlannedPeriod = cacProcurementProject ? cacProcurementProject["cac:PlannedPeriod"] : null;
+                    const cbcDurationMeasure = cacPlannedPeriod ? cacPlannedPeriod[0]["cbc:DurationMeasure"] : null;
+                    const valuesDurationMeasure = cbcDurationMeasure ? cbcDurationMeasure[0] : null;
 
-              summary:
-                elem.summary[0]._,
+                    if (valuesDurationMeasure) {
+                        durationMeasure = valuesDurationMeasure._;
+                        unitCode = valuesDurationMeasure.$.unitCode;
+                    }
 
-              title:
-                elem.title[0],
+                    const cbcContractFolderStatusCode = contractFolderStatus["cbc-place-ext:ContractFolderStatusCode"] ? contractFolderStatus["cbc-place-ext:ContractFolderStatusCode"][0]._ : "Sin dato";
+                    const cbcName = cacProcurementProject && cacProcurementProject["cbc:Name"] ? cacProcurementProject["cbc:Name"][0] : "Sin dato";
+                    const cbcTypeCode = cacProcurementProject && cacProcurementProject["cbc:TypeCode"] ? cacProcurementProject["cbc:TypeCode"][0]._ : "Sin dato";
+                    const cbcSubTypeCode = cacProcurementProject && cacProcurementProject["cbc:SubTypeCode"] ? cacProcurementProject["cbc:SubTypeCode"][0]._ : "Sin dato";
+                    const cacBudgetAmount = cacProcurementProject && cacProcurementProject["cac:BudgetAmount"] ? cacProcurementProject["cac:BudgetAmount"] : null;
+                    let cbcTotalAmount = "Sin dato";
+                    let cbcTaxExclusiveAmount = "Sin dato";
 
-              updated:
-                elem.updated[0],
+                    if (cacBudgetAmount) {
+                        cbcTotalAmount = cacBudgetAmount[0]["cbc:TotalAmount"] ? Math.trunc(cacBudgetAmount[0]["cbc:TotalAmount"][0]._) : "Sin dato";
+                        cbcTaxExclusiveAmount = cacBudgetAmount[0]["cbc:TaxExclusiveAmount"] ? Math.trunc(cacBudgetAmount[0]["cbc:TaxExclusiveAmount"][0]._) : "Sin dato";
+                    }
 
-              // En licitaciones esta propiedad no dice nada, es solo un numero.  
-              ContractFolderID:
-                elem["cac-place-ext:ContractFolderStatus"][0][
-                "cbc:ContractFolderID"
-                ][0],
+                    // let listURI = "Sin dato";
+                    // const aAdditionalPublicationStatus = contractFolderStatus["cac:place-ext:ValidNoticeInfo"] ? contractFolderStatus["cac:place-ext:ValidNoticeInfo"][0]["cac-place-ext:AdditionalPublicationStatus"] : null;
+                    // const AdditionalPublicationDocumentReference = aAdditionalPublicationStatus ? aAdditionalPublicationStatus[0]["cac-place-ext:AdditionalPublicationDocumentReference"] : null;
+                    // const cboDocumentTypeCode = AdditionalPublicationDocumentReference ? AdditionalPublicationDocumentReference[0]["cbc:DocumentTypeCode"] : null;
+                    // const valuesDocumentTypeCode = cboDocumentTypeCode ? cboDocumentTypeCode[0] : null;
 
-              ContractFolderStatusCode:
-                elem["cac-place-ext:ContractFolderStatus"][0][
-                  "cbc-place-ext:ContractFolderStatusCode"
-                ][0]._,
+                    // if (valuesDocumentTypeCode) {
+                    //     listURI = valuesDocumentTypeCode.$.listURI
+                    // }
 
-              Name: elem["cac-place-ext:ContractFolderStatus"][0][
-                "cac:ProcurementProject"
-              ][0]["cbc:Name"][0],
+                    const cbcUrgencyCode = contractFolderStatus["cac:TenderingProcess"] && contractFolderStatus["cac:TenderingProcess"][0]["cbc:UrgencyCode"]
+                        ? contractFolderStatus["cac:TenderingProcess"][0]["cbc:UrgencyCode"]._
+                        : "Sin dato"
 
-              TypeCode:
-                elem["cac-place-ext:ContractFolderStatus"][0][
-                  "cac:ProcurementProject"
-                ][0]["cbc:TypeCode"][0]._,
+                    itemArray.ContractFolderStatusCode = cbcContractFolderStatusCode;
+                    itemArray.Name = cbcName;
+                    itemArray.TypeCode = cbcTypeCode;
+                    itemArray.SubTypeCode = cbcSubTypeCode;
+                    itemArray.TotalAmount = cbcTotalAmount;
+                    itemArray.TaxExclusiveAmount = cbcTaxExclusiveAmount;
+                    itemArray.DurationMeasure = durationMeasure;
+                    itemArray.unitCode = unitCode;
+                    // itemArray.listURI = listURI;
+                    itemArray.UrgencyCode = cbcUrgencyCode;
 
-              // SubTypeCode:
-              //   elem["cac-place-ext:ContractFolderStatus"][0][
-              //     "cac:ProcurementProject"
-              //   ][0]["cbc:SubTypeCode"][0]._,
 
-              TotalAmount:
-                Math.trunc(
-                  elem["cac-place-ext:ContractFolderStatus"][0][
-                    "cac:ProcurementProject"
-                  ][0]["cac:BudgetAmount"][0]["cbc:TotalAmount"][0]._
-                ),
+                    if (cacTenderResult) {
+                        const arrayTenderResult = [];
+                        // Ver ejemplo.atom a partir linea 7511
+                        cuantosArray = Object.keys(cacTenderResult).length;
+                        for (var i = 0; i < cuantosArray; i++) {
 
-              TaxExclusiveAmount:
-                Math.trunc(
-                  elem["cac-place-ext:ContractFolderStatus"][0][
-                    "cac:ProcurementProject"
-                  ][0]["cac:BudgetAmount"][0]["cbc:TaxExclusiveAmount"][0]._
-                ),
+                            let partyIdentification = "Sin dato";
+                            let partyName = "Sin dato";
 
-              DurationMeasure: durationMeasure,
-              unitCode: unitCode,
-              ResultCode: resultCode,
-              AwardDate: awardDate,
-              ReceivedTenderQuantity: receivedTenderQuantity,
-              PartyIdentification: partyIdentification,
-              PartyName: partyName,
-              PayableAmount: payableAmount,
+                            const cacWinningParty = cacTenderResult[i] ? cacTenderResult[i]["cac:WinningParty"] : null;
+                            if (cacWinningParty) {
+                                const cbcId = cacWinningParty[0]["cac:PartyIdentification"] ? cacWinningParty[0]["cac:PartyIdentification"][0]["cbc:ID"] : null;
+                                partyIdentification = cbcId ? cbcId[0]._ : 'Sin dato';
 
-              UrgencyCode:
-                elem["cac-place-ext:ContractFolderStatus"][0][
-                  "cac:TenderingProcess"
-                ][0]["cbc:UrgencyCode"][0]._,
-              listURI: listURI
-            };
+                                const cbcName = cacWinningParty[0]["cac:PartyName"] ? cacWinningParty[0]["cac:PartyName"][0]["cbc:Name"] : null;
+                                partyName = cbcName ? cbcName[0] : "Sin dato"
+                            }
 
-            arrayFinal.push(item);
-          }
+                            const cacLegalMonetaryTotal = cacTenderResult[i]["cac:AwardedTenderedProject"] ? cacTenderResult[i]["cac:AwardedTenderedProject"][0]["cac:LegalMonetaryTotal"] : null;
+                            const cbcPayableAmount = cacLegalMonetaryTotal ? cacLegalMonetaryTotal[0]["cbc:PayableAmount"] : null;
+                            const cbcTaxExclusiveAmount = cacLegalMonetaryTotal ? cacLegalMonetaryTotal[0]["cbc:TaxExclusiveAmount"] : null;
+
+                            const taxExclusiveAmount = cbcTaxExclusiveAmount ? Math.trunc(cbcTaxExclusiveAmount[0]._) : "Sin dato";
+                            const payableAmount = cbcPayableAmount ? Math.trunc(cbcPayableAmount[0]._) : "Sin dato";
+
+                            const resultCode = cacTenderResult[i]["cbc:ResultCode"] ? cacTenderResult[i]["cbc:ResultCode"][0]._ : "Sin dato";
+                            const awardDate = cacTenderResult[0]["cbc:AwardDate"] ? cacTenderResult[0]["cbc:AwardDate"][0] : "Sin dato";
+                            const receivedTenderQuantity = cacTenderResult[0]["cbc:ReceivedTenderQuantity"] ? cacTenderResult[0]["cbc:ReceivedTenderQuantity"][0] : "Sin dato";
+
+                            const item = {
+                                ResultCode: resultCode,
+                                AwardDate: awardDate,
+                                ReceivedTenderQuantity: receivedTenderQuantity,
+                                PartyIdentification: partyIdentification,
+                                PartyName: partyName,
+                                TaxExclusiveAmount: taxExclusiveAmount,
+                                PayableAmount: payableAmount,
+                            };
+
+                            arrayTenderResult.push(item);
+                        }
+
+                        itemArray.arrayTenderResult = arrayTenderResult;
+                    }
+                }
+
+                arrayFinal.push(itemArray);
+            });
+
+    });
+
+    saveFinalJson(arrayFinal);
+
+    const stop = Date.now()
+    this.timeMapJSON = ((stop - start) / 60000).toFixed(2)
+}
+
+function viewRepeat(arrayFinal) {
+    const listRepeat = [];
+    const listNoRepeat = [];
+    const listRepeatMajor = [];
+
+    arrayFinal.forEach(item => {
+        const data = arrayFinal.filter(filterItem => item.ContractFolderID.search(filterItem.ContractFolderID) > -1);
+
+        if (data.length > 1) {
+            listRepeat.push(item);
+        } else {
+            listNoRepeat.push(item);
+        }
+    });
+
+    listRepeat.forEach(item => {
+        const itemMajor = listRepeatMajor.find(findItem => findItem.ContractFolderID.includes(item.ContractFolderID));
+        if (itemMajor === undefined) {
+            const data = listRepeat.filter(filterItem => filterItem.ContractFolderID.includes(item.ContractFolderID));
+
+            const major = data.reduce((prev, current) => {
+                const dateItemPrev = new Date(prev.updated);
+                const dateItemCurrent = new Date(current.updated);
+
+                return dateItemPrev > dateItemCurrent ? prev : current
+            });
+
+            listRepeatMajor.push(major);
+            listNoRepeat.push(major);
         }
 
-      });
-  });
-  saveFinalJson(arrayFinal);
-  const stop = Date.now()
-  this.timeMapJSON = ((stop - start) / 60000).toFixed(2)
+    });
+
+
+    fs.writeFile(
+        "./resultados/repeat.json",
+        JSON.stringify(listRepeat),
+        function (err) {
+            if (err) throw err;
+            console.log(listRepeat.length);
+            console.log("************** TERMINADO repeat.json ********************");
+        }
+    );
+
+    fs.writeFile(
+        "./resultados/repeatMajor.json",
+        JSON.stringify(listRepeatMajor),
+        function (err) {
+            if (err) throw err;
+            console.log(listRepeatMajor.length);
+            console.log("************** TERMINADO repeatMajor.json ********************");
+        }
+    );
+    fs.writeFile(
+        "./resultados/finalNoRepeat.json",
+        JSON.stringify(listNoRepeat),
+        function (err) {
+            if (err) throw err;
+            console.log(listNoRepeat.length);
+            console.log("************** TERMINADO finalNoRepeat.json ********************");
+        }
+    );
 }
 
 function saveFinalJson(arrayFinal) {
-  // const countLinesJSON = await readLines("./jsonfinal.json");
-  fs.rmdir("./extracted", { recursive: true },
-    (error) => {
-      console.log(error);
-    })
+    // const countLinesJSON = await readLines("./jsonfinal.json");
+    fs.rmdir("./extracted", { recursive: true },
+        (error) => {
+            console.error("Error: ", error);
+        })
 
-  fs.writeFile(
-    "./jsonfinal.json",
-    JSON.stringify(arrayFinal),
-    function (err) {
-      if (err) throw err;
-      console.log("************** TERMINADO ********************");
-      console.log(`Time taken to execute extractZip()    = ${this.timeExtractZip} minutes`);
-      console.log(`Time taken to execute parseXML2JSON() = ${this.timeParseXML2JSON} minutes`);
-      console.log(`Time taken to execute mapJSON()       = ${this.timeMapJSON} minutes`);
-      console.log(`Total XML lines                       = ${new Intl.NumberFormat('es-Es').format(this.totalLines)}`);
-      console.log(`Total JSON lines                      = ${new Intl.NumberFormat('es-Es').format(279)}`);
-    }
-  );
+    fs.writeFile(
+        "./resultados/final.json",
+        JSON.stringify(arrayFinal),
+        function (err) {
+            if (err) throw err;
+            console.log("************** TERMINADO ********************");
+            console.log(`Time taken to execute extractZip()    = ${this.timeExtractZip} minutes`);
+            console.log(`Time taken to execute parseXML2JSON() = ${this.timeParseXML2JSON} minutes`);
+            console.log(`Time taken to execute mapJSON()       = ${this.timeMapJSON} minutes`);
+            console.log(`Total XML lines                       = ${new Intl.NumberFormat('es-Es').format(this.totalLines)}`);
+            console.log(`Total licitaciones encontradas:       = ${arrayFinal.length}`);
+            // console.log(`Total licitaciones sin repeticiones:  = ${this.listNoRepeat.length}`);
+            // console.log(`Total JSON lines                      = ${new Intl.NumberFormat('es-Es').format(279)}`);
+        }
+    );
+
+    viewRepeat(arrayFinal);
 }
 
 async function ejecutaTodo() {
-  try {
-    await extractZip();
-    await parseXML2JSON();
-    mapJSON();
-  } catch (error) {
-    console.error("Error: ", error);
-  }
+    try {
+        await extractZip();
+        await parseXML2JSON();
+        mapJSON();
+    } catch (error) {
+        console.error("Error: ", error);
+    }
 }
 
 ejecutaTodo();
