@@ -9,14 +9,18 @@ timeParseXML2JSON = 0;
 timeMapJSON = 0;
 totalLines = 0;
 
-const ficheroZIP =
-    "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2021/licitacionesPerfilesContratanteCompleto3_202107.zip";
-// "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Contratos menores/2020/contratosMenoresPerfilesContratantes_2020.zip";
-// "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2021/licitacionesPerfilesContratanteCompleto3_202106.zip";
-// "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2020/PlataformasAgregadasSinMenores_2020.zip";
-// "C:/Users/Usuario/Google Drive/Node.js/xml2json/PlataformasAgregadasSinMenores_2020.zip"
+// const ficheroZIP = "C:/Users/usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/contratos menores/2021/contratosMenoresPerfilesContratantes_202107.zip";
+// const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2021/licitacionesPerfilesContratanteCompleto3_202107.zip";
+
+const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/contratos menores/2019/contratosMenoresPerfilesContratantes_2019.zip";
+// const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2019/licitacionesPerfilesContratanteCompleto3_2019.zip";
+
+// if (!fs.existsSync("./resultados")) {
+//     fs.mkdirSync("resultados");
+// }
 
 async function extractZip() {
+    console.log("************** extractZip ********************");
     const start = Date.now()
     const zip = new StreamZip.async({ file: ficheroZIP });
 
@@ -37,12 +41,8 @@ async function extractZip() {
     });
 
     this.countFiles = await zip.extract(null, "./extracted/atom");
-
-    console.log("************** extractZip ********************");
-    // console.log(`Extracted ${this.countFiles} entries`);
     const stop = Date.now()
     this.timeExtractZip = ((stop - start) / 60000).toFixed(2)
-    // console.log(`Time Taken to execute = ${this.timeExtractZip} minutes`);
     await zip.close();
     return Promise.resolve(true);
 }
@@ -99,7 +99,7 @@ async function parseXML2JSON() {
 
     const stop = Date.now()
     this.timeParseXML2JSON = ((stop - start) / 60000).toFixed(2)
-    console.log(`Time Taken to execute = ${this.timeParseXML2JSON} minutes`);
+    // console.log(`Time Taken to execute = ${this.timeParseXML2JSON} minutes`);
 }
 
 function mapJSON() {
@@ -109,6 +109,7 @@ function mapJSON() {
     const arrayFinal = [];
     let contador = 1;
 
+    // https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch05s02.html
     archivos.forEach((fichero) => {
         const liciJson = fs.readFileSync("./extracted/json/" + fichero);
         console.log(`${contador}/${this.countFiles} ${fichero}`);
@@ -117,24 +118,20 @@ function mapJSON() {
         liciObject.feed.entry
             .filter((itemFilter) =>
                 itemFilter.summary[0]._.match(
-                    /Junta de Gobierno Local del Ayuntamiento de Jerez/g
+                    /\b(?:Junta de Gobierno Local del Ayuntamiento de Jerez|Patronato de la Fundación Centro de Acogida San José|Empresa Municipal de la Vivienda de Jerez|COMUJESA|FUNDARTE|MERCAJEREZ)\b/g
                 )
             )
             .forEach((elem) => {
                 const itemArray = {
                     link:
                         elem.link[0].$.href,
-
                     summary:
                         elem.summary[0]._,
-
                     title:
                         elem.title[0],
-
                     updated:
                         elem.updated[0],
                 };
-
 
                 const contractFolderStatus = elem["cac-place-ext:ContractFolderStatus"][0];
                 const cacTenderResult = contractFolderStatus && contractFolderStatus["cac:TenderResult"] ? contractFolderStatus["cac:TenderResult"] : null;
@@ -246,12 +243,11 @@ function mapJSON() {
     });
 
     saveFinalJson(arrayFinal);
-
     const stop = Date.now()
     this.timeMapJSON = ((stop - start) / 60000).toFixed(2)
 }
 
-function viewRepeat(arrayFinal) {
+function searchRepeat(arrayFinal) {
     const listRepeat = [];
     const listNoRepeat = [];
     const listRepeatMajor = [];
@@ -270,20 +266,16 @@ function viewRepeat(arrayFinal) {
         const itemMajor = listRepeatMajor.find(findItem => findItem.ContractFolderID.includes(item.ContractFolderID));
         if (itemMajor === undefined) {
             const data = listRepeat.filter(filterItem => filterItem.ContractFolderID.includes(item.ContractFolderID));
-
             const major = data.reduce((prev, current) => {
                 const dateItemPrev = new Date(prev.updated);
                 const dateItemCurrent = new Date(current.updated);
-
                 return dateItemPrev > dateItemCurrent ? prev : current
             });
 
             listRepeatMajor.push(major);
             listNoRepeat.push(major);
         }
-
     });
-
 
     fs.writeFile(
         "./resultados/repeat.json",
@@ -313,6 +305,7 @@ function viewRepeat(arrayFinal) {
             console.log("************** TERMINADO finalNoRepeat.json ********************");
         }
     );
+
 }
 
 function saveFinalJson(arrayFinal) {
@@ -338,7 +331,7 @@ function saveFinalJson(arrayFinal) {
         }
     );
 
-    viewRepeat(arrayFinal);
+    searchRepeat(arrayFinal);
 }
 
 async function ejecutaTodo() {
