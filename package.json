@@ -10,7 +10,6 @@
   "license": "MIT",
   "dependencies": {
     "node-stream-zip": "^1.13.4",
-    "xml-js": "^1.6.11",
     "xml2js": "^0.4.23",
     "xml2json": "^0.12.0"
   },
