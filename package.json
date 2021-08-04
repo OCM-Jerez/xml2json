@@ -9,7 +9,6 @@
   "author": "mam",
   "license": "MIT",
   "dependencies": {
-    "ngx-xml2json": "^1.0.2",
     "node-fetch": "^2.6.1",
     "node-stream-zip": "^1.13.4",
     "xml-js": "^1.6.11",
