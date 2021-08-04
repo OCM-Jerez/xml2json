@@ -9,7 +9,6 @@
   "author": "mam",
   "license": "MIT",
   "dependencies": {
-    "node-fetch": "^2.6.1",
     "node-stream-zip": "^1.13.4",
     "xml-js": "^1.6.11",
     "xml2js": "^0.4.23",
