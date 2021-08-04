@@ -12,12 +12,13 @@ totalLines = 0;
 // const ficheroZIP = "C:/Users/usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/contratos menores/2021/contratosMenoresPerfilesContratantes_202107.zip";
 // const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2021/licitacionesPerfilesContratanteCompleto3_202107.zip";
 
-const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/contratos menores/2019/contratosMenoresPerfilesContratantes_2019.zip";
-// const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2019/licitacionesPerfilesContratanteCompleto3_2019.zip";
+// const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/contratos menores/2020/contratosMenoresPerfilesContratantes_2020.zip";
+const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2020/licitacionesPerfilesContratanteCompleto3_2020.zip";
 
-// if (!fs.existsSync("./resultados")) {
-//     fs.mkdirSync("resultados");
-// }
+// jsonfinal.filter(x=> x.year > 2019 && x.year <2021).filter(x=> {
+//     x.year.2019.licitaciones.filter(x=> x.updated)
+//     x.year.2021.licitaciones.filter(x=> x.updated)
+// })
 
 async function extractZip() {
     console.log("************** extractZip ********************");
@@ -47,33 +48,12 @@ async function extractZip() {
     return Promise.resolve(true);
 }
 
-function readFiles(pathSearch) {
-    return fs.readdirSync(pathSearch);
-}
-
-async function readLines(name) {
-    const pathAtom = __dirname + '/extracted/atom/' + name;
-    return new Promise((resolve, reject) => {
-        const readInterface = readLineFile.createInterface({
-            input: fs.createReadStream(pathAtom),
-            ouput: process.stdout,
-            console: false
-        })
-        let count = 0;
-        readInterface.on('line', function (line) {
-            count++;
-        })
-        readInterface.on('close', function () {
-            resolve(count);
-        })
-    })
-}
-
 async function parseXML2JSON() {
     console.log("************** parseXML2JSON inicio ********************");
     const start = Date.now()
     const archivos = readFiles("./extracted/atom/");
     let contador = 1;
+
     if (!fs.existsSync("./extracted/json")) {
         fs.mkdirSync("extracted/json");
     }
@@ -99,7 +79,6 @@ async function parseXML2JSON() {
 
     const stop = Date.now()
     this.timeParseXML2JSON = ((stop - start) / 60000).toFixed(2)
-    // console.log(`Time Taken to execute = ${this.timeParseXML2JSON} minutes`);
 }
 
 function mapJSON() {
@@ -115,6 +94,7 @@ function mapJSON() {
         console.log(`${contador}/${this.countFiles} ${fichero}`);
         contador++
         const liciObject = JSON.parse(liciJson);
+
         liciObject.feed.entry
             .filter((itemFilter) =>
                 itemFilter.summary[0]._.match(
@@ -193,7 +173,6 @@ function mapJSON() {
 
                     if (cacTenderResult) {
                         const arrayTenderResult = [];
-                        // Ver ejemplo.atom a partir linea 7511
                         cuantosArray = Object.keys(cacTenderResult).length;
                         for (var i = 0; i < cuantosArray; i++) {
 
@@ -247,93 +226,6 @@ function mapJSON() {
     this.timeMapJSON = ((stop - start) / 60000).toFixed(2)
 }
 
-function searchRepeat(arrayFinal) {
-    const listRepeat = [];
-    const listNoRepeat = [];
-    const listRepeatMajor = [];
-
-    arrayFinal.forEach(item => {
-        const data = arrayFinal.filter(filterItem => item.ContractFolderID.search(filterItem.ContractFolderID) > -1);
-
-        if (data.length > 1) {
-            listRepeat.push(item);
-        } else {
-            listNoRepeat.push(item);
-        }
-    });
-
-    listRepeat.forEach(item => {
-        const itemMajor = listRepeatMajor.find(findItem => findItem.ContractFolderID.includes(item.ContractFolderID));
-        if (itemMajor === undefined) {
-            const data = listRepeat.filter(filterItem => filterItem.ContractFolderID.includes(item.ContractFolderID));
-            const major = data.reduce((prev, current) => {
-                const dateItemPrev = new Date(prev.updated);
-                const dateItemCurrent = new Date(current.updated);
-                return dateItemPrev > dateItemCurrent ? prev : current
-            });
-
-            listRepeatMajor.push(major);
-            listNoRepeat.push(major);
-        }
-    });
-
-    fs.writeFile(
-        "./resultados/repeat.json",
-        JSON.stringify(listRepeat),
-        function (err) {
-            if (err) throw err;
-            console.log(listRepeat.length);
-            console.log("************** TERMINADO repeat.json ********************");
-        }
-    );
-
-    fs.writeFile(
-        "./resultados/repeatMajor.json",
-        JSON.stringify(listRepeatMajor),
-        function (err) {
-            if (err) throw err;
-            console.log(listRepeatMajor.length);
-            console.log("************** TERMINADO repeatMajor.json ********************");
-        }
-    );
-    fs.writeFile(
-        "./resultados/finalNoRepeat.json",
-        JSON.stringify(listNoRepeat),
-        function (err) {
-            if (err) throw err;
-            console.log(listNoRepeat.length);
-            console.log("************** TERMINADO finalNoRepeat.json ********************");
-        }
-    );
-
-}
-
-function saveFinalJson(arrayFinal) {
-    // const countLinesJSON = await readLines("./jsonfinal.json");
-    fs.rmdir("./extracted", { recursive: true },
-        (error) => {
-            console.error("Error: ", error);
-        })
-
-    fs.writeFile(
-        "./resultados/final.json",
-        JSON.stringify(arrayFinal),
-        function (err) {
-            if (err) throw err;
-            console.log("************** TERMINADO ********************");
-            console.log(`Time taken to execute extractZip()    = ${this.timeExtractZip} minutes`);
-            console.log(`Time taken to execute parseXML2JSON() = ${this.timeParseXML2JSON} minutes`);
-            console.log(`Time taken to execute mapJSON()       = ${this.timeMapJSON} minutes`);
-            console.log(`Total XML lines                       = ${new Intl.NumberFormat('es-Es').format(this.totalLines)}`);
-            console.log(`Total licitaciones encontradas:       = ${arrayFinal.length}`);
-            // console.log(`Total licitaciones sin repeticiones:  = ${this.listNoRepeat.length}`);
-            // console.log(`Total JSON lines                      = ${new Intl.NumberFormat('es-Es').format(279)}`);
-        }
-    );
-
-    searchRepeat(arrayFinal);
-}
-
 async function ejecutaTodo() {
     try {
         await extractZip();
@@ -346,3 +238,131 @@ async function ejecutaTodo() {
 
 ejecutaTodo();
 
+//#region Funciones secundarias
+function saveFinalJson(arrayFinal) {
+    fs.rmdir("./extracted", { recursive: true },
+        (error) => {
+            console.error("Error: ", error);
+        })
+
+    const result = searchRepeat(arrayFinal);
+
+    fs.writeFile(
+        "./resultados/final.json",
+        JSON.stringify(arrayFinal),
+
+        function (err) {
+            if (err) throw err;
+            const totalRepeticiones = arrayFinal.length;
+            const noRepetidos = result.listNoRepeat;
+            const repetidos = result.listRepeat;
+            const mayores = result.listRepeatMajor;
+
+            console.log("************** TERMINADO ********************");
+            console.log(`Time taken to execute extractZip()    = ${this.timeExtractZip} minutes`);
+            console.log(`Time taken to execute parseXML2JSON() = ${this.timeParseXML2JSON} minutes`);
+            console.log(`Time taken to execute mapJSON()       = ${this.timeMapJSON} minutes`);
+            console.log(`Total XML lines                       = ${new Intl.NumberFormat('es-Es').format(this.totalLines)}`);
+            console.log(`Total licitaciones encontradas:       = ${totalRepeticiones}`);
+            console.log(`Total licitaciones sin repeticiones:  = ${noRepetidos}`);
+            console.log(`Total licitaciones con repeticiones:  = ${repetidos}`);
+            console.log(`Total licitaciones repetidas más recientes:  = ${mayores}`);
+
+            logFinal(totalRepeticiones, noRepetidos, repetidos, mayores)
+        }
+    );
+
+}
+
+
+function searchRepeat(arrayFinal) {
+    const listRepeat = [];
+    const listNoRepeat = [];
+    const listRepeatMajor = [];
+
+    arrayFinal.forEach(item => {
+        const data = arrayFinal.filter(filterItem => filterItem.ContractFolderID === item.ContractFolderID);
+
+        if (data.length > 1) {
+            listRepeat.push(item);
+        } else {
+            listNoRepeat.push(item);
+        }
+
+    });
+
+    listRepeat.forEach(item => {
+        const itemMajor = listRepeatMajor.find(findItem => findItem.ContractFolderID === item.ContractFolderID);
+
+        if (itemMajor === undefined) {
+            const data = listRepeat.filter(filterItem => filterItem.ContractFolderID === item.ContractFolderID);
+            const major = data.reduce((prev, current) => {
+                const dateItemPrev = new Date(prev.updated);
+                const dateItemCurrent = new Date(current.updated);
+                return dateItemPrev > dateItemCurrent ? prev : current
+            });
+
+            listRepeatMajor.push(major);
+            listNoRepeat.push(major);
+        }
+    });
+
+    createFile("./resultados/repeat.json", listRepeat);
+    createFile("./resultados/repeatMajor.json", listRepeatMajor);
+    createFile("./resultados/finalNoRepeat.json", listNoRepeat);
+
+    return { listRepeat: listRepeat.length, listRepeatMajor: listRepeatMajor.length, listNoRepeat: listNoRepeat.length };
+}
+
+
+
+function logFinal(totalLicitaciones, sinRepeticion, repetidos, mayores) {
+    const logFinal = {
+        "Time taken to execute extractZip": `${this.timeExtractZip} minutes`,
+        "Time taken to execute parseXML2JSON": `${this.timeParseXML2JSON} minutes`,
+        "Time taken to execute mapJSON": `${this.timeMapJSON} minutes`,
+        "Total XML lines": `${new Intl.NumberFormat('es-Es').format(this.totalLines)}`,
+        "Total licitaciones encontradas:": totalLicitaciones,
+        "Total licitaciones sin repeticiones": sinRepeticion,
+        "Total licitaciones con repeticiones": repetidos,
+        "Total licitaciones repetidas más recientes": mayores,
+    }
+
+    createFile("./resultados/logFinal.json", logFinal);
+}
+
+async function readLines(name) {
+    const pathAtom = __dirname + '/extracted/atom/' + name;
+    return new Promise((resolve, reject) => {
+        const readInterface = readLineFile.createInterface({
+            input: fs.createReadStream(pathAtom),
+            // Cuando lo paso a TS tengo que cambiar ouput a output
+            // si lo cambio aqui comienza a volcar por consola.
+            ouput: process.stdout,
+            console: false
+        })
+        let count = 0;
+        readInterface.on('line', function (line) {
+            count++;
+        })
+        readInterface.on('close', function () {
+            resolve(count);
+        })
+    })
+}
+
+function readFiles(pathSearch) {
+    return fs.readdirSync(pathSearch);
+}
+
+function createFile(path, data) {
+    fs.writeFileSync(
+        path,
+        JSON.stringify(data),
+        function (err) {
+            if (err) throw err;
+        }
+    );
+}
+
+//#endregion
