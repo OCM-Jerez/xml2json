@@ -1,5 +1,3 @@
-# Github Profile README/ xml2json
-
 <h2 align='center'> Utilidad para copnvertir XML a JSON. </h2>
 
 
@@ -20,8 +18,7 @@ The article contains resources for gifs, royalty free images/icons and tutorials
 - If you used this app to build your README, consider adding yourself to the "Users who used this app to generate a README" section. You can showcase your README and others will be able to view it and star it. You are guranteed a star from me ⭐
 
 # Built With Node.js
-- <a href= 'https://github.com/python'> Python </a>
-- <a href= 'https://github.com/streamlit'> Streamlit </a>
+
 
 # Features 💿
 <ul><li>Gifs</li><li>Social Icons</li><li>Skill Icons</li><li>Visitors Badge</li><li>Github Stats</li><li>WakaTime Stats</li><li>.yml file to display Blog Posts from your feed</li><li>Ability to add image banners at beginning of README</li>
@@ -47,7 +44,6 @@ The article contains resources for gifs, royalty free images/icons and tutorials
 ```streamlit run __init__.py```
 
 # Contributors ✨
-- <a href= 'https://github.com/rahulbanerjee26'> Rahul Banerjee </a> - banerjeer2611@gmail.com
 
 # Feature Suggestion 💎
 - Create an Issue explaining the Feature
