@@ -1,13 +1,7 @@
-# Github Profile README/ About Me Generator 💯
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
-<a href="https://www.producthunt.com/posts/github-profile-readme-generator-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-github-profile-readme-generator-2" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=294427&theme=light" alt="Github Profile README Generator - A Few inputs+ ~15mins= Github Profile reaches a new level 🔥 | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
-[![Streamlit-Badge](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/rahulbanerjee26/githubaboutmegenerator/main/__init__.py)
+# Github Profile README/ xml2json
 
-<h2 align='center'> This webapp lets you build a cool README for your profile. </h2>
+<h2 align='center'> Utilidad para copnvertir XML a JSON. </h2>
 
-<img src='https://github.com/rahulbanerjee26/githubProfileReadmeGenerator/blob/main/screencast_ghub_profile_gen_v1.gif' alt='Screencast of Github AboutMe/Profile ReadMe Generator'/>
-
-<h2 align ='center'> A few inputs + ~15 mins = Your Github Profile reaches a new level 🔥 </h2>
 
 # Live 🌞
 - <a href= 'https://share.streamlit.io/rahulbanerjee26/githubaboutmegenerator/main/__init__.py'> Live Site </a>
@@ -25,7 +19,7 @@ The article contains resources for gifs, royalty free images/icons and tutorials
 - If you want to build on top of the Readme, </a> refer to the article I mentioned above </a> for resources and tips
 - If you used this app to build your README, consider adding yourself to the "Users who used this app to generate a README" section. You can showcase your README and others will be able to view it and star it. You are guranteed a star from me ⭐
 
-# Built With 🧰
+# Built With Node.js
 - <a href= 'https://github.com/python'> Python </a>
 - <a href= 'https://github.com/streamlit'> Streamlit </a>
 
@@ -81,18 +75,11 @@ If you find any errors/issues, feel free to create an Issue
 - Giving user ability to chose between different ReadMe designs
 - Increasing Number of social Icons
 
-# Users who used this app to generate a README 🌠
-- <a href = 'https://github.com/rahulbanerjee26'> Rahul Banerjee </a>
-- <a href = 'https://github.com/saminul'> Saminul Islam </a>
-- <a href ='https://github.com/sksaikia'> Sourav Kr. Saikia </a>
-- <a href ='https://github.com/brandonbartram98'> Brandon Bartram </a>
-- <a href = 'https://github.com/goz4el'> Miguel Gozaine </a>
-
 # License ⚖️
 - Distributed under the ```MIT License```. See LICENSE for more information.
 
 # Resources
-- https://metrics.lecoq.io/
+
 
 
 
