@@ -1,4 +1,4 @@
-<h2 align='center'> Utilidad para copnvertir XML a JSON. </h2>
+<h2 align='center'> Utilidad para convertir XML a JSON. </h2>
 
 
 # Live 🌞
