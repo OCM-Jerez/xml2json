@@ -48,7 +48,7 @@
 # Licencia ⚖️
 - Distribuido bajo ```MIT License```. Ver LICENSE.TXT para más información.
 
-# Contacto ⚖️
+# Contacto
 - <a href= 'info@ocmjerez.org'> email </a>
 - <a href= 'https://ocmjerez.org'> WEB </a>
 - <a href= 'https://www.facebook.com/OcmJerez/'> Facebook </a>
