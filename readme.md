@@ -43,13 +43,13 @@
 # Planes futuras mejoras📆
 - Interfaz inicial para permitir seleccionar ficheros ZIP a extraer.
 - Interfaz inicial para permitir seleccionar Perfil de contratante  a filtrar.
-- Poder seleecionar ubicación carpeta resultados.
+- Poder seleccionar ubicación carpeta resultados.
 
 # Licencia ⚖️
 - Distribuido bajo ```MIT License```. Ver LICENSE.TXT para más información.
 
 # Contacto
-- <a href= 'info@ocmjerez.org'> email </a>
+- <a href= 'mailto:info@ocmjerez.org'> email </a>
 - <a href= 'https://ocmjerez.org'> WEB </a>
 - <a href= 'https://www.facebook.com/OcmJerez/'> Facebook </a>
 - <a href= 'https://twitter.com/ocmjerez'> Twitter </a>
