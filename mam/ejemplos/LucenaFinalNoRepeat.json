@@ -1,0 +1,2862 @@
+[
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=G9e54cZyzADnSoTX3z%2F7wA%3D%3D",
+        "summary": "Id licitación: OB-13/19; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 79956.7 EUR; Estado: RES",
+        "title": "Renovación de saneamiento en calle Pedro Abad (tramo desde Avenida del Parquea calle El Carpio).",
+        "updated": "2020-01-03T08:01:51.353+01:00",
+        "ContractFolderID": "OB-13/19",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Renovación de saneamiento en calle Pedro Abad (tramo desde Avenida del Parquea calle El Carpio).",
+        "TypeCode": "3",
+        "SubTypeCode": "4534",
+        "TotalAmount": 96747,
+        "TaxExclusiveAmount": 79956,
+        "DurationMeasure": "2",
+        "unitCode": "MON",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-12-30",
+                "ReceivedTenderQuantity": "30",
+                "PartyIdentification": "A14901342",
+                "PartyName": "ANDALUZA DE REPRESENTACION,GESTIONES Y OBRAS S.A.",
+                "TaxExclusiveAmount": 61780,
+                "PayableAmount": 74754
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=UZIIIV2W63sBPRBxZ4nJ%2Fg%3D%3D",
+        "summary": "Id licitación: CDP-03/19; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 13272 EUR; Estado: RES",
+        "title": "Concesión del uso privativo del dominio público a VODAFONE S.A., por adjudicación directa, para la explotación de una antena de telecomunicaciones.",
+        "updated": "2020-01-09T18:35:28.293+01:00",
+        "ContractFolderID": "CDP-03/19",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Concesión del uso privativo del dominio público a VODAFONE S.A., por adjudicación directa, para la explotación de una antena de telecomunicaciones.",
+        "TypeCode": "50",
+        "SubTypeCode": "11",
+        "TotalAmount": 13272,
+        "TaxExclusiveAmount": 13272,
+        "DurationMeasure": "10",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-12-12",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "A80907397",
+                "PartyName": "Vodafone España S.A.",
+                "TaxExclusiveAmount": 13272,
+                "PayableAmount": 13272
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=X5hOqAtUmLLnSoTX3z%2F7wA%3D%3D",
+        "summary": "Id licitación: SE-31/19; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 110000 EUR; Estado: RES",
+        "title": "Seguro de responsabilidad civil",
+        "updated": "2020-01-15T08:48:02.345+01:00",
+        "ContractFolderID": "SE-31/19",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Seguro de responsabilidad civil",
+        "TypeCode": "2",
+        "SubTypeCode": "6",
+        "TotalAmount": 110000,
+        "TaxExclusiveAmount": 110000,
+        "DurationMeasure": "Sin dato",
+        "unitCode": "Sin dato",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "3",
+                "AwardDate": "2020-01-15",
+                "ReceivedTenderQuantity": "0",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=odaQgyRLn8OiEJrVRqloyA%3D%3D",
+        "summary": "Id licitación: OB-01/19; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 307712.06 EUR; Estado: RES",
+        "title": "Remodelación parcial de la Ronda del Valle y sus viales de servicio y mejora de su cruce con calles Corazón de Jesús y José Antonio Muñoz Rojas.",
+        "updated": "2020-01-22T12:30:04.107+01:00",
+        "ContractFolderID": "OB-01/19",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Remodelación parcial de la Ronda del Valle y sus viales de servicio y mejora de su cruce con calles Corazón de Jesús y José Antonio Muñoz Rojas.",
+        "TypeCode": "3",
+        "SubTypeCode": "4523",
+        "TotalAmount": 372331,
+        "TaxExclusiveAmount": 307712,
+        "DurationMeasure": "5",
+        "unitCode": "MON",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-01-16",
+                "ReceivedTenderQuantity": "31",
+                "PartyIdentification": "b14308910",
+                "PartyName": "Arquitectura y Obras de Andalucia S.L.",
+                "TaxExclusiveAmount": 212013,
+                "PayableAmount": 256536
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=0Nf7zaWtramiEJrVRqloyA%3D%3D",
+        "summary": "Id licitación: AG-12/2019; Órgano de Contratación: Consejería Delegada de Aguas de Lucena S.L.; Importe: 34808.64 EUR; Estado: RES",
+        "title": "Suministro de material para la renovación y mejora de las redes de abastecimiento de las calles objeto del Plan Profea 2019 en el Municipio de Lucena",
+        "updated": "2020-01-21T14:25:45.888+01:00",
+        "ContractFolderID": "AG-12/2019",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Suministro de material para la renovación y mejora de las redes de abastecimiento de las calles objeto del Plan Profea 2019 en el Municipio de Lucena",
+        "TypeCode": "1",
+        "SubTypeCode": "2",
+        "TotalAmount": 42118,
+        "TaxExclusiveAmount": 34808,
+        "DurationMeasure": "1",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-12-18",
+                "ReceivedTenderQuantity": "4",
+                "PartyIdentification": "A03466604",
+                "PartyName": "LOGISTIUM, SERVICIOS LOGISTICOS, S.A.",
+                "TaxExclusiveAmount": 17521,
+                "PayableAmount": 21200
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-12-18",
+                "ReceivedTenderQuantity": "4",
+                "PartyIdentification": "A03466604",
+                "PartyName": "LOGISTIUM, SERVICIOS LOGISTICOS, S.A.",
+                "TaxExclusiveAmount": 17521,
+                "PayableAmount": 21200
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-12-18",
+                "ReceivedTenderQuantity": "4",
+                "PartyIdentification": "B29370434",
+                "PartyName": "GECONSAA, S.L.",
+                "TaxExclusiveAmount": 2161,
+                "PayableAmount": 2615
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-12-18",
+                "ReceivedTenderQuantity": "4",
+                "PartyIdentification": "B29370434",
+                "PartyName": "GECONSAA, S.L.",
+                "TaxExclusiveAmount": 2161,
+                "PayableAmount": 2615
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-12-18",
+                "ReceivedTenderQuantity": "4",
+                "PartyIdentification": "B29370434",
+                "PartyName": "GECONSAA, S.L.",
+                "TaxExclusiveAmount": 2134,
+                "PayableAmount": 2583
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-12-18",
+                "ReceivedTenderQuantity": "4",
+                "PartyIdentification": "B29370434",
+                "PartyName": "GECONSAA, S.L.",
+                "TaxExclusiveAmount": 2134,
+                "PayableAmount": 2583
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-12-18",
+                "ReceivedTenderQuantity": "4",
+                "PartyIdentification": "B14962203",
+                "PartyName": "Tuberías y Válvulas del Sur, SL",
+                "TaxExclusiveAmount": 8329,
+                "PayableAmount": 10078
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-12-18",
+                "ReceivedTenderQuantity": "4",
+                "PartyIdentification": "B29370434",
+                "PartyName": "GECONSAA, S.L.",
+                "TaxExclusiveAmount": 1580,
+                "PayableAmount": 1911
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-12-18",
+                "ReceivedTenderQuantity": "4",
+                "PartyIdentification": "B29370434",
+                "PartyName": "GECONSAA, S.L.",
+                "TaxExclusiveAmount": 1580,
+                "PayableAmount": 1911
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=FHuL5cJN4darz3GQd5r6SQ%3D%3D",
+        "summary": "Id licitación: SU-13/19.; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 29988.53 EUR; Estado: RES",
+        "title": "Suministro e instalación de dos máquinas climatizadoras en la primera planta del edificio municipal sito en Pasaje Cristo de Amor, 1.",
+        "updated": "2020-01-30T13:27:09.830+01:00",
+        "ContractFolderID": "SU-13/19.",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Suministro e instalación de dos máquinas climatizadoras en la primera planta del edificio municipal sito en Pasaje Cristo de Amor, 1.",
+        "TypeCode": "1",
+        "SubTypeCode": "2",
+        "TotalAmount": 36286,
+        "TaxExclusiveAmount": 29988,
+        "DurationMeasure": "15",
+        "unitCode": "DAY",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "3",
+                "AwardDate": "2020-01-30",
+                "ReceivedTenderQuantity": "0",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=sRtOLHW8sGurz3GQd5r6SQ%3D%3D",
+        "summary": "Id licitación: SU-08/19; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 278400 EUR; Estado: RES",
+        "title": "Suministro, mediante arrendamiento en la modalidad de renting con opción de compra, de dos barredoras autopropulsadas de aspiración y tolva de residuos de 2 m³",
+        "updated": "2020-01-30T09:40:01.818+01:00",
+        "ContractFolderID": "SU-08/19",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Suministro, mediante arrendamiento en la modalidad de renting con opción de compra, de dos barredoras autopropulsadas de aspiración y tolva de residuos de 2 m³",
+        "TypeCode": "1",
+        "SubTypeCode": "1",
+        "TotalAmount": 336864,
+        "TaxExclusiveAmount": 278400,
+        "DurationMeasure": "47",
+        "unitCode": "MON",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-12-12",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "A48265169",
+                "PartyName": "BANCO BILBAO VIZCAYA ARGENTARIA, S.A.",
+                "TaxExclusiveAmount": 5744,
+                "PayableAmount": 6950
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=rKJbVOJtyLWiEJrVRqloyA%3D%3D",
+        "summary": "Id licitación: VE-02/19; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 39664.86 EUR; Estado: ADJ",
+        "title": "Enajenación de varios inmuebles municipales, por subasta pública y en procedimiento abierto.",
+        "updated": "2020-02-13T13:24:33.616+01:00",
+        "ContractFolderID": "VE-02/19",
+        "ContractFolderStatusCode": "ADJ",
+        "Name": "Enajenación de varios inmuebles municipales, por subasta pública y en procedimiento abierto.",
+        "TypeCode": "50",
+        "SubTypeCode": "50",
+        "TotalAmount": 39664,
+        "TaxExclusiveAmount": 39664,
+        "DurationMeasure": "1",
+        "unitCode": "MON",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-02-13",
+                "ReceivedTenderQuantity": "5",
+                "PartyIdentification": "50600805T",
+                "PartyName": "Angel Jesus Munoz Ramirez",
+                "TaxExclusiveAmount": 10090,
+                "PayableAmount": 10090
+            },
+            {
+                "ResultCode": "3",
+                "AwardDate": "2020-02-13",
+                "ReceivedTenderQuantity": "5",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            },
+            {
+                "ResultCode": "3",
+                "AwardDate": "2020-02-13",
+                "ReceivedTenderQuantity": "5",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-02-13",
+                "ReceivedTenderQuantity": "5",
+                "PartyIdentification": "34011943A",
+                "PartyName": "JOSEFA PAREJO HURTADO",
+                "TaxExclusiveAmount": 7654,
+                "PayableAmount": 7654
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-02-13",
+                "ReceivedTenderQuantity": "5",
+                "PartyIdentification": "50601666X",
+                "PartyName": "MARIA DEL CARMEN OSUNA JIMENEZ",
+                "TaxExclusiveAmount": 11542,
+                "PayableAmount": 11542
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=roij3zt542Cmq21uxhbaVQ%3D%3D",
+        "summary": "Id licitación: 150/2020; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena del Puerto; Importe: 159329.01 EUR; Estado: EV",
+        "title": "Acondicionamiento y mejora  del tramo comprendido entre el P.K. 1+950 y el P.K. 3+530 del denominado camino secundario de \"Las Puercas\" de Lucena del Puerto",
+        "updated": "2020-02-27T13:03:01.873+01:00",
+        "ContractFolderID": "150/2020",
+        "ContractFolderStatusCode": "EV",
+        "Name": "Acondicionamiento y mejora  del tramo comprendido entre el P.K. 1+950 y el P.K. 3+530 del denominado camino secundario de \"Las Puercas\" de Lucena del Puerto",
+        "TypeCode": "3",
+        "SubTypeCode": "4523",
+        "TotalAmount": 201563,
+        "TaxExclusiveAmount": 159329,
+        "DurationMeasure": "6",
+        "unitCode": "MON"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=d0vejfkqvV8uf4aBO%2BvQlQ%3D%3D",
+        "summary": "Id licitación: AG-10/2019; Órgano de Contratación: Consejería Delegada de Aguas de Lucena S.L.; Importe: 131815.02 EUR; Estado: RES",
+        "title": "Gestión de los lodos procedentes de la depuración de aguas residuales de la EDAR de Lucena",
+        "updated": "2020-03-05T12:44:36.857+01:00",
+        "ContractFolderID": "AG-10/2019",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Gestión de los lodos procedentes de la depuración de aguas residuales de la EDAR de Lucena",
+        "TypeCode": "2",
+        "SubTypeCode": "27",
+        "TotalAmount": 144996,
+        "TaxExclusiveAmount": 131815,
+        "DurationMeasure": "1",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-03-02",
+                "ReceivedTenderQuantity": "2",
+                "PartyIdentification": "B11557584",
+                "PartyName": "GRUPO VALORA GESTION DE RESIDUOS, S.L.",
+                "TaxExclusiveAmount": 100149,
+                "PayableAmount": 110164
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=%2BpctcjhBGoyXQV0WE7lYPw%3D%3D",
+        "summary": "Id licitación: SE-18/20; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 18801.65 EUR; Estado: RES",
+        "title": "Servicio de desinfección de los viales y espacios públicos de Lucena, diseminados y aldeas",
+        "updated": "2020-04-02T18:41:11.448+02:00",
+        "ContractFolderID": "SE-18/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Servicio de desinfección de los viales y espacios públicos de Lucena, diseminados y aldeas",
+        "TypeCode": "2",
+        "SubTypeCode": "27",
+        "TotalAmount": 22750,
+        "TaxExclusiveAmount": 18801,
+        "DurationMeasure": "Sin dato",
+        "unitCode": "Sin dato",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-04-02",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "48869506A",
+                "PartyName": "Pedro Jesús Luque Campaña",
+                "TaxExclusiveAmount": 1446,
+                "PayableAmount": 1750
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-04-02",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "30453616Y",
+                "PartyName": "Juan José Montes Espejo",
+                "TaxExclusiveAmount": 1446,
+                "PayableAmount": 1750
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-04-02",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "50602539D",
+                "PartyName": "Antonio Manuel Montes Muñoz",
+                "TaxExclusiveAmount": 1446,
+                "PayableAmount": 1750
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-04-02",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "50602539D",
+                "PartyName": "Antonio Manuel Montes Muñoz",
+                "TaxExclusiveAmount": 1446,
+                "PayableAmount": 1750
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-04-02",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "50614874Q",
+                "PartyName": "Javier Cabello Cosano",
+                "TaxExclusiveAmount": 1446,
+                "PayableAmount": 1750
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-04-02",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "48866968H",
+                "PartyName": "Luis Diego Sánchez Campaña",
+                "TaxExclusiveAmount": 1446,
+                "PayableAmount": 1750
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-04-02",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "50607359E",
+                "PartyName": "Sandra Ruiz Gutiérrez",
+                "TaxExclusiveAmount": 1446,
+                "PayableAmount": 1750
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-04-02",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "50607359E",
+                "PartyName": "Sandra Ruiz Gutiérrez",
+                "TaxExclusiveAmount": 1446,
+                "PayableAmount": 1750
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-04-02",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "50601391B",
+                "PartyName": "Araceli Ibáñez López",
+                "TaxExclusiveAmount": 1446,
+                "PayableAmount": 1750
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-04-02",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "50603856S",
+                "PartyName": "Jesús Algar Mesa",
+                "TaxExclusiveAmount": 1446,
+                "PayableAmount": 1750
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-04-02",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "48866950T",
+                "PartyName": "Manuel Corredera Tobal",
+                "TaxExclusiveAmount": 1446,
+                "PayableAmount": 1750
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-04-02",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "50602621E",
+                "PartyName": "David Marín Pavón",
+                "TaxExclusiveAmount": 1446,
+                "PayableAmount": 1750
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-04-02",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "50612426Y",
+                "PartyName": "Francisco Manuel Montes Jiménez",
+                "TaxExclusiveAmount": 1446,
+                "PayableAmount": 1750
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=Bc6xf5Fl%2BoyiEJrVRqloyA%3D%3D",
+        "summary": "Id licitación: SE-17/20; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 1800 EUR; Estado: RES",
+        "title": "Servicios de desinfección de los centros residenciales de Lucena San Juan de Dios y Residencia Nueva Aurora de Lucena.",
+        "updated": "2020-04-01T09:16:31.461+02:00",
+        "ContractFolderID": "SE-17/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Servicios de desinfección de los centros residenciales de Lucena San Juan de Dios y Residencia Nueva Aurora de Lucena.",
+        "TypeCode": "2",
+        "SubTypeCode": "14",
+        "TotalAmount": 2178,
+        "TaxExclusiveAmount": 1800,
+        "DurationMeasure": "3",
+        "unitCode": "DAY",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-03-31",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "B14396816",
+                "PartyName": "Lucelimpiezas Servicios y Mantenimientos, S.L.",
+                "TaxExclusiveAmount": 1800,
+                "PayableAmount": 2178
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=hAXOiz%2FTBDqXQV0WE7lYPw%3D%3D",
+        "summary": "Id licitación: 853/2020; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena del Puerto; Importe: 70695.48 EUR; Estado: EV",
+        "title": "Reforma y acondicionamiento del Centro Cultural Juan Ramón Jiménez para Centro de Inmigrantes",
+        "updated": "2020-06-19T12:24:04.068+02:00",
+        "ContractFolderID": "853/2020",
+        "ContractFolderStatusCode": "EV",
+        "Name": "Reforma y acondicionamiento del Centro Cultural Juan Ramón Jiménez para Centro de Inmigrantes",
+        "TypeCode": "3",
+        "SubTypeCode": "4500",
+        "TotalAmount": 85541,
+        "TaxExclusiveAmount": 70695,
+        "DurationMeasure": "2",
+        "unitCode": "MON"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=mLVyIbtxoo57h85%2Fpmmsfw%3D%3D",
+        "summary": "Id licitación: 190/2020; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena del Cid; Importe: 43380.9 EUR; Estado: EV",
+        "title": "Paliar daños en vial urbanización La saera",
+        "updated": "2020-06-30T15:51:58.999+02:00",
+        "ContractFolderID": "190/2020",
+        "ContractFolderStatusCode": "EV",
+        "Name": "Paliar daños en vial urbanización La saera",
+        "TypeCode": "3",
+        "SubTypeCode": "4500",
+        "TotalAmount": 52490,
+        "TaxExclusiveAmount": 43380,
+        "DurationMeasure": "1",
+        "unitCode": "MON"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=xiL4LAdXwpIBPRBxZ4nJ%2Fg%3D%3D",
+        "summary": "Id licitación: AG-02/2020; Órgano de Contratación: Consejería Delegada de Aguas de Lucena S.L.; Importe: 23092.34 EUR; Estado: EV",
+        "title": "Servicio de limpieza de centros de trabajo de Aguas de Lucena S.L.",
+        "updated": "2020-06-29T13:21:44.572+02:00",
+        "ContractFolderID": "AG-02/2020",
+        "ContractFolderStatusCode": "EV",
+        "Name": "Servicio de limpieza de centros de trabajo de Aguas de Lucena S.L.",
+        "TypeCode": "2",
+        "SubTypeCode": "14",
+        "TotalAmount": 27941,
+        "TaxExclusiveAmount": 23092,
+        "DurationMeasure": "2",
+        "unitCode": "ANN"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=wWKa8L1cxA6XQV0WE7lYPw%3D%3D",
+        "summary": "Id licitación: SE-06/20; Órgano de Contratación: Pleno del Ayuntamiento de Lucena ; Importe: 6654800.4 EUR; Estado: PUB",
+        "title": "Servicio de Ayuda a Domicilio.",
+        "updated": "2020-07-20T10:18:27.913+02:00",
+        "ContractFolderID": "SE-06/20",
+        "ContractFolderStatusCode": "PUB",
+        "Name": "Servicio de Ayuda a Domicilio.",
+        "TypeCode": "2",
+        "SubTypeCode": "25",
+        "TotalAmount": 6920992,
+        "TaxExclusiveAmount": 6654800,
+        "DurationMeasure": "2",
+        "unitCode": "ANN"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=CYolcIfsxLJ7h85%2Fpmmsfw%3D%3D",
+        "summary": "Id licitación: OB-19/19; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 46280.89 EUR; Estado: RES",
+        "title": "Obras de sustitución de la cobertera externa del yacimiento arqueológico denominado Cueva y Sima dl Ángel.",
+        "updated": "2020-07-29T12:31:58.154+02:00",
+        "ContractFolderID": "OB-19/19",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Obras de sustitución de la cobertera externa del yacimiento arqueológico denominado Cueva y Sima dl Ángel.",
+        "TypeCode": "3",
+        "SubTypeCode": "4522",
+        "TotalAmount": 56000,
+        "TaxExclusiveAmount": 46280,
+        "DurationMeasure": "4",
+        "unitCode": "MON",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "3",
+                "AwardDate": "2020-07-15",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=NNDdDFwNCDABPRBxZ4nJ%2Fg%3D%3D",
+        "summary": "Id licitación: OB-07/20; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 75390.1 EUR; Estado: RES",
+        "title": "Actuaciones de emergencia en las obras de construcción de un pabellón deportivo en c/ María Zambrano, 2 de Lucena, cofinanciado por el Fondo Europeo de Desarrollo Regional (FEDER)EDUSI.",
+        "updated": "2020-08-07T10:19:28.360+02:00",
+        "ContractFolderID": "OB-07/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Actuaciones de emergencia en las obras de construcción de un pabellón deportivo en c/ María Zambrano, 2 de Lucena, cofinanciado por el Fondo Europeo de Desarrollo Regional (FEDER)EDUSI.",
+        "TypeCode": "3",
+        "SubTypeCode": "4500",
+        "TotalAmount": 91222,
+        "TaxExclusiveAmount": 75390,
+        "DurationMeasure": "75",
+        "unitCode": "DAY",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-07-30",
+                "ReceivedTenderQuantity": "2",
+                "PartyIdentification": "B90094848",
+                "PartyName": "Cubiertas Tecaisa S.L.",
+                "TaxExclusiveAmount": 75390,
+                "PayableAmount": 91222
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=TzPsEaV4uVt7h85%2Fpmmsfw%3D%3D",
+        "summary": "Id licitación: SE-20/20; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 5160 EUR; Estado: PUB",
+        "title": "Servicio de grabación de las sesiones del Pleno del Ayuntamiento de Lucena y entrega de señal para su retransmisión a través de la web del Ayuntamiento.",
+        "updated": "2020-09-03T11:15:58.212+02:00",
+        "ContractFolderID": "SE-20/20",
+        "ContractFolderStatusCode": "PUB",
+        "Name": "Servicio de grabación de las sesiones del Pleno del Ayuntamiento de Lucena y entrega de señal para su retransmisión a través de la web del Ayuntamiento.",
+        "TypeCode": "2",
+        "SubTypeCode": "5",
+        "TotalAmount": 6243,
+        "TaxExclusiveAmount": 5160,
+        "DurationMeasure": "2",
+        "unitCode": "ANN"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=vz83Vjp6xVKmq21uxhbaVQ%3D%3D",
+        "summary": "Id licitación: 571/2020; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena del Cid; Importe: 80736.11 EUR; Estado: PUB",
+        "title": "Obras de cerramientos exteriores y adecuación distribución interior a normativa vigente residencia pública personas mayores dependientes.",
+        "updated": "2020-09-11T18:37:44.932+02:00",
+        "ContractFolderID": "571/2020",
+        "ContractFolderStatusCode": "PUB",
+        "Name": "Obras de cerramientos exteriores y adecuación distribución interior a normativa vigente residencia pública personas mayores dependientes.",
+        "TypeCode": "3",
+        "SubTypeCode": "4500",
+        "TotalAmount": 97690,
+        "TaxExclusiveAmount": 80736,
+        "DurationMeasure": "5",
+        "unitCode": "MON"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=6g%2FxwtWVoN%2BiEJrVRqloyA%3D%3D",
+        "summary": "Id licitación: 2222/2020; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena del Puerto; Importe: 47773.28 EUR; Estado: PUB",
+        "title": "Materiales de construccion de las obras del PFEA Garantia de Rentas 2020 para la ampliación de la Calle la Paz y aparcamientos del Recinto Ferial",
+        "updated": "2020-09-18T09:47:58.834+02:00",
+        "ContractFolderID": "2222/2020",
+        "ContractFolderStatusCode": "PUB",
+        "Name": "Materiales de construccion de las obras del PFEA Garantia de Rentas 2020 para la ampliación de la Calle la Paz y aparcamientos del Recinto Ferial",
+        "TypeCode": "1",
+        "SubTypeCode": "2",
+        "TotalAmount": 57805,
+        "TaxExclusiveAmount": 47773,
+        "DurationMeasure": "4",
+        "unitCode": "MON"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=Vx77aS89ZI4QK2TEfXGy%2BA%3D%3D",
+        "summary": "Id licitación: SE-03/18; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 135000 EUR; Estado: RES",
+        "title": "Servicio de telefonía y otras telecomunicaciones para el Ayuntamiento de Lucena (Córdoba)",
+        "updated": "2020-10-05T12:31:46.668+02:00",
+        "ContractFolderID": "SE-03/18",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Servicio de telefonía y otras telecomunicaciones para el Ayuntamiento de Lucena (Córdoba)",
+        "TypeCode": "2",
+        "SubTypeCode": "5",
+        "TotalAmount": 163350,
+        "TaxExclusiveAmount": 135000,
+        "DurationMeasure": "4",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-11-28",
+                "ReceivedTenderQuantity": "4",
+                "PartyIdentification": "A80907397",
+                "PartyName": "Vodafone España, S.A.U.",
+                "TaxExclusiveAmount": 81876,
+                "PayableAmount": 99071
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=d0we5pMHhaZvYnTkQN0%2FZA%3D%3D",
+        "summary": "Id licitación: SU-03/19; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 89950.41 EUR; Estado: RES",
+        "title": "Suministro de vestuario laboral y equipos de protección individual (EPI) para personal del Ayuntamiento",
+        "updated": "2020-10-16T10:24:40.368+02:00",
+        "ContractFolderID": "SU-03/19",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Suministro de vestuario laboral y equipos de protección individual (EPI) para personal del Ayuntamiento",
+        "TypeCode": "1",
+        "SubTypeCode": "2",
+        "TotalAmount": 108840,
+        "TaxExclusiveAmount": 89950,
+        "DurationMeasure": "2",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-06-20",
+                "ReceivedTenderQuantity": "8",
+                "PartyIdentification": "B56096860",
+                "PartyName": "VESTYSEG SL",
+                "TaxExclusiveAmount": 14129,
+                "PayableAmount": 17096
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-06-20",
+                "ReceivedTenderQuantity": "8",
+                "PartyIdentification": "B56096860",
+                "PartyName": "VESTYSEG SL",
+                "TaxExclusiveAmount": 12278,
+                "PayableAmount": 14856
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-06-20",
+                "ReceivedTenderQuantity": "8",
+                "PartyIdentification": "B56096860",
+                "PartyName": "VESTYSEG SL",
+                "TaxExclusiveAmount": 8058,
+                "PayableAmount": 9750
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-06-20",
+                "ReceivedTenderQuantity": "8",
+                "PartyIdentification": "28731842N",
+                "PartyName": "Juan Antonio Rodriguez Lopez",
+                "TaxExclusiveAmount": 308,
+                "PayableAmount": 372
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=X6OHbCCeUdcSugstABGr5A%3D%3D",
+        "summary": "Id licitación: 675/2020; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena del Cid; Importe: 72649.5 EUR; Estado: PUB",
+        "title": "Obras de mejora accesibilidad edificio municipal viviendas tuteladas 3ª edad ",
+        "updated": "2020-10-22T18:49:58.499+02:00",
+        "ContractFolderID": "675/2020",
+        "ContractFolderStatusCode": "PUB",
+        "Name": "Obras de mejora accesibilidad edificio municipal viviendas tuteladas 3ª edad ",
+        "TypeCode": "3",
+        "SubTypeCode": "4500",
+        "TotalAmount": 87905,
+        "TaxExclusiveAmount": 72649,
+        "DurationMeasure": "6",
+        "unitCode": "MON"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=JUgbpoCf52%2FnSoTX3z%2F7wA%3D%3D",
+        "summary": "Id licitación: SE-22/20; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 106294.33 EUR; Estado: PUB",
+        "title": "Servicio de comunicación institucional",
+        "updated": "2020-10-26T13:08:26.346+01:00",
+        "ContractFolderID": "SE-22/20",
+        "ContractFolderStatusCode": "PUB",
+        "Name": "Servicio de comunicación institucional",
+        "TypeCode": "2",
+        "SubTypeCode": "13",
+        "TotalAmount": 128616,
+        "TaxExclusiveAmount": 106294,
+        "DurationMeasure": "2",
+        "unitCode": "ANN"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=HoaH3L1bOOZ7h85%2Fpmmsfw%3D%3D",
+        "summary": "Id licitación: AGPTMO/2020; Órgano de Contratación: Consejería Delegada de Aguas de Lucena S.L.; Importe: 1000000 EUR; Estado: PUB",
+        "title": "Contratación de una operación de tesorería (póliza de crédito) por Aguas de Lucena S.L.",
+        "updated": "2020-10-28T11:29:48.858+01:00",
+        "ContractFolderID": "AGPTMO/2020",
+        "ContractFolderStatusCode": "PUB",
+        "Name": "Contratación de una operación de tesorería (póliza de crédito) por Aguas de Lucena S.L.",
+        "TypeCode": "8",
+        "SubTypeCode": "Sin dato",
+        "TotalAmount": 1000000,
+        "TaxExclusiveAmount": 1000000,
+        "DurationMeasure": "1",
+        "unitCode": "ANN"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=n42tbNWooWYBPRBxZ4nJ%2Fg%3D%3D",
+        "summary": "Id licitación: OB-10/20; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 82049.59 EUR; Estado: PUB",
+        "title": "Dotación de infraestructuras básicas y remodelación de plaza en el entorno de la vía verde, en las Navas del Selpillar.",
+        "updated": "2020-11-05T11:21:33.829+01:00",
+        "ContractFolderID": "OB-10/20",
+        "ContractFolderStatusCode": "PUB",
+        "Name": "Dotación de infraestructuras básicas y remodelación de plaza en el entorno de la vía verde, en las Navas del Selpillar.",
+        "TypeCode": "3",
+        "SubTypeCode": "4525",
+        "TotalAmount": 99280,
+        "TaxExclusiveAmount": 82049,
+        "DurationMeasure": "4",
+        "unitCode": "MON"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=9yGe5k9VVJiiEJrVRqloyA%3D%3D",
+        "summary": "Id licitación: SE-32/20; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 24000 EUR; Estado: PUB",
+        "title": "Servicio de dinamización de las Redes Sociales y Página Web EDUSI Lucena-Cohesionada, elaboración del boletín electrónico anual y libro final de la EDUSI de la Estrategia de Desarrollo Urbano Sostenible e Integrado EDUSI Lucena- Cohesionada, cofinanciada en un 80% por el fondo europeo de desarrollo regional (FEDER).",
+        "updated": "2020-11-16T08:13:42.642+01:00",
+        "ContractFolderID": "SE-32/20",
+        "ContractFolderStatusCode": "PUB",
+        "Name": "Servicio de dinamización de las Redes Sociales y Página Web EDUSI Lucena-Cohesionada, elaboración del boletín electrónico anual y libro final de la EDUSI de la Estrategia de Desarrollo Urbano Sostenible e Integrado EDUSI Lucena- Cohesionada, cofinanciada en un 80% por el fondo europeo de desarrollo regional (FEDER).",
+        "TypeCode": "2",
+        "SubTypeCode": "13",
+        "TotalAmount": 29040,
+        "TaxExclusiveAmount": 24000,
+        "DurationMeasure": "3",
+        "unitCode": "ANN"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=A1RfLAqELFDnSoTX3z%2F7wA%3D%3D",
+        "summary": "Id licitación: AG-05/2020; Órgano de Contratación: Consejería Delegada de Aguas de Lucena S.L.; Importe: 487.6 EUR; Estado: PUB",
+        "title": "Revisión, mantenimiento, retimbrado y reposición de extintores de los edificios, instalaciones y vehículos de la empresa Aguas de Lucena S.L.",
+        "updated": "2020-11-20T14:34:59.560+01:00",
+        "ContractFolderID": "AG-05/2020",
+        "ContractFolderStatusCode": "PUB",
+        "Name": "Revisión, mantenimiento, retimbrado y reposición de extintores de los edificios, instalaciones y vehículos de la empresa Aguas de Lucena S.L.",
+        "TypeCode": "2",
+        "SubTypeCode": "1",
+        "TotalAmount": 590,
+        "TaxExclusiveAmount": 487,
+        "DurationMeasure": "2",
+        "unitCode": "ANN"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=wFB7bRSjz3guf4aBO%2BvQlQ%3D%3D",
+        "summary": "Id licitación: AG-03/2020; Órgano de Contratación: Consejería Delegada de Aguas de Lucena S.L.; Importe: 27700.56 EUR; Estado: PUB",
+        "title": "Suministro de Material Electrico necesario para las distintas reparaciones necesarias para el mantenimiento de la maquinaria e instalaciones de Aguas de Lucena S.L.",
+        "updated": "2020-12-02T14:45:31.218+01:00",
+        "ContractFolderID": "AG-03/2020",
+        "ContractFolderStatusCode": "PUB",
+        "Name": "Suministro de Material Electrico necesario para las distintas reparaciones necesarias para el mantenimiento de la maquinaria e instalaciones de Aguas de Lucena S.L.",
+        "TypeCode": "1",
+        "SubTypeCode": "2",
+        "TotalAmount": 33517,
+        "TaxExclusiveAmount": 27700,
+        "DurationMeasure": "2",
+        "unitCode": "ANN"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=dOgsktwcACkuf4aBO%2BvQlQ%3D%3D",
+        "summary": "Id licitación: AG042020; Órgano de Contratación: Consejería Delegada de Aguas de Lucena S.L.; Importe: 36000 EUR; Estado: PUB",
+        "title": "Servicio de asesoramiento, asistencia jurídica, asistencia a Consejos de Administración y representación y defensa judicial activa y pasiva",
+        "updated": "2020-12-11T14:31:05.520+01:00",
+        "ContractFolderID": "AG042020",
+        "ContractFolderStatusCode": "PUB",
+        "Name": "Servicio de asesoramiento, asistencia jurídica, asistencia a Consejos de Administración y representación y defensa judicial activa y pasiva",
+        "TypeCode": "2",
+        "SubTypeCode": "1",
+        "TotalAmount": 43560,
+        "TaxExclusiveAmount": 36000,
+        "DurationMeasure": "2",
+        "unitCode": "ANN"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=txy7GFbhioISugstABGr5A%3D%3D",
+        "summary": "Id licitación: OB-14/20; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 96499.69 EUR; Estado: PUB",
+        "title": "Obras de rehabilitación y adaptación del Centro Cívico Municipal El Valle,  enmarcado dentro de la Estrategia de Desarrollo Urbano Sostenible e Integrado “EDUSI LUCENA-COHESIONADA” y cofinanciado en un 80% por el Fondo Europeo de Desarrollo Regional (FEDER).",
+        "updated": "2020-12-11T14:30:08.020+01:00",
+        "ContractFolderID": "OB-14/20",
+        "ContractFolderStatusCode": "PUB",
+        "Name": "Obras de rehabilitación y adaptación del Centro Cívico Municipal El Valle,  enmarcado dentro de la Estrategia de Desarrollo Urbano Sostenible e Integrado “EDUSI LUCENA-COHESIONADA” y cofinanciado en un 80% por el Fondo Europeo de Desarrollo Regional (FEDER).",
+        "TypeCode": "3",
+        "SubTypeCode": "4530",
+        "TotalAmount": 116764,
+        "TaxExclusiveAmount": 96499,
+        "DurationMeasure": "3",
+        "unitCode": "MON"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=JOzwWStqF8ISugstABGr5A%3D%3D",
+        "summary": "Id licitación: VE-01/19; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 0 EUR; Estado: RES",
+        "title": "Venta de vehículos para su desguace",
+        "updated": "2020-12-22T08:56:13.872+01:00",
+        "ContractFolderID": "VE-01/19",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Venta de vehículos para su desguace",
+        "TypeCode": "50",
+        "SubTypeCode": "51",
+        "TotalAmount": 0,
+        "TaxExclusiveAmount": 0,
+        "DurationMeasure": "10",
+        "unitCode": "DAY",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-03-20",
+                "ReceivedTenderQuantity": "2",
+                "PartyIdentification": "75354188R",
+                "PartyName": "DON SANTIAGO MORIANA PEREZ",
+                "TaxExclusiveAmount": 2502,
+                "PayableAmount": 2502
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=GyUlJF7jQYtvYnTkQN0%2FZA%3D%3D",
+        "summary": "Id licitación: OB-13/20; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 90513.54 EUR; Estado: PUB",
+        "title": "Construcción de carril de espera en la carretera A-331, cruce Polígono de la Viñuela.",
+        "updated": "2020-12-30T13:58:43.309+01:00",
+        "ContractFolderID": "OB-13/20",
+        "ContractFolderStatusCode": "PUB",
+        "Name": "Construcción de carril de espera en la carretera A-331, cruce Polígono de la Viñuela.",
+        "TypeCode": "3",
+        "SubTypeCode": "4523",
+        "TotalAmount": 109521,
+        "TaxExclusiveAmount": 90513,
+        "DurationMeasure": "2",
+        "unitCode": "MON"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=CdZG1e5LtBUBPRBxZ4nJ%2Fg%3D%3D",
+        "summary": "Id licitación: CDP-13/19; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 0 EUR; Estado: RES",
+        "title": "Concesión del uso privativo de dependencias del módulo \"Enero\" en el Complejo Formativo Los Santos de Lucena, para su adecuación y explotación como bar-cafetería.",
+        "updated": "2020-02-03T09:13:52.622+01:00",
+        "ContractFolderID": "CDP-13/19",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Concesión del uso privativo de dependencias del módulo \"Enero\" en el Complejo Formativo Los Santos de Lucena, para su adecuación y explotación como bar-cafetería.",
+        "TypeCode": "50",
+        "SubTypeCode": "11",
+        "TotalAmount": 0,
+        "TaxExclusiveAmount": 0,
+        "DurationMeasure": "5",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "3",
+                "AwardDate": "2020-01-30",
+                "ReceivedTenderQuantity": "0",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=wn%2BHy%2FsnKk%2BiEJrVRqloyA%3D%3D",
+        "summary": "Id licitación: SE-04/20; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 55000 EUR; Estado: RES",
+        "title": "Seguro de responsabilidad civil del Ayuntamiento de Lucena.",
+        "updated": "2020-05-07T13:57:36.051+02:00",
+        "ContractFolderID": "SE-04/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Seguro de responsabilidad civil del Ayuntamiento de Lucena.",
+        "TypeCode": "2",
+        "SubTypeCode": "6",
+        "TotalAmount": 55000,
+        "TaxExclusiveAmount": 55000,
+        "DurationMeasure": "1",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-03-05",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "W03711455G",
+                "PartyName": "W.R. Berkley Europe AG, Sucursal en España",
+                "TaxExclusiveAmount": 54500,
+                "PayableAmount": 54500
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=X57O7wsn%2Ft0BPRBxZ4nJ%2Fg%3D%3D",
+        "summary": "Id licitación: 2019/110.; Órgano de Contratación: Consejo de Administración de Entidad Pública Empresarial Aparcamientos Municipales de Lucena; Importe: 250 EUR; Estado: RES",
+        "title": "Concesión demanial para la instalación, mantenimiento y explotación de dos puntos de recarga de vehículos eléctricos para el aparcamiento público de la Plaza Nueva de Lucena (Córdoba).",
+        "updated": "2020-02-12T10:49:37.203+01:00",
+        "ContractFolderID": "2019/110.",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Concesión demanial para la instalación, mantenimiento y explotación de dos puntos de recarga de vehículos eléctricos para el aparcamiento público de la Plaza Nueva de Lucena (Córdoba).",
+        "TypeCode": "50",
+        "SubTypeCode": "11",
+        "TotalAmount": 250,
+        "TaxExclusiveAmount": 250,
+        "DurationMeasure": "10",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-01-16",
+                "ReceivedTenderQuantity": "3",
+                "PartyIdentification": "A95758389",
+                "PartyName": "IBERDROLA CLIENTES",
+                "TaxExclusiveAmount": 1004,
+                "PayableAmount": 1004
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=b%2BBvk6Ibt68uf4aBO%2BvQlQ%3D%3D",
+        "summary": "Id licitación: ARR-04/19; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 5240.67 EUR; Estado: RES",
+        "title": "Cesión del aprovechamiento de los productos del olivo de varias de varias parcelas de propiedad municipal.",
+        "updated": "2020-06-05T08:45:28.412+02:00",
+        "ContractFolderID": "ARR-04/19",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Cesión del aprovechamiento de los productos del olivo de varias de varias parcelas de propiedad municipal.",
+        "TypeCode": "50",
+        "SubTypeCode": "100",
+        "TotalAmount": 5240,
+        "TaxExclusiveAmount": 5240,
+        "DurationMeasure": "Sin dato",
+        "unitCode": "Sin dato",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-03-04",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "34012500P",
+                "PartyName": "OLEGARIO CABELLO GOMEZ",
+                "TaxExclusiveAmount": 805,
+                "PayableAmount": 805
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-03-04",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "34012500P",
+                "PartyName": "OLEGARIO CABELLO GOMEZ",
+                "TaxExclusiveAmount": 805,
+                "PayableAmount": 805
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-03-04",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "50613611H",
+                "PartyName": "JESUS POLO DELGADO",
+                "TaxExclusiveAmount": 9340,
+                "PayableAmount": 9340
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-03-04",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "50613611H",
+                "PartyName": "JESUS POLO DELGADO",
+                "TaxExclusiveAmount": 9340,
+                "PayableAmount": 9340
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=wIrzotDBP9FvYnTkQN0%2FZA%3D%3D",
+        "summary": "Id licitación: SE-01/20; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 21500 EUR; Estado: RES",
+        "title": "Servicio de contratación artística del cantante “José Mercé” y organización del concierto de dicho artista, en la Plaza Nueva de Lucena, el día 28 de febrero de 2020 con motivo del “Día de Andalucía\".",
+        "updated": "2020-02-12T11:06:31.936+01:00",
+        "ContractFolderID": "SE-01/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Servicio de contratación artística del cantante “José Mercé” y organización del concierto de dicho artista, en la Plaza Nueva de Lucena, el día 28 de febrero de 2020 con motivo del “Día de Andalucía\".",
+        "TypeCode": "2",
+        "SubTypeCode": "26",
+        "TotalAmount": 26015,
+        "TaxExclusiveAmount": 21500,
+        "DurationMeasure": "1",
+        "unitCode": "DAY",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-02-11",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "B14399570",
+                "PartyName": "ESPECTÁCULOS ARMANDO, S. L.",
+                "TaxExclusiveAmount": 21500,
+                "PayableAmount": 26015
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=59c3PLJykxCiEJrVRqloyA%3D%3D",
+        "summary": "Id licitación: SU-15/19; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 6755.2 EUR; Estado: RES",
+        "title": "Suministro, soporte y mantenimiento de una solución antivirus integral, incluyendo licencias para servidores y equipos de usuarios del Ayuntamiento de Lucena.",
+        "updated": "2020-03-16T12:34:19.250+01:00",
+        "ContractFolderID": "SU-15/19",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Suministro, soporte y mantenimiento de una solución antivirus integral, incluyendo licencias para servidores y equipos de usuarios del Ayuntamiento de Lucena.",
+        "TypeCode": "1",
+        "SubTypeCode": "2",
+        "TotalAmount": 8173,
+        "TaxExclusiveAmount": 6755,
+        "DurationMeasure": "1",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-03-05",
+                "ReceivedTenderQuantity": "4",
+                "PartyIdentification": "B14691497",
+                "PartyName": "ELAQUI SL",
+                "TaxExclusiveAmount": 5897,
+                "PayableAmount": 7136
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=OsRPZHAPQvN7h85%2Fpmmsfw%3D%3D",
+        "summary": "Id licitación: SE-29/19; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 16021.97 EUR; Estado: RES",
+        "title": "Servicio de mantenimiento integral del jardín vertical de la Casa Consistorial del Ayuntamiento de Lucena.",
+        "updated": "2020-03-02T10:14:26.083+01:00",
+        "ContractFolderID": "SE-29/19",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Servicio de mantenimiento integral del jardín vertical de la Casa Consistorial del Ayuntamiento de Lucena.",
+        "TypeCode": "2",
+        "SubTypeCode": "1",
+        "TotalAmount": 19386,
+        "TaxExclusiveAmount": 16021,
+        "DurationMeasure": "2",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-02-13",
+                "ReceivedTenderQuantity": "2",
+                "PartyIdentification": "b14479687",
+                "PartyName": "Crisálida Centros Especiales de empleo S,L",
+                "TaxExclusiveAmount": 6936,
+                "PayableAmount": 8392
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=moVbv22OxhoSugstABGr5A%3D%3D",
+        "summary": "Id licitación: VE-04/19; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 0 EUR; Estado: RES",
+        "title": "Venta de vehículos para su desguace.",
+        "updated": "2020-03-25T14:53:21.291+01:00",
+        "ContractFolderID": "VE-04/19",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Venta de vehículos para su desguace.",
+        "TypeCode": "50",
+        "SubTypeCode": "51",
+        "TotalAmount": 0,
+        "TaxExclusiveAmount": 0,
+        "DurationMeasure": "10",
+        "unitCode": "DAY",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-03-18",
+                "ReceivedTenderQuantity": "3",
+                "PartyIdentification": "B91540203",
+                "PartyName": "DESGUACES LOZANO, S.L.",
+                "TaxExclusiveAmount": 3850,
+                "PayableAmount": 3850
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=ovkSEeCANwNvYnTkQN0%2FZA%3D%3D",
+        "summary": "Id licitación: SU-03/20; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 142975.21 EUR; Estado: RES",
+        "title": "Suministro e instalación de alumbrado extraordinario y accesorios, con motivo de la celebración de las ferias y fiestas de Lucena 2020.",
+        "updated": "2020-11-04T10:14:52.923+01:00",
+        "ContractFolderID": "SU-03/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Suministro e instalación de alumbrado extraordinario y accesorios, con motivo de la celebración de las ferias y fiestas de Lucena 2020.",
+        "TypeCode": "1",
+        "SubTypeCode": "2",
+        "TotalAmount": 173000,
+        "TaxExclusiveAmount": 142975,
+        "DurationMeasure": "Sin dato",
+        "unitCode": "Sin dato",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-10-06",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "A14099022",
+                "PartyName": "PORGESA, SA.",
+                "TaxExclusiveAmount": 142950,
+                "PayableAmount": 172969
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=b9zSKkLqK1yXQV0WE7lYPw%3D%3D",
+        "summary": "Id licitación: VE-01/20; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 0 EUR; Estado: RES",
+        "title": "Enajenación de vehículos para su desguace.",
+        "updated": "2020-03-24T13:30:09.551+01:00",
+        "ContractFolderID": "VE-01/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Enajenación de vehículos para su desguace.",
+        "TypeCode": "50",
+        "SubTypeCode": "51",
+        "TotalAmount": 0,
+        "TaxExclusiveAmount": 0,
+        "DurationMeasure": "10",
+        "unitCode": "DAY",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-03-18",
+                "ReceivedTenderQuantity": "3",
+                "PartyIdentification": "B91540203",
+                "PartyName": "DESGUACES LOZANO, S.L.",
+                "TaxExclusiveAmount": 4050,
+                "PayableAmount": 4050
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=bLAYREfOa7Uuf4aBO%2BvQlQ%3D%3D",
+        "summary": "Id licitación: SU-09/18; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 535578.52 EUR; Estado: RES",
+        "title": "Suministro de elementos de iluminación para la mejora de la eficiencia energética en instalaciones del Excmo. Ayuntamiento de Lucena, cofinanciado en un 80% por el FEDER",
+        "updated": "2020-05-14T14:36:59.659+02:00",
+        "ContractFolderID": "SU-09/18",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Suministro de elementos de iluminación para la mejora de la eficiencia energética en instalaciones del Excmo. Ayuntamiento de Lucena, cofinanciado en un 80% por el FEDER",
+        "TypeCode": "1",
+        "SubTypeCode": "2",
+        "TotalAmount": 648050,
+        "TaxExclusiveAmount": 535578,
+        "DurationMeasure": "5",
+        "unitCode": "MON",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-09-05",
+                "ReceivedTenderQuantity": "16",
+                "PartyIdentification": "B59987529",
+                "PartyName": "BENITO URBAN, S.L.U.",
+                "TaxExclusiveAmount": 76795,
+                "PayableAmount": 92922
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-09-05",
+                "ReceivedTenderQuantity": "16",
+                "PartyIdentification": "B59987529",
+                "PartyName": "BENITO URBAN, S.L.U.",
+                "TaxExclusiveAmount": 47950,
+                "PayableAmount": 58020
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-09-05",
+                "ReceivedTenderQuantity": "16",
+                "PartyIdentification": "B59987529",
+                "PartyName": "BENITO URBAN, S.L.U.",
+                "TaxExclusiveAmount": 47950,
+                "PayableAmount": 58020
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-09-05",
+                "ReceivedTenderQuantity": "16",
+                "PartyIdentification": "B55162200",
+                "PartyName": "ILUMIA LIGHTING COMPANY SL",
+                "TaxExclusiveAmount": 36906,
+                "PayableAmount": 44656
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-09-05",
+                "ReceivedTenderQuantity": "16",
+                "PartyIdentification": "B95640512",
+                "PartyName": "Energy Management System & Solutions SL",
+                "TaxExclusiveAmount": 38180,
+                "PayableAmount": 46197
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-09-05",
+                "ReceivedTenderQuantity": "16",
+                "PartyIdentification": "B95640512",
+                "PartyName": "Energy Management System & Solutions SL",
+                "TaxExclusiveAmount": 36694,
+                "PayableAmount": 44399
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-09-05",
+                "ReceivedTenderQuantity": "16",
+                "PartyIdentification": "B55162200",
+                "PartyName": "ILUMIA LIGHTING COMPANY SL",
+                "TaxExclusiveAmount": 36194,
+                "PayableAmount": 43795
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-09-05",
+                "ReceivedTenderQuantity": "16",
+                "PartyIdentification": "B95640512",
+                "PartyName": "Energy Management System & Solutions SL",
+                "TaxExclusiveAmount": 71397,
+                "PayableAmount": 86390
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-09-05",
+                "ReceivedTenderQuantity": "16",
+                "PartyIdentification": "B95640512",
+                "PartyName": "Energy Management System & Solutions SL",
+                "TaxExclusiveAmount": 71397,
+                "PayableAmount": 86390
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-09-05",
+                "ReceivedTenderQuantity": "16",
+                "PartyIdentification": "A48116404",
+                "PartyName": "COMERCIAL HISPANOFIL, S.A.U.",
+                "TaxExclusiveAmount": 56986,
+                "PayableAmount": 68953
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2019-09-05",
+                "ReceivedTenderQuantity": "16",
+                "PartyIdentification": "A48116404",
+                "PartyName": "COMERCIAL HISPANOFIL, S.A.U.",
+                "TaxExclusiveAmount": 68248,
+                "PayableAmount": 82581
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=5vsYGWywWaDnSoTX3z%2F7wA%3D%3D",
+        "summary": "Id licitación: SE-28/19; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 208400 EUR; Estado: RES",
+        "title": "Servicio de logopedia para el Centro Municipal de Atención Infantil Temprana.",
+        "updated": "2020-03-24T11:54:26.799+01:00",
+        "ContractFolderID": "SE-28/19",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Servicio de logopedia para el Centro Municipal de Atención Infantil Temprana.",
+        "TypeCode": "2",
+        "SubTypeCode": "25",
+        "TotalAmount": 208400,
+        "TaxExclusiveAmount": 208400,
+        "DurationMeasure": "2",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-02-06",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "34012475Y",
+                "PartyName": "JORGE ROLDAN GARRIDO",
+                "TaxExclusiveAmount": 17,
+                "PayableAmount": 17
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=W11cXaC%2BreCiEJrVRqloyA%3D%3D",
+        "summary": "Id licitación: SE-27/19; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 83360 EUR; Estado: RES",
+        "title": "Servicio de fisioterapia para el Centro Municipal de Atención Infantil Temprana.",
+        "updated": "2020-03-16T12:04:31.799+01:00",
+        "ContractFolderID": "SE-27/19",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Servicio de fisioterapia para el Centro Municipal de Atención Infantil Temprana.",
+        "TypeCode": "2",
+        "SubTypeCode": "25",
+        "TotalAmount": 83360,
+        "TaxExclusiveAmount": 83360,
+        "DurationMeasure": "2",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-02-13",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "52439925V",
+                "PartyName": "RUTH MARIA CARRILLO CALVO",
+                "TaxExclusiveAmount": 17,
+                "PayableAmount": 17
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=c2GRIC039N57h85%2Fpmmsfw%3D%3D",
+        "summary": "Id licitación: SU-01/20; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 36866.43 EUR; Estado: RES",
+        "title": "Suministro e instalación de dos máquinas climatizadoras en la primera planta del edificio municipal sito en Pasaje Cristo del Amor, 1.",
+        "updated": "2020-05-20T13:24:43.671+02:00",
+        "ContractFolderID": "SU-01/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Suministro e instalación de dos máquinas climatizadoras en la primera planta del edificio municipal sito en Pasaje Cristo del Amor, 1.",
+        "TypeCode": "1",
+        "SubTypeCode": "2",
+        "TotalAmount": 44608,
+        "TaxExclusiveAmount": 36866,
+        "DurationMeasure": "15",
+        "unitCode": "DAY",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-05-08",
+                "ReceivedTenderQuantity": "6",
+                "PartyIdentification": "B14422794",
+                "PartyName": "RBCLIMATIZACION SL",
+                "TaxExclusiveAmount": 32480,
+                "PayableAmount": 39300
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-05-08",
+                "ReceivedTenderQuantity": "6",
+                "PartyIdentification": "B14422794",
+                "PartyName": "RBCLIMATIZACION SL",
+                "TaxExclusiveAmount": 32480,
+                "PayableAmount": 39300
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=Jkm9T9%2Fu6aqXQV0WE7lYPw%3D%3D",
+        "summary": "Id licitación: CDP-01/20; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 366.17 EUR; Estado: RES",
+        "title": "Concesión del uso privativo del quiosco ubicado en el interior del Paseo del Coso.",
+        "updated": "2020-05-14T12:28:26.608+02:00",
+        "ContractFolderID": "CDP-01/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Concesión del uso privativo del quiosco ubicado en el interior del Paseo del Coso.",
+        "TypeCode": "50",
+        "SubTypeCode": "11",
+        "TotalAmount": 366,
+        "TaxExclusiveAmount": 366,
+        "DurationMeasure": "5",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-05-07",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "50612892N",
+                "PartyName": "Luis Antonio Contreras Cabeza",
+                "TaxExclusiveAmount": 400,
+                "PayableAmount": 400
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=FhMjcgmn%2B4wuf4aBO%2BvQlQ%3D%3D",
+        "summary": "Id licitación: CDP-03/20; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 3765.5 EUR; Estado: ADJ",
+        "title": "Concesión administrativa del uso privativo de los puestos del Mercado Municipal de Abastos de Lucena.",
+        "updated": "2020-04-03T09:47:18.845+02:00",
+        "ContractFolderID": "CDP-03/20",
+        "ContractFolderStatusCode": "ADJ",
+        "Name": "Concesión administrativa del uso privativo de los puestos del Mercado Municipal de Abastos de Lucena.",
+        "TypeCode": "50",
+        "SubTypeCode": "11",
+        "TotalAmount": 3765,
+        "TaxExclusiveAmount": 3765,
+        "DurationMeasure": "5",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "3",
+                "AwardDate": "2020-03-26",
+                "ReceivedTenderQuantity": "0",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            },
+            {
+                "ResultCode": "3",
+                "AwardDate": "2020-03-26",
+                "ReceivedTenderQuantity": "0",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            },
+            {
+                "ResultCode": "3",
+                "AwardDate": "2020-03-26",
+                "ReceivedTenderQuantity": "0",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            },
+            {
+                "ResultCode": "3",
+                "AwardDate": "2020-03-26",
+                "ReceivedTenderQuantity": "0",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            },
+            {
+                "ResultCode": "3",
+                "AwardDate": "2020-03-26",
+                "ReceivedTenderQuantity": "0",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            },
+            {
+                "ResultCode": "3",
+                "AwardDate": "2020-03-26",
+                "ReceivedTenderQuantity": "0",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            },
+            {
+                "ResultCode": "3",
+                "AwardDate": "2020-03-26",
+                "ReceivedTenderQuantity": "0",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            },
+            {
+                "ResultCode": "3",
+                "AwardDate": "2020-03-26",
+                "ReceivedTenderQuantity": "0",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            },
+            {
+                "ResultCode": "3",
+                "AwardDate": "2020-03-26",
+                "ReceivedTenderQuantity": "0",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            },
+            {
+                "ResultCode": "3",
+                "AwardDate": "2020-03-26",
+                "ReceivedTenderQuantity": "0",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            },
+            {
+                "ResultCode": "3",
+                "AwardDate": "2020-03-26",
+                "ReceivedTenderQuantity": "0",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            },
+            {
+                "ResultCode": "3",
+                "AwardDate": "2020-03-26",
+                "ReceivedTenderQuantity": "0",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            },
+            {
+                "ResultCode": "3",
+                "AwardDate": "2020-03-26",
+                "ReceivedTenderQuantity": "0",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            },
+            {
+                "ResultCode": "3",
+                "AwardDate": "2020-03-26",
+                "ReceivedTenderQuantity": "0",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            },
+            {
+                "ResultCode": "3",
+                "AwardDate": "2020-03-26",
+                "ReceivedTenderQuantity": "0",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            },
+            {
+                "ResultCode": "3",
+                "AwardDate": "2020-03-26",
+                "ReceivedTenderQuantity": "0",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            },
+            {
+                "ResultCode": "3",
+                "AwardDate": "2020-03-26",
+                "ReceivedTenderQuantity": "0",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            },
+            {
+                "ResultCode": "3",
+                "AwardDate": "2020-03-26",
+                "ReceivedTenderQuantity": "0",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            },
+            {
+                "ResultCode": "3",
+                "AwardDate": "2020-03-26",
+                "ReceivedTenderQuantity": "0",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=ywnUF1TEkGGiEJrVRqloyA%3D%3D",
+        "summary": "Id licitación: SU-14/19; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 23200 EUR; Estado: RES",
+        "title": "Suministro de material fungible de informática para el Ayuntamiento de Lucena.",
+        "updated": "2020-05-28T18:07:04.441+02:00",
+        "ContractFolderID": "SU-14/19",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Suministro de material fungible de informática para el Ayuntamiento de Lucena.",
+        "TypeCode": "1",
+        "SubTypeCode": "2",
+        "TotalAmount": 28072,
+        "TaxExclusiveAmount": 23200,
+        "DurationMeasure": "1",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-05-19",
+                "ReceivedTenderQuantity": "8",
+                "PartyIdentification": "A25027145",
+                "PartyName": "SERVICIOS MICROINFORMATICA SA",
+                "TaxExclusiveAmount": 22154,
+                "PayableAmount": 26806
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=02532pxSoeDnSoTX3z%2F7wA%3D%3D",
+        "summary": "Id licitación: OB-18/19; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 60115.7 EUR; Estado: RES",
+        "title": "Restauración y consolidación de los arcos y pilar central del puente Povedano.",
+        "updated": "2020-03-04T10:25:47.224+01:00",
+        "ContractFolderID": "OB-18/19",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Restauración y consolidación de los arcos y pilar central del puente Povedano.",
+        "TypeCode": "3",
+        "SubTypeCode": "4545",
+        "TotalAmount": 72740,
+        "TaxExclusiveAmount": 60115,
+        "DurationMeasure": "7",
+        "unitCode": "MON",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-02-21",
+                "ReceivedTenderQuantity": "5",
+                "PartyIdentification": "B14786321",
+                "PartyName": "Antica, Rehabilitación de bienes inmuebles S.L.",
+                "TaxExclusiveAmount": 55900,
+                "PayableAmount": 67639
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=0SjIjt%2FQLHYBPRBxZ4nJ%2Fg%3D%3D",
+        "summary": "Id licitación: PTMO-01/20; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 1050400 EUR; Estado: RES",
+        "title": "Contratación de una operación de préstamo por el Ayuntamiento de Lucena en el ejercicio 2020.",
+        "updated": "2020-06-03T08:23:35.431+02:00",
+        "ContractFolderID": "PTMO-01/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Contratación de una operación de préstamo por el Ayuntamiento de Lucena en el ejercicio 2020.",
+        "TypeCode": "8",
+        "SubTypeCode": "Sin dato",
+        "TotalAmount": 1050400,
+        "TaxExclusiveAmount": 1050400,
+        "DurationMeasure": "9",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-05-28",
+                "ReceivedTenderQuantity": "8",
+                "PartyIdentification": "A08000143",
+                "PartyName": "banco sabadell",
+                "TaxExclusiveAmount": 0,
+                "PayableAmount": 0
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=USaLnMAtBxeiEJrVRqloyA%3D%3D",
+        "summary": "Id licitación: OB-01/20; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 457340 EUR; Estado: ADJ",
+        "title": "Alquiler de equipos de construcción o demolición dotado de operario, para el Área de Servicios Operativos.",
+        "updated": "2020-08-27T11:33:00.420+02:00",
+        "ContractFolderID": "OB-01/20",
+        "ContractFolderStatusCode": "ADJ",
+        "Name": "Alquiler de equipos de construcción o demolición dotado de operario, para el Área de Servicios Operativos.",
+        "TypeCode": "3",
+        "SubTypeCode": "4550",
+        "TotalAmount": 553381,
+        "TaxExclusiveAmount": 457340,
+        "DurationMeasure": "2",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-08-20",
+                "ReceivedTenderQuantity": "6",
+                "PartyIdentification": "B14864425",
+                "PartyName": "MARMOTRES 2020 S.L.",
+                "TaxExclusiveAmount": 80800,
+                "PayableAmount": 97768
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-08-20",
+                "ReceivedTenderQuantity": "6",
+                "PartyIdentification": "B14864425",
+                "PartyName": "MARMOTRES 2020 S.L.",
+                "TaxExclusiveAmount": 80800,
+                "PayableAmount": 97768
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-08-20",
+                "ReceivedTenderQuantity": "6",
+                "PartyIdentification": "B14864425",
+                "PartyName": "MARMOTRES 2020 S.L.",
+                "TaxExclusiveAmount": 80800,
+                "PayableAmount": 97768
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-08-20",
+                "ReceivedTenderQuantity": "6",
+                "PartyIdentification": "B14864425",
+                "PartyName": "MARMOTRES 2020 S.L.",
+                "TaxExclusiveAmount": 39100,
+                "PayableAmount": 47311
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-08-20",
+                "ReceivedTenderQuantity": "6",
+                "PartyIdentification": "B14864425",
+                "PartyName": "MARMOTRES 2020 S.L.",
+                "TaxExclusiveAmount": 39100,
+                "PayableAmount": 47311
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-08-20",
+                "ReceivedTenderQuantity": "6",
+                "PartyIdentification": "B14864425",
+                "PartyName": "MARMOTRES 2020 S.L.",
+                "TaxExclusiveAmount": 39100,
+                "PayableAmount": 47311
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-08-20",
+                "ReceivedTenderQuantity": "6",
+                "PartyIdentification": "48867207G",
+                "PartyName": "JUAN LÓPEZ FERNÁNDEZ",
+                "TaxExclusiveAmount": 13010,
+                "PayableAmount": 15742
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-08-20",
+                "ReceivedTenderQuantity": "6",
+                "PartyIdentification": "48867207G",
+                "PartyName": "JUAN LÓPEZ FERNÁNDEZ",
+                "TaxExclusiveAmount": 13010,
+                "PayableAmount": 15742
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-08-20",
+                "ReceivedTenderQuantity": "6",
+                "PartyIdentification": "48867207G",
+                "PartyName": "JUAN LÓPEZ FERNÁNDEZ",
+                "TaxExclusiveAmount": 13010,
+                "PayableAmount": 15742
+            },
+            {
+                "ResultCode": "3",
+                "AwardDate": "2020-08-20",
+                "ReceivedTenderQuantity": "6",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-08-20",
+                "ReceivedTenderQuantity": "6",
+                "PartyIdentification": "B14323810",
+                "PartyName": "Hnos Gómez Cecilla S.L.",
+                "TaxExclusiveAmount": 15050,
+                "PayableAmount": 18210
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-08-20",
+                "ReceivedTenderQuantity": "6",
+                "PartyIdentification": "B14323810",
+                "PartyName": "Hnos Gómez Cecilla S.L.",
+                "TaxExclusiveAmount": 15050,
+                "PayableAmount": 18210
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-08-20",
+                "ReceivedTenderQuantity": "6",
+                "PartyIdentification": "B14864425",
+                "PartyName": "MARMOTRES 2020 S.L.",
+                "TaxExclusiveAmount": 6230,
+                "PayableAmount": 7538
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-08-20",
+                "ReceivedTenderQuantity": "6",
+                "PartyIdentification": "B14864425",
+                "PartyName": "MARMOTRES 2020 S.L.",
+                "TaxExclusiveAmount": 6230,
+                "PayableAmount": 7538
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-08-20",
+                "ReceivedTenderQuantity": "6",
+                "PartyIdentification": "B14864425",
+                "PartyName": "MARMOTRES 2020 S.L.",
+                "TaxExclusiveAmount": 6230,
+                "PayableAmount": 7538
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-08-20",
+                "ReceivedTenderQuantity": "6",
+                "PartyIdentification": "B14589675",
+                "PartyName": "IX ALAMOS TORRES S.L.",
+                "TaxExclusiveAmount": 18525,
+                "PayableAmount": 22415
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-08-20",
+                "ReceivedTenderQuantity": "6",
+                "PartyIdentification": "B14589675",
+                "PartyName": "IX ALAMOS TORRES S.L.",
+                "TaxExclusiveAmount": 18525,
+                "PayableAmount": 22415
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-08-20",
+                "ReceivedTenderQuantity": "6",
+                "PartyIdentification": "B14589675",
+                "PartyName": "IX ALAMOS TORRES S.L.",
+                "TaxExclusiveAmount": 18525,
+                "PayableAmount": 22415
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=M5lLB3dfxnznSoTX3z%2F7wA%3D%3D",
+        "summary": "Id licitación: SE-02/20; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 33000 EUR; Estado: RES",
+        "title": "Contratación del cantante \"Leiva\" y organización del concierto de dicho artista en la plaza de toros \"Coso de los Donceles\" el día 13 de junio de 2020.",
+        "updated": "2020-03-13T09:45:17.826+01:00",
+        "ContractFolderID": "SE-02/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Contratación del cantante \"Leiva\" y organización del concierto de dicho artista en la plaza de toros \"Coso de los Donceles\" el día 13 de junio de 2020.",
+        "TypeCode": "2",
+        "SubTypeCode": "26",
+        "TotalAmount": 39930,
+        "TaxExclusiveAmount": 33000,
+        "DurationMeasure": "Sin dato",
+        "unitCode": "Sin dato",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-03-11",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "B14737217",
+                "PartyName": "NAVARROCK SIGLO XXI, S. L.",
+                "TaxExclusiveAmount": 33000,
+                "PayableAmount": 39930
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=yCZZadGLIO5vYnTkQN0%2FZA%3D%3D",
+        "summary": "Id licitación: OB-16/19; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 149796.4 EUR; Estado: RES",
+        "title": "Obras de cubrición de pista en el CEIP San José de Calasanz, para la creación de un espacio de usos múltiples para el fomento de actividades sociales de cohesión de la ciudadanía, actuación enmarcada dentro de la Estrategia de Desarrollo Urbano Sostenible  e Integrado \"EDUSI LUCENA-COHESIONADA\" cofinanciada en un 80% por el Fondo Europeo de Desarrollo Regional (FEDER).",
+        "updated": "2020-12-11T11:04:19.373+01:00",
+        "ContractFolderID": "OB-16/19",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Obras de cubrición de pista en el CEIP San José de Calasanz, para la creación de un espacio de usos múltiples para el fomento de actividades sociales de cohesión de la ciudadanía, actuación enmarcada dentro de la Estrategia de Desarrollo Urbano Sostenible  e Integrado \"EDUSI LUCENA-COHESIONADA\" cofinanciada en un 80% por el Fondo Europeo de Desarrollo Regional (FEDER).",
+        "TypeCode": "3",
+        "SubTypeCode": "4522",
+        "TotalAmount": 181253,
+        "TaxExclusiveAmount": 149796,
+        "DurationMeasure": "3",
+        "unitCode": "MON",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-09-10",
+                "ReceivedTenderQuantity": "18",
+                "PartyIdentification": "B14352363",
+                "PartyName": "FAJOSA,S.L.",
+                "TaxExclusiveAmount": 121155,
+                "PayableAmount": 146597
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=iRW9SkOyC9LnSoTX3z%2F7wA%3D%3D",
+        "summary": "Id licitación: CDP-04/20; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 500 EUR; Estado: PUB",
+        "title": "Licencia para ocupación temporal del dominio público, para la explotación de la barra-bar en la caseta municipal.",
+        "updated": "2020-03-19T11:23:50.820+01:00",
+        "ContractFolderID": "CDP-04/20",
+        "ContractFolderStatusCode": "PUB",
+        "Name": "Licencia para ocupación temporal del dominio público, para la explotación de la barra-bar en la caseta municipal.",
+        "TypeCode": "50",
+        "SubTypeCode": "10",
+        "TotalAmount": 500,
+        "TaxExclusiveAmount": 500,
+        "DurationMeasure": "8",
+        "unitCode": "DAY"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=2BF7YdgmateXQV0WE7lYPw%3D%3D",
+        "summary": "Id licitación: SE-07/19; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 218136.28 EUR; Estado: RES",
+        "title": "Servicio de retirada y gestión de residuos producidos en las obras del programa de fomento del empleo agrario, ejecutadas por el Ayuntamiento de Lucena.",
+        "updated": "2020-06-19T10:22:48.560+02:00",
+        "ContractFolderID": "SE-07/19",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Servicio de retirada y gestión de residuos producidos en las obras del programa de fomento del empleo agrario, ejecutadas por el Ayuntamiento de Lucena.",
+        "TypeCode": "2",
+        "SubTypeCode": "27",
+        "TotalAmount": 257036,
+        "TaxExclusiveAmount": 218136,
+        "DurationMeasure": "Sin dato",
+        "unitCode": "Sin dato",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-03-05",
+                "ReceivedTenderQuantity": "4",
+                "PartyIdentification": "34011489D",
+                "PartyName": "ANA HINOJOSA RONDA",
+                "TaxExclusiveAmount": 168000,
+                "PayableAmount": 203280
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-03-05",
+                "ReceivedTenderQuantity": "4",
+                "PartyIdentification": "34011489D",
+                "PartyName": "ANA HINOJOSA RONDA",
+                "TaxExclusiveAmount": 168000,
+                "PayableAmount": 203280
+            },
+            {
+                "ResultCode": "3",
+                "AwardDate": "2020-03-05",
+                "ReceivedTenderQuantity": "4",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=13F7oceeMlHnSoTX3z%2F7wA%3D%3D",
+        "summary": "Id licitación: SU-05/20; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 46831.67 EUR; Estado: RES",
+        "title": "Suministro de plantas y material de jardinería para las zonas verdes de Lucena.",
+        "updated": "2020-07-02T13:24:35.030+02:00",
+        "ContractFolderID": "SU-05/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Suministro de plantas y material de jardinería para las zonas verdes de Lucena.",
+        "TypeCode": "1",
+        "SubTypeCode": "2",
+        "TotalAmount": 51813,
+        "TaxExclusiveAmount": 46831,
+        "DurationMeasure": "1",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-06-25",
+                "ReceivedTenderQuantity": "5",
+                "PartyIdentification": "B91897983",
+                "PartyName": "VERDIAL GL PLANTAS.ES",
+                "TaxExclusiveAmount": 32795,
+                "PayableAmount": 39682
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-06-25",
+                "ReceivedTenderQuantity": "5",
+                "PartyIdentification": "B91897983",
+                "PartyName": "VERDIAL GL PLANTAS.ES",
+                "TaxExclusiveAmount": 32795,
+                "PayableAmount": 39682
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=Ixb2iaiEW%2FWiEJrVRqloyA%3D%3D",
+        "summary": "Id licitación: SE-07/20; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 69460 EUR; Estado: RES",
+        "title": "Servicio de mantenimiento, conservación y reparación de averías de los medios de protección contra incendios, instalados en edificios y vehículos municipales.",
+        "updated": "2020-11-20T07:58:02.049+01:00",
+        "ContractFolderID": "SE-07/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Servicio de mantenimiento, conservación y reparación de averías de los medios de protección contra incendios, instalados en edificios y vehículos municipales.",
+        "TypeCode": "2",
+        "SubTypeCode": "1",
+        "TotalAmount": 84046,
+        "TaxExclusiveAmount": 69460,
+        "DurationMeasure": "2",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-09-24",
+                "ReceivedTenderQuantity": "7",
+                "PartyIdentification": "B18957985",
+                "PartyName": "GRUPO INTEGRAL INNOVACIÓN TECNOLÓGICA, S.L.",
+                "TaxExclusiveAmount": 54023,
+                "PayableAmount": 65368
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=0D1t7sCM1Y4BPRBxZ4nJ%2Fg%3D%3D",
+        "summary": "Id licitación: SU-02/20; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 14563.2 EUR; Estado: RES",
+        "title": "Suministro, en la modalidad de arrendamiento, de elementos higiénicos para los edificios municipales del Ayuntamiento de Lucena, así como servicio de  mantenimiento y conservación de los mismos.",
+        "updated": "2020-07-07T13:58:29.134+02:00",
+        "ContractFolderID": "SU-02/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Suministro, en la modalidad de arrendamiento, de elementos higiénicos para los edificios municipales del Ayuntamiento de Lucena, así como servicio de  mantenimiento y conservación de los mismos.",
+        "TypeCode": "1",
+        "SubTypeCode": "1",
+        "TotalAmount": 17156,
+        "TaxExclusiveAmount": 14563,
+        "DurationMeasure": "2",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-07-05",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "A48148647",
+                "PartyName": "SERVICIO DE CONTENEDORES HIGIÉNICOS SAU",
+                "TaxExclusiveAmount": 0,
+                "PayableAmount": 0
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-07-05",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "A48148647",
+                "PartyName": "SERVICIO DE CONTENEDORES HIGIÉNICOS SAU",
+                "TaxExclusiveAmount": 0,
+                "PayableAmount": 0
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=x13GHO%2FIy4FvYnTkQN0%2FZA%3D%3D",
+        "summary": "Id licitación: SU-10/19; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 284927.44 EUR; Estado: RES",
+        "title": "Suministro para la Policía Local de terminales de radio y servicio de mantenimiento del sistema.",
+        "updated": "2020-09-25T09:33:12.882+02:00",
+        "ContractFolderID": "SU-10/19",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Suministro para la Policía Local de terminales de radio y servicio de mantenimiento del sistema.",
+        "TypeCode": "1",
+        "SubTypeCode": "2",
+        "TotalAmount": 344762,
+        "TaxExclusiveAmount": 284927,
+        "DurationMeasure": "4",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-07-23",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "A78923125",
+                "PartyName": "Telefónica Móviles España S.A.U.",
+                "TaxExclusiveAmount": 283720,
+                "PayableAmount": 343302
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=Isg6KDJw%2BxwSugstABGr5A%3D%3D",
+        "summary": "Id licitación: SE-14/20; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 7477.48 EUR; Estado: RES",
+        "title": "Servicio de asistencia y asesoramiento en relación con el programa europeo Erasmus+.",
+        "updated": "2020-07-24T10:47:03.017+02:00",
+        "ContractFolderID": "SE-14/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Servicio de asistencia y asesoramiento en relación con el programa europeo Erasmus+.",
+        "TypeCode": "2",
+        "SubTypeCode": "26",
+        "TotalAmount": 7747,
+        "TaxExclusiveAmount": 7477,
+        "DurationMeasure": "1",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-07-16",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "G56032907",
+                "PartyName": "Asociación Amigos de Europa",
+                "TaxExclusiveAmount": 7447,
+                "PayableAmount": 7447
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-07-16",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "G56032907",
+                "PartyName": "Asociación Amigos de Europa",
+                "TaxExclusiveAmount": 7447,
+                "PayableAmount": 7447
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=pZSfy8TuqEqmq21uxhbaVQ%3D%3D",
+        "summary": "Id licitación: SE-16/20; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 403599.18 EUR; Estado: RES",
+        "title": "Servicio de vigilancia y seguridad en diversos edificios, instalaciones y eventos del\r\nAyuntamiento de Lucena.",
+        "updated": "2020-11-11T09:32:11.347+01:00",
+        "ContractFolderID": "SE-16/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Servicio de vigilancia y seguridad en diversos edificios, instalaciones y eventos del\r\nAyuntamiento de Lucena.",
+        "TypeCode": "2",
+        "SubTypeCode": "23",
+        "TotalAmount": 488355,
+        "TaxExclusiveAmount": 403599,
+        "DurationMeasure": "2",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-09-25",
+                "ReceivedTenderQuantity": "10",
+                "PartyIdentification": "B90254756",
+                "PartyName": "GRUPO TORNEO SEGURIDAD S.L.U",
+                "TaxExclusiveAmount": 169595,
+                "PayableAmount": 205210
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=hHsiYhFHlpcuf4aBO%2BvQlQ%3D%3D",
+        "summary": "Id licitación: OB-02/20; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 247304.43 EUR; Estado: RES",
+        "title": "Cubrición de pista deportiva ubicada en la Ronda de San Francisco, para uso público y uso docente por el C.E.I.P. Antonio Machado.",
+        "updated": "2020-08-05T10:13:56.394+02:00",
+        "ContractFolderID": "OB-02/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Cubrición de pista deportiva ubicada en la Ronda de San Francisco, para uso público y uso docente por el C.E.I.P. Antonio Machado.",
+        "TypeCode": "3",
+        "SubTypeCode": "4522",
+        "TotalAmount": 298822,
+        "TaxExclusiveAmount": 247304,
+        "DurationMeasure": "8",
+        "unitCode": "MON",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-07-09",
+                "ReceivedTenderQuantity": "15",
+                "PartyIdentification": "B14716831",
+                "PartyName": "SEPISUR XXI S.L.",
+                "TaxExclusiveAmount": 198000,
+                "PayableAmount": 239580
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-07-09",
+                "ReceivedTenderQuantity": "15",
+                "PartyIdentification": "B14716831",
+                "PartyName": "SEPISUR XXI S.L.",
+                "TaxExclusiveAmount": 198000,
+                "PayableAmount": 239580
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=AyXX3i%2BuEz6mq21uxhbaVQ%3D%3D",
+        "summary": "Id licitación: OB-05/20; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 761476.98 EUR; Estado: RES",
+        "title": "Obras de construcción de vial de acceso, pasarela y aparcamientos en el Sistema General VN-Oeste; actuación enmarcada dentro de la Estrategia de Desarrollo Urbano Sostenible e Integrado \"EDUSI LUCENA-COHESIONADA\" y cofinanciado en un 80% por el Fondo Europeo de Desarrollo Regional (FEDER)",
+        "updated": "2020-09-18T09:35:50.169+02:00",
+        "ContractFolderID": "OB-05/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Obras de construcción de vial de acceso, pasarela y aparcamientos en el Sistema General VN-Oeste; actuación enmarcada dentro de la Estrategia de Desarrollo Urbano Sostenible e Integrado \"EDUSI LUCENA-COHESIONADA\" y cofinanciado en un 80% por el Fondo Europeo de Desarrollo Regional (FEDER)",
+        "TypeCode": "3",
+        "SubTypeCode": "4523",
+        "TotalAmount": 921387,
+        "TaxExclusiveAmount": 761476,
+        "DurationMeasure": "5",
+        "unitCode": "MON",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-08-21",
+                "ReceivedTenderQuantity": "6",
+                "PartyIdentification": "b14308910",
+                "PartyName": "Arquitectura y Obras de Andalucia S.L. / HORMIGONES ASFÁLTICOS ANDALUCES S.A.",
+                "TaxExclusiveAmount": 549786,
+                "PayableAmount": 665241
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=vkeynQZZOHF7h85%2Fpmmsfw%3D%3D",
+        "summary": "Id licitación: 860/2020; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena del Puerto; Importe: 41320 EUR; Estado: EV",
+        "title": "Mejora de la eficiciencia energética, eliminacion de la contaminacion lumínica y redcción de la huella de carbono en sus liminarias conectadas a varios cuadros electricos en Lucena  del Puerto.",
+        "updated": "2020-07-14T09:48:28.663+02:00",
+        "ContractFolderID": "860/2020",
+        "ContractFolderStatusCode": "EV",
+        "Name": "Mejora de la eficiciencia energética, eliminacion de la contaminacion lumínica y redcción de la huella de carbono en sus liminarias conectadas a varios cuadros electricos en Lucena  del Puerto.",
+        "TypeCode": "3",
+        "SubTypeCode": "4531",
+        "TotalAmount": 49997,
+        "TaxExclusiveAmount": 41320,
+        "DurationMeasure": "3",
+        "unitCode": "MON"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=O4ug19K2gQZvYnTkQN0%2FZA%3D%3D",
+        "summary": "Id licitación: SE-08/19; Órgano de Contratación: Pleno del Ayuntamiento de Lucena ; Importe: 5948797 EUR; Estado: RES",
+        "title": "Servicio de ayuda a domicilio.",
+        "updated": "2020-06-24T09:36:25.130+02:00",
+        "ContractFolderID": "SE-08/19",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Servicio de ayuda a domicilio.",
+        "TypeCode": "2",
+        "SubTypeCode": "25",
+        "TotalAmount": 6186748,
+        "TaxExclusiveAmount": 5948797,
+        "DurationMeasure": "2",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "4",
+                "AwardDate": "2020-05-26",
+                "ReceivedTenderQuantity": "Sin dato",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=qXDEhwIEJ%2BMuf4aBO%2BvQlQ%3D%3D",
+        "summary": "Id licitación: ARR-01/20; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 650 EUR; Estado: RES",
+        "title": "Arrendamiento de una nave industrial ubicada en el Polígono Industrial La Viñuela de Lucena.",
+        "updated": "2020-09-18T09:49:59.499+02:00",
+        "ContractFolderID": "ARR-01/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Arrendamiento de una nave industrial ubicada en el Polígono Industrial La Viñuela de Lucena.",
+        "TypeCode": "8",
+        "SubTypeCode": "Sin dato",
+        "TotalAmount": 786,
+        "TaxExclusiveAmount": 650,
+        "DurationMeasure": "2",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-08-21",
+                "ReceivedTenderQuantity": "2",
+                "PartyIdentification": "80129608T",
+                "PartyName": "ANTONIO ROMERO ALGAR",
+                "TaxExclusiveAmount": 650,
+                "PayableAmount": 786
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=wF58rcWDfFTnSoTX3z%2F7wA%3D%3D",
+        "summary": "Id licitación: PTMO-02/20; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 3000000 EUR; Estado: RES",
+        "title": "Contrtación de una operación de préstamos por el Ayuntamiento de Lucena en el ejercicio 2020",
+        "updated": "2020-07-29T08:39:25.903+02:00",
+        "ContractFolderID": "PTMO-02/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Contrtación de una operación de préstamos por el Ayuntamiento de Lucena en el ejercicio 2020",
+        "TypeCode": "8",
+        "SubTypeCode": "Sin dato",
+        "TotalAmount": 3000000,
+        "TaxExclusiveAmount": 3000000,
+        "DurationMeasure": "1",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-07-26",
+                "ReceivedTenderQuantity": "6",
+                "PartyIdentification": "A08663619",
+                "PartyName": "CAIXABANK S.A.",
+                "TaxExclusiveAmount": 0,
+                "PayableAmount": 0
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=eUFh2P5f2vGXQV0WE7lYPw%3D%3D",
+        "summary": "Id licitación: OB-03/20; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 425152 EUR; Estado: RES",
+        "title": "Construcción de jardines y pistas deportivas en zona Huerta del Carmen.",
+        "updated": "2020-09-16T13:42:43.750+02:00",
+        "ContractFolderID": "OB-03/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Construcción de jardines y pistas deportivas en zona Huerta del Carmen.",
+        "TypeCode": "3",
+        "SubTypeCode": "4500",
+        "TotalAmount": 514433,
+        "TaxExclusiveAmount": 425152,
+        "DurationMeasure": "5",
+        "unitCode": "MON",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-08-20",
+                "ReceivedTenderQuantity": "27",
+                "PartyIdentification": "B29102852",
+                "PartyName": "Acedo Hermanos, S.L.",
+                "TaxExclusiveAmount": 304396,
+                "PayableAmount": 368319
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=VloU%2Fn1YwcVvYnTkQN0%2FZA%3D%3D",
+        "summary": "Id licitación: CDP-06/20; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 3294.73 EUR; Estado: RES",
+        "title": "Concesión del uso privativo del quiosco-bar ubicado junto a la piscina pública de Jauja.",
+        "updated": "2020-08-14T12:30:12.755+02:00",
+        "ContractFolderID": "CDP-06/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Concesión del uso privativo del quiosco-bar ubicado junto a la piscina pública de Jauja.",
+        "TypeCode": "50",
+        "SubTypeCode": "11",
+        "TotalAmount": 3294,
+        "TaxExclusiveAmount": 3294,
+        "DurationMeasure": "Sin dato",
+        "unitCode": "Sin dato",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-08-14",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "34025390H",
+                "PartyName": "RAFAEL RODRIGUEZ GARCIA",
+                "TaxExclusiveAmount": 3600,
+                "PayableAmount": 3600
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=ROQXaGVMqDFvYnTkQN0%2FZA%3D%3D",
+        "summary": "Id licitación: AG-01/2020; Órgano de Contratación: Consejería Delegada de Aguas de Lucena S.L.; Importe: 668375.98 EUR; Estado: ADJ",
+        "title": "Suministro para almacén de materiales , tuberías y accesorios para trabajos de conservación , mantenimiento y obras en las redes de abastecimiento y saneamiento competencia de la empresa Aguas de Lucena S.L.",
+        "updated": "2020-11-27T14:30:57.736+01:00",
+        "ContractFolderID": "AG-01/2020",
+        "ContractFolderStatusCode": "ADJ",
+        "Name": "Suministro para almacén de materiales , tuberías y accesorios para trabajos de conservación , mantenimiento y obras en las redes de abastecimiento y saneamiento competencia de la empresa Aguas de Lucena S.L.",
+        "TypeCode": "1",
+        "SubTypeCode": "2",
+        "TotalAmount": 808734,
+        "TaxExclusiveAmount": 668375,
+        "DurationMeasure": "2",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-11-27",
+                "ReceivedTenderQuantity": "4",
+                "PartyIdentification": "A03466604",
+                "PartyName": "LOGISTIUM, SERVICIOS LOGISTICOS, S.A.",
+                "TaxExclusiveAmount": 102260,
+                "PayableAmount": 123734
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-11-27",
+                "ReceivedTenderQuantity": "4",
+                "PartyIdentification": "A03466604",
+                "PartyName": "LOGISTIUM, SERVICIOS LOGISTICOS, S.A.",
+                "TaxExclusiveAmount": 82894,
+                "PayableAmount": 100302
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-11-27",
+                "ReceivedTenderQuantity": "4",
+                "PartyIdentification": "A03466604",
+                "PartyName": "LOGISTIUM, SERVICIOS LOGISTICOS, S.A.",
+                "TaxExclusiveAmount": 68308,
+                "PayableAmount": 82653
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-11-27",
+                "ReceivedTenderQuantity": "4",
+                "PartyIdentification": "B14962203",
+                "PartyName": "Tuberías y Válvulas del Sur, SL",
+                "TaxExclusiveAmount": 20315,
+                "PayableAmount": 24582
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-11-27",
+                "ReceivedTenderQuantity": "4",
+                "PartyIdentification": "B29370434",
+                "PartyName": "GECONSAA, S.L.",
+                "TaxExclusiveAmount": 14694,
+                "PayableAmount": 17779
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-11-27",
+                "ReceivedTenderQuantity": "4",
+                "PartyIdentification": "B14962203",
+                "PartyName": "Tuberías y Válvulas del Sur, SL",
+                "TaxExclusiveAmount": 30065,
+                "PayableAmount": 36379
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-11-27",
+                "ReceivedTenderQuantity": "4",
+                "PartyIdentification": "A28164762",
+                "PartyName": "ELSTER MEDICIÓN, S.A.U.",
+                "TaxExclusiveAmount": 116142,
+                "PayableAmount": 140531
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-11-27",
+                "ReceivedTenderQuantity": "4",
+                "PartyIdentification": "B14962203",
+                "PartyName": "Tuberías y Válvulas del Sur, SL",
+                "TaxExclusiveAmount": 21307,
+                "PayableAmount": 25781
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=85665YpEtw2XQV0WE7lYPw%3D%3D",
+        "summary": "Id licitación: SE-11/20; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 93100 EUR; Estado: RES",
+        "title": "Servicio de prevención ajeno de riesgos laborales, en la especialidad de medicina del trabajo.",
+        "updated": "2020-10-27T12:03:25.475+01:00",
+        "ContractFolderID": "SE-11/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Servicio de prevención ajeno de riesgos laborales, en la especialidad de medicina del trabajo.",
+        "TypeCode": "2",
+        "SubTypeCode": "25",
+        "TotalAmount": 94414,
+        "TaxExclusiveAmount": 93100,
+        "DurationMeasure": "2",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-09-17",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "B14586911",
+                "PartyName": "ANDALUZA DE RIESGOS LABORALES S.L.",
+                "TaxExclusiveAmount": 40974,
+                "PayableAmount": 41499
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=%2F%2BLGMrjWst7nSoTX3z%2F7wA%3D%3D",
+        "summary": "Id licitación: OB-08/20; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 117586.13 EUR; Estado: RES",
+        "title": "Remodelación de calle Tras Matadero.",
+        "updated": "2020-11-13T11:11:41.435+01:00",
+        "ContractFolderID": "OB-08/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Remodelación de calle Tras Matadero.",
+        "TypeCode": "3",
+        "SubTypeCode": "4500",
+        "TotalAmount": 141543,
+        "TaxExclusiveAmount": 117586,
+        "DurationMeasure": "3",
+        "unitCode": "MON",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-11-05",
+                "ReceivedTenderQuantity": "19",
+                "PartyIdentification": "B29102852",
+                "PartyName": "Acedo Hermanos, S.L.",
+                "TaxExclusiveAmount": 89680,
+                "PayableAmount": 108512
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=pZ11xHxvLYguf4aBO%2BvQlQ%3D%3D",
+        "summary": "Id licitación: OB-04/20; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 115616.33 EUR; Estado: RES",
+        "title": "Mejora del saneamiento y alcantarillado en zona oeste del núcleo urbano. Actuación 2.2",
+        "updated": "2020-10-26T09:00:46.780+01:00",
+        "ContractFolderID": "OB-04/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Mejora del saneamiento y alcantarillado en zona oeste del núcleo urbano. Actuación 2.2",
+        "TypeCode": "3",
+        "SubTypeCode": "4524",
+        "TotalAmount": 139895,
+        "TaxExclusiveAmount": 115616,
+        "DurationMeasure": "2",
+        "unitCode": "MON",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-10-15",
+                "ReceivedTenderQuantity": "9",
+                "PartyIdentification": "A14102180",
+                "PartyName": "CONSTRUCCIONES PAVON, S.A.",
+                "TaxExclusiveAmount": 101568,
+                "PayableAmount": 122898
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=hWeWclZbdliXQV0WE7lYPw%3D%3D",
+        "summary": "Id licitación: SE-23/20; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 34799.8 EUR; Estado: RES",
+        "title": "Servicios de limpieza de los centros escolares C.E.I.P. Antonio Machado y C.E.I.P. El Carmen, para el fomento de empleo de personas en riesgo de exclusión social, a través de Centros Especiales de Empleo o Empresas de Inserción.",
+        "updated": "2020-10-15T08:49:07.440+02:00",
+        "ContractFolderID": "SE-23/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Servicios de limpieza de los centros escolares C.E.I.P. Antonio Machado y C.E.I.P. El Carmen, para el fomento de empleo de personas en riesgo de exclusión social, a través de Centros Especiales de Empleo o Empresas de Inserción.",
+        "TypeCode": "2",
+        "SubTypeCode": "14",
+        "TotalAmount": 42097,
+        "TaxExclusiveAmount": 34799,
+        "DurationMeasure": "53",
+        "unitCode": "DAY",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-10-09",
+                "ReceivedTenderQuantity": "4",
+                "PartyIdentification": "b14479687",
+                "PartyName": "Crisálida Centros Especiales de empleo S,L",
+                "TaxExclusiveAmount": 8,
+                "PayableAmount": 10
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=cldgIndNjLqiEJrVRqloyA%3D%3D",
+        "summary": "Id licitación: SE-21/20; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 43801.66 EUR; Estado: RES",
+        "title": "Servicio de desratización en el ámbito municipal, y desinsectación y desinfección de edificios e instalaciones cuya titularidad, mantenimiento y conservación estén a cargo de este Ayuntamiento",
+        "updated": "2020-12-30T09:47:26.098+01:00",
+        "ContractFolderID": "SE-21/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Servicio de desratización en el ámbito municipal, y desinsectación y desinfección de edificios e instalaciones cuya titularidad, mantenimiento y conservación estén a cargo de este Ayuntamiento",
+        "TypeCode": "2",
+        "SubTypeCode": "14",
+        "TotalAmount": 53000,
+        "TaxExclusiveAmount": 43801,
+        "DurationMeasure": "2",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-12-21",
+                "ReceivedTenderQuantity": "3",
+                "PartyIdentification": "A82850611",
+                "PartyName": "ANTICIMEX 3D SANIDAD AMBIENTAL S.A.U",
+                "TaxExclusiveAmount": 35916,
+                "PayableAmount": 43458
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=a%2FTou3t5OFWrz3GQd5r6SQ%3D%3D",
+        "summary": "Id licitación: OB-09/20; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 101950.65 EUR; Estado: RES",
+        "title": "Pavimentación con aglomerado asfáltico en caliente, de varias calles. \r\n(Plan de asfalto 2020).",
+        "updated": "2020-12-29T09:06:49.805+01:00",
+        "ContractFolderID": "OB-09/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Pavimentación con aglomerado asfáltico en caliente, de varias calles. \r\n(Plan de asfalto 2020).",
+        "TypeCode": "3",
+        "SubTypeCode": "4500",
+        "TotalAmount": 123360,
+        "TaxExclusiveAmount": 101950,
+        "DurationMeasure": "1",
+        "unitCode": "MON",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-11-30",
+                "ReceivedTenderQuantity": "9",
+                "PartyIdentification": "B93033181",
+                "PartyName": "PAVASUR 1, S.L.",
+                "TaxExclusiveAmount": 77070,
+                "PayableAmount": 93254
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=n9ITIk8Hr%2FASugstABGr5A%3D%3D",
+        "summary": "Id licitación: SU-04/20; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 45551.4 EUR; Estado: RES",
+        "title": "Suministro de gas natural canalizado para calefacción en el C.E.I.P. Ntra. Sra. del Carmen, C.E.I.P. San José de Calasanz, C.E.I.P. Ntra. Sra. de Araceli y C.E.I.P. El Prado, de Lucena.",
+        "updated": "2020-10-19T09:00:59.664+02:00",
+        "ContractFolderID": "SU-04/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Suministro de gas natural canalizado para calefacción en el C.E.I.P. Ntra. Sra. del Carmen, C.E.I.P. San José de Calasanz, C.E.I.P. Ntra. Sra. de Araceli y C.E.I.P. El Prado, de Lucena.",
+        "TypeCode": "1",
+        "SubTypeCode": "2",
+        "TotalAmount": 55117,
+        "TaxExclusiveAmount": 45551,
+        "DurationMeasure": "2",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-10-14",
+                "ReceivedTenderQuantity": "2",
+                "PartyIdentification": "A81948077",
+                "PartyName": "ENDESA ENERGÍA S.A.U.",
+                "TaxExclusiveAmount": 10775,
+                "PayableAmount": 13038
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=%2BlO3sN82mFt7h85%2Fpmmsfw%3D%3D",
+        "summary": "Id licitación: SE-29/20; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 10544 EUR; Estado: RES",
+        "title": "Seguro de accidentes para el personal municipal, miembros de la Corporación y miembros de Protección Civil.",
+        "updated": "2020-12-02T10:54:26.772+01:00",
+        "ContractFolderID": "SE-29/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Seguro de accidentes para el personal municipal, miembros de la Corporación y miembros de Protección Civil.",
+        "TypeCode": "2",
+        "SubTypeCode": "6",
+        "TotalAmount": 10544,
+        "TaxExclusiveAmount": 10544,
+        "DurationMeasure": "1",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-11-25",
+                "ReceivedTenderQuantity": "4",
+                "PartyIdentification": "A28007268",
+                "PartyName": "GENERALI ESPAÑA SA DE SEGUROS Y REASEGUROS",
+                "TaxExclusiveAmount": 8014,
+                "PayableAmount": 8014
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=LEd%2BVQgPcUsBPRBxZ4nJ%2Fg%3D%3D",
+        "summary": "Id licitación: OB-11/20; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 61950.54 EUR; Estado: RES",
+        "title": "Eliminación de barreras arquitectónicas en acerado de calle Corazón de Jesús (tramo Callejón Corazón de Jesús a vivienda n.º 43) de Lucena.",
+        "updated": "2020-12-03T10:03:04.914+01:00",
+        "ContractFolderID": "OB-11/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Eliminación de barreras arquitectónicas en acerado de calle Corazón de Jesús (tramo Callejón Corazón de Jesús a vivienda n.º 43) de Lucena.",
+        "TypeCode": "3",
+        "SubTypeCode": "4500",
+        "TotalAmount": 74960,
+        "TaxExclusiveAmount": 61950,
+        "DurationMeasure": "3",
+        "unitCode": "MON",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-11-27",
+                "ReceivedTenderQuantity": "11",
+                "PartyIdentification": "B14352363",
+                "PartyName": "FAJOSA,S.L.",
+                "TaxExclusiveAmount": 50105,
+                "PayableAmount": 60627
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=f%2BMqbkxnr6CiEJrVRqloyA%3D%3D",
+        "summary": "Id licitación: SU-06/20; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 30000 EUR; Estado: ADJ",
+        "title": "Suministro de mascarillas higiénicas y FFP2 para los trabajadores del Ayuntamiento de Lucena.",
+        "updated": "2020-12-22T08:16:21.616+01:00",
+        "ContractFolderID": "SU-06/20",
+        "ContractFolderStatusCode": "ADJ",
+        "Name": "Suministro de mascarillas higiénicas y FFP2 para los trabajadores del Ayuntamiento de Lucena.",
+        "TypeCode": "1",
+        "SubTypeCode": "2",
+        "TotalAmount": 30000,
+        "TaxExclusiveAmount": 30000,
+        "DurationMeasure": "14",
+        "unitCode": "DAY",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-12-21",
+                "ReceivedTenderQuantity": "44",
+                "PartyIdentification": "B92196443",
+                "PartyName": "FERRETERIA CASIMIRO LUQUE S.L",
+                "TaxExclusiveAmount": 10920,
+                "PayableAmount": 10920
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=ThLLMbbXJoYuf4aBO%2BvQlQ%3D%3D",
+        "summary": "Id licitación: VE-02/20; Órgano de Contratación: Alcaldía del Ayuntamiento de Lucena ; Importe: 8480 EUR; Estado: RES",
+        "title": "Venta de material no utilizable (chatarra) existente en el almacén municipal sito en el Polígono Industrial \"La Viñuela\" de Lucena.",
+        "updated": "2020-12-21T13:22:09.320+01:00",
+        "ContractFolderID": "VE-02/20",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Venta de material no utilizable (chatarra) existente en el almacén municipal sito en el Polígono Industrial \"La Viñuela\" de Lucena.",
+        "TypeCode": "8",
+        "SubTypeCode": "Sin dato",
+        "TotalAmount": 8480,
+        "TaxExclusiveAmount": 8480,
+        "DurationMeasure": "20",
+        "unitCode": "DAY",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-12-01",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "34023153N",
+                "PartyName": "MANUEL CUENCA CABEZAS",
+                "TaxExclusiveAmount": 7740,
+                "PayableAmount": 7740
+            },
+            {
+                "ResultCode": "8",
+                "AwardDate": "2020-12-01",
+                "ReceivedTenderQuantity": "1",
+                "PartyIdentification": "34023153N",
+                "PartyName": "MANUEL CUENCA CABEZAS",
+                "TaxExclusiveAmount": 1600,
+                "PayableAmount": 1600
+            }
+        ]
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=OwYtR8CCzmsBPRBxZ4nJ%2Fg%3D%3D",
+        "summary": "Id licitación: OB-06/20; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 167420.68 EUR; Estado: PUB",
+        "title": "Obras de reforma del edificio de Servicios Sociales sito en calle la Vendimia, 2, de Lucena.",
+        "updated": "2020-11-05T14:32:41.394+01:00",
+        "ContractFolderID": "OB-06/20",
+        "ContractFolderStatusCode": "PUB",
+        "Name": "Obras de reforma del edificio de Servicios Sociales sito en calle la Vendimia, 2, de Lucena.",
+        "TypeCode": "3",
+        "SubTypeCode": "4534",
+        "TotalAmount": 202579,
+        "TaxExclusiveAmount": 167420,
+        "DurationMeasure": "3",
+        "unitCode": "MON"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=ziLI5dnLtoWmq21uxhbaVQ%3D%3D",
+        "summary": "Id licitación: SE-10/20; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 838328.3 EUR; Estado: PUB",
+        "title": "Servicios de socorrismo, monitoría de natación, monitoría deportiva, coordinación de actividades deportivas, servicios de auxiliar de vestuario, atención al público y venta de entradas en las instalaciones deportivas municipales.",
+        "updated": "2020-11-06T09:32:15.706+01:00",
+        "ContractFolderID": "SE-10/20",
+        "ContractFolderStatusCode": "PUB",
+        "Name": "Servicios de socorrismo, monitoría de natación, monitoría deportiva, coordinación de actividades deportivas, servicios de auxiliar de vestuario, atención al público y venta de entradas en las instalaciones deportivas municipales.",
+        "TypeCode": "2",
+        "SubTypeCode": "26",
+        "TotalAmount": 1014377,
+        "TaxExclusiveAmount": 838328,
+        "DurationMeasure": "2",
+        "unitCode": "ANN"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=zgNaEOAc1yeiEJrVRqloyA%3D%3D",
+        "summary": "Id licitación: SE-19/20; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 374036 EUR; Estado: ANUL",
+        "title": "Servicio de mantenimiento, limpieza y adecuación para el funcionamiento de las instalaciones deportivas municipales.",
+        "updated": "2020-11-06T09:36:14.509+01:00",
+        "ContractFolderID": "SE-19/20",
+        "ContractFolderStatusCode": "ANUL",
+        "Name": "Servicio de mantenimiento, limpieza y adecuación para el funcionamiento de las instalaciones deportivas municipales.",
+        "TypeCode": "2",
+        "SubTypeCode": "27",
+        "TotalAmount": 452583,
+        "TaxExclusiveAmount": 374036,
+        "DurationMeasure": "2",
+        "unitCode": "ANN"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=XBIcTGjz8RJvYnTkQN0%2FZA%3D%3D",
+        "summary": "Id licitación: SE-19/20.; Órgano de Contratación: Junta de Gobierno Lucena ; Importe: 748072 EUR; Estado: PUB",
+        "title": "Servicio de mantenimiento, limpieza y adecuación para el funcionamiento de las instalaciones deportivas municipales.",
+        "updated": "2020-11-11T09:32:12.866+01:00",
+        "ContractFolderID": "SE-19/20.",
+        "ContractFolderStatusCode": "PUB",
+        "Name": "Servicio de mantenimiento, limpieza y adecuación para el funcionamiento de las instalaciones deportivas municipales.",
+        "TypeCode": "2",
+        "SubTypeCode": "27",
+        "TotalAmount": 905167,
+        "TaxExclusiveAmount": 748072,
+        "DurationMeasure": "2",
+        "unitCode": "ANN"
+    },
+    {
+        "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=kbBAW6HmaZAuf4aBO%2BvQlQ%3D%3D",
+        "summary": "Id licitación: AG-04/2020; Órgano de Contratación: Consejería Delegada de Aguas de Lucena S.L.; Importe: 36000 EUR; Estado: RES",
+        "title": "Servicio de asesoramiento, asistencia jurídica, asistencia a Consejos de Administración y representación y defensa judicial activa y pasiva",
+        "updated": "2020-12-11T11:27:42.519+01:00",
+        "ContractFolderID": "AG-04/2020",
+        "ContractFolderStatusCode": "RES",
+        "Name": "Servicio de asesoramiento, asistencia jurídica, asistencia a Consejos de Administración y representación y defensa judicial activa y pasiva",
+        "TypeCode": "2",
+        "SubTypeCode": "1",
+        "TotalAmount": 43560,
+        "TaxExclusiveAmount": 36000,
+        "DurationMeasure": "2",
+        "unitCode": "ANN",
+        "arrayTenderResult": [
+            {
+                "ResultCode": "4",
+                "AwardDate": "2020-12-11",
+                "ReceivedTenderQuantity": "Sin dato",
+                "PartyIdentification": "Sin dato",
+                "PartyName": "Sin dato",
+                "TaxExclusiveAmount": "Sin dato",
+                "PayableAmount": "Sin dato"
+            }
+        ]
+    }
+]
