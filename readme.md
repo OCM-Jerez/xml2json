@@ -31,6 +31,8 @@
 # Como ejecutar el código 🖥️
 - Clone el repositorio.
 - npm install para instalar referencias.
+- En index.js cambiar la ruta a la carpeta donde se encuentre el ZIP bajado de la Plataforma de Contratación del Sector Público.
+- En index.js cambiar los Organos de Contratación que se quieren filtar. <a href= 'https://contrataciondelsectorpublico.gob.es/datosabiertos/OrganosContratacion.xlsx'> Excel con todos los Organos de Contratación </a>
 - node index.js.
 - 
 
