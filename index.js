@@ -11,11 +11,11 @@ totalLines = 0;
 
 // Meses
 // const ficheroZIP = "C:/Users/usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/contratos menores/2021/contratosMenoresPerfilesContratantes_202107.zip";
-const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2021/licitacionesPerfilesContratanteCompleto3_202107.zip";
+// const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2021/licitacionesPerfilesContratanteCompleto3_202107.zip";
 
 // Años
 // const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/contratos menores/2020/contratosMenoresPerfilesContratantes_2020.zip";
-// const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2020/licitacionesPerfilesContratanteCompleto3_2020.zip";
+const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2020/licitacionesPerfilesContratanteCompleto3_2020.zip";
 
 // jsonfinal.filter(x=> x.year > 2019 && x.year <2021).filter(x=> {
 //     x.year.2019.licitaciones.filter(x=> x.updated)
@@ -97,10 +97,14 @@ function mapJSON() {
         contador++
         const liciObject = JSON.parse(liciJson);
 
+
         liciObject.feed.entry
             .filter((itemFilter) =>
+                // itemFilter.title[0].search('Fundación') != -1
+
                 itemFilter.summary[0]._.match(
                     /\b(?:Junta de Gobierno Local del Ayuntamiento de Jerez|Patronato de la Fundación Centro de Acogida San José|Empresa Municipal de la Vivienda de Jerez|COMUJESA|FUNDARTE|MERCAJEREZ)\b/g
+                    // /\b(?:Fundación Computación y Tecnologías Avanzadas de Extremadura)\b/g
                 )
             )
             .forEach((elem) => {
@@ -172,7 +176,6 @@ function mapJSON() {
                     // itemArray.listURI = listURI;
                     itemArray.UrgencyCode = cbcUrgencyCode;
 
-
                     if (cacTenderResult) {
                         const arrayTenderResult = [];
                         cuantosArray = Object.keys(cacTenderResult).length;
@@ -230,8 +233,8 @@ function mapJSON() {
 
 async function ejecutaTodo() {
     try {
-        await extractZip();
-        await parseXML2JSON();
+        // await extractZip();
+        // await parseXML2JSON();
         mapJSON();
     } catch (error) {
         console.error("Error: ", error);
@@ -242,10 +245,15 @@ ejecutaTodo();
 
 //#region Funciones secundarias
 function saveFinalJson(arrayFinal) {
-    fs.rmdir("./extracted", { recursive: true },
-        (error) => {
-            console.error("Error: ", error);
-        })
+    // fs.rmdir("./extracted", { recursive: true },
+    //     (error) => {
+    //         console.error("Error: ", error);
+    //     }
+
+
+    if (!fs.existsSync("./resultados")) {
+        fs.mkdirSync("resultados");
+    }
 
     const result = searchRepeat(arrayFinal);
 
@@ -275,7 +283,6 @@ function saveFinalJson(arrayFinal) {
     );
 
 }
-
 
 function searchRepeat(arrayFinal) {
     const listRepeat = [];
@@ -315,8 +322,6 @@ function searchRepeat(arrayFinal) {
 
     return { listRepeat: listRepeat.length, listRepeatMajor: listRepeatMajor.length, listNoRepeat: listNoRepeat.length };
 }
-
-
 
 function logFinal(totalLicitaciones, sinRepeticion, repetidos, mayores) {
     const logFinal = {
