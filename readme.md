@@ -1,4 +1,3 @@
-<h2 align='center'> Observatorio Ciudadano Municipal de Jerez. </h2>
 <h2 align='center'> Licitaciones y contratos menores en formato JSON </h2>
 
 <img src='https://res.cloudinary.com/dabrencx7/image/upload/v1628928251/xml2json/plataformaContratacion_xeteka.png'/>
