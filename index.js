@@ -17,13 +17,8 @@ totalLines = 0;
 // const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/contratos menores/2020/contratosMenoresPerfilesContratantes_2020.zip";
 const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2020/licitacionesPerfilesContratanteCompleto3_2020.zip";
 
-// jsonfinal.filter(x=> x.year > 2019 && x.year <2021).filter(x=> {
-//     x.year.2019.licitaciones.filter(x=> x.updated)
-//     x.year.2021.licitaciones.filter(x=> x.updated)
-// })
-
 async function extractZip() {
-    console.log("************** extractZip ********************");
+    console.log("************** extractZip  inicio ********************");
     const start = Date.now()
     const zip = new StreamZip.async({ file: ficheroZIP });
 
@@ -97,13 +92,13 @@ function mapJSON() {
         contador++
         const liciObject = JSON.parse(liciJson);
 
-
         liciObject.feed.entry
             .filter((itemFilter) =>
                 // itemFilter.title[0].search('Fundación') != -1
 
                 itemFilter.summary[0]._.match(
                     /\b(?:Junta de Gobierno Local del Ayuntamiento de Jerez|Patronato de la Fundación Centro de Acogida San José|Empresa Municipal de la Vivienda de Jerez|COMUJESA|FUNDARTE|MERCAJEREZ)\b/g
+                    // Para comprobar que busca con acentos.
                     // /\b(?:Fundación Computación y Tecnologías Avanzadas de Extremadura)\b/g
                 )
             )
@@ -233,8 +228,8 @@ function mapJSON() {
 
 async function ejecutaTodo() {
     try {
-        // await extractZip();
-        // await parseXML2JSON();
+        await extractZip();
+        await parseXML2JSON();
         mapJSON();
     } catch (error) {
         console.error("Error: ", error);
@@ -245,11 +240,10 @@ ejecutaTodo();
 
 //#region Funciones secundarias
 function saveFinalJson(arrayFinal) {
-    // fs.rmdir("./extracted", { recursive: true },
-    //     (error) => {
-    //         console.error("Error: ", error);
-    //     }
-
+    fs.rmdir("./extracted", { recursive: true },
+        (error) => {
+            console.error("Error: ", error);
+        })
 
     if (!fs.existsSync("./resultados")) {
         fs.mkdirSync("resultados");
