@@ -1,15 +1,16 @@
-const fs = require("fs");
-import { createRequire } from 'module';
-const requireMam = createRequire(import.meta.url);
-const serviceAccount = requireMam('./todos.json');
+const fs = require('fs');
+const dataInitial = require("./todos.json");
+searchRepeat(dataInitial);
 
-function searchRepeat(arrayFinal) {
+function searchRepeat(dataInitial) {
     const listRepeat = [];
     const listNoRepeat = [];
     const listRepeatMajor = [];
 
-    arrayFinal.forEach(item => {
-        const data = arrayFinal.filter(filterItem => filterItem.ContractFolderID === item.ContractFolderID);
+    console.log("Resultados iniciales", dataInitial.length);
+    dataInitial.forEach(item => {
+
+        const data = dataInitial.filter(filterItem => filterItem.ContractFolderID === item.ContractFolderID);
 
         if (data.length > 1) {
             listRepeat.push(item);
@@ -39,6 +40,11 @@ function searchRepeat(arrayFinal) {
     createFile("repeatMajor.json", listRepeatMajor);
     createFile("finalNoRepeat.json", listNoRepeat);
 
+    console.log("Resultados repetidos", listRepeat.length);
+    console.log("Resultados con fecha mayor", listRepeatMajor.length);
+    console.log("Resultados sin repeticiones", listNoRepeat.length);
+
+
     return { listRepeat: listRepeat.length, listRepeatMajor: listRepeatMajor.length, listNoRepeat: listNoRepeat.length };
 }
 
@@ -51,6 +57,3 @@ function createFile(path, data) {
         }
     );
 }
-
-
-searchRepeat(serviceAccount);
