@@ -11,11 +11,11 @@ totalLines = 0;
 
 // Meses
 // const ficheroZIP = "C:/Users/usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/contratos menores/2021/contratosMenoresPerfilesContratantes_202107.zip";
-// const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2021/licitacionesPerfilesContratanteCompleto3_202107.zip";
+const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2021/licitacionesPerfilesContratanteCompleto3_202108.zip";
 
 // Años
 // const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/contratos menores/2020/contratosMenoresPerfilesContratantes_2020.zip";
-const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2020/licitacionesPerfilesContratanteCompleto3_2020.zip";
+// const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2020/licitacionesPerfilesContratanteCompleto3_2020.zip";
 
 async function extractZip() {
     console.log("************** extractZip  inicio ********************");
@@ -263,13 +263,13 @@ function saveFinalJson(arrayFinal) {
             const mayores = result.listRepeatMajor;
 
             console.log("************** TERMINADO ********************");
-            console.log(`Time taken to execute extractZip()    = ${this.timeExtractZip} minutes`);
-            console.log(`Time taken to execute parseXML2JSON() = ${this.timeParseXML2JSON} minutes`);
-            console.log(`Time taken to execute mapJSON()       = ${this.timeMapJSON} minutes`);
-            console.log(`Total XML lines                       = ${new Intl.NumberFormat('es-Es').format(this.totalLines)}`);
-            console.log(`Total licitaciones encontradas:       = ${totalRepeticiones}`);
-            console.log(`Total licitaciones sin repeticiones:  = ${noRepetidos}`);
-            console.log(`Total licitaciones con repeticiones:  = ${repetidos}`);
+            console.log(`Tiempo para ejecutar extractZip()    = ${this.timeExtractZip} minutos`);
+            console.log(`Tiempo para ejecutar parseXML2JSON() = ${this.timeParseXML2JSON} minutos`);
+            console.log(`Tiempo para ejecutar mapJSON()       = ${this.timeMapJSON} minutos`);
+            console.log(`Total lineas XML analizadas          = ${new Intl.NumberFormat('es-Es').format(this.totalLines)}`);
+            console.log(`Total licitaciones encontradas:      = ${totalRepeticiones}`);
+            console.log(`Total licitaciones sin repeticiones: = ${noRepetidos}`);
+            console.log(`Total licitaciones con repeticiones: = ${repetidos}`);
             console.log(`Total licitaciones repetidas más recientes:  = ${mayores}`);
 
             logFinal(totalRepeticiones, noRepetidos, repetidos, mayores)
@@ -319,10 +319,10 @@ function searchRepeat(arrayFinal) {
 
 function logFinal(totalLicitaciones, sinRepeticion, repetidos, mayores) {
     const logFinal = {
-        "Time taken to execute extractZip": `${this.timeExtractZip} minutes`,
-        "Time taken to execute parseXML2JSON": `${this.timeParseXML2JSON} minutes`,
-        "Time taken to execute mapJSON": `${this.timeMapJSON} minutes`,
-        "Total XML lines": `${new Intl.NumberFormat('es-Es').format(this.totalLines)}`,
+        "Tiempo para ejecutar extractZip()": `${this.timeExtractZip} minutes`,
+        "Tiempo para ejecutar parseXML2JSON()": `${this.timeParseXML2JSON} minutes`,
+        "Tiempo para ejecutar mapJSON()": `${this.timeMapJSON} minutes`,
+        "Total lineas XML analizadas": `${new Intl.NumberFormat('es-Es').format(this.totalLines)}`,
         "Total licitaciones encontradas:": totalLicitaciones,
         "Total licitaciones sin repeticiones": sinRepeticion,
         "Total licitaciones con repeticiones": repetidos,
