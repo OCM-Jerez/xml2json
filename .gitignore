@@ -1,7 +1,5 @@
 /node_modules
 
-repeat.json
-repeatMajor.json
-todos.json
-finalNoListado.json
-finalNoRepeat.json
+/resultados
+
+todasLicitacionesContratos.json
