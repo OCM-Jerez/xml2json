@@ -1,5 +1,5 @@
 const fs = require('fs');
-const dataInitial = require("./todos.json");
+const dataInitial = require("./todasLicitacionesContratos.json");
 searchRepeat(dataInitial);
 
 function searchRepeat(dataInitial) {
@@ -36,14 +36,19 @@ function searchRepeat(dataInitial) {
         }
     });
 
-    createFile("repeat.json", listRepeat);
-    createFile("repeatMajor.json", listRepeatMajor);
-    createFile("finalNoRepeat.json", listNoRepeat);
+    if (!fs.existsSync("./resultados")) {
+        fs.mkdirSync("resultados");
+    }
+
+    createFile("./resultados/repeat.json", listRepeat);
+    createFile("./resultados/repeatMajor.json", listRepeatMajor);
+    createFile("./resultados/finalNoRepeat.json", listNoRepeat);
 
     console.log("Resultados repetidos", listRepeat.length);
     console.log("Resultados con fecha mayor", listRepeatMajor.length);
     console.log("Resultados sin repeticiones", listNoRepeat.length);
 
+    logFinal(listRepeat.length, listRepeatMajor.length, listNoRepeat.length)
 
     return { listRepeat: listRepeat.length, listRepeatMajor: listRepeatMajor.length, listNoRepeat: listNoRepeat.length };
 }
@@ -56,4 +61,15 @@ function createFile(path, data) {
             if (err) throw err;
         }
     );
+}
+
+function logFinal(listRepeat, listRepeatMajor, listNoRepeat) {
+    const logFinal = {
+        "Total resultados iniciales:": dataInitial.length,
+        "Total resultados con repeticiones": listRepeat,
+        "Total resultados repetidos más recientes": listRepeatMajor,
+        "Total resultados sin repeticiones": listNoRepeat,
+    }
+
+    createFile("./resultados/logFinal.json", logFinal);
 }
