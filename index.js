@@ -156,8 +156,14 @@ function mapJSON() {
                     //     listURI = valuesDocumentTypeCode.$.listURI
                     // }
 
-                    const cbcUrgencyCode = contractFolderStatus["cac:TenderingProcess"] && contractFolderStatus["cac:TenderingProcess"][0]["cbc:UrgencyCode"]
-                        ? contractFolderStatus["cac:TenderingProcess"][0]["cbc:UrgencyCode"]._
+                    const cacTenderingProcess = contractFolderStatus["cac:TenderingProcess"];
+
+                    const cbcUrgencyCode = cacTenderingProcess && cacTenderingProcess[0]["cbc:UrgencyCode"]
+                        ? cacTenderingProcess[0]["cbc:UrgencyCode"][0]._
+                        : "Sin dato"
+
+                    const cbcProcedureCode = cacTenderingProcess && cacTenderingProcess[0]["cbc:ProcedureCode"]
+                        ? cacTenderingProcess[0]["cbc:ProcedureCode"][0]._
                         : "Sin dato"
 
                     itemArray.ContractFolderStatusCode = cbcContractFolderStatusCode;
@@ -169,6 +175,7 @@ function mapJSON() {
                     itemArray.DurationMeasure = durationMeasure;
                     itemArray.unitCode = unitCode;
                     // itemArray.listURI = listURI;
+                    itemArray.ProcedureCode = cbcProcedureCode;
                     itemArray.UrgencyCode = cbcUrgencyCode;
 
                     if (cacTenderResult) {
