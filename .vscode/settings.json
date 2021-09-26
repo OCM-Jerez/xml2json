@@ -1,4 +1,22 @@
 {
     "json.maxItemsComputed": 250000,
-    "explorer.compactFolders": false
+    "explorer.compactFolders": false,
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#ebd724",
+        "activityBar.activeBorder": "#ee90bb",
+        "activityBar.background": "#ebd724",
+        "activityBar.foreground": "#1a1919",
+        "activityBar.inactiveForeground": "#1a1919",
+        "activityBarBadge.background": "#ee90bb",
+        "activityBarBadge.foreground": "#15202b",
+        "statusBar.background": "#ebd724",
+        "statusBar.foreground": "#1a1919",
+        "statusBarItem.hoverBackground": "#ebd724",
+        "titleBar.activeBackground": "#ebd724",
+        "titleBar.activeForeground": "#1a1919",
+        "titleBar.inactiveBackground": "#ebd724",
+        "titleBar.inactiveForeground": "#1a1919",
+    },
+    "editor.bracketPairColorization.enabled": true,
+    "peacock.color": "#1857a4"
 }
