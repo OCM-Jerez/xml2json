@@ -1,0 +1,56 @@
+//  Datos obtenidos despues commit 3c7e16f7d7ca6fec56bb986854af149364c32ea7
+{
+    "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=1hkloWFkqa4SugstABGr5A%3D%3D",
+    "summary": "Id licitación: Asueco-2021/1810; Órgano de Contratación: Junta de Gobierno Local del Ayuntamiento de Jerez; Importe: 14900 EUR; Estado: RES",
+    "title": "Campaña difusión publicitaria de las Fiestas de la Vendimia Jerez 2021, en medios radiofönicos.",
+    "updated": "2021-08-31T10:58:14.190+02:00",
+    "ContractFolderID": "Asueco-2021/1810",
+    "ContractFolderStatusCode": "RES",
+    "Name": "Campaña difusión publicitaria de las Fiestas de la Vendimia Jerez 2021, en medios radiofönicos.",
+    "TypeCode": "2",
+    "SubTypeCode": "1",
+    "TotalAmount": 18029,
+    "TaxExclusiveAmount": 14900,
+    "DurationMeasure": "2",
+    "unitCode": "MON",
+    "ProcedureCode": "6",
+    "UrgencyCode": "1",
+    "arrayTenderResult": [
+        {
+            "ResultCode": "8",
+            "AwardDate": "2021-08-26",
+            "ReceivedTenderQuantity": "4",
+            "PartyIdentification": "B72391998",
+            "PartyName": "RADIO MARCA. GADIR COMUNICACIÓN, S.L.",
+            "TaxExclusiveAmount": 3725,
+            "PayableAmount": 4507
+        },
+        {
+            "ResultCode": "8",
+            "AwardDate": "2021-08-26",
+            "ReceivedTenderQuantity": "4",
+            "PartyIdentification": "A27281368",
+            "PartyName": "RADIO POPULAR, S.A. COPE",
+            "TaxExclusiveAmount": 3725,
+            "PayableAmount": 4507
+        },
+        {
+            "ResultCode": "8",
+            "AwardDate": "2021-08-26",
+            "ReceivedTenderQuantity": "4",
+            "PartyIdentification": "B11604402",
+            "PartyName": "RADIO JEREZ, S.L.",
+            "TaxExclusiveAmount": 3725,
+            "PayableAmount": 4507
+        },
+        {
+            "ResultCode": "8",
+            "AwardDate": "2021-08-26",
+            "ReceivedTenderQuantity": "4",
+            "PartyIdentification": "A28782936",
+            "PartyName": "UNIPREX, S.A.U. ONDA CERO",
+            "TaxExclusiveAmount": 3725,
+            "PayableAmount": 4507
+        }
+    ]
+}

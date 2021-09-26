@@ -1,0 +1,110 @@
+//  Datos obtenidos despues commit 3c7e16f7d7ca6fec56bb986854af149364c32ea7
+{
+    "link": "https://contrataciondelestado.es/wps/poc?uri=deeplink:detalle_licitacion&idEvl=45SIkXdZedeXQV0WE7lYPw%3D%3D",
+    "summary": "Id licitación: 01/2021; Órgano de Contratación: Presidencia del Consejo de Administración de Corporación Municipal de Jerez, S.A. (COMUJESA); Importe: 602229.66 EUR; Estado: ADJ",
+    "title": "Suministros de repuestos y recambios para la flota de Autobuses Urbanos de Jerez ",
+    "updated": "2021-08-04T14:26:58.462+02:00",
+    "ContractFolderID": "01/2021",
+    "ContractFolderStatusCode": "ADJ",
+    "Name": "Suministros de repuestos y recambios para la flota de Autobuses Urbanos de Jerez ",
+    "TypeCode": "1",
+    "SubTypeCode": "2",
+    "TotalAmount": 728697,
+    "TaxExclusiveAmount": 602229,
+    "DurationMeasure": "2",
+    "unitCode": "ANN",
+    "ProcedureCode": "1",
+    "UrgencyCode": "1",
+    "arrayTenderResult": [
+        {
+            "ResultCode": "8",
+            "AwardDate": "2021-07-19",
+            "ReceivedTenderQuantity": "1",
+            "PartyIdentification": "B11908498",
+            "PartyName": "Gesauto Maquinaria S.L.",
+            "TaxExclusiveAmount": 34183,
+            "PayableAmount": 41361
+        },
+        {
+            "ResultCode": "8",
+            "AwardDate": "2021-07-19",
+            "ReceivedTenderQuantity": "1",
+            "PartyIdentification": "B85631083",
+            "PartyName": "CAR ET BUS MAINTENANCE IBERICA S.L ",
+            "TaxExclusiveAmount": 28389,
+            "PayableAmount": 34350
+        },
+        {
+            "ResultCode": "8",
+            "AwardDate": "2021-07-19",
+            "ReceivedTenderQuantity": "1",
+            "PartyIdentification": "B81567075",
+            "PartyName": "BPW TRAPACO SL",
+            "TaxExclusiveAmount": 9662,
+            "PayableAmount": 11691
+        },
+        {
+            "ResultCode": "8",
+            "AwardDate": "2021-07-19",
+            "ReceivedTenderQuantity": "1",
+            "PartyIdentification": "B03260684",
+            "PartyName": "NEUMATICOS SOLEDAD, S.L.",
+            "TaxExclusiveAmount": 30208,
+            "PayableAmount": 36552
+        },
+        {
+            "ResultCode": "8",
+            "AwardDate": "2021-07-19",
+            "ReceivedTenderQuantity": "1",
+            "PartyIdentification": "B81567075",
+            "PartyName": "BPW TRAPACO SL",
+            "TaxExclusiveAmount": 21013,
+            "PayableAmount": 25425
+        },
+        {
+            "ResultCode": "8",
+            "AwardDate": "2021-07-19",
+            "ReceivedTenderQuantity": "1",
+            "PartyIdentification": "B90025560",
+            "PartyName": "Eurorecambios del Camión, S.L.",
+            "TaxExclusiveAmount": 16232,
+            "PayableAmount": 19641
+        },
+        {
+            "ResultCode": "8",
+            "AwardDate": "2021-07-19",
+            "ReceivedTenderQuantity": "1",
+            "PartyIdentification": "B81567075",
+            "PartyName": "BPW TRAPACO SL",
+            "TaxExclusiveAmount": 49032,
+            "PayableAmount": 59328
+        },
+        {
+            "ResultCode": "8",
+            "AwardDate": "2021-07-19",
+            "ReceivedTenderQuantity": "1",
+            "PartyIdentification": "B14651046",
+            "PartyName": "GRUPO PEÑA AUTOMOCION, S.L.U",
+            "TaxExclusiveAmount": 26111,
+            "PayableAmount": 31595
+        },
+        {
+            "ResultCode": "8",
+            "AwardDate": "2021-07-19",
+            "ReceivedTenderQuantity": "1",
+            "PartyIdentification": "B14651046",
+            "PartyName": "GRUPO PEÑA AUTOMOCION, S.L.U",
+            "TaxExclusiveAmount": 18804,
+            "PayableAmount": 22753
+        },
+        {
+            "ResultCode": "8",
+            "AwardDate": "2021-07-19",
+            "ReceivedTenderQuantity": "1",
+            "PartyIdentification": "B14651046",
+            "PartyName": "GRUPO PEÑA AUTOMOCION, S.L.U",
+            "TaxExclusiveAmount": 37765,
+            "PayableAmount": 45695
+        }
+    ]
+},
