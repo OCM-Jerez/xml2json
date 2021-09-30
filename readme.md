@@ -50,6 +50,16 @@
 - Interfaz inicial para permitir seleccionar Perfil de contratante  a filtrar.
 - Poder seleccionar ubicación carpeta resultados.
 
+# Framework desarrollo 🚀
+
+- [Node](https://nodejs.org/es/) 
+
+# Librerias usadas 📖
+- <a href= 'https://www.npmjs.com/package/xml2js' target="_blank">xml2js</a>
+- <a href= 'https://www.npmjs.com/package/node-stream-zip' target="_blank">node-stream-zip</a>
+- <a href= 'https://www.npmjs.com/package/readline-sync' target="_blank">readline-sync</a>
+
+
 # Licencia ⚖️
 - Distribuido bajo ```MIT License```. Ver LICENSE.TXT para más información.
 
