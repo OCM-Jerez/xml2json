@@ -1,5 +1,5 @@
 const fs = require('fs');
-const dataInitial = require("./todasLicitacionesContratos.json");
+const dataInitial = require("./todasLicitacionesHasta082021.json");
 searchRepeat(dataInitial);
 
 function searchRepeat(dataInitial) {

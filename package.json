@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "node-stream-zip": "^1.13.4",
+    "readline-sync": "^1.4.10",
     "xml2js": "^0.4.23"
   },
   "devDependencies": {
