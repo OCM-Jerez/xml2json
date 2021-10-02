@@ -1,5 +1,8 @@
 const fs = require('fs');
-const dataInitial = require("./todasLicitacionesHasta082021.json");
+// const dataInitial = require("./todasLicitacionesHasta082021.json");
+// const dataInitial = require("C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/contratos menores/todosContratosHasta092021.json");
+const dataInitial = require("C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/contratosYlicitaciones092021.json");
+
 searchRepeat(dataInitial);
 
 function searchRepeat(dataInitial) {
@@ -40,9 +43,11 @@ function searchRepeat(dataInitial) {
         fs.mkdirSync("resultados");
     }
 
-    createFile("./resultados/repeat.json", listRepeat);
-    createFile("./resultados/repeatMajor.json", listRepeatMajor);
-    createFile("./resultados/finalNoRepeat.json", listNoRepeat);
+    createFile("./resultados/repeat092021.json", listRepeat);
+    createFile("./resultados/repeatMajor092021.json", listRepeatMajor);
+    // createFile("./resultados/todosContratosHasta092021NoRepeat.json", listNoRepeat);
+    createFile("./resultados/contratosYlicitaciones092021NoRepeat.json", listNoRepeat);
+
 
     console.log("Resultados repetidos", listRepeat.length);
     console.log("Resultados con fecha mayor", listRepeatMajor.length);
@@ -71,5 +76,5 @@ function logFinal(listRepeat, listRepeatMajor, listNoRepeat) {
         "Total resultados sin repeticiones": listNoRepeat,
     }
 
-    createFile("./resultados/logFinal.json", logFinal);
+    createFile("./resultados/logFinal092021.json", logFinal);
 }

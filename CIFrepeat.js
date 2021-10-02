@@ -1,9 +1,12 @@
 const fs = require('fs');
 const readline = require('readline-sync');
 
-const licitaciones = require("./todasLicitacionesHasta082021NoRepeat.json");
-const contratos = require("./todosContratosHasta082021NoRepeat.json");
-const dataInitial = [...licitaciones, ...contratos];
+// const licitaciones = require("./todasLicitacionesHasta082021NoRepeat.json");
+// const contratos = require("./todosContratosHasta082021NoRepeat.json");
+// const dataInitial = [...licitaciones, ...contratos];
+
+const dataInitial = require("C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2021/resultados/09/finalNoRepeat.json");
+// const dataInitial = require("C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/contratos menores/2021/resultados/09/finalNoRepeat.json");
 
 const listPartyIdentification = [];
 const listAdjudicatarios = [];
@@ -50,8 +53,13 @@ function question() {
         return 0;
     });
 
-    createFile("./resultados/adjudicatarias082021.json", adjudicatarios);
-    createFile("./resultados/contratosYlicitaciones082021.json", dataInitial);
+
+
+    createFile("./resultados/adjudicatariasLicitaciones092021.json", adjudicatarios);
+    createFile("./resultados/licitaciones092021.json", dataInitial);
+
+    // createFile("./resultados/adjudicatariasContratos092021.json", adjudicatarios);
+    // createFile("./resultados/contratos092021.json", dataInitial);
 
 }
 
