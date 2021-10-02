@@ -1,10 +1,38 @@
 Datos:
 https://www.hacienda.gob.es/es-ES/GobiernoAbierto/Datos%20Abiertos/Paginas/licitaciones_plataforma_contratacion.aspx
-Guardar enlace como.
 
-.- Hay que tratar 2 ficheros:
+Hay tres tipos de ficheros:
+1.- ​Licitaciones publicadas en los perfiles del contratante ubicados en la Plataforma de Contratación del Sector Público, excluyendo los contratos menores.
+
+2.- Licitaciones publicadas en la Plataforma mediante mecanismos de agregación, excluyendo los contratos menores.
+    En estos ficheros estas las licitaciones que ha hecho la Junta de Andalucía. Buscando por Jerez tendremos datos.
+
+3.- Contratos menores publicados en los perfiles del contratante ubicados en la Plataforma de Contratación del Sector Público.    
+
+.- Hay que tratar 2 ficheros los del tipo 1 y 3:
     Contratos menores.
     Licitaciones
+
+Guardar enlace como.
+Puede ser necesario seleccionar guardar en la parte inferior de la página.
+
+
+
+1.- En index.js cambiar nombre del fichero del mes correspondiente.
+2.- Se generaran ficheros de resultados en la carpeta resultados.
+3.- finalNoRepeat.json es el fichero con los duplicados encontrados tratados para dejar unicamente los más recientes.
+4.- Mover la carpeta resultados a C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\ CARPETA CORRESPONDIENTE.
+5.- Seleccionar nombre de fichero del mes y cambiar nombres de los ficheros que se generan en CIFrepeat.js
+6.- Tratar finalNoRepeat.json con CIFrepeat.js para seleccionar las razones sociales correctas.
+7.- Crear carpeta Tratados con CIFrepeat.js en C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\ CARPETA CORRESPONDIENTE.
+7.- Mover la carpeta anterior los resultados de CIFrepeat .
+8.- Agregar contratos092021.json a todosContratosHasta082021.json.
+    NO COPIAR LOS [] 
+9.- Anotar dato en el indice.txt
+10.- Guardar como todosContratosHasta092021.json. SE VA INCREMENTANDO EL MES, en C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\contratos menores
+11.- Filtrar los repetidos conjs (en index.json filtramos los repetidos dentro del 
+         fichero ZIP tratado, pero necesitamos el segundo paso con searchRepeat() para eliminar    
+              los repetidos del mes añadido que ya estaban en todosContratosHasta082021.json
 
 .- En años ya cerrados, por ejemplo 2020, trataremos los ficheros anuales que estan en la pagina del Ministerio.
   
