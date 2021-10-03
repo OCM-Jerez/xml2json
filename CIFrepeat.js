@@ -1,7 +1,7 @@
 const fs = require('fs');
 const readline = require('readline-sync');
 
-const dataInitial = require("./contratosYlicitaciones092021NoRepeat.json");
+const dataInitial = require("./todo092021NoRepeatOkCIF.json");
 
 const listPartyIdentification = [];
 const listAdjudicatarios = [];
