@@ -17,19 +17,40 @@ Guardar enlace como.
 Puede ser necesario seleccionar guardar en la parte inferior de la página.
 
 
-
+CONTRATOS MENORES
 1.- En index.js cambiar nombre del fichero del mes correspondiente.
 2.- Se generaran ficheros de resultados en la carpeta resultados.
 3.- finalNoRepeat.json es el fichero con los duplicados encontrados tratados para dejar unicamente los más recientes.
 4.- Mover la carpeta resultados a C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\ CARPETA CORRESPONDIENTE.
-5.- Seleccionar nombre de fichero del mes y cambiar nombres de los ficheros que se generan en CIFrepeat.js
-6.- Tratar finalNoRepeat.json con CIFrepeat.js para seleccionar las razones sociales correctas.
-7.- Crear carpeta Tratados con CIFrepeat.js en C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\ CARPETA CORRESPONDIENTE.
-7.- Mover la carpeta anterior los resultados de CIFrepeat .
-8.- Agregar contratos092021.json a todosContratosHasta082021.json.
+8.- Agregar contratos092021.json a contratosYlicitaciones082021.json.
     NO COPIAR LOS [] 
 9.- Anotar dato en el indice.txt
 10.- Guardar como todosContratosHasta092021.json. SE VA INCREMENTANDO EL MES, en C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\contratos menores
+
+LICITACIONES
+1.- En index.js cambiar nombre del fichero del mes correspondiente.
+2.- Se generaran ficheros de resultados en la carpeta resultados.
+3.- finalNoRepeat.json es el fichero con los duplicados encontrados tratados para dejar unicamente los más recientes.
+4.- Mover la carpeta resultados a C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\ CARPETA CORRESPONDIENTE.
+8.- Agregar licitaciones092021.json a contratosYlicitaciones082021.json.
+    NO COPIAR LOS [] 
+9.- Anotar dato en el indice.txt
+10.- Guardar como todasLicitaciones092021.json. SE VA INCREMENTANDO EL MES, en C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\licitaciones
+
+CREAR JSON CON TODOS LOS CONTRATOS Y LICITACIONES
+1.- Añadir a todosContratosHasta092021.json y todasLicitaciones092021.json.
+2.- Anotar dato en el indice.txt
+3.- Tratar este fichero con searchRepeat.js
+4.- Genera contratosYlicitaciones092021NoRepeat.json
+5.- Tratar contratosYlicitaciones092021NoRepeat.json con CIFrepeat.js
+6.- Genera todo092021NoRepeatOkCIF.json
+7.- Copiarlo a C:\Users\Usuario\Google Drive\Angular\plataforma-contratacion-estado\src\assets\data
+8.- Copiarlo a C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos
+
+
+
+
+
 11.- Filtrar los repetidos conjs (en index.json filtramos los repetidos dentro del 
          fichero ZIP tratado, pero necesitamos el segundo paso con searchRepeat() para eliminar    
               los repetidos del mes añadido que ya estaban en todosContratosHasta082021.json
