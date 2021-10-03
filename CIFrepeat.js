@@ -1,12 +1,7 @@
 const fs = require('fs');
 const readline = require('readline-sync');
 
-// const licitaciones = require("./todasLicitacionesHasta082021NoRepeat.json");
-// const contratos = require("./todosContratosHasta082021NoRepeat.json");
-// const dataInitial = [...licitaciones, ...contratos];
-
-const dataInitial = require("C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2021/resultados/09/finalNoRepeat.json");
-// const dataInitial = require("C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/contratos menores/2021/resultados/09/finalNoRepeat.json");
+const dataInitial = require("./contratosYlicitaciones092021NoRepeat.json");
 
 const listPartyIdentification = [];
 const listAdjudicatarios = [];
@@ -42,25 +37,19 @@ function question() {
         })
     })
 
-    let adjudicatarios = Array.from(new Set(listAdjudicatarios.map(a => a.PartyName.trim())))
+    let adjudicatarias = Array.from(new Set(listAdjudicatarios.map(a => a.PartyName.trim())))
         .map(PartyName => {
             return listAdjudicatarios.find(a => a.PartyName.trim() === PartyName.trim())
         })
 
-    adjudicatarios = adjudicatarios.sort(function (a, b) {
+    adjudicatarias = adjudicatarias.sort(function (a, b) {
         if (a.PartyName.trim() < b.PartyName.trim()) { return -1 }
         if (a.PartyName.trim() > b.PartyName.trim()) { return 1 }
         return 0;
     });
 
-
-
-    createFile("./resultados/adjudicatariasLicitaciones092021.json", adjudicatarios);
-    createFile("./resultados/licitaciones092021.json", dataInitial);
-
-    // createFile("./resultados/adjudicatariasContratos092021.json", adjudicatarios);
-    // createFile("./resultados/contratos092021.json", dataInitial);
-
+    createFile("./resultados/todoAdjudicatarias092021.json", adjudicatarias);
+    createFile("./resultados/todo092021NoRepeatOkCIF.json", dataInitial);
 }
 
 function replacePartyName(partyIdentification, partyName) {
@@ -104,6 +93,5 @@ function logFinal(listRepeat, listRepeatMajor, listNoRepeat) {
         "Total resultados repetidos más recientes": listRepeatMajor,
         "Total resultados sin repeticiones": listNoRepeat,
     }
-
     createFile("./resultados/logFinal.json", logFinal);
 }

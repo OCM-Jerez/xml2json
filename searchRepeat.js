@@ -1,7 +1,9 @@
 const fs = require('fs');
 // const dataInitial = require("./todasLicitacionesHasta082021.json");
 // const dataInitial = require("C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/contratos menores/todosContratosHasta092021.json");
-const dataInitial = require("C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/contratosYlicitaciones092021.json");
+// const dataInitial = require("C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/contratosYlicitaciones092021.json");
+const dataInitial = require("./contratosYlicitaciones092021NoRepeat.json");
+
 
 searchRepeat(dataInitial);
 
