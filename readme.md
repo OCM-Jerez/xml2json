@@ -23,7 +23,7 @@
    <li>Se generará una carpeta resultados donde se  encuentrar todos los ficheros JSON con los datos y un log con los datos de la generación.</li>
    <li>Los ficheros intermedios se generan en una carpeta temporal que se borrar al finalizar el proceso.</li>
   <li>Hemos creado una <a href= 'http://con.ocmjerez.org/home'> app </a> que permite consultar los datos de diferentes formas, y generar graficos con los datos obtenidos.
-  <img src='https://res.cloudinary.com/dabrencx7/image/upload/v1628930992/xml2json/appContratos_ubhiyt.png'/>
+  <img src='https://res.cloudinary.com/dabrencx7/image/upload/v1633887024/Licitaciones/10-10--2021_19-28-51_cfw2vl.jpg'/>
   </li>
  </ul>
 
