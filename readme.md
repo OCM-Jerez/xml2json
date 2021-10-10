@@ -9,18 +9,18 @@
 
 -  La propia Plataforma ha elaborado la herramienta <a href= 'https://contrataciondelestado.es/wps/portal/!ut/p/b1/04_Sj9Q1tzQyMTU2NrHQj9CPykssy0xPLMnMz0vMAfGjzOKdgi0sHJ0MHQ0MjEMtDBzNAgOdLV0MjAwsjYEKIoEKDHAARwNC-sP1o8BKTI2dTcK8wgLMgj3dDQw8PdxcfEINTQ3cjcygCvBY4eeRn5uqnxuVY-mp66gIAB_9XP8!/dl4/d5/L2dJQSEvUUt3QS80SmtFL1o2X0sxQzhBQjFBMEdBUjUwUUpJR1FDMTRKSDY3/'> OpenPLACSP </a>, para facilitar la transformación de los ficheros de datos abiertos en un documento de hoja de cálculo con los principales datos de las licitaciones seleccionadas.
 
--  En las pruebas realizadas por nosotros nos ha resultado complicado el uso de esta herremienta, por lo que decidimos generar nuestra propia utilidad.
+-  En las pruebas realizadas por nosotros nos ha resultado complicado el uso de esta herramienta, por lo que decidimos generar nuestra propia utilidad.
 
 # Caracteristicas 💿
 <ul>
   <li>Genera un único fichero JSON con todos los datos contenidos en el fichero ZIP inicial.</li>
   <li>Genera datos tanto de licitaciones como de contratos menores.</li>
-  <li>Es posible filtrar por cualquier Perfil de contratante de los órganos de contratación alojados en la Plataforma de Contratación del Sector Público. </li>
+  <li>Es posible filtrar por cualquier Perfil de Contratante de los órganos de contratación alojados en la Plataforma de Contratación del Sector Público. </li>
   <li>Genera fichero JSON intermedio con licitaciones o contratos menores repetidos.</li>
   <li>De las licitaciones o contratos menores repetidos encontrados, conserva unicamente la entrada más reciente.</li>
  <li>Se compone de un único fichero index.js.</li>
    <li>Codigo en Javascript vanilla.</li>
-   <li>Se generara una carpeta resultados donde se  encuentrar todos los ficheros JSON con los datos y un log con los datos de la generación.</li>
+   <li>Se generará una carpeta resultados donde se  encuentrar todos los ficheros JSON con los datos y un log con los datos de la generación.</li>
    <li>Los ficheros intermedios se generan en una carpeta temporal que se borrar al finalizar el proceso.</li>
   <li>Hemos creado una <a href= 'http://con.ocmjerez.org/home'> app </a> que permite consultar los datos de diferentes formas, y generar graficos con los datos obtenidos.
   <img src='https://res.cloudinary.com/dabrencx7/image/upload/v1628930992/xml2json/appContratos_ubhiyt.png'/>
@@ -31,7 +31,7 @@
 - Existe un fichero para las licitaciones y otro para los contratos menores.
 
 # Como ejecutar el código 🖥️
-- Clone el repositorio.
+- Clonar el repositorio.
 - npm install para instalar referencias.
 - En index.js cambiar la ruta a la carpeta donde se encuentre el ZIP de contratos menores bajado de la Plataforma de Contratación del Sector Público.
 - En index.js cambiar los Organos de Contratación que se quieren filtar. <a href= 'https://contrataciondelsectorpublico.gob.es/datosabiertos/OrganosContratacion.xlsx'> Excel con todos los  Organos de Contratación </a>
