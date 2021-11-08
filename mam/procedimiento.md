@@ -10,42 +10,60 @@ Hay tres tipos de ficheros:
 3.- Contratos menores publicados en los perfiles del contratante ubicados en la Plataforma de Contratación del Sector Público.    
 
 .- Hay que tratar 2 ficheros los del tipo 1 y 3:
-    Contratos menores.
     Licitaciones
+    Contratos menores.
 
 Guardar enlace como.
 Puede ser necesario seleccionar guardar en la parte inferior de la página.
 
+LICITACIONES
+ Guardar como  => C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\licitaciones\2021\
+ HAY QUE CONFIRMAR DESCARGA
+1.- En index.js cambiar nombre del fichero del mes correspondiente.
+2.- Borrar carpeta resultados
+3.- node index.js
+4.- Se generaran ficheros de resultados en la carpeta resultados.
+5.- Mover la carpeta resultados a C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\ CARPETA CORRESPONDIENTE.
+6.- finalNoRepeat.json es el fichero con los duplicados encontrados tratados para dejar unicamente los más recientes.
+7.- Abrir finalNoRepeat.json
+8.- CTRL + b para formatatear JSON
+
 
 CONTRATOS MENORES
 1.- En index.js cambiar nombre del fichero del mes correspondiente.
-2.- Se generaran ficheros de resultados en la carpeta resultados.
-3.- finalNoRepeat.json es el fichero con los duplicados encontrados tratados para dejar unicamente los más recientes.
-4.- Mover la carpeta resultados a C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\ CARPETA CORRESPONDIENTE.
-8.- Agregar contratos092021.json a contratosYlicitaciones082021.json.
-    NO COPIAR LOS [] 
-9.- Anotar dato en el indice.txt
-10.- Guardar como todosContratosHasta092021.json. SE VA INCREMENTANDO EL MES, en C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\contratos menores
+2.- Borrar carpeta resultados
+3.- node index.js
+4.- Se generaran ficheros de resultados en la carpeta resultados.
+5.- Mover la carpeta resultados a C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\ CARPETA CORRESPONDIENTE.
+6.- finalNoRepeat.json es el fichero con los duplicados encontrados tratados para dejar unicamente los más recientes.
+7.- Abrir finalNoRepeat.json
+8.- CTRL + b para formatatear JSON
 
-LICITACIONES
-1.- En index.js cambiar nombre del fichero del mes correspondiente.
-2.- Se generaran ficheros de resultados en la carpeta resultados.
-3.- finalNoRepeat.json es el fichero con los duplicados encontrados tratados para dejar unicamente los más recientes.
-4.- Mover la carpeta resultados a C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\ CARPETA CORRESPONDIENTE.
-8.- Agregar licitaciones092021.json a contratosYlicitaciones082021.json.
-    NO COPIAR LOS [] 
-9.- Anotar dato en el indice.txt
-10.- Guardar como todasLicitaciones092021.json. SE VA INCREMENTANDO EL MES, en C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\licitaciones
 
 CREAR JSON CON TODOS LOS CONTRATOS Y LICITACIONES
-1.- Añadir a todosContratosHasta092021.json y todasLicitaciones092021.json.
-2.- Anotar dato en el indice.txt
-3.- Tratar este fichero con searchRepeat.js
-4.- Genera contratosYlicitaciones092021NoRepeat.json
-5.- Tratar contratosYlicitaciones092021NoRepeat.json con CIFrepeat.js
-6.- Genera todo092021NoRepeatOkCIF.json
-7.- Copiarlo a C:\Users\Usuario\Google Drive\Angular\plataforma-contratacion-estado\src\assets\data
-8.- Copiarlo a C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos
+1.- Abrir todo{ultimo mes existente}2021NoRepeat.json
+2.- Guardar como todo{mes que estamos tratando}2021NoRepeat.json
+3.- Añadir finalNoRepeat.json de licitaciones a todo{mes que estamos tratando}2021NoRepeat.json. NO COPIAR []
+4.- Añadir finalNoRepeat.json de contratos a todo{mes que estamos tratando}2021NoRepeat.json. NO COPIAR []
+5.- Copiar todoXX2021NoRepeat.json a C:\Users\Usuario\Google Drive\Node.js\xml2json
+6.- Cambiar todos las referencia a mes actual en lineas 44-45-46 y 72
+7.- node searchRepeat.js
+8.- Genera todo{mes actual}2021NoRepeatOK.json
+9.- Crear carpeta "tratados con searchRepeat.js"
+10.- Mover todos los ficheros de "Resultados" a la carpeta creada en punto anterior.
+11.- Copiar todo{mes actual}2021NoRepeatOK.json a C:\Users\Usuario\Google Drive\Node.js\xml2json
+12.- En CIFrepeat.js
+13.- Cambiar las referencias  mes actual en lineas 4-51-52 y 96
+14.- Tratar todo{mes actual}2021NoRepeatOK.json con CIFrepeat.js
+15.- Genera todo{mes actual}2021NoRepeatOkCIFOK.json
+16.- Crear carpeta "tratados con CIFRepeat.js"
+17.- Mover todos los ficheros de "Resultados" a la carpeta creada en punto anterior.
+18.- Copiarlo a C:\Users\Usuario\Google Drive\Angular\plataforma-contratacion-estado\src\assets\data
+192.- Copiarlo a C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos
+
+20.- En app platafomra-contratacion-estado   indice.component.ts cambiar fichero de datos en linea 15.
+
+
 
 
 
