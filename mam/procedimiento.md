@@ -13,13 +13,11 @@ Hay tres tipos de ficheros:
     Licitaciones
     Contratos menores.
 
-Guardar enlace como.
-Puede ser necesario seleccionar guardar en la parte inferior de la página.
-
 LICITACIONES
- Guardar como  => C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\licitaciones\2021\
+ Guardar enlace como  => C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\licitaciones\2021\
  HAY QUE CONFIRMAR DESCARGA
 1.- En index.js cambiar nombre del fichero del mes correspondiente.
+GRABAR
 2.- Borrar carpeta resultados
 3.- node index.js
 4.- Se generaran ficheros de resultados en la carpeta resultados.
@@ -30,7 +28,10 @@ LICITACIONES
 
 
 CONTRATOS MENORES
+Guardar enlace como  => C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\contratos menores\2021\
+ HAY QUE CONFIRMAR DESCARGA
 1.- En index.js cambiar nombre del fichero del mes correspondiente.
+GRABAR
 2.- Borrar carpeta resultados
 3.- node index.js
 4.- Se generaran ficheros de resultados en la carpeta resultados.
@@ -41,12 +42,14 @@ CONTRATOS MENORES
 
 
 CREAR JSON CON TODOS LOS CONTRATOS Y LICITACIONES
-1.- Abrir todo{ultimo mes existente}2021NoRepeat.json
+1.- Abrir todo{ultimo mes existente}NoRepeatOkCIF.json
 2.- Guardar como todo{mes que estamos tratando}2021NoRepeat.json
 3.- Añadir finalNoRepeat.json de licitaciones a todo{mes que estamos tratando}2021NoRepeat.json. NO COPIAR []
 4.- Añadir finalNoRepeat.json de contratos a todo{mes que estamos tratando}2021NoRepeat.json. NO COPIAR []
-5.- Copiar todoXX2021NoRepeat.json a C:\Users\Usuario\Google Drive\Node.js\xml2json
-6.- Cambiar todos las referencia a mes actual en lineas 44-45-46 y 72
+5.- Mover todoXX2021NoRepeat.json a C:\Users\Usuario\Google Drive\Node.js\xml2json
+Abrir searchRepeat.js
+6.- Cambiar todos las referencia a mes actual en lineas 2-44-45-46 y 72
+GRABAR
 7.- node searchRepeat.js
 8.- Genera todo{mes actual}2021NoRepeatOK.json
 9.- Crear carpeta "tratados con searchRepeat.js"
@@ -54,7 +57,9 @@ CREAR JSON CON TODOS LOS CONTRATOS Y LICITACIONES
 11.- Copiar todo{mes actual}2021NoRepeatOK.json a C:\Users\Usuario\Google Drive\Node.js\xml2json
 12.- En CIFrepeat.js
 13.- Cambiar las referencias  mes actual en lineas 4-51-52 y 96
+GRABAR
 14.- Tratar todo{mes actual}2021NoRepeatOK.json con CIFrepeat.js
+node CIFrepeat.js
 15.- Genera todo{mes actual}2021NoRepeatOkCIFOK.json
 16.- Crear carpeta "tratados con CIFRepeat.js"
 17.- Mover todos los ficheros de "Resultados" a la carpeta creada en punto anterior.
