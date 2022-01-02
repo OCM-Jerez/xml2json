@@ -1,7 +1,7 @@
 const fs = require('fs');
 const readline = require('readline-sync');
 
-const dataInitial = require("./todo102021NoRepeatOk.json");
+const dataInitial = require("./todo122021NoRepeatOk.json");
 
 const listPartyIdentification = [];
 const listAdjudicatarios = [];
@@ -48,8 +48,8 @@ function question() {
         return 0;
     });
 
-    createFile("./resultados/todoAdjudicatarias102021.json", adjudicatarias);
-    createFile("./resultados/todo102021NoRepeatOkCIFOK.json", dataInitial);
+    createFile("./resultados/todoAdjudicatarias122021.json", adjudicatarias);
+    createFile("./resultados/todo122021NoRepeatOkCIFOK.json", dataInitial);
 }
 
 function replacePartyName(partyIdentification, partyName) {
@@ -93,5 +93,5 @@ function logFinal(listRepeat, listRepeatMajor, listNoRepeat) {
         "Total resultados repetidos más recientes": listRepeatMajor,
         "Total resultados sin repeticiones": listNoRepeat,
     }
-    createFile("./resultados/logFinal102021.json", logFinal);
+    createFile("./resultados/logFinal122021.json", logFinal);
 }
