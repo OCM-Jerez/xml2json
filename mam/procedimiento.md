@@ -69,9 +69,9 @@ Comienza a solicitar seleccionar CID adecuado
 16.- Crear carpeta "tratados con CIFRepeat.js"
 17.- Mover todos los ficheros de "Resultados" a la carpeta creada en punto anterior.
 18.- Copiarlo a C:\Users\Usuario\Google Drive\Angular\plataforma-contratacion-estado\src\assets\data
-192.- Copiarlo a C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos
+19.- Copiarlo a C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos
 
-20.- En app platafomra-contratacion-estado   indice.component.ts cambiar fichero de datos en linea 15.
+20.- En app plataforma-contratacion-estado   indice.component.ts cambiar fichero de datos en linea 15.
 
 
 

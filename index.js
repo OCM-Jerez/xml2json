@@ -10,8 +10,8 @@ timeMapJSON = 0;
 totalLines = 0;
 
 // Meses
-// const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2022/licitacionesPerfilesContratanteCompleto3_202202.zip";
-const ficheroZIP = "C:/Users/usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/contratos menores/2022/contratosMenoresPerfilesContratantes_202202.zip";
+// const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2022/licitacionesPerfilesContratanteCompleto3_202203.zip";
+const ficheroZIP = "C:/Users/usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/contratos menores/2022/contratosMenoresPerfilesContratantes_202203.zip";
 
 // Años
 // const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/contratos menores/2020/contratosMenoresPerfilesContratantes_2020.zip";

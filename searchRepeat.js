@@ -1,5 +1,5 @@
 const fs = require('fs');
-const dataInitial = require("./todo022022NoRepeat.json");
+const dataInitial = require("./todo032022NoRepeat.json");
 
 searchRepeat(dataInitial);
 
@@ -41,9 +41,9 @@ function searchRepeat(dataInitial) {
         fs.mkdirSync("resultados");
     }
 
-    createFile("./resultados/repeat022022.json", listRepeat);
-    createFile("./resultados/repeatMajor022022.json", listRepeatMajor);
-    createFile("./resultados/todo022022NoRepeatOK.json", listNoRepeat);
+    createFile("./resultados/repeat032022.json", listRepeat);
+    createFile("./resultados/repeatMajor032022.json", listRepeatMajor);
+    createFile("./resultados/todo032022NoRepeatOK.json", listNoRepeat);
     console.log("Resultados repetidos", listRepeat.length);
     console.log("Resultados con fecha mayor", listRepeatMajor.length);
     console.log("Resultados sin repeticiones", listNoRepeat.length);
@@ -69,5 +69,5 @@ function logFinal(listRepeat, listRepeatMajor, listNoRepeat) {
         "Total resultados sin repeticiones": listNoRepeat,
     }
 
-    createFile("./resultados/logFinal022022.json", logFinal);
+    createFile("./resultados/logFinal032022.json", logFinal);
 }
