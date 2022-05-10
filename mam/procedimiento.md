@@ -42,36 +42,39 @@ GRABAR
 
 
 CREAR JSON CON TODOS LOS CONTRATOS Y LICITACIONES
-1.- Copiar todo{ultimo mes existente}2022NoRepeatOkCIFOK.json en carpeta C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos
+1.- Copiar todo{ultimo mes existente}2022NoRepeatOkCIFOK.json en carpeta C:\Users\Usuario\Google Drive\Angular\plataforma-contratacion-estado\src\assets\data
 2.- Pegar como todo{mes que estamos tratando}2022NoRepeat.json IMPORTANTE sin OK..... al final
-    Abrir fichero creado en punto anterior.
-    CTRL + b para formatatear JSON
-3.- Añadir finalNoRepeat.json de licitaciones a todo{mes que estamos tratando}2021NoRepeat.json. NO COPIAR []
-Añadir coma al final fichero anterior
-4.- Añadir finalNoRepeat.json de contratos a todo{mes que estamos tratando}2021NoRepeat.json. NO COPIAR []
-5.- Mover todoXX2022NoRepeat.json a C:\Users\Usuario\Google Drive\Node.js\xml2json
-Abrir searchRepeat.js
-6.- Cambiar todos las referencia a mes actual en lineas 2-44-45-46 y 72
-GRABAR
-    BORRAR CARPETA RESULTADOS
-7.- node searchRepeat.js
-8.- Genera todo{mes actual}2021NoRepeatOK.json y demas ficheros en subdirectorio Resultados
-9.- Crear carpeta del mes correspondiente en directorio "Tratados con searchRepeat.js"
-10.- Mover todos los ficheros de "Resultados" a la carpeta creada en punto anterior.
-11.- Copiar todo{mes actual}2022NoRepeatOK.json a C:\Users\Usuario\Google Drive\Node.js\xml2json
-12.- En CIFrepeat.js
-13.- Cambiar las referencias  mes actual en lineas 4-51-52 y 96
-GRABAR
-14.- Tratar todo{mes actual}2021NoRepeatOK.json con CIFrepeat.js
-node CIFrepeat.js
-Comienza a solicitar seleccionar CID adecuado
-15.- Genera todo{mes actual}2021NoRepeatOkCIFOK.json
-16.- Crear carpeta "tratados con CIFRepeat.js"
+3.- Mover a C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\Obsoletos el fichero del mes anterior
+4.- Abrir fichero creado en punto anterior. EL RENOMBRADO CON EL MES ACTUAL
+5.- CTRL + b para formatatear JSON
+6.- Añadir finalNoRepeat.json de licitaciones a todo{mes que estamos tratando}2021NoRepeat.json. NO COPIAR []
+7.- Añadir coma al final fichero anterior
+8.- Añadir finalNoRepeat.json de contratos a todo{mes que estamos tratando}2021NoRepeat.json. NO COPIAR []
+9.- Mover todoXX2022NoRepeat.json a C:\Users\Usuario\Google Drive\Node.js\xml2json
+10.- Abrir searchRepeat.js
+11.- Cambiar todos las referencia a mes actual en lineas 2-44-45-46 y 72
+12.- GRABAR
+13.- BORRAR CARPETA RESULTADOS
+14.- node searchRepeat.js
+15.- Genera todo{mes actual}2021NoRepeatOK.json y demas ficheros en subdirectorio Resultados
+16.- Crear carpeta del mes correspondiente en directorio "Tratados con searchRepeat.js"
 17.- Mover todos los ficheros de "Resultados" a la carpeta creada en punto anterior.
-18.- Copiarlo a C:\Users\Usuario\Google Drive\Angular\plataforma-contratacion-estado\src\assets\data
-19.- Copiarlo a C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos
+18.- Copiar todo{mes actual}2022NoRepeatOK.json a C:\Users\Usuario\Google Drive\Node.js\xml2json
+19.- En CIFrepeat.js
+20.- Cambiar las referencias  mes actual en lineas 4-51-52 y 96
+21.- GRABAR
+22.- Tratar todo{mes actual}2021NoRepeatOK.json con CIFrepeat.js
+23.- node CIFrepeat.js
+24.- Comienza a solicitar seleccionar CID adecuado
+25.- Genera todo{mes actual}2021NoRepeatOkCIFOK.json
+26.- Crear carpeta "tratados con CIFRepeat.js"
+27.- Mover todos los ficheros de "Resultados" a la carpeta creada en punto anterior.
+28.- Copiarlo a C:\Users\Usuario\Google Drive\Angular\plataforma-contratacion-estado\src\assets\data
+29.- En app plataforma-contratacion-estado   indice.component.ts cambiar fichero de datos en linea 15.
 
-20.- En app plataforma-contratacion-estado   indice.component.ts cambiar fichero de datos en linea 15.
+
+
+
 
 
 
