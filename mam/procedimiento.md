@@ -44,7 +44,7 @@ GRABAR
 CREAR JSON CON TODOS LOS CONTRATOS Y LICITACIONES
 1.- Copiar todo{ultimo mes existente}2022NoRepeatOkCIFOK.json en carpeta C:\Users\Usuario\Google Drive\Angular\plataforma-contratacion-estado\src\assets\data
 2.- Pegar como todo{mes que estamos tratando}2022NoRepeat.json IMPORTANTE sin OK..... al final
-3.- Mover a C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\Obsoletos el fichero del mes anterior
+3.- Mover a C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\Obsoletos LOS FICHEROS del mes anterior
 4.- Abrir fichero creado en punto anterior. EL RENOMBRADO CON EL MES ACTUAL
 5.- CTRL + b para formatatear JSON
 6.- Añadir finalNoRepeat.json de licitaciones a todo{mes que estamos tratando}2021NoRepeat.json. NO COPIAR []
@@ -59,6 +59,7 @@ CREAR JSON CON TODOS LOS CONTRATOS Y LICITACIONES
 15.- Genera todo{mes actual}2021NoRepeatOK.json y demas ficheros en subdirectorio Resultados
 16.- Crear carpeta del mes correspondiente en directorio "Tratados con searchRepeat.js"
 17.- Mover todos los ficheros de "Resultados" a la carpeta creada en punto anterior.
+18.- Borrar todo{mes actual}2022NoRepeat.json en C:\Users\Usuario\Google Drive\Node.js\xml2json
 18.- Copiar todo{mes actual}2022NoRepeatOK.json a C:\Users\Usuario\Google Drive\Node.js\xml2json
 19.- En CIFrepeat.js
 20.- Cambiar las referencias  mes actual en lineas 4-51-52 y 96
