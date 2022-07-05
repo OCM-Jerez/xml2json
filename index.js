@@ -3,6 +3,8 @@ const xml2js = require("xml2js");
 const StreamZip = require("node-stream-zip");
 const parserXml2js = new xml2js.Parser();
 const readLineFile = require('readline');
+const readline = require('readline-sync');
+
 countFiles = 0;
 timeExtractZip = 0;
 timeParseXML2JSON = 0;
@@ -11,38 +13,56 @@ totalLines = 0;
 
 // Meses
 // const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2022/licitacionesPerfilesContratanteCompleto3_202206.zip";
-const ficheroZIP = "C:/Users/usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/contratos menores/2022/contratosMenoresPerfilesContratantes_202206.zip";
-
+const responseMonth = readline.question('ingrese el mes\n');
+// let responseMonth = "";
+const ficheroZIP = "C:/Users/usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2022/PROCCESS_2022MONTH.zip";
+const pathResultsParam = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2022/resultados";
+let pathResults = "";
 // Años
 // const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/contratos menores/2020/contratosMenoresPerfilesContratantes_2020.zip";
 // const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2020/licitacionesPerfilesContratanteCompleto3_2020.zip";
 
 async function extractZip() {
     console.log("************** extractZip  inicio ********************");
-    const start = Date.now()
-    const zip = new StreamZip.async({ file: ficheroZIP });
+    const start = Date.now();
+    console.log('Que proceso desea usar:\n');
+    console.log('1.-Licitaciones:\n');
+    console.log('2.-Contratos:\n');
 
-    if (!fs.existsSync("./extracted")) {
-        fs.mkdirSync("extracted");
+    const responseProcces = readline.question('ingrese el número de la opcion deseada\n');
+
+
+    if (responseMonth && responseProcces) {
+        const ficheroZip = ficheroZIP.replace('FOLDER', responseProcces == 1 ? "licitaciones" : "contratos menores").replace('PROCCESS', responseProcces == 1 ? "licitacionesPerfilesContratanteCompleto3" : "contratosMenoresPerfilesContratantes").replace("MONTH", responseMonth);
+        pathResults = pathResultsParam.replace('FOLDER', responseProcces == 1 ? "licitaciones" : "contratos menores") + `/${responseMonth}`;
+
+        console.log(ficheroZip);
+
+        const zip = new StreamZip.async({ file: ficheroZip });
+
+        if (!fs.existsSync("./extracted")) {
+            fs.mkdirSync("extracted");
+        }
+
+        if (!fs.existsSync("./extracted/atom")) {
+            fs.mkdirSync("extracted/atom");
+        }
+
+        // if (!fs.existsSync("./resultados")) {
+        //     fs.mkdirSync("resultados");
+        // }
+
+        zip.on('extract', (entry, file) => {
+            console.log(`Extracted ${entry.name} to ${file}`);
+        });
+
+        this.countFiles = await zip.extract(null, "./extracted/atom");
+        const stop = Date.now()
+        this.timeExtractZip = ((stop - start) / 60000).toFixed(2)
+        await zip.close();
+        return Promise.resolve(true);
     }
 
-    if (!fs.existsSync("./extracted/atom")) {
-        fs.mkdirSync("extracted/atom");
-    }
-
-    if (!fs.existsSync("./resultados")) {
-        fs.mkdirSync("resultados");
-    }
-
-    zip.on('extract', (entry, file) => {
-        console.log(`Extracted ${entry.name} to ${file}`);
-    });
-
-    this.countFiles = await zip.extract(null, "./extracted/atom");
-    const stop = Date.now()
-    this.timeExtractZip = ((stop - start) / 60000).toFixed(2)
-    await zip.close();
-    return Promise.resolve(true);
 }
 
 async function parseXML2JSON() {
@@ -235,9 +255,12 @@ function mapJSON() {
 
 async function ejecutaTodo() {
     try {
-        await extractZip();
-        await parseXML2JSON();
-        mapJSON();
+        for (let index = 0; index < 2; index++) {
+            await extractZip();
+            await parseXML2JSON();
+            mapJSON();
+        }
+
     } catch (error) {
         console.error("Error: ", error);
     }
@@ -252,14 +275,19 @@ function saveFinalJson(arrayFinal) {
             console.error("Error: ", error);
         })
 
-    if (!fs.existsSync("./resultados")) {
-        fs.mkdirSync("resultados");
+    // if (!fs.existsSync("./resultados")) {
+    //     fs.mkdirSync("resultados");
+    // }
+
+    if (!fs.existsSync(pathResults)) {
+        console.log('create--> ', pathResults);
+        fs.mkdirSync(pathResults);
     }
 
     const result = searchRepeat(arrayFinal);
 
-    fs.writeFile(
-        "./resultados/final.json",
+    fs.writeFileSync(
+        `${pathResults}/final.json`,
         JSON.stringify(arrayFinal),
 
         function (err) {
@@ -317,9 +345,9 @@ function searchRepeat(arrayFinal) {
         }
     });
 
-    createFile("./resultados/repeat.json", listRepeat);
-    createFile("./resultados/repeatMajor.json", listRepeatMajor);
-    createFile("./resultados/finalNoRepeat.json", listNoRepeat);
+    createFile(`${pathResults}/repeat.json`, listRepeat);
+    createFile(`${pathResults}/repeatMajor.json`, listRepeatMajor);
+    createFile(`${pathResults}/finalNoRepeat.json`, listNoRepeat);
 
     return { listRepeat: listRepeat.length, listRepeatMajor: listRepeatMajor.length, listNoRepeat: listNoRepeat.length };
 }
@@ -336,7 +364,7 @@ function logFinal(totalLicitaciones, sinRepeticion, repetidos, mayores) {
         "Total licitaciones repetidas más recientes": mayores,
     }
 
-    createFile("./resultados/logFinal.json", logFinal);
+    createFile(`${pathResults}/logFinal.json`, logFinal);
 }
 
 async function readLines(name) {
