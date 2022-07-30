@@ -18,6 +18,8 @@ const responseMonth = readline.question('ingrese el mes\n');
 const ficheroZIP = "C:/Users/usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2022/PROCCESS_2022MONTH.zip";
 const pathResultsParam = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2022/resultados";
 let pathResults = "";
+let process = 1;
+
 // Años
 // const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/contratos menores/2020/contratosMenoresPerfilesContratantes_2020.zip";
 // const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2020/licitacionesPerfilesContratanteCompleto3_2020.zip";
@@ -25,18 +27,12 @@ let pathResults = "";
 async function extractZip() {
     console.log("************** extractZip  inicio ********************");
     const start = Date.now();
-    console.log('Que proceso desea usar:\n');
-    console.log('1.-Licitaciones:\n');
-    console.log('2.-Contratos:\n');
 
-    const responseProcces = readline.question('ingrese el número de la opcion deseada\n');
+    if (responseMonth) {
+        const ficheroZip = ficheroZIP.replace('FOLDER', process == 1 ? "licitaciones" : "contratos menores").replace('PROCCESS', process == 1 ? "licitacionesPerfilesContratanteCompleto3" : "contratosMenoresPerfilesContratantes").replace("MONTH", responseMonth);
+        pathResults = pathResultsParam.replace('FOLDER', process == 1 ? "licitaciones" : "contratos menores") + `/${responseMonth}`;
 
-
-    if (responseMonth && responseProcces) {
-        const ficheroZip = ficheroZIP.replace('FOLDER', responseProcces == 1 ? "licitaciones" : "contratos menores").replace('PROCCESS', responseProcces == 1 ? "licitacionesPerfilesContratanteCompleto3" : "contratosMenoresPerfilesContratantes").replace("MONTH", responseMonth);
-        pathResults = pathResultsParam.replace('FOLDER', responseProcces == 1 ? "licitaciones" : "contratos menores") + `/${responseMonth}`;
-
-        console.log(ficheroZip);
+        console.log("Fichero zip-> ", ficheroZip);
 
         const zip = new StreamZip.async({ file: ficheroZip });
 
@@ -57,8 +53,8 @@ async function extractZip() {
         });
 
         this.countFiles = await zip.extract(null, "./extracted/atom");
-        const stop = Date.now()
-        this.timeExtractZip = ((stop - start) / 60000).toFixed(2)
+        const stop = Date.now();
+        this.timeExtractZip = ((stop - start) / 60000).toFixed(2);
         await zip.close();
         return Promise.resolve(true);
     }
@@ -70,6 +66,7 @@ async function parseXML2JSON() {
     const start = Date.now()
     const archivos = readFiles("./extracted/atom/");
     let contador = 1;
+    totalLines = 0;
 
     if (!fs.existsSync("./extracted/json")) {
         fs.mkdirSync("extracted/json");
@@ -81,7 +78,7 @@ async function parseXML2JSON() {
             const countLines = await readLines(fichero);
             console.log(`${contador}/${this.countFiles} ${fichero} / lineas ${new Intl.NumberFormat('es-Es').format(countLines)}`);
             totalLines = totalLines + countLines;
-            contador++
+            contador++;
             const dataXml = fs.readFileSync(pathFile);
             parserXml2js.parseString(dataXml, function (err, result) {
                 if (err) {
@@ -94,13 +91,13 @@ async function parseXML2JSON() {
         }
     }
 
-    const stop = Date.now()
-    this.timeParseXML2JSON = ((stop - start) / 60000).toFixed(2)
+    const stop = Date.now();
+    this.timeParseXML2JSON = ((stop - start) / 60000).toFixed(2);
 }
 
 function mapJSON() {
     console.log("************** mapJSON inicio ********************");
-    const start = Date.now()
+    const start = Date.now();
     const archivos = readFiles("./extracted/json/");
     const arrayFinal = [];
     let contador = 1;
@@ -109,7 +106,7 @@ function mapJSON() {
     archivos.forEach((fichero) => {
         const liciJson = fs.readFileSync("./extracted/json/" + fichero);
         console.log(`${contador}/${this.countFiles} ${fichero}`);
-        contador++
+        contador++;
         const liciObject = JSON.parse(liciJson);
 
         liciObject.feed.entry
@@ -249,8 +246,8 @@ function mapJSON() {
     });
 
     saveFinalJson(arrayFinal);
-    const stop = Date.now()
-    this.timeMapJSON = ((stop - start) / 60000).toFixed(2)
+    const stop = Date.now();
+    this.timeMapJSON = ((stop - start) / 60000).toFixed(2);
 }
 
 async function ejecutaTodo() {
@@ -259,6 +256,7 @@ async function ejecutaTodo() {
             await extractZip();
             await parseXML2JSON();
             mapJSON();
+            process = 2;
         }
 
     } catch (error) {
@@ -268,12 +266,14 @@ async function ejecutaTodo() {
 
 ejecutaTodo();
 
-//#region Funciones secundarias
+//#region Funciones secundarias07
+
 function saveFinalJson(arrayFinal) {
-    fs.rmdir("./extracted", { recursive: true },
+
+    fs.rmdirSync("./extracted", { recursive: true, force: true },
         (error) => {
             console.error("Error: ", error);
-        })
+        });
 
     // if (!fs.existsSync("./resultados")) {
     //     fs.mkdirSync("resultados");
@@ -288,29 +288,26 @@ function saveFinalJson(arrayFinal) {
 
     fs.writeFileSync(
         `${pathResults}/final.json`,
-        JSON.stringify(arrayFinal),
-
-        function (err) {
-            if (err) throw err;
-            const totalRepeticiones = arrayFinal.length;
-            const noRepetidos = result.listNoRepeat;
-            const repetidos = result.listRepeat;
-            const mayores = result.listRepeatMajor;
-
-            console.log("************** TERMINADO ********************");
-            console.log(`Tiempo para ejecutar extractZip()    = ${this.timeExtractZip} minutos`);
-            console.log(`Tiempo para ejecutar parseXML2JSON() = ${this.timeParseXML2JSON} minutos`);
-            console.log(`Tiempo para ejecutar mapJSON()       = ${this.timeMapJSON} minutos`);
-            console.log(`Total lineas XML analizadas          = ${new Intl.NumberFormat('es-Es').format(this.totalLines)}`);
-            console.log(`Total licitaciones encontradas:      = ${totalRepeticiones}`);
-            console.log(`Total licitaciones sin repeticiones: = ${noRepetidos}`);
-            console.log(`Total licitaciones con repeticiones: = ${repetidos}`);
-            console.log(`Total licitaciones repetidas más recientes:  = ${mayores}`);
-
-            logFinal(totalRepeticiones, noRepetidos, repetidos, mayores)
-        }
+        JSON.stringify(arrayFinal)
     );
 
+    const totalRepeticiones = arrayFinal.length;
+    const noRepetidos = result.listNoRepeat;
+    const repetidos = result.listRepeat;
+    const mayores = result.listRepeatMajor;
+
+    console.log("************** TERMINADO ********************");
+    console.log(`Tiempo para ejecutar extractZip()    = ${this.timeExtractZip} minutos`);
+    console.log(`Tiempo para ejecutar parseXML2JSON() = ${this.timeParseXML2JSON} minutos`);
+    console.log(`Tiempo para ejecutar mapJSON()       = ${this.timeMapJSON} minutos`);
+    console.log(`Total lineas XML analizadas          = ${new Intl.NumberFormat('es-Es').format(this.totalLines)}`);
+    console.log(`Total licitaciones encontradas:      = ${totalRepeticiones}`);
+
+    console.log(`Total licitaciones sin repeticiones: = ${noRepetidos}`);
+    console.log(`Total licitaciones con repeticiones: = ${repetidos}`);
+    console.log(`Total licitaciones repetidas más recientes:  = ${mayores}`);
+
+    logFinal(totalRepeticiones, noRepetidos, repetidos, mayores);
 }
 
 function searchRepeat(arrayFinal) {
