@@ -318,21 +318,18 @@ function saveFinalJson(arrayFinal) {
     const noRepetidos = result.listNoRepeat;
     const repetidos = result.listRepeat;
     const mayores = result.listRepeatMajor;
-
-
     const processDescription = process === 1 ? 'licitaciones' : 'contratos menores';
+    const ao = process === 1 ? 'a' : 'o';
 
     console.log("************** TERMINADO ********************");
     console.log(`Tiempo para ejecutar extractZip()    = ${this.timeExtractZip} minutos`);
     console.log(`Tiempo para ejecutar parseXML2JSON() = ${this.timeParseXML2JSON} minutos`);
     console.log(`Tiempo para ejecutar mapJSON()       = ${this.timeMapJSON} minutos`);
     console.log(`Total lineas XML analizadas          = ${new Intl.NumberFormat('es-Es').format(this.totalLines)}`);
-    console.log(`Total ${processDescription} encontradas:      = ${totalRepeticiones}`);
-
-
+    console.log(`Total ${processDescription} encontrad${ao}s:      = ${totalRepeticiones}`);
     console.log(`Total ${processDescription} sin repeticiones: = ${noRepetidos}`);
     console.log(`Total ${processDescription} con repeticiones: = ${repetidos}`);
-    console.log(`Total ${processDescription} repetidas más recientes:  = ${mayores}`);
+    console.log(`Total ${processDescription} repetid${ao}s más recientes:  = ${mayores}`);
 
     logFinal(totalRepeticiones, noRepetidos, repetidos, mayores);
 }
@@ -378,16 +375,17 @@ function searchRepeat(arrayFinal) {
 
 function logFinal(totalLicitaciones, sinRepeticion, repetidos, mayores) {
     const processDescription = process === 1 ? 'licitaciones' : 'contratos menores';
+    const ao = process === 1 ? 'a' : 'o';
 
     const logFinal = {
         "Tiempo para ejecutar extractZip()": `${this.timeExtractZip} minutes`,
         "Tiempo para ejecutar parseXML2JSON()": `${this.timeParseXML2JSON} minutes`,
         "Tiempo para ejecutar mapJSON()": `${this.timeMapJSON} minutes`,
         "Total lineas XML analizadas": `${new Intl.NumberFormat('es-Es').format(this.totalLines)}`,
-        [`Total ${processDescription} encontradas:`]: totalLicitaciones,
+        [`Total ${processDescription} encontrad${ao}s:`]: totalLicitaciones,
         [`Total ${processDescription} sin repeticiones`]: sinRepeticion,
         [`Total ${processDescription} con repeticiones`]: repetidos,
-        [`Total ${processDescription} repetidas más recientes`]: mayores,
+        [`Total ${processDescription} repetid${ao}s más recientes`]: mayores,
 
     }
 
