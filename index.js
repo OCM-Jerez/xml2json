@@ -4,6 +4,7 @@ const StreamZip = require("node-stream-zip");
 const parserXml2js = new xml2js.Parser();
 const readLineFile = require('readline');
 const readline = require('readline-sync');
+const path = require('path');
 
 countFiles = 0;
 timeExtractZip = 0;
@@ -14,12 +15,12 @@ totalLines = 0;
 // Meses
 // const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2022/licitacionesPerfilesContratanteCompleto3_202206.zip";
 const responseMonth = readline.question('ingrese el mes\n');
-// let responseMonth = "";
+
 const ficheroZIP = "C:/Users/usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2022/PROCCESS_2022MONTH.zip";
 const pathResultsParam = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2022/resultados";
 let pathResults = "";
 let process = 1;
-
+let jsonFinalProcces = [];
 // Años
 // const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/contratos menores/2020/contratosMenoresPerfilesContratantes_2020.zip";
 // const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2020/licitacionesPerfilesContratanteCompleto3_2020.zip";
@@ -32,8 +33,6 @@ async function extractZip() {
         const ficheroZip = ficheroZIP.replace('FOLDER', process == 1 ? "licitaciones" : "contratos menores").replace('PROCCESS', process == 1 ? "licitacionesPerfilesContratanteCompleto3" : "contratosMenoresPerfilesContratantes").replace("MONTH", responseMonth);
         pathResults = pathResultsParam.replace('FOLDER', process == 1 ? "licitaciones" : "contratos menores") + `/${responseMonth}`;
 
-        console.log("Fichero zip-> ", ficheroZip);
-
         const zip = new StreamZip.async({ file: ficheroZip });
 
         if (!fs.existsSync("./extracted")) {
@@ -43,10 +42,6 @@ async function extractZip() {
         if (!fs.existsSync("./extracted/atom")) {
             fs.mkdirSync("extracted/atom");
         }
-
-        // if (!fs.existsSync("./resultados")) {
-        //     fs.mkdirSync("resultados");
-        // }
 
         zip.on('extract', (entry, file) => {
             console.log(`Extracted ${entry.name} to ${file}`);
@@ -258,7 +253,8 @@ async function ejecutaTodo() {
             mapJSON();
             process = 2;
         }
-
+        //juntar datos
+        mergeJsonFinal();
     } catch (error) {
         console.error("Error: ", error);
     }
@@ -266,7 +262,34 @@ async function ejecutaTodo() {
 
 ejecutaTodo();
 
-//#region Funciones secundarias07
+//#region Funciones secundarias
+function mergeJsonFinal() {
+    // C:\Users\Usuario\Google Drive\Angular\plataforma-contratacion-estado\src\assets\data
+    // C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\Obsoletos
+    //mover archivos
+    const oldPath = 'C:/Users/Usuario/Google Drive/Angular/plataforma-contratacion-estado/src/assets/data';
+    const newPath = 'C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Obsoletos';
+
+    const oldOk = path.join(oldPath, 'todo062022NoRepeatOkCIFOK.json');
+    const newOk = path.join(newPath, 'todo062022NoRepeatOkCIFOK.json');
+
+    fs.copyFileSync(oldOk, newOk);
+
+
+    const oldAdjudicataria = path.join(oldPath, 'todoAdjudicatarias062022.json');
+    const newAdjudicataria = path.join(newPath, 'todoAdjudicatarias062022.json');
+
+    fs.renameSync(oldAdjudicataria, newAdjudicataria);
+
+    fs.readFile(oldOk, function (err, data) {
+        const json = JSON.parse(data);
+        jsonFinalProcces.forEach((array) => {
+            array.forEach((item) => json.push(item));
+        })
+
+        fs.writeFileSync(`${oldPath}/demo.json`, JSON.stringify(json));
+    })
+}
 
 function saveFinalJson(arrayFinal) {
 
@@ -275,37 +298,41 @@ function saveFinalJson(arrayFinal) {
             console.error("Error: ", error);
         });
 
-    // if (!fs.existsSync("./resultados")) {
-    //     fs.mkdirSync("resultados");
-    // }
-
     if (!fs.existsSync(pathResults)) {
-        console.log('create--> ', pathResults);
+        // console.log('create--> ', pathResults);
         fs.mkdirSync(pathResults);
     }
 
+    jsonFinalProcces.push(arrayFinal);
+
     const result = searchRepeat(arrayFinal);
 
-    fs.writeFileSync(
-        `${pathResults}/final.json`,
-        JSON.stringify(arrayFinal)
-    );
+    // fs.writeFileSync(
+    //     `${pathResults}/final.json`,
+    //     JSON.stringify(arrayFinal)
+    // );
+
+    createFile(`${pathResults}/final.json`, arrayFinal);
 
     const totalRepeticiones = arrayFinal.length;
     const noRepetidos = result.listNoRepeat;
     const repetidos = result.listRepeat;
     const mayores = result.listRepeatMajor;
 
+
+    const processDescription = process === 1 ? 'licitaciones' : 'contratos menores';
+
     console.log("************** TERMINADO ********************");
     console.log(`Tiempo para ejecutar extractZip()    = ${this.timeExtractZip} minutos`);
     console.log(`Tiempo para ejecutar parseXML2JSON() = ${this.timeParseXML2JSON} minutos`);
     console.log(`Tiempo para ejecutar mapJSON()       = ${this.timeMapJSON} minutos`);
     console.log(`Total lineas XML analizadas          = ${new Intl.NumberFormat('es-Es').format(this.totalLines)}`);
-    console.log(`Total licitaciones encontradas:      = ${totalRepeticiones}`);
+    console.log(`Total ${processDescription} encontradas:      = ${totalRepeticiones}`);
 
-    console.log(`Total licitaciones sin repeticiones: = ${noRepetidos}`);
-    console.log(`Total licitaciones con repeticiones: = ${repetidos}`);
-    console.log(`Total licitaciones repetidas más recientes:  = ${mayores}`);
+
+    console.log(`Total ${processDescription} sin repeticiones: = ${noRepetidos}`);
+    console.log(`Total ${processDescription} con repeticiones: = ${repetidos}`);
+    console.log(`Total ${processDescription} repetidas más recientes:  = ${mayores}`);
 
     logFinal(totalRepeticiones, noRepetidos, repetidos, mayores);
 }
@@ -350,15 +377,18 @@ function searchRepeat(arrayFinal) {
 }
 
 function logFinal(totalLicitaciones, sinRepeticion, repetidos, mayores) {
+    const processDescription = process === 1 ? 'licitaciones' : 'contratos menores';
+
     const logFinal = {
         "Tiempo para ejecutar extractZip()": `${this.timeExtractZip} minutes`,
         "Tiempo para ejecutar parseXML2JSON()": `${this.timeParseXML2JSON} minutes`,
         "Tiempo para ejecutar mapJSON()": `${this.timeMapJSON} minutes`,
         "Total lineas XML analizadas": `${new Intl.NumberFormat('es-Es').format(this.totalLines)}`,
-        "Total licitaciones encontradas:": totalLicitaciones,
-        "Total licitaciones sin repeticiones": sinRepeticion,
-        "Total licitaciones con repeticiones": repetidos,
-        "Total licitaciones repetidas más recientes": mayores,
+        [`Total ${processDescription} encontradas:`]: totalLicitaciones,
+        [`Total ${processDescription} sin repeticiones`]: sinRepeticion,
+        [`Total ${processDescription} con repeticiones`]: repetidos,
+        [`Total ${processDescription} repetidas más recientes`]: mayores,
+
     }
 
     createFile(`${pathResults}/logFinal.json`, logFinal);

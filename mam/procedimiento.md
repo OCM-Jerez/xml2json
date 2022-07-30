@@ -50,7 +50,8 @@ CREAR JSON CON TODOS LOS CONTRATOS Y LICITACIONES
 6.- Añadir finalNoRepeat.json de licitaciones a todo{mes que estamos tratando}2021NoRepeat.json. NO COPIAR []
 7.- Añadir coma al final fichero anterior
 8.- Añadir finalNoRepeat.json de contratos a todo{mes que estamos tratando}2021NoRepeat.json. NO COPIAR []
-9.- Mover todoXX2022NoRepeat.json a C:\Users\Usuario\Google Drive\Node.js\xml2json
+9.- Copiar fichero anterior a C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\Obsoletos\Obsoletos xml2json
+10.- Mover todoXX2022NoRepeat.json a C:\Users\Usuario\Google Drive\Node.js\xml2json
 
 
 searchRepeat.js
@@ -63,7 +64,8 @@ searchRepeat.js
 7.- Crear carpeta del mes correspondiente en directorio "Tratados con searchRepeat.js"
 8.- Mover todos los ficheros de "Resultados" a la carpeta creada en punto anterior.
 9.- Borrar todo{mes actual}2022NoRepeat.json en C:\Users\Usuario\Google Drive\Node.js\xml2json
-10.- Copiar todo{mes actual}2022NoRepeatOK.json a C:\Users\Usuario\Google Drive\Node.js\xml2json
+10.- Copiar fichero anterior a C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\Obsoletos\Obsoletos xml2json
+11.- Copiar todo{mes actual}2022NoRepeatOK.json a C:\Users\Usuario\Google Drive\Node.js\xml2json
 
 CIFrepeat.js
 1.- En CIFrepeat.js
