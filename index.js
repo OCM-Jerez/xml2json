@@ -253,7 +253,6 @@ async function ejecutaTodo() {
             mapJSON();
             process = 2;
         }
-        //juntar datos
         mergeJsonFinal();
     } catch (error) {
         console.error("Error: ", error);
@@ -264,17 +263,13 @@ ejecutaTodo();
 
 //#region Funciones secundarias
 function mergeJsonFinal() {
-    // C:\Users\Usuario\Google Drive\Angular\plataforma-contratacion-estado\src\assets\data
-    // C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\Obsoletos
-    //mover archivos
+    //mover archivos a obsoletos
     const oldPath = 'C:/Users/Usuario/Google Drive/Angular/plataforma-contratacion-estado/src/assets/data';
     const newPath = 'C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Obsoletos';
-
     const oldOk = path.join(oldPath, 'todo062022NoRepeatOkCIFOK.json');
     const newOk = path.join(newPath, 'todo062022NoRepeatOkCIFOK.json');
 
     fs.copyFileSync(oldOk, newOk);
-
 
     const oldAdjudicataria = path.join(oldPath, 'todoAdjudicatarias062022.json');
     const newAdjudicataria = path.join(newPath, 'todoAdjudicatarias062022.json');
@@ -286,7 +281,6 @@ function mergeJsonFinal() {
         jsonFinalProcces.forEach((array) => {
             array.forEach((item) => json.push(item));
         })
-
         fs.writeFileSync(`${oldPath}/demo.json`, JSON.stringify(json));
     })
 }
@@ -299,7 +293,6 @@ function saveFinalJson(arrayFinal) {
         });
 
     if (!fs.existsSync(pathResults)) {
-        // console.log('create--> ', pathResults);
         fs.mkdirSync(pathResults);
     }
 
