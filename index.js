@@ -306,12 +306,6 @@ function saveFinalJson(arrayFinal) {
     jsonFinalProcces.push(arrayFinal);
 
     const result = searchRepeat(arrayFinal);
-
-    // fs.writeFileSync(
-    //     `${pathResults}/final.json`,
-    //     JSON.stringify(arrayFinal)
-    // );
-
     createFile(`${pathResults}/final.json`, arrayFinal);
 
     const totalRepeticiones = arrayFinal.length;
