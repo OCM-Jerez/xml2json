@@ -73,7 +73,7 @@ CIFrepeat.js
 3.- GRABAR
 4.- Tratar todo{mes actual}2021NoRepeatOK.json con CIFrepeat.js
 5.- node CIFrepeat.js
-6.- Comienza a solicitar seleccionar CID adecuado
+6.- Comienza a solicitar seleccionar CIF adecuado
 7.- Genera todo{mes actual}2021NoRepeatOkCIFOK.json
 8.- Crear carpeta "tratados con CIFRepeat.js"
 9.- Mover todos los ficheros de "Resultados" a la carpeta creada en punto anterior.
