@@ -263,17 +263,18 @@ ejecutaTodo();
 
 //#region Funciones secundarias
 function mergeJsonFinal() {
-    //mover archivos a obsoletos
     const oldPath = 'C:/Users/Usuario/Google Drive/Angular/plataforma-contratacion-estado/src/assets/data';
     const newPath = 'C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Obsoletos';
+
+    // TODO crear ficheros con el mes anterior
+    //copiar archivo a obsoletos
     const oldOk = path.join(oldPath, 'todo062022NoRepeatOkCIFOK.json');
     const newOk = path.join(newPath, 'todo062022NoRepeatOkCIFOK.json');
-
     fs.copyFileSync(oldOk, newOk);
 
+    //mover archivo a obsoletos
     const oldAdjudicataria = path.join(oldPath, 'todoAdjudicatarias062022.json');
     const newAdjudicataria = path.join(newPath, 'todoAdjudicatarias062022.json');
-
     fs.renameSync(oldAdjudicataria, newAdjudicataria);
 
     fs.readFile(oldOk, function (err, data) {
