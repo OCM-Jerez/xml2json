@@ -5,6 +5,11 @@ const parserXml2js = new xml2js.Parser();
 const readLineFile = require('readline');
 const readline = require('readline-sync');
 const path = require('path');
+const Common = require('./common');
+const commonInstance = new Common();
+
+const SearchRepeat = require('./searchRepeat');
+const searchRepeatInstance = new SearchRepeat();
 
 countFiles = 0;
 timeExtractZip = 0;
@@ -268,22 +273,45 @@ function mergeJsonFinal() {
 
     // TODO crear ficheros con el mes anterior
     //copiar archivo a obsoletos
-    const oldOk = path.join(oldPath, 'todo062022NoRepeatOkCIFOK.json');
-    const newOk = path.join(newPath, 'todo062022NoRepeatOkCIFOK.json');
+    const month = getOldMonth();
+
+    const oldOk = path.join(oldPath, `todo${month}2022NoRepeatOkCIFOK.json`);
+    const newOk = path.join(newPath, `todo${month}2022NoRepeatOkCIFOK.json`);
     fs.copyFileSync(oldOk, newOk);
 
     //mover archivo a obsoletos
-    const oldAdjudicataria = path.join(oldPath, 'todoAdjudicatarias062022.json');
-    const newAdjudicataria = path.join(newPath, 'todoAdjudicatarias062022.json');
+    const oldAdjudicataria = path.join(oldPath, `todoAdjudicatarias${month}2022.json`);
+    const newAdjudicataria = path.join(newPath, `todoAdjudicatarias${month}2022.json`);
     fs.renameSync(oldAdjudicataria, newAdjudicataria);
 
+    let jsonMerge;
     fs.readFile(oldOk, function (err, data) {
         const json = JSON.parse(data);
         jsonFinalProcces.forEach((array) => {
             array.forEach((item) => json.push(item));
         })
-        fs.writeFileSync(`${oldPath}/demo.json`, JSON.stringify(json));
+        jsonMerge = json;
+        fs.writeFileSync(`${oldPath}/todo${responseMonth}2022NoRepeat.json`, JSON.stringify(json));
+        const repeatJsonMerge = commonInstance.searchRepeat(jsonMerge);
+        searchRepeatInstance.saveResultRepeat(jsonMerge.length, repeatJsonMerge.repeat, repeatJsonMerge.noRepeat, repeatJsonMerge.repeatMajor, responseMonth);
     })
+
+
+}
+
+function getOldMonth() {
+    let month = Number(responseMonth);
+
+    month = month - 1;
+    if (month < 0) {
+        month = 12;
+    }
+
+    if (month < 10) {
+        return `0${month}`
+    }
+
+    return month;
 }
 
 function saveFinalJson(arrayFinal) {
@@ -323,42 +351,43 @@ function saveFinalJson(arrayFinal) {
 }
 
 function searchRepeat(arrayFinal) {
-    const listRepeat = [];
-    const listNoRepeat = [];
-    const listRepeatMajor = [];
+    // const listRepeat = [];
+    // const listNoRepeat = [];
+    // const listRepeatMajor = [];
 
-    arrayFinal.forEach(item => {
-        const data = arrayFinal.filter(filterItem => filterItem.ContractFolderID === item.ContractFolderID);
+    // arrayFinal.forEach(item => {
+    //     const data = arrayFinal.filter(filterItem => filterItem.ContractFolderID === item.ContractFolderID);
 
-        if (data.length > 1) {
-            listRepeat.push(item);
-        } else {
-            listNoRepeat.push(item);
-        }
+    //     if (data.length > 1) {
+    //         listRepeat.push(item);
+    //     } else {
+    //         listNoRepeat.push(item);
+    //     }
 
-    });
+    // });
 
-    listRepeat.forEach(item => {
-        const itemMajor = listRepeatMajor.find(findItem => findItem.ContractFolderID === item.ContractFolderID);
+    // listRepeat.forEach(item => {
+    //     const itemMajor = listRepeatMajor.find(findItem => findItem.ContractFolderID === item.ContractFolderID);
 
-        if (itemMajor === undefined) {
-            const data = listRepeat.filter(filterItem => filterItem.ContractFolderID === item.ContractFolderID);
-            const major = data.reduce((prev, current) => {
-                const dateItemPrev = new Date(prev.updated);
-                const dateItemCurrent = new Date(current.updated);
-                return dateItemPrev > dateItemCurrent ? prev : current
-            });
+    //     if (itemMajor === undefined) {
+    //         const data = listRepeat.filter(filterItem => filterItem.ContractFolderID === item.ContractFolderID);
+    //         const major = data.reduce((prev, current) => {
+    //             const dateItemPrev = new Date(prev.updated);
+    //             const dateItemCurrent = new Date(current.updated);
+    //             return dateItemPrev > dateItemCurrent ? prev : current
+    //         });
 
-            listRepeatMajor.push(major);
-            listNoRepeat.push(major);
-        }
-    });
+    //         listRepeatMajor.push(major);
+    //         listNoRepeat.push(major);
+    //     }
+    // });
+    const objectRepeat = commonInstance.searchRepeat(arrayFinal);
 
-    createFile(`${pathResults}/repeat.json`, listRepeat);
-    createFile(`${pathResults}/repeatMajor.json`, listRepeatMajor);
-    createFile(`${pathResults}/finalNoRepeat.json`, listNoRepeat);
+    commonInstance.createFile(`${pathResults}/repeat.json`, objectRepeat.repeat);
+    commonInstance.createFile(`${pathResults}/repeatMajor.json`, objectRepeat.repeatMajor);
+    commonInstance.createFile(`${pathResults}/finalNoRepeat.json`, objectRepeat.noRepeat);
 
-    return { listRepeat: listRepeat.length, listRepeatMajor: listRepeatMajor.length, listNoRepeat: listNoRepeat.length };
+    return { listRepeat: objectRepeat.repeat.length, listRepeatMajor: objectRepeat.repeatMajor.length, listNoRepeat: objectRepeat.noRepeat.length };
 }
 
 function logFinal(totalLicitaciones, sinRepeticion, repetidos, mayores) {

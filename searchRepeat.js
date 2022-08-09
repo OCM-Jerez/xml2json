@@ -1,73 +1,40 @@
 const fs = require('fs');
-const dataInitial = require("./todo062022NoRepeat.json");
+// const dataInitial = require("./todo062022NoRepeat.json");
+const Common = require('./common');
+const commonInstance = new Common();
 
-searchRepeat(dataInitial);
+class SearchRepeat {
 
-function searchRepeat(dataInitial) {
-    const listRepeat = [];
-    const listNoRepeat = [];
-    const listRepeatMajor = [];
+    saveResultRepeat(dataInitial, listRepeat, listNoRepeat, listRepeatMajor, monthSelected) {
 
-    console.log("Resultados iniciales", dataInitial.length);
-    dataInitial.forEach(item => {
+        const pathRepeat = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Tratados con searchRepeat.js/2022/" + monthSelected;
 
-        const data = dataInitial.filter(filterItem => filterItem.ContractFolderID === item.ContractFolderID);
-
-        if (data.length > 1) {
-            listRepeat.push(item);
-        } else {
-            listNoRepeat.push(item);
+        if (!fs.existsSync(pathRepeat)) {
+            fs.mkdirSync(pathRepeat);
         }
 
-    });
+        commonInstance.createFile(`${pathRepeat}/repeat${monthSelected}2022.json`, listRepeat);
+        commonInstance.createFile(`${pathRepeat}/repeatMajor${monthSelected}2022.json`, listRepeatMajor);
+        commonInstance.createFile(`${pathRepeat}/todo${monthSelected}2022NoRepeatOK.json`, listNoRepeat);
+        console.log("Resultados repetidos", listRepeat.length);
+        console.log("Resultados con fecha mayor", listRepeatMajor.length);
+        console.log("Resultados sin repeticiones", listNoRepeat.length);
 
-    listRepeat.forEach(item => {
-        const itemMajor = listRepeatMajor.find(findItem => findItem.ContractFolderID === item.ContractFolderID);
+        this.logFinal(pathRepeat, monthSelected, dataInitial, listRepeat.length, listRepeatMajor.length, listNoRepeat.length)
 
-        if (itemMajor === undefined) {
-            const data = listRepeat.filter(filterItem => filterItem.ContractFolderID === item.ContractFolderID);
-            const major = data.reduce((prev, current) => {
-                const dateItemPrev = new Date(prev.updated);
-                const dateItemCurrent = new Date(current.updated);
-                return dateItemPrev > dateItemCurrent ? prev : current
-            });
-
-            listRepeatMajor.push(major);
-            listNoRepeat.push(major);
-        }
-    });
-
-    if (!fs.existsSync("./resultados")) {
-        fs.mkdirSync("resultados");
+        return { listRepeat: listRepeat.length, listRepeatMajor: listRepeatMajor.length, listNoRepeat: listNoRepeat.length };
     }
 
-    createFile("./resultados/repeat062022.json", listRepeat);
-    createFile("./resultados/repeatMajor062022.json", listRepeatMajor);
-    createFile("./resultados/todo062022NoRepeatOK.json", listNoRepeat);
-    console.log("Resultados repetidos", listRepeat.length);
-    console.log("Resultados con fecha mayor", listRepeatMajor.length);
-    console.log("Resultados sin repeticiones", listNoRepeat.length);
-    logFinal(listRepeat.length, listRepeatMajor.length, listNoRepeat.length)
-    return { listRepeat: listRepeat.length, listRepeatMajor: listRepeatMajor.length, listNoRepeat: listNoRepeat.length };
-}
-
-function createFile(path, data) {
-    fs.writeFileSync(
-        path,
-        JSON.stringify(data),
-        function (err) {
-            if (err) throw err;
+    logFinal(pathRepeat, monthSelected, dataInitial, listRepeat, listRepeatMajor, listNoRepeat) {
+        const logFinal = {
+            "Total resultados iniciales:": dataInitial,
+            "Total resultados con repeticiones": listRepeat,
+            "Total resultados repetidos más recientes": listRepeatMajor,
+            "Total resultados sin repeticiones": listNoRepeat,
         }
-    );
-}
 
-function logFinal(listRepeat, listRepeatMajor, listNoRepeat) {
-    const logFinal = {
-        "Total resultados iniciales:": dataInitial.length,
-        "Total resultados con repeticiones": listRepeat,
-        "Total resultados repetidos más recientes": listRepeatMajor,
-        "Total resultados sin repeticiones": listNoRepeat,
+        commonInstance.createFile(`${pathRepeat}/logFinal${monthSelected}2022.json`, logFinal);
     }
 
-    createFile("./resultados/logFinal062022.json", logFinal);
 }
+module.exports = SearchRepeat;
