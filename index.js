@@ -11,6 +11,10 @@ const commonInstance = new Common();
 const SearchRepeat = require('./searchRepeat');
 const searchRepeatInstance = new SearchRepeat();
 
+
+const CIFrepeat = require('./CIFrepeat');
+const cifrepeatInstance = new CIFrepeat();
+
 countFiles = 0;
 timeExtractZip = 0;
 timeParseXML2JSON = 0;
@@ -259,6 +263,7 @@ async function ejecutaTodo() {
             process = 2;
         }
         mergeJsonFinal();
+
     } catch (error) {
         console.error("Error: ", error);
     }
@@ -294,6 +299,7 @@ function mergeJsonFinal() {
         fs.writeFileSync(`${oldPath}/todo${responseMonth}2022NoRepeat.json`, JSON.stringify(json));
         const repeatJsonMerge = commonInstance.searchRepeat(jsonMerge);
         searchRepeatInstance.saveResultRepeat(jsonMerge.length, repeatJsonMerge.repeat, repeatJsonMerge.noRepeat, repeatJsonMerge.repeatMajor, responseMonth);
+        cifrepeatInstance.question(repeatJsonMerge.noRepeat, responseMonth, oldPath);
     })
 
 
