@@ -48,6 +48,21 @@ class Common {
         );
     }
 
+    getOldMonth(monthCurrent) {
+        let month = Number(monthCurrent);
+
+        month = month - 1;
+        if (month < 0) {
+            month = 12;
+        }
+
+        if (month < 10) {
+            return `0${month}`
+        }
+
+        return month;
+    }
+
 }
 
 module.exports = Common;

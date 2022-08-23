@@ -256,12 +256,12 @@ function mapJSON() {
 
 async function ejecutaTodo() {
     try {
-        for (let index = 0; index < 2; index++) {
-            await extractZip();
-            await parseXML2JSON();
-            mapJSON();
-            process = 2;
-        }
+        // for (let index = 0; index < 2; index++) {
+        //     await extractZip();
+        //     await parseXML2JSON();
+        //     mapJSON();
+        //     process = 2;
+        // }
         mergeJsonFinal();
 
     } catch (error) {
@@ -278,16 +278,16 @@ function mergeJsonFinal() {
 
     // TODO crear ficheros con el mes anterior
     //copiar archivo a obsoletos
-    const month = getOldMonth();
+    const month = commonInstance.getOldMonth(responseMonth);
 
     const oldOk = path.join(oldPath, `todo${month}2022NoRepeatOkCIFOK.json`);
     const newOk = path.join(newPath, `todo${month}2022NoRepeatOkCIFOK.json`);
-    fs.copyFileSync(oldOk, newOk);
+    //fs.copyFileSync(oldOk, newOk);
 
     //mover archivo a obsoletos
-    const oldAdjudicataria = path.join(oldPath, `todoAdjudicatarias${month}2022.json`);
-    const newAdjudicataria = path.join(newPath, `todoAdjudicatarias${month}2022.json`);
-    fs.renameSync(oldAdjudicataria, newAdjudicataria);
+    // const oldAdjudicataria = path.join(oldPath, `todoAdjudicatarias${month}2022.json`);
+    // const newAdjudicataria = path.join(newPath, `todoAdjudicatarias${month}2022.json`);
+    // fs.renameSync(oldAdjudicataria, newAdjudicataria);
 
     let jsonMerge;
     fs.readFile(oldOk, function (err, data) {
@@ -296,7 +296,7 @@ function mergeJsonFinal() {
             array.forEach((item) => json.push(item));
         })
         jsonMerge = json;
-        fs.writeFileSync(`${oldPath}/todo${responseMonth}2022NoRepeat.json`, JSON.stringify(json));
+        // fs.writeFileSync(`${oldPath}/todo${responseMonth}2022NoRepeat.json`, JSON.stringify(json));
         const repeatJsonMerge = commonInstance.searchRepeat(jsonMerge);
         searchRepeatInstance.saveResultRepeat(jsonMerge.length, repeatJsonMerge.repeat, repeatJsonMerge.noRepeat, repeatJsonMerge.repeatMajor, responseMonth);
         cifrepeatInstance.question(repeatJsonMerge.noRepeat, responseMonth, oldPath);
@@ -305,20 +305,7 @@ function mergeJsonFinal() {
 
 }
 
-function getOldMonth() {
-    let month = Number(responseMonth);
 
-    month = month - 1;
-    if (month < 0) {
-        month = 12;
-    }
-
-    if (month < 10) {
-        return `0${month}`
-    }
-
-    return month;
-}
 
 function saveFinalJson(arrayFinal) {
 

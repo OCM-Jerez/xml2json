@@ -19,6 +19,7 @@ class CifRepeat {
                     const findParty = listPartyIdentification.find(item => tender.PartyIdentification === item);
                     if (!findParty) {
                         //const dataRepeat = searchRepeatTender(dataInitial, tender.PartyIdentification, tender.PartyName);
+
                         const dataRepeat = this.searchRepeatTender(dataInitial, tender.PartyIdentification);
 
                         if (dataRepeat.length > 1) {
@@ -35,6 +36,41 @@ class CifRepeat {
                     }
                 })
             }
+        })
+
+        const month = commonInstance.getOldMonth(monthSelected);
+
+
+        const oldData = fs.readFileSync(`${pathApp}/todoAdjudicatarias${month}2022.json`);
+        const oldDataJson = JSON.parse(oldData);
+
+
+        dataInitial.filter(item => item.arrayTenderResult && item.arrayTenderResult.length > 0).forEach(item => {
+            item.arrayTenderResult.forEach(tender => {
+                const resultOld = oldDataJson.find(oldItem => oldItem.PartyIdentification === tender.PartyIdentification);
+                if (resultOld) {
+                    this.replacePartyName(dataInitial, tender.PartyIdentification, resultOld.PartyName);
+                } else {
+                    const findParty = listPartyIdentification.find(item => tender.PartyIdentification === item);
+                    if (!findParty) {
+
+                        const dataRepeat = this.searchRepeatTender(dataInitial, tender.PartyIdentification);
+
+                        if (dataRepeat.length > 1) {
+                            listPartyIdentification.push(tender.PartyIdentification);
+                            console.log('CIF: ', tender.PartyIdentification);
+                            let question = 'Seleccionar una opción\n';
+                            dataRepeat.forEach((repeatItem, index) => {
+                                question = question + index + ': ' + repeatItem.PartyName + '\n';
+                            })
+                            const option = readline.question(question);
+                            const name = dataRepeat[option].PartyName;
+                            this.replacePartyName(dataInitial, tender.PartyIdentification, name)
+                        }
+                    }
+                }
+
+            })
         })
 
         dataInitial.filter(filter => filter.arrayTenderResult && filter.arrayTenderResult.length > 0).forEach(item => {
@@ -59,6 +95,8 @@ class CifRepeat {
         commonInstance.createFile(`${pathApp}/todo${monthSelected}2022NoRepeatOkCIFOK.json`, dataInitial);
         // this.logFinal()
     }
+
+
 
     replacePartyName(dataInitial, partyIdentification, partyName) {
         dataInitial.filter(filter => filter.arrayTenderResult && filter.arrayTenderResult.length > 0).forEach(item => {
