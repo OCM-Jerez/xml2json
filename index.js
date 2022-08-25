@@ -11,7 +11,6 @@ const commonInstance = new Common();
 const SearchRepeat = require('./searchRepeat');
 const searchRepeatInstance = new SearchRepeat();
 
-
 const CIFrepeat = require('./CIFrepeat');
 const cifrepeatInstance = new CIFrepeat();
 
@@ -256,12 +255,12 @@ function mapJSON() {
 
 async function ejecutaTodo() {
     try {
-        // for (let index = 0; index < 2; index++) {
-        //     await extractZip();
-        //     await parseXML2JSON();
-        //     mapJSON();
-        //     process = 2;
-        // }
+        for (let index = 0; index < 2; index++) {
+            await extractZip();
+            await parseXML2JSON();
+            mapJSON();
+            process = 2;
+        }
         mergeJsonFinal();
 
     } catch (error) {
@@ -302,9 +301,7 @@ function mergeJsonFinal() {
         cifrepeatInstance.question(repeatJsonMerge.noRepeat, responseMonth, oldPath);
     })
 
-
 }
-
 
 
 function saveFinalJson(arrayFinal) {
@@ -344,36 +341,6 @@ function saveFinalJson(arrayFinal) {
 }
 
 function searchRepeat(arrayFinal) {
-    // const listRepeat = [];
-    // const listNoRepeat = [];
-    // const listRepeatMajor = [];
-
-    // arrayFinal.forEach(item => {
-    //     const data = arrayFinal.filter(filterItem => filterItem.ContractFolderID === item.ContractFolderID);
-
-    //     if (data.length > 1) {
-    //         listRepeat.push(item);
-    //     } else {
-    //         listNoRepeat.push(item);
-    //     }
-
-    // });
-
-    // listRepeat.forEach(item => {
-    //     const itemMajor = listRepeatMajor.find(findItem => findItem.ContractFolderID === item.ContractFolderID);
-
-    //     if (itemMajor === undefined) {
-    //         const data = listRepeat.filter(filterItem => filterItem.ContractFolderID === item.ContractFolderID);
-    //         const major = data.reduce((prev, current) => {
-    //             const dateItemPrev = new Date(prev.updated);
-    //             const dateItemCurrent = new Date(current.updated);
-    //             return dateItemPrev > dateItemCurrent ? prev : current
-    //         });
-
-    //         listRepeatMajor.push(major);
-    //         listNoRepeat.push(major);
-    //     }
-    // });
     const objectRepeat = commonInstance.searchRepeat(arrayFinal);
 
     commonInstance.createFile(`${pathResults}/repeat.json`, objectRepeat.repeat);
@@ -426,14 +393,14 @@ function readFiles(pathSearch) {
     return fs.readdirSync(pathSearch);
 }
 
-function createFile(path, data) {
-    fs.writeFileSync(
-        path,
-        JSON.stringify(data),
-        function (err) {
-            if (err) throw err;
-        }
-    );
-}
+// function createFile(path, data) {
+//     fs.writeFileSync(
+//         path,
+//         JSON.stringify(data),
+//         function (err) {
+//             if (err) throw err;
+//         }
+//     );
+// }
 
 //#endregion
