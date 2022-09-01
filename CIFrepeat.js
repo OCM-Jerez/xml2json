@@ -4,14 +4,10 @@ const commonInstance = new Common();
 
 const readline = require('readline-sync');
 
-//const dataInitial = require("./todo062022NoRepeatOk.json");
-
 const listPartyIdentification = [];
 const listAdjudicatarios = [];
 
 class CifRepeat {
-    // question();
-
     question(dataInitial, monthSelected, pathApp) {
         dataInitial.forEach(item => {
             if (item.arrayTenderResult && item.arrayTenderResult.length > 0) {
@@ -39,11 +35,8 @@ class CifRepeat {
         })
 
         const month = commonInstance.getOldMonth(monthSelected);
-
-
         const oldData = fs.readFileSync(`${pathApp}/todoAdjudicatarias${month}2022.json`);
         const oldDataJson = JSON.parse(oldData);
-
 
         dataInitial.filter(item => item.arrayTenderResult && item.arrayTenderResult.length > 0).forEach(item => {
             item.arrayTenderResult.forEach(tender => {
@@ -93,10 +86,9 @@ class CifRepeat {
         // C:/Users/Usuario/Google Drive/Angular/plataforma-contratacion-estado/src/assets/data
         commonInstance.createFile(`${pathApp}/todoAdjudicatarias${monthSelected}2022.json`, adjudicatarias);
         commonInstance.createFile(`${pathApp}/todo${monthSelected}2022NoRepeatOkCIFOK.json`, dataInitial);
+
         // this.logFinal()
     }
-
-
 
     replacePartyName(dataInitial, partyIdentification, partyName) {
         dataInitial.filter(filter => filter.arrayTenderResult && filter.arrayTenderResult.length > 0).forEach(item => {
@@ -107,7 +99,6 @@ class CifRepeat {
         })
     }
 
-    // searchRepeatTender(partyIdentification, partyName) {
     searchRepeatTender(dataInitial, partyIdentification) {
         let arrayTenderFilter = [];
         dataInitial.filter(filter => filter.arrayTenderResult && filter.arrayTenderResult.length > 0).forEach(item => {
@@ -123,8 +114,6 @@ class CifRepeat {
         return uniqueTender;//
     }
 
-
-    // C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Tratados con CIFrepeat.js/2022/06
     logFinal(dataInitial, listRepeat, listRepeatMajor, listNoRepeat, monthSelected) {
         const path = `C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Tratados con CIFrepeat.js/2022/${monthSelected}`;
         const logFinal = {

@@ -5,6 +5,7 @@ const parserXml2js = new xml2js.Parser();
 const readLineFile = require('readline');
 const readline = require('readline-sync');
 const path = require('path');
+
 const Common = require('./common');
 const commonInstance = new Common();
 
@@ -38,8 +39,8 @@ async function extractZip() {
     const start = Date.now();
 
     if (responseMonth) {
+        // Se contruye la ruta en función de es el primer proceso o el segundo, ademas se sustituye el mes por el que se hja introducido en la consola.
         const ficheroZip = ficheroZIP.replace('FOLDER', process == 1 ? "licitaciones" : "contratos menores").replace('PROCCESS', process == 1 ? "licitacionesPerfilesContratanteCompleto3" : "contratosMenoresPerfilesContratantes").replace("MONTH", responseMonth);
-        pathResults = pathResultsParam.replace('FOLDER', process == 1 ? "licitaciones" : "contratos menores") + `/${responseMonth}`;
 
         const zip = new StreamZip.async({ file: ficheroZip });
 
@@ -114,8 +115,6 @@ function mapJSON() {
 
         liciObject.feed.entry
             .filter((itemFilter) =>
-                // itemFilter.title[0].search('Fundación') != -1
-
                 itemFilter.summary[0]._.match(
                     /\b(?:Junta de Gobierno Local del Ayuntamiento de Jerez|Patronato de la Fundación Centro de Acogida San José|Empresa Municipal de la Vivienda de Jerez|COMUJESA|FUNDARTE|MERCAJEREZ)\b/g
                     // Para comprobar que busca con acentos.
@@ -248,6 +247,7 @@ function mapJSON() {
 
     });
 
+    pathResults = pathResultsParam.replace('FOLDER', process == 1 ? "licitaciones" : "contratos menores") + `/${responseMonth}`;
     saveFinalJson(arrayFinal);
     const stop = Date.now();
     this.timeMapJSON = ((stop - start) / 60000).toFixed(2);
@@ -275,18 +275,13 @@ function mergeJsonFinal() {
     const oldPath = 'C:/Users/Usuario/Google Drive/Angular/plataforma-contratacion-estado/src/assets/data';
     const newPath = 'C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Obsoletos';
 
-    // TODO crear ficheros con el mes anterior
-    //copiar archivo a obsoletos
     const month = commonInstance.getOldMonth(responseMonth);
 
     const oldOk = path.join(oldPath, `todo${month}2022NoRepeatOkCIFOK.json`);
     const newOk = path.join(newPath, `todo${month}2022NoRepeatOkCIFOK.json`);
-    //fs.copyFileSync(oldOk, newOk);
 
-    //mover archivo a obsoletos
-    // const oldAdjudicataria = path.join(oldPath, `todoAdjudicatarias${month}2022.json`);
-    // const newAdjudicataria = path.join(newPath, `todoAdjudicatarias${month}2022.json`);
-    // fs.renameSync(oldAdjudicataria, newAdjudicataria);
+    const oldAdjudicataria = path.join(oldPath, `todoAdjudicatarias${month}2022.json`);
+    const newAdjudicataria = path.join(newPath, `todoAdjudicatarias${month}2022.json`);
 
     let jsonMerge;
     fs.readFile(oldOk, function (err, data) {
@@ -300,6 +295,11 @@ function mergeJsonFinal() {
         searchRepeatInstance.saveResultRepeat(jsonMerge.length, repeatJsonMerge.repeat, repeatJsonMerge.noRepeat, repeatJsonMerge.repeatMajor, responseMonth);
         cifrepeatInstance.question(repeatJsonMerge.noRepeat, responseMonth, oldPath);
     })
+
+    // Mover archivos a obsoletos
+    // fs.renameSync(oldAdjudicataria, newAdjudicataria);
+    // fs.copyFileSync(oldOk, newOk);
+    fs.renameSync(oldOk, newOk);
 
 }
 
@@ -393,14 +393,14 @@ function readFiles(pathSearch) {
     return fs.readdirSync(pathSearch);
 }
 
-// function createFile(path, data) {
-//     fs.writeFileSync(
-//         path,
-//         JSON.stringify(data),
-//         function (err) {
-//             if (err) throw err;
-//         }
-//     );
-// }
+function createFile(path, data) {
+    fs.writeFileSync(
+        path,
+        JSON.stringify(data),
+        function (err) {
+            if (err) throw err;
+        }
+    );
+}
 
 //#endregion
