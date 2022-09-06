@@ -24,6 +24,7 @@ totalLines = 0;
 // Meses
 // const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2022/licitacionesPerfilesContratanteCompleto3_202206.zip";
 const responseMonth = readline.question('ingrese el mes\n');
+const respondeCreateFiles = readline.question('Desea crear los fichero?\n');
 
 const ficheroZIP = "C:/Users/usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2022/PROCCESS_2022MONTH.zip";
 const pathResultsParam = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2022/resultados";
@@ -255,12 +256,15 @@ function mapJSON() {
 
 async function ejecutaTodo() {
     try {
-        for (let index = 0; index < 2; index++) {
-            await extractZip();
-            await parseXML2JSON();
-            mapJSON();
-            process = 2;
+        if (respondeCreateFiles.toUpperCase() === 'Y') {
+            for (let index = 0; index < 2; index++) {
+                await extractZip();
+                await parseXML2JSON();
+                mapJSON();
+                process = 2;
+            }
         }
+
         mergeJsonFinal();
 
     } catch (error) {
@@ -299,7 +303,7 @@ function mergeJsonFinal() {
     // Mover archivos a obsoletos
     // fs.renameSync(oldAdjudicataria, newAdjudicataria);
     // fs.copyFileSync(oldOk, newOk);
-    fs.renameSync(oldOk, newOk);
+    // fs.renameSync(oldOk, newOk);
 
 }
 

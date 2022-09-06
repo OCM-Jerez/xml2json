@@ -9,34 +9,38 @@ const listAdjudicatarios = [];
 
 class CifRepeat {
     question(dataInitial, monthSelected, pathApp) {
-        dataInitial.forEach(item => {
-            if (item.arrayTenderResult && item.arrayTenderResult.length > 0) {
-                item.arrayTenderResult.forEach(tender => {
-                    const findParty = listPartyIdentification.find(item => tender.PartyIdentification === item);
-                    if (!findParty) {
-                        //const dataRepeat = searchRepeatTender(dataInitial, tender.PartyIdentification, tender.PartyName);
+        // dataInitial.filter(item => item.arrayTenderResult && item.arrayTenderResult.length > 0).forEach(item => {
+        //     item.arrayTenderResult.forEach(tender => {
 
-                        const dataRepeat = this.searchRepeatTender(dataInitial, tender.PartyIdentification);
+        //         const findParty = listPartyIdentification.find(item => tender.PartyIdentification === item);
+        //         if (!findParty) {
+        //             //const dataRepeat = searchRepeatTender(dataInitial, tender.PartyIdentification, tender.PartyName);
 
-                        if (dataRepeat.length > 1) {
-                            listPartyIdentification.push(tender.PartyIdentification);
-                            console.log('CIF: ', tender.PartyIdentification);
-                            let question = 'Seleccionar una opción\n';
-                            dataRepeat.forEach((repeatItem, index) => {
-                                question = question + index + ': ' + repeatItem.PartyName + '\n';
-                            })
-                            const option = readline.question(question);
-                            const name = dataRepeat[option].PartyName;
-                            this.replacePartyName(dataInitial, tender.PartyIdentification, name)
-                        }
-                    }
-                })
-            }
-        })
+        //             const dataRepeat = this.searchRepeatTender(dataInitial, tender.PartyIdentification);
+
+        //             // if (tender.PartyIdentification === 'B11604972' && dataRepeat.length > 1) {
+        //             //     debugger
+        //             // }
+        //             if (dataRepeat.length > 1) {
+        //                 listPartyIdentification.push(tender.PartyIdentification);
+        //                 console.log('CIF: ', tender.PartyIdentification);
+        //                 let question = 'Seleccionar una opción\n';
+        //                 dataRepeat.forEach((repeatItem, index) => {
+        //                     question = question + index + ': ' + repeatItem.PartyName + '\n';
+        //                 })
+        //                 const option = readline.question(question);
+        //                 const name = dataRepeat[option].PartyName;
+        //                 this.replacePartyName(dataInitial, tender.PartyIdentification, name)
+        //             }
+        //         }
+        //     })
+        // })
 
         const month = commonInstance.getOldMonth(monthSelected);
         const oldData = fs.readFileSync(`${pathApp}/todoAdjudicatarias${month}2022.json`);
         const oldDataJson = JSON.parse(oldData);
+
+        const newAdjudicatarias = [];
 
         dataInitial.filter(item => item.arrayTenderResult && item.arrayTenderResult.length > 0).forEach(item => {
             item.arrayTenderResult.forEach(tender => {
@@ -58,8 +62,11 @@ class CifRepeat {
                             })
                             const option = readline.question(question);
                             const name = dataRepeat[option].PartyName;
-                            this.replacePartyName(dataInitial, tender.PartyIdentification, name)
+                            this.replacePartyName(dataInitial, tender.PartyIdentification, name);
                         }
+
+                        newAdjudicatarias.push({ PartyName: tender.PartyName, PartyIdentification: tender.PartyIdentification });
+
                     }
                 }
 
@@ -68,16 +75,19 @@ class CifRepeat {
 
         dataInitial.filter(filter => filter.arrayTenderResult && filter.arrayTenderResult.length > 0).forEach(item => {
             item.arrayTenderResult.forEach(tender => {
-                listAdjudicatarios.push({ PartyName: tender.PartyName, PartyIdentification: tender.PartyIdentification })
+                const isDuplicate = listAdjudicatarios.filter((item) => item.PartyIdentification === tender.PartyIdentification);
+                if (isDuplicate.length === 0) {
+                    listAdjudicatarios.push({ PartyName: tender.PartyName, PartyIdentification: tender.PartyIdentification })
+                }
             })
         })
 
-        let adjudicatarias = Array.from(new Set(listAdjudicatarios.map(a => a.PartyName.trim())))
-            .map(PartyName => {
-                return listAdjudicatarios.find(a => a.PartyName.trim() === PartyName.trim())
-            })
+        // let adjudicatarias = Array.from(new Set(listAdjudicatarios.map(a => a.PartyName.trim())))
+        //     .map(PartyName => {
+        //         return listAdjudicatarios.find(a => a.PartyName.trim() === PartyName.trim())
+        //     })
 
-        adjudicatarias = adjudicatarias.sort(function (a, b) {
+        const adjudicatarias = listAdjudicatarios.sort(function (a, b) {
             if (a.PartyName.trim() < b.PartyName.trim()) { return -1 }
             if (a.PartyName.trim() > b.PartyName.trim()) { return 1 }
             return 0;
@@ -86,7 +96,7 @@ class CifRepeat {
         // C:/Users/Usuario/Google Drive/Angular/plataforma-contratacion-estado/src/assets/data
         commonInstance.createFile(`${pathApp}/todoAdjudicatarias${monthSelected}2022.json`, adjudicatarias);
         commonInstance.createFile(`${pathApp}/todo${monthSelected}2022NoRepeatOkCIFOK.json`, dataInitial);
-
+        commonInstance.createFile(`${pathApp}/nuevasAdjudicatarias${monthSelected}2022.json`, newAdjudicatarias);
         // this.logFinal()
     }
 
@@ -94,7 +104,7 @@ class CifRepeat {
         dataInitial.filter(filter => filter.arrayTenderResult && filter.arrayTenderResult.length > 0).forEach(item => {
             item.arrayTenderResult.filter(tenderFilter => tenderFilter.PartyIdentification === partyIdentification)
                 .forEach(tender => {
-                    tender.PartyName = partyName;
+                    tender.PartyName = partyName.trim();
                 });
         })
     }
@@ -106,7 +116,8 @@ class CifRepeat {
                 .forEach(tender => {
                     arrayTenderFilter.push(tender);
                 })
-        })
+        });
+
         const uniqueTender = Array.from(new Set(arrayTenderFilter.map(a => a.PartyName.trim())))
             .map(PartyName => {
                 return arrayTenderFilter.find(a => a.PartyName.trim() === PartyName.trim())
