@@ -1,5 +1,4 @@
 const fs = require('fs');
-// const dataInitial = require("./todo062022NoRepeat.json");
 const Common = require('./common');
 const commonInstance = new Common();
 

@@ -13,6 +13,15 @@ Hay tres tipos de ficheros:
     Licitaciones
     Contratos menores.
 
+
+// Meses
+// const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2022/licitacionesPerfilesContratanteCompleto3_202206.zip";
+
+// Años
+// const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/contratos menores/2020/contratosMenoresPerfilesContratantes_2020.zip";
+// const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2020/licitacionesPerfilesContratanteCompleto3_2020.zip";
+
+
 LICITACIONES
  Guardar enlace como  => C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\licitaciones\2022\
  HAY QUE CONFIRMAR DESCARGA
@@ -20,7 +29,7 @@ LICITACIONES
 2.- GRABAR
 3.- Borrar carpeta resultados
 4.- node index.js
-5.- Se generaran ficheros de resultados en la carpeta resultados.
+5.- Se generaran ficheros de resultados en la carpeta resultados de la app.
 6.- Mover la carpeta resultados a C:\Users\Usuario\Google Drive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\ CARPETA CORRESPONDIENTE.
 7.- finalNoRepeat.json es el fichero con los duplicados encontrados tratados para dejar unicamente los más recientes.
 8.- Abrir finalNoRepeat.json

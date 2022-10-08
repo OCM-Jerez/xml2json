@@ -20,20 +20,13 @@ timeExtractZip = 0;
 timeParseXML2JSON = 0;
 timeMapJSON = 0;
 totalLines = 0;
-
-// Meses
-// const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2022/licitacionesPerfilesContratanteCompleto3_202206.zip";
-const responseMonth = readline.question('ingrese el mes\n');
-const respondeCreateFiles = readline.question('Desea crear los fichero?\n');
-
+const responseMonth = readline.question('Ingresa el mes 09-10-11...\n');
+const respondeCreateFiles = readline.question('Desea crear los fichero? S/N\n');
 const ficheroZIP = "C:/Users/usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2022/PROCCESS_2022MONTH.zip";
 const pathResultsParam = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2022/resultados";
 let pathResults = "";
 let process = 1;
 let jsonFinalProcces = [];
-// Años
-// const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/contratos menores/2020/contratosMenoresPerfilesContratantes_2020.zip";
-// const ficheroZIP = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/licitaciones/2020/licitacionesPerfilesContratanteCompleto3_2020.zip";
 
 async function extractZip() {
     console.log("************** extractZip  inicio ********************");
@@ -64,6 +57,9 @@ async function extractZip() {
         this.timeExtractZip = ((stop - start) / 60000).toFixed(2);
         await zip.close();
         return Promise.resolve(true);
+    } else {
+        this.responseMonth = readline.question('Ingresa el mes 09-10-11...\n');
+        extractZip();
     }
 
 }
@@ -251,6 +247,7 @@ function mapJSON() {
     });
 
     pathResults = pathResultsParam.replace('FOLDER', process == 1 ? "licitaciones" : "contratos menores") + `/${responseMonth}`;
+    // Guarda todos los resultados
     saveFinalJson(arrayFinal);
     const stop = Date.now();
     this.timeMapJSON = ((stop - start) / 60000).toFixed(2);
@@ -258,7 +255,7 @@ function mapJSON() {
 
 async function ejecutaTodo() {
     try {
-        if (respondeCreateFiles.toUpperCase() === 'Y') {
+        if (respondeCreateFiles.toUpperCase() === 'S') {
             for (let index = 0; index < 2; index++) {
                 await extractZip();
                 await parseXML2JSON();
@@ -278,6 +275,39 @@ ejecutaTodo();
 
 //#region Funciones secundarias
 function mergeJsonFinal() {
+    const appPath = 'C:/Users/Usuario/Google Drive/Angular/plataforma-contratacion-estado/src/assets/data';
+    const obsoletosPath = 'C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Obsoletos';
+    const intermediosPath = 'C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Resultados contratos+licitaciones';
+
+    const month = commonInstance.getOldMonth(responseMonth);
+
+    const appPathFileData = path.join(appPath, `todo${month}2022NoRepeatOkCIFOK.json`);
+    const obsoletosPathFileData = path.join(obsoletosPath, `todo${month}2022NoRepeatOkCIFOK.json`);
+
+    const appPathFileAdjudicatarios = path.join(appPath, `todoAdjudicatarias${month}2022.json`);
+    const obsoletosPathFileAdjudicatarios = path.join(obsoletosPath, `todoAdjudicatarias${month}2022.json`);
+
+    let jsonMerge;
+    fs.readFile(oldOk, function (err, data) {
+        const json = JSON.parse(data);
+        jsonFinalProcces.forEach((array) => {
+            array.forEach((item) => json.push(item));
+        })
+        jsonMerge = json;
+        // fs.writeFileSync(`${oldPath}/todo${responseMonth}2022NoRepeat.json`, JSON.stringify(json));
+        const repeatJsonMerge = commonInstance.searchRepeat(jsonMerge);
+        searchRepeatInstance.saveResultRepeat(jsonMerge.length, repeatJsonMerge.repeat, repeatJsonMerge.noRepeat, repeatJsonMerge.repeatMajor, responseMonth);
+        cifrepeatInstance.question(repeatJsonMerge.noRepeat, responseMonth, oldPath);
+    })
+
+    // Mover archivos a obsoletos
+    // fs.renameSync(oldAdjudicataria, newAdjudicataria);
+    // fs.copyFileSync(oldOk, newOk);
+    // fs.renameSync(oldOk, newOk);
+
+}
+
+function OLDmergeJsonFinal() {
     const oldPath = 'C:/Users/Usuario/Google Drive/Angular/plataforma-contratacion-estado/src/assets/data';
     const newPath = 'C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Obsoletos';
 
@@ -315,10 +345,14 @@ function saveFinalJson(arrayFinal) {
             console.error("Error: ", error);
         });
 
+
+    // pathResults se crea en mapJSON
+    // pathResults = pathResultsParam.replace('FOLDER', process == 1 ? "licitaciones" : "contratos menores") + `/${responseMonth}`;
     if (!fs.existsSync(pathResults)) {
         fs.mkdirSync(pathResults);
     }
 
+    // ¿Esta linea sirve para algo?
     jsonFinalProcces.push(arrayFinal);
 
     const result = searchRepeat(arrayFinal);
