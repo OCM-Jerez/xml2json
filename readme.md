@@ -33,10 +33,7 @@
 # Como ejecutar el código 🖥️
 - Clonar el repositorio.
 - npm install para instalar referencias.
-- En index.js cambiar la ruta a la carpeta donde se encuentre el ZIP de contratos menores bajado de la Plataforma de Contratación del Sector Público.
 - En index.js cambiar los Organos de Contratación que se quieren filtar. <a href= 'https://contrataciondelsectorpublico.gob.es/datosabiertos/OrganosContratacion.xlsx'> Excel con todos los  Organos de Contratación </a>
-- Ejecutar node index.js.
--  En index.js cambiar la ruta a la carpeta donde se encuentre el ZIP de licitaciones bajado de la Plataforma de Contratación del Sector Público.
 - Ejecutar node index.js.
 
 # Sugerencias nuevas caracteristicas 💎
