@@ -309,9 +309,7 @@ function mergeJsonFinal() {
 
 }
 
-
 function saveFinalJson(arrayFinal) {
-
     fs.rmdirSync("./extracted", { recursive: true, force: true },
         (error) => {
             console.error("Error: ", error);
