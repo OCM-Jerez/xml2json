@@ -40,9 +40,11 @@ async function extractZip() {
     const start = Date.now();
 
     if (responseMonth) {
-        // Se contruye la ruta en función de es el primer proceso o el segundo, ademas se sustituye el mes por el que se hja introducido en la consola.
-        const ficheroZip = ficheroZIP.replace('FOLDER', process == 1 ? "licitaciones" : "contratos menores").replace('PROCCESS', process == 1 ? "licitacionesPerfilesContratanteCompleto3" : "contratosMenoresPerfilesContratantes").replace("MONTH", responseMonth);
-
+        // Se construye la ruta en función de es el primer proceso o el segundo, ademas se sustituye el mes por el que se haya introducido en la consola.
+        const ficheroZip = ficheroZIP
+            .replace('FOLDER', process == 1 ? "licitaciones" : "contratos menores")
+            .replace('PROCCESS', process == 1 ? "licitacionesPerfilesContratanteCompleto3" : "contratosMenoresPerfilesContratantes")
+            .replace("MONTH", responseMonth);
         const zip = new StreamZip.async({ file: ficheroZip });
 
         if (!fs.existsSync("./extracted")) {
