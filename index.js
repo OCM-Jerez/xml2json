@@ -20,7 +20,7 @@ timeExtractZip = 0;
 timeParseXML2JSON = 0;
 timeMapJSON = 0;
 totalLines = 0;
-const responseMonth = readline.question('Ingresa el mes 09-10-11...\n');
+const responseMonth = readline.question('Ingresa el mes con dos cifras, por ejemplo 09-10-11...\n');
 const respondeCreateFiles = readline.question('Desea crear los fichero? S/N\n');
 const ficheroZIP = "C:/Users/usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2022/PROCCESS_2022MONTH.zip";
 const pathResultsParam = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2022/resultados";
@@ -288,7 +288,7 @@ function mergeJsonFinal() {
     const obsoletosPathFileAdjudicatarios = path.join(obsoletosPath, `todoAdjudicatarias${month}2022.json`);
 
     let jsonMerge;
-    fs.readFile(oldOk, function (err, data) {
+    fs.readFile(appPathFileData, function (err, data) {
         const json = JSON.parse(data);
         jsonFinalProcces.forEach((array) => {
             array.forEach((item) => json.push(item));
@@ -297,13 +297,13 @@ function mergeJsonFinal() {
         // fs.writeFileSync(`${oldPath}/todo${responseMonth}2022NoRepeat.json`, JSON.stringify(json));
         const repeatJsonMerge = commonInstance.searchRepeat(jsonMerge);
         searchRepeatInstance.saveResultRepeat(jsonMerge.length, repeatJsonMerge.repeat, repeatJsonMerge.noRepeat, repeatJsonMerge.repeatMajor, responseMonth);
-        cifrepeatInstance.question(repeatJsonMerge.noRepeat, responseMonth, oldPath);
+        cifrepeatInstance.question(repeatJsonMerge.noRepeat, responseMonth, appPath);
     })
 
     // Mover archivos a obsoletos
-    // fs.renameSync(oldAdjudicataria, newAdjudicataria);
-    // fs.copyFileSync(oldOk, newOk);
-    // fs.renameSync(oldOk, newOk);
+    // fs.renameSync(appPathFileAdjudicatarios, obsoletosPathFileAdjudicatarios);
+    // fs.copyFileSync(appPathFileData, obsoletosPathFileData);
+    // fs.renameSync(appPathFileData, obsoletosPathFileData);
 
 }
 
