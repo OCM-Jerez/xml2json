@@ -22,7 +22,9 @@ timeMapJSON = 0;
 totalLines = 0;
 const responseMonth = readline.question('Ingresa el mes con dos cifras, por ejemplo 09-10-11...\n');
 const respondeCreateFiles = readline.question('Desea crear los fichero? S/N\n');
-const ficheroZIP = "C:/Users/usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2022/PROCCESS_2022MONTH.zip";
+// const ficheroZIP = "C:/Users/usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2022/PROCCESS_2022MONTH.zip";
+const ficheroZIP = "C:/Users/usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2022/PROCCESS_MONTH.zip";
+
 const pathResultsParam = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2022/resultados";
 let pathResults = "";
 let process = 1;
@@ -34,10 +36,12 @@ async function extractZip() {
 
     if (responseMonth) {
         // Se construye la ruta en función de es el primer proceso o el segundo, ademas se sustituye el mes por el que se haya introducido en la consola.
+        // Al finalizar un año no existe el fichero de diciembre. Crean un fichero con el año completo
         const ficheroZip = ficheroZIP
             .replace('FOLDER', process == 1 ? "licitaciones" : "contratos menores")
             .replace('PROCCESS', process == 1 ? "licitacionesPerfilesContratanteCompleto3" : "contratosMenoresPerfilesContratantes")
-            .replace("MONTH", responseMonth);
+            // .replace("MONTH", responseMonth);
+            .replace("MONTH", "2022");
         const zip = new StreamZip.async({ file: ficheroZip });
 
         if (!fs.existsSync("./extracted")) {
