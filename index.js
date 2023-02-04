@@ -22,10 +22,11 @@ timeMapJSON = 0;
 totalLines = 0;
 const responseMonth = readline.question('Ingresa el mes con dos cifras, por ejemplo 09-10-11...\n');
 const respondeCreateFiles = readline.question('Desea crear los fichero? S/N\n');
-// const ficheroZIP = "C:/Users/usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2022/PROCCESS_2022MONTH.zip";
-const ficheroZIP = "C:/Users/usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2022/PROCCESS_MONTH.zip";
+const ficheroZIP = "C:/Users/usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2023/PROCCESS_2023MONTH.zip";
+// Al finalizar un año no existe el fichero de diciembre. Crean un fichero con el año completo
+// const ficheroZIP = "C:/Users/usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2022/PROCCESS_MONTH.zip";
 
-const pathResultsParam = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2022/resultados";
+const pathResultsParam = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2023/resultados";
 let pathResults = "";
 let process = 1;
 let jsonFinalProcces = [];
@@ -40,8 +41,8 @@ async function extractZip() {
         const ficheroZip = ficheroZIP
             .replace('FOLDER', process == 1 ? "licitaciones" : "contratos menores")
             .replace('PROCCESS', process == 1 ? "licitacionesPerfilesContratanteCompleto3" : "contratosMenoresPerfilesContratantes")
-            // .replace("MONTH", responseMonth);
-            .replace("MONTH", "2022");
+            .replace("MONTH", responseMonth);
+        // .replace("MONTH", "2022");
         const zip = new StreamZip.async({ file: ficheroZip });
 
         if (!fs.existsSync("./extracted")) {
@@ -285,11 +286,11 @@ function mergeJsonFinal() {
 
     const month = commonInstance.getOldMonth(responseMonth);
 
-    const appPathFileData = path.join(appPath, `todo${month}2022NoRepeatOkCIFOK.json`);
-    const obsoletosPathFileData = path.join(obsoletosPath, `todo${month}2022NoRepeatOkCIFOK.json`);
+    const appPathFileData = path.join(appPath, `todo${month}2023NoRepeatOkCIFOK.json`);
+    const obsoletosPathFileData = path.join(obsoletosPath, `todo${month}2023NoRepeatOkCIFOK.json`);
 
-    const appPathFileAdjudicatarios = path.join(appPath, `todoAdjudicatarias${month}2022.json`);
-    const obsoletosPathFileAdjudicatarios = path.join(obsoletosPath, `todoAdjudicatarias${month}2022.json`);
+    const appPathFileAdjudicatarios = path.join(appPath, `todoAdjudicatarias${month}2023.json`);
+    const obsoletosPathFileAdjudicatarios = path.join(obsoletosPath, `todoAdjudicatarias${month}2023.json`);
 
     let jsonMerge;
     fs.readFile(appPathFileData, function (err, data) {
@@ -317,11 +318,11 @@ function OLDmergeJsonFinal() {
 
     const month = commonInstance.getOldMonth(responseMonth);
 
-    const oldOk = path.join(oldPath, `todo${month}2022NoRepeatOkCIFOK.json`);
-    const newOk = path.join(newPath, `todo${month}2022NoRepeatOkCIFOK.json`);
+    const oldOk = path.join(oldPath, `todo${month}2023NoRepeatOkCIFOK.json`);
+    const newOk = path.join(newPath, `todo${month}2023NoRepeatOkCIFOK.json`);
 
-    const oldAdjudicataria = path.join(oldPath, `todoAdjudicatarias${month}2022.json`);
-    const newAdjudicataria = path.join(newPath, `todoAdjudicatarias${month}2022.json`);
+    const oldAdjudicataria = path.join(oldPath, `todoAdjudicatarias${month}2023.json`);
+    const newAdjudicataria = path.join(newPath, `todoAdjudicatarias${month}2023.json`);
 
     let jsonMerge;
     fs.readFile(oldOk, function (err, data) {
