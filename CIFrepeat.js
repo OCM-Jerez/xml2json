@@ -37,7 +37,7 @@ class CifRepeat {
         // })
 
         const month = commonInstance.getOldMonth(monthSelected);
-        const oldData = fs.readFileSync(`${pathApp}/todoAdjudicatarias${month}2022.json`);
+        const oldData = fs.readFileSync(`${pathApp}/todoAdjudicatarias${month}2023.json`);
         const oldDataJson = JSON.parse(oldData);
 
         const newAdjudicatarias = [];
@@ -94,9 +94,9 @@ class CifRepeat {
         });
 
         // C:/Users/Usuario/Google Drive/Angular/plataforma-contratacion-estado/src/assets/data
-        commonInstance.createFile(`${pathApp}/todoAdjudicatarias${monthSelected}2022.json`, adjudicatarias);
-        commonInstance.createFile(`${pathApp}/todo${monthSelected}2022NoRepeatOkCIFOK.json`, dataInitial);
-        commonInstance.createFile(`${pathApp}/nuevasAdjudicatarias${monthSelected}2022.json`, newAdjudicatarias);
+        commonInstance.createFile(`${pathApp}/todoAdjudicatarias${monthSelected}2023.json`, adjudicatarias);
+        commonInstance.createFile(`${pathApp}/todo${monthSelected}2023NoRepeatOkCIFOK.json`, dataInitial);
+        commonInstance.createFile(`${pathApp}/nuevasAdjudicatarias${monthSelected}2023.json`, newAdjudicatarias);
         // this.logFinal()
     }
 
@@ -126,14 +126,16 @@ class CifRepeat {
     }
 
     logFinal(dataInitial, listRepeat, listRepeatMajor, listNoRepeat, monthSelected) {
-        const path = `C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Tratados con CIFrepeat.js/2022/${monthSelected}`;
+        // const path = `C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Tratados con CIFrepeat.js/2022/${monthSelected}`;
+        const path = `C:/Users/Usuario/Mi unidad/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Tratados con CIFrepeat.js/2023/${monthSelected}`;
+
         const logFinal = {
             "Total resultados iniciales:": dataInitial.length,
             "Total resultados con repeticiones": listRepeat,
             "Total resultados repetidos más recientes": listRepeatMajor,
             "Total resultados sin repeticiones": listNoRepeat,
         }
-        commonInstance.createFile(`${path}/logFinal${monthSelected}2022.json`, logFinal);
+        commonInstance.createFile(`${path}/logFinal${monthSelected}2023.json`, logFinal);
     }
 }
 
