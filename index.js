@@ -343,48 +343,11 @@ function mergeJsonFinal() {
 
 }
 
-function OLDmergeJsonFinal() {
-    // const oldPath = 'C:/Users/Usuario/Google Drive/Angular/plataforma-contratacion-estado/src/assets/data';
-    // const newPath = 'C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Obsoletos';
-    // const oldPath = 'C:/Users/Usuario/Mi unidad/Angular/Angular/plataforma-contratacion-estado/src/assets/data';
-    // const newPath = 'C:/Users/Usuario/Mi unidad/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Obsoletos';
-    const oldPath = 'C:/Users/Usuario/OneDrive/Angular/Angular/plataforma-contratacion-estado/src/assets/data';
-    const newPath = 'C:/Users/Usuario/OneDrive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Obsoletos';
-
-    const month = commonInstance.getOldMonth(responseMonth);
-
-    const oldOk = path.join(oldPath, `todo${month}2023NoRepeatOkCIFOK.json`);
-    const newOk = path.join(newPath, `todo${month}2023NoRepeatOkCIFOK.json`);
-
-    const oldAdjudicataria = path.join(oldPath, `todoAdjudicatarias${month}2023.json`);
-    const newAdjudicataria = path.join(newPath, `todoAdjudicatarias${month}2023.json`);
-
-    let jsonMerge;
-    fs.readFile(oldOk, function (err, data) {
-        const json = JSON.parse(data);
-        jsonFinalProcces.forEach((array) => {
-            array.forEach((item) => json.push(item));
-        })
-        jsonMerge = json;
-        // fs.writeFileSync(`${oldPath}/todo${responseMonth}2022NoRepeat.json`, JSON.stringify(json));
-        const repeatJsonMerge = commonInstance.searchRepeat(jsonMerge);
-        searchRepeatInstance.saveResultRepeat(jsonMerge.length, repeatJsonMerge.repeat, repeatJsonMerge.noRepeat, repeatJsonMerge.repeatMajor, responseMonth);
-        cifrepeatInstance.question(repeatJsonMerge.noRepeat, responseMonth, oldPath);
-    })
-
-    // Mover archivos a obsoletos
-    // fs.renameSync(oldAdjudicataria, newAdjudicataria);
-    // fs.copyFileSync(oldOk, newOk);
-    // fs.renameSync(oldOk, newOk);
-
-}
-
 function saveFinalJson(arrayFinal) {
     fs.rmdirSync("./extracted", { recursive: true, force: true },
         (error) => {
             console.error("Error: ", error);
         });
-
 
     // pathResults se crea en mapJSON
     // pathResults = pathResultsParam.replace('FOLDER', process == 1 ? "licitaciones" : "contratos menores") + `/${responseMonth}`;
@@ -441,7 +404,6 @@ function logFinal(totalLicitaciones, sinRepeticion, repetidos, mayores) {
         [`Total ${processDescription} sin repeticiones`]: sinRepeticion,
         [`Total ${processDescription} con repeticiones`]: repetidos,
         [`Total ${processDescription} repetid${ao}s más recientes`]: mayores,
-
     }
 
     createFile(`${pathResults}/logFinal.json`, logFinal);
