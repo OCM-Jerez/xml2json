@@ -99,7 +99,6 @@ class CifRepeat {
 			return 0;
 		});
 
-		// C:/Users/Usuario/Google Drive/Angular/plataforma-contratacion-estado/src/assets/data
 		commonInstance.createFile(`${pathApp}/todoAdjudicatarias${monthSelected}2023.json`, adjudicatarias);
 		commonInstance.createFile(`${pathApp}/todo${monthSelected}2023NoRepeatOkCIFOK.json`, dataInitial);
 		commonInstance.createFile(`${pathApp}/nuevasAdjudicatarias${monthSelected}2023.json`, newAdjudicatarias);
@@ -137,8 +136,6 @@ class CifRepeat {
 	}
 
 	logFinal(dataInitial, listRepeat, listRepeatMajor, listNoRepeat, monthSelected) {
-		// const path = `C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Tratados con CIFrepeat.js/2022/${monthSelected}`;
-		// const path = `C:/Users/Usuario/Mi unidad/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Tratados con CIFrepeat.js/2023/${monthSelected}`;
 		const path = `C:/Users/Usuario/OneDrive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Tratados con CIFrepeat.js/2023/${monthSelected}`;
 
 		const logFinal = {
