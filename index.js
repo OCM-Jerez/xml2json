@@ -230,7 +230,7 @@ function mapJSON() {
                     if (cacTenderResult) {
                         const arrayTenderResult = [];
                         cuantosArray = Object.keys(cacTenderResult).length;
-                        for (var i = 0; i < cuantosArray; i++) {
+                        for (let i = 0; i < cuantosArray; i++) {
 
                             let partyIdentification = "Sin dato";
                             let partyName = "Sin dato";
