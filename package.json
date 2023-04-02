@@ -4,21 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "run": "node index.js"
+    "run": "node index.js",
+    "lint": "eslint ."
   },
   "author": "mam",
   "license": "MIT",
   "dependencies": {
-    "node-stream-zip": "^1.13.4",
-    "readline-sync": "^1.4.10",
-    "xml2js": "^0.4.23"
+    "node-stream-zip": "1.13.4",
+    "readline-sync": "1.4.10",
+    "xml2js": "0.4.23"
   },
   "devDependencies": {
-    "eslint": "^8.25.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.3.0",
-    "eslint-plugin-promise": "^6.0.1",
-    "nodemon": "^2.0.7"
+    "eslint": "^8.37.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "2.0.7",
+    "prettier": "^2.8.7"
   }
 }
