@@ -22,16 +22,11 @@ let timeMapJSON = 0;
 let totalLines = 0;
 let responseMonth = readline.question('Ingresa el mes con dos cifras, por ejemplo 09-10-11...\n');
 const respondeCreateFiles = readline.question('Desea crear los fichero? S/N\n');
-// const ficheroZIP = 'C:/Users/usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2023/PROCCESS_2023MONTH.zip';
-// const ficheroZIP = 'C:/Users/Usuario/Mi unidad/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2023/PROCCESS_2023MONTH.zip';
 const ficheroZIP =
 	'C:/Users/Usuario/OneDrive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2023/PROCCESS_2023MONTH.zip';
 
 // Al finalizar un año no existe el fichero de diciembre. Crean un fichero con el año completo
 // const ficheroZIP = 'C:/Users/usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2022/PROCCESS_MONTH.zip';
-
-// const pathResultsParam = 'C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2023/resultados';
-// const pathResultsParam = 'C:/Users/Usuario/Mi unidad/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2023/resultados';
 const pathResultsParam =
 	'C:/Users/Usuario/OneDrive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2023/resultados';
 
@@ -324,21 +319,13 @@ ejecutaTodo();
 
 //#region Funciones secundarias
 function mergeJsonFinal() {
-	// const appPath = 'C:/Users/Usuario/Google Drive/Angular/plataforma-contratacion-estado/src/assets/data';
-	// const obsoletosPath = 'C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Obsoletos';
-	// const intermediosPath = 'C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Resultados contratos+licitaciones';
-	// const appPath = 'C:/Users/Usuario/Mi unidad/Angular/Angular/plataforma-contratacion-estado/src/assets/data';
-	// const obsoletosPath = 'C:/Users/Usuario/Mi unidad/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Obsoletos';
-	// const intermediosPath = 'C:/Users/Usuario/Mi unidad/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Resultados contratos+licitaciones';
 	const appPath = 'D:/plataforma-contratacion-estado/src/assets/data';
 	// const obsoletosPath ='C:/Users/Usuario/OneDrive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Obsoletos';
-
 	// const intermediosPath = 'C:/Users/Usuario/OneDrive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Resultados contratos+licitaciones';
 	const month = commonInstance.getOldMonth(responseMonth);
 
 	const appPathFileData = path.join(appPath, `todo${month}2023NoRepeatOkCIFOK.json`);
 	// const obsoletosPathFileData = path.join(obsoletosPath, `todo${month}2023NoRepeatOkCIFOK.json`);
-
 	// const appPathFileAdjudicatarios = path.join(appPath, `todoAdjudicatarias${month}2023.json`);
 	// const obsoletosPathFileAdjudicatarios = path.join(obsoletosPath, `todoAdjudicatarias${month}2023.json`);
 
