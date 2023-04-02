@@ -1,3 +1,19 @@
+/* eslint-disable comma-dangle */
+/* eslint-disable no-multiple-empty-lines */
+/* eslint-disable eol-last */
+/* eslint-disable space-before-function-paren */
+/* eslint-disable n/no-path-concat */
+/* eslint-disable n/handle-callback-err */
+/* eslint-disable no-unused-vars */
+/* eslint-disable spaced-comment */
+/* eslint-disable padded-blocks */
+/* eslint-disable new-cap */
+/* eslint-disable eqeqeq */
+/* eslint-disable prefer-const */
+/* eslint-disable indent */
+/* eslint-disable quotes */
+/* eslint-disable no-undef */
+/* eslint-disable semi */
 const fs = require('fs');
 const Common = require('./common');
 const commonInstance = new Common();
@@ -39,7 +55,6 @@ class CifRepeat {
         const month = commonInstance.getOldMonth(monthSelected);
         const oldData = fs.readFileSync(`${pathApp}/todoAdjudicatarias${month}2023.json`);
         const oldDataJson = JSON.parse(oldData);
-
         const newAdjudicatarias = [];
 
         dataInitial.filter(item => item.arrayTenderResult && item.arrayTenderResult.length > 0).forEach(item => {
@@ -127,7 +142,8 @@ class CifRepeat {
 
     logFinal(dataInitial, listRepeat, listRepeatMajor, listNoRepeat, monthSelected) {
         // const path = `C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Tratados con CIFrepeat.js/2022/${monthSelected}`;
-        const path = `C:/Users/Usuario/Mi unidad/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Tratados con CIFrepeat.js/2023/${monthSelected}`;
+        // const path = `C:/Users/Usuario/Mi unidad/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Tratados con CIFrepeat.js/2023/${monthSelected}`;
+        const path = `C:/Users/Usuario/OneDrive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Tratados con CIFrepeat.js/2023/${monthSelected}`;
 
         const logFinal = {
             "Total resultados iniciales:": dataInitial.length,

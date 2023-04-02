@@ -1,3 +1,9 @@
+/* eslint-disable space-before-function-paren */
+/* eslint-disable padded-blocks */
+/* eslint-disable comma-dangle */
+/* eslint-disable semi */
+/* eslint-disable quotes */
+/* eslint-disable indent */
 const fs = require('fs');
 const Common = require('./common');
 const commonInstance = new Common();
@@ -5,7 +11,8 @@ const commonInstance = new Common();
 class SearchRepeat {
     saveResultRepeat(dataInitial, listRepeat, listNoRepeat, listRepeatMajor, monthSelected) {
         // const pathRepeat = "C:/Users/Usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Tratados con searchRepeat.js/2022/" + monthSelected;
-        const pathRepeat = "C:/Users/Usuario/Mi unidad/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Tratados con searchRepeat.js/2023/" + monthSelected;
+        // const pathRepeat = "C:/Users/Usuario/Mi unidad/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Tratados con searchRepeat.js/2023/" + monthSelected;
+        const pathRepeat = "C:/Users/Usuario/OneDrive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Tratados con searchRepeat.js/2023/" + monthSelected;
 
         if (!fs.existsSync(pathRepeat)) {
             fs.mkdirSync(pathRepeat);

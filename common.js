@@ -1,3 +1,19 @@
+/* eslint-disable comma-dangle */
+/* eslint-disable no-multiple-empty-lines */
+/* eslint-disable eol-last */
+/* eslint-disable space-before-function-paren */
+/* eslint-disable n/no-path-concat */
+/* eslint-disable n/handle-callback-err */
+/* eslint-disable no-unused-vars */
+/* eslint-disable spaced-comment */
+/* eslint-disable padded-blocks */
+/* eslint-disable new-cap */
+/* eslint-disable eqeqeq */
+/* eslint-disable prefer-const */
+/* eslint-disable indent */
+/* eslint-disable quotes */
+/* eslint-disable no-undef */
+/* eslint-disable semi */
 const fs = require("fs");
 
 class Common {
