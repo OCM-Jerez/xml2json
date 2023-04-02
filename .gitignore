@@ -1,6 +1,6 @@
 node_modules/
 node/
-/resultados
+resultados/
 
 todasLicitacionesContratos.json
 todasLicitacionesHasta082021NoRepeat.json
