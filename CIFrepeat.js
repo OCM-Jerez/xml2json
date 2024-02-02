@@ -3,6 +3,7 @@ const Common = require('./common');
 const commonInstance = new Common();
 
 const readline = require('readline-sync');
+const { log } = require('console');
 
 const listPartyIdentification = [];
 const listAdjudicatarios = [];
@@ -37,6 +38,7 @@ class CifRepeat {
 		// })
 
 		const month = commonInstance.getOldMonth(monthSelected);
+		log('month', month);
 		const oldData = fs.readFileSync(`${pathApp}/todoAdjudicatarias${month}2023.json`);
 		const oldDataJson = JSON.parse(oldData);
 		const newAdjudicatarias = [];
@@ -99,9 +101,9 @@ class CifRepeat {
 			return 0;
 		});
 
-		commonInstance.createFile(`${pathApp}/todoAdjudicatarias${monthSelected}2023.json`, adjudicatarias);
-		commonInstance.createFile(`${pathApp}/todo${monthSelected}2023NoRepeatOkCIFOK.json`, dataInitial);
-		commonInstance.createFile(`${pathApp}/nuevasAdjudicatarias${monthSelected}2023.json`, newAdjudicatarias);
+		commonInstance.createFile(`${pathApp}/todoAdjudicatarias${monthSelected}2024.json`, adjudicatarias);
+		commonInstance.createFile(`${pathApp}/todo${monthSelected}2024NoRepeatOkCIFOK.json`, dataInitial);
+		commonInstance.createFile(`${pathApp}/nuevasAdjudicatarias${monthSelected}2024.json`, newAdjudicatarias);
 		// this.logFinal()
 	}
 
@@ -136,7 +138,7 @@ class CifRepeat {
 	}
 
 	logFinal(dataInitial, listRepeat, listRepeatMajor, listNoRepeat, monthSelected) {
-		const path = `C:/Users/Usuario/OneDrive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Tratados con CIFrepeat.js/2023/${monthSelected}`;
+		const path = `C:/Users/Usuario/OneDrive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Tratados con CIFrepeat.js/2024/${monthSelected}`;
 
 		const logFinal = {
 			'Total resultados iniciales:': dataInitial.length,
@@ -144,7 +146,7 @@ class CifRepeat {
 			'Total resultados repetidos más recientes': listRepeatMajor,
 			'Total resultados sin repeticiones': listNoRepeat
 		};
-		commonInstance.createFile(`${path}/logFinal${monthSelected}2023.json`, logFinal);
+		commonInstance.createFile(`${path}/logFinal${monthSelected}2024.json`, logFinal);
 	}
 }
 

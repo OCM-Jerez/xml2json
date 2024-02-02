@@ -44,9 +44,10 @@ class Common {
 
 	getOldMonth(monthCurrent) {
 		let month = Number(monthCurrent);
+		console.log('month antes', month);
 
 		month = month - 1;
-		if (month < 0) {
+		if (month <= 0) {
 			month = 12;
 		}
 
@@ -54,6 +55,7 @@ class Common {
 			return `0${month}`;
 		}
 
+		console.log('month despues', month);
 		return month;
 	}
 }

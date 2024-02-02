@@ -23,12 +23,12 @@ let totalLines = 0;
 let responseMonth = readline.question('Ingresa el mes con dos cifras, por ejemplo 09-10-11...\n');
 const respondeCreateFiles = readline.question('Desea crear los fichero? S/N\n');
 const ficheroZIP =
-	'C:/Users/Usuario/OneDrive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2023/PROCCESS_2023MONTH.zip';
+	'C:/Users/Usuario/OneDrive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2024/PROCCESS_2024MONTH.zip';
 
 // Al finalizar un año no existe el fichero de diciembre. Crean un fichero con el año completo
 // const ficheroZIP = 'C:/Users/usuario/Google Drive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2022/PROCCESS_MONTH.zip';
 const pathResultsParam =
-	'C:/Users/Usuario/OneDrive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2023/resultados';
+	'C:/Users/Usuario/OneDrive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/FOLDER/2024/resultados';
 
 let pathResults = '';
 let process = 1;
@@ -323,8 +323,11 @@ function mergeJsonFinal() {
 	// const obsoletosPath ='C:/Users/Usuario/OneDrive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Obsoletos';
 	// const intermediosPath = 'C:/Users/Usuario/OneDrive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Resultados contratos+licitaciones';
 	const month = commonInstance.getOldMonth(responseMonth);
+	// const month = '12';
+	console.log('month: ', month);
 
 	const appPathFileData = path.join(appPath, `todo${month}2023NoRepeatOkCIFOK.json`);
+	console.log('appPathFileData: ', appPathFileData);
 	// const obsoletosPathFileData = path.join(obsoletosPath, `todo${month}2023NoRepeatOkCIFOK.json`);
 	// const appPathFileAdjudicatarios = path.join(appPath, `todoAdjudicatarias${month}2023.json`);
 	// const obsoletosPathFileAdjudicatarios = path.join(obsoletosPath, `todoAdjudicatarias${month}2023.json`);
