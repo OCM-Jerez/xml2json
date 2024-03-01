@@ -20,13 +20,12 @@ En estos ficheros estas las licitaciones que ha hecho la Junta de Andalucía. Bu
 Licitaciones
 Contratos menores.
 
-
-
 NUEVO AÑO
 
-Cambiar en index.js
-usart search & replace 
+Cambiar en index.js y Y TODOS LOS DEMAS FICHEROS el año
+usart search & replace
 crear carpetas con nuevoAño
-Crear carpetas resultado en 
+Crear carpetas resultado en
 C:\Users\Usuario\OneDrive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\licitaciones\nuevoAño
 C:\Users\Usuario\OneDrive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\contratos menores\nuevoAño
+C:\Users\Usuario\OneDrive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\Tratados con searchRepeat.js\nuevoAño + CARPETAS DE MESES
