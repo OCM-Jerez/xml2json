@@ -3,7 +3,9 @@ Pide mes a tratar
 Confirmar generación de ficheros.
 Creará los files del mes en D:\plataforma-contratacion-estado\src\assets\data
 Mover los files del mes anterior a C:\Users\Usuario\OneDrive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\Copia seguridad assets data
+
 En proyecto plataforma-contratacion-estado indice.js cambiar linea 14
+                                           Cambiar fecha en footer
 
 Datos:
 https://www.hacienda.gob.es/es-ES/GobiernoAbierto/Datos%20Abiertos/Paginas/licitaciones_plataforma_contratacion.aspx
