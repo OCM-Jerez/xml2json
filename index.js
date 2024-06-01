@@ -122,172 +122,174 @@ function mapJSON() {
 		contador++;
 		const liciObject = JSON.parse(liciJson);
 
-		liciObject.feed.entry
-			.filter((itemFilter) =>
-				itemFilter.summary[0]._.match(
-					/\b(?:Junta de Gobierno Local del Ayuntamiento de Jerez|Patronato de la Fundación Centro de Acogida San José|Empresa Municipal de la Vivienda de Jerez|COMUJESA|FUNDARTE|MERCAJEREZ)\b/g
-					// Para comprobar que busca con acentos.
-					// /\b(?:Fundación Computación y Tecnologías Avanzadas de Extremadura)\b/g
+		if (liciObject && liciObject.feed && liciObject.feed.entry) {
+			liciObject.feed.entry
+				.filter((itemFilter) =>
+					itemFilter.summary[0]._.match(
+						/\b(?:Junta de Gobierno Local del Ayuntamiento de Jerez|Patronato de la Fundación Centro de Acogida San José|Empresa Municipal de la Vivienda de Jerez|COMUJESA|FUNDARTE|MERCAJEREZ)\b/g
+						// Para comprobar que busca con acentos.
+						// /\b(?:Fundación Computación y Tecnologías Avanzadas de Extremadura)\b/g
+					)
 				)
-			)
-			.forEach((elem) => {
-				const itemArray = {
-					link: elem.link[0].$.href,
-					summary: elem.summary[0]._,
-					title: elem.title[0],
-					updated: elem.updated[0]
-				};
+				.forEach((elem) => {
+					const itemArray = {
+						link: elem.link[0].$.href,
+						summary: elem.summary[0]._,
+						title: elem.title[0],
+						updated: elem.updated[0]
+					};
 
-				const contractFolderStatus = elem['cac-place-ext:ContractFolderStatus'][0];
-				const cacTenderResult =
-					contractFolderStatus && contractFolderStatus['cac:TenderResult']
-						? contractFolderStatus['cac:TenderResult']
-						: null;
-
-				if (contractFolderStatus) {
-					itemArray.ContractFolderID = contractFolderStatus['cbc:ContractFolderID'][0];
-
-					let durationMeasure = 'Sin dato';
-					let unitCode = 'Sin dato';
-
-					const cacProcurementProject =
-						contractFolderStatus['cac:ProcurementProject'] && contractFolderStatus['cac:ProcurementProject'][0]
-							? contractFolderStatus['cac:ProcurementProject'][0]
+					const contractFolderStatus = elem['cac-place-ext:ContractFolderStatus'][0];
+					const cacTenderResult =
+						contractFolderStatus && contractFolderStatus['cac:TenderResult']
+							? contractFolderStatus['cac:TenderResult']
 							: null;
-					const cacPlannedPeriod = cacProcurementProject ? cacProcurementProject['cac:PlannedPeriod'] : null;
-					const cbcDurationMeasure = cacPlannedPeriod ? cacPlannedPeriod[0]['cbc:DurationMeasure'] : null;
-					const valuesDurationMeasure = cbcDurationMeasure ? cbcDurationMeasure[0] : null;
 
-					if (valuesDurationMeasure) {
-						durationMeasure = valuesDurationMeasure._;
-						unitCode = valuesDurationMeasure.$.unitCode;
-					}
+					if (contractFolderStatus) {
+						itemArray.ContractFolderID = contractFolderStatus['cbc:ContractFolderID'][0];
 
-					const cbcContractFolderStatusCode = contractFolderStatus['cbc-place-ext:ContractFolderStatusCode']
-						? contractFolderStatus['cbc-place-ext:ContractFolderStatusCode'][0]._
-						: 'Sin dato';
-					const cbcName =
-						cacProcurementProject && cacProcurementProject['cbc:Name']
-							? cacProcurementProject['cbc:Name'][0]
-							: 'Sin dato';
-					const cbcTypeCode =
-						cacProcurementProject && cacProcurementProject['cbc:TypeCode']
-							? cacProcurementProject['cbc:TypeCode'][0]._
-							: 'Sin dato';
-					const cbcSubTypeCode =
-						cacProcurementProject && cacProcurementProject['cbc:SubTypeCode']
-							? cacProcurementProject['cbc:SubTypeCode'][0]._
-							: 'Sin dato';
-					const cacBudgetAmount =
-						cacProcurementProject && cacProcurementProject['cac:BudgetAmount']
-							? cacProcurementProject['cac:BudgetAmount']
-							: null;
-					let cbcTotalAmount = 'Sin dato';
-					let cbcTaxExclusiveAmount = 'Sin dato';
+						let durationMeasure = 'Sin dato';
+						let unitCode = 'Sin dato';
 
-					if (cacBudgetAmount) {
-						cbcTotalAmount = cacBudgetAmount[0]['cbc:TotalAmount']
-							? Math.trunc(cacBudgetAmount[0]['cbc:TotalAmount'][0]._)
-							: 'Sin dato';
-						cbcTaxExclusiveAmount = cacBudgetAmount[0]['cbc:TaxExclusiveAmount']
-							? Math.trunc(cacBudgetAmount[0]['cbc:TaxExclusiveAmount'][0]._)
-							: 'Sin dato';
-					}
-
-					// let listURI = 'Sin dato';
-					// const aAdditionalPublicationStatus = contractFolderStatus['cac:place-ext:ValidNoticeInfo'] ? contractFolderStatus['cac:place-ext:ValidNoticeInfo'][0]['cac-place-ext:AdditionalPublicationStatus'] : null;
-					// const AdditionalPublicationDocumentReference = aAdditionalPublicationStatus ? aAdditionalPublicationStatus[0]['cac-place-ext:AdditionalPublicationDocumentReference'] : null;
-					// const cboDocumentTypeCode = AdditionalPublicationDocumentReference ? AdditionalPublicationDocumentReference[0]['cbc:DocumentTypeCode'] : null;
-					// const valuesDocumentTypeCode = cboDocumentTypeCode ? cboDocumentTypeCode[0] : null;
-
-					// if (valuesDocumentTypeCode) {
-					//     listURI = valuesDocumentTypeCode.$.listURI
-					// }
-
-					const cacTenderingProcess = contractFolderStatus['cac:TenderingProcess'];
-
-					const cbcUrgencyCode =
-						cacTenderingProcess && cacTenderingProcess[0]['cbc:UrgencyCode']
-							? cacTenderingProcess[0]['cbc:UrgencyCode'][0]._
-							: 'Sin dato';
-
-					const cbcProcedureCode =
-						cacTenderingProcess && cacTenderingProcess[0]['cbc:ProcedureCode']
-							? cacTenderingProcess[0]['cbc:ProcedureCode'][0]._
-							: 'Sin dato';
-
-					itemArray.ContractFolderStatusCode = cbcContractFolderStatusCode;
-					itemArray.Name = cbcName;
-					itemArray.TypeCode = cbcTypeCode;
-					itemArray.SubTypeCode = cbcSubTypeCode;
-					itemArray.TotalAmount = cbcTotalAmount;
-					itemArray.TaxExclusiveAmount = cbcTaxExclusiveAmount;
-					itemArray.DurationMeasure = durationMeasure;
-					itemArray.unitCode = unitCode;
-					// itemArray.listURI = listURI;
-					itemArray.ProcedureCode = cbcProcedureCode;
-					itemArray.UrgencyCode = cbcUrgencyCode;
-
-					if (cacTenderResult) {
-						const arrayTenderResult = [];
-						const cuantosArray = Object.keys(cacTenderResult).length;
-						for (let i = 0; i < cuantosArray; i++) {
-							let partyIdentification = 'Sin dato';
-							let partyName = 'Sin dato';
-
-							const cacWinningParty = cacTenderResult[i] ? cacTenderResult[i]['cac:WinningParty'] : null;
-							if (cacWinningParty) {
-								const cbcId = cacWinningParty[0]['cac:PartyIdentification']
-									? cacWinningParty[0]['cac:PartyIdentification'][0]['cbc:ID']
-									: null;
-								partyIdentification = cbcId ? cbcId[0]._ : 'Sin dato';
-
-								const cbcName = cacWinningParty[0]['cac:PartyName']
-									? cacWinningParty[0]['cac:PartyName'][0]['cbc:Name']
-									: null;
-								partyName = cbcName ? cbcName[0] : 'Sin dato';
-							}
-
-							const cacLegalMonetaryTotal = cacTenderResult[i]['cac:AwardedTenderedProject']
-								? cacTenderResult[i]['cac:AwardedTenderedProject'][0]['cac:LegalMonetaryTotal']
+						const cacProcurementProject =
+							contractFolderStatus['cac:ProcurementProject'] && contractFolderStatus['cac:ProcurementProject'][0]
+								? contractFolderStatus['cac:ProcurementProject'][0]
 								: null;
-							const cbcPayableAmount = cacLegalMonetaryTotal ? cacLegalMonetaryTotal[0]['cbc:PayableAmount'] : null;
-							const cbcTaxExclusiveAmount = cacLegalMonetaryTotal
-								? cacLegalMonetaryTotal[0]['cbc:TaxExclusiveAmount']
-								: null;
+						const cacPlannedPeriod = cacProcurementProject ? cacProcurementProject['cac:PlannedPeriod'] : null;
+						const cbcDurationMeasure = cacPlannedPeriod ? cacPlannedPeriod[0]['cbc:DurationMeasure'] : null;
+						const valuesDurationMeasure = cbcDurationMeasure ? cbcDurationMeasure[0] : null;
 
-							const taxExclusiveAmount = cbcTaxExclusiveAmount ? Math.trunc(cbcTaxExclusiveAmount[0]._) : 'Sin dato';
-							const payableAmount = cbcPayableAmount ? Math.trunc(cbcPayableAmount[0]._) : 'Sin dato';
-
-							const resultCode = cacTenderResult[i]['cbc:ResultCode']
-								? cacTenderResult[i]['cbc:ResultCode'][0]._
-								: 'Sin dato';
-							const awardDate = cacTenderResult[0]['cbc:AwardDate']
-								? cacTenderResult[0]['cbc:AwardDate'][0]
-								: 'Sin dato';
-							const receivedTenderQuantity = cacTenderResult[0]['cbc:ReceivedTenderQuantity']
-								? cacTenderResult[0]['cbc:ReceivedTenderQuantity'][0]
-								: 'Sin dato';
-
-							const item = {
-								ResultCode: resultCode,
-								AwardDate: awardDate,
-								ReceivedTenderQuantity: receivedTenderQuantity,
-								PartyIdentification: partyIdentification,
-								PartyName: partyName,
-								TaxExclusiveAmount: taxExclusiveAmount,
-								PayableAmount: payableAmount
-							};
-
-							arrayTenderResult.push(item);
+						if (valuesDurationMeasure) {
+							durationMeasure = valuesDurationMeasure._;
+							unitCode = valuesDurationMeasure.$.unitCode;
 						}
 
-						itemArray.arrayTenderResult = arrayTenderResult;
-					}
-				}
+						const cbcContractFolderStatusCode = contractFolderStatus['cbc-place-ext:ContractFolderStatusCode']
+							? contractFolderStatus['cbc-place-ext:ContractFolderStatusCode'][0]._
+							: 'Sin dato';
+						const cbcName =
+							cacProcurementProject && cacProcurementProject['cbc:Name']
+								? cacProcurementProject['cbc:Name'][0]
+								: 'Sin dato';
+						const cbcTypeCode =
+							cacProcurementProject && cacProcurementProject['cbc:TypeCode']
+								? cacProcurementProject['cbc:TypeCode'][0]._
+								: 'Sin dato';
+						const cbcSubTypeCode =
+							cacProcurementProject && cacProcurementProject['cbc:SubTypeCode']
+								? cacProcurementProject['cbc:SubTypeCode'][0]._
+								: 'Sin dato';
+						const cacBudgetAmount =
+							cacProcurementProject && cacProcurementProject['cac:BudgetAmount']
+								? cacProcurementProject['cac:BudgetAmount']
+								: null;
+						let cbcTotalAmount = 'Sin dato';
+						let cbcTaxExclusiveAmount = 'Sin dato';
 
-				arrayFinal.push(itemArray);
-			});
+						if (cacBudgetAmount) {
+							cbcTotalAmount = cacBudgetAmount[0]['cbc:TotalAmount']
+								? Math.trunc(cacBudgetAmount[0]['cbc:TotalAmount'][0]._)
+								: 'Sin dato';
+							cbcTaxExclusiveAmount = cacBudgetAmount[0]['cbc:TaxExclusiveAmount']
+								? Math.trunc(cacBudgetAmount[0]['cbc:TaxExclusiveAmount'][0]._)
+								: 'Sin dato';
+						}
+
+						// let listURI = 'Sin dato';
+						// const aAdditionalPublicationStatus = contractFolderStatus['cac:place-ext:ValidNoticeInfo'] ? contractFolderStatus['cac:place-ext:ValidNoticeInfo'][0]['cac-place-ext:AdditionalPublicationStatus'] : null;
+						// const AdditionalPublicationDocumentReference = aAdditionalPublicationStatus ? aAdditionalPublicationStatus[0]['cac-place-ext:AdditionalPublicationDocumentReference'] : null;
+						// const cboDocumentTypeCode = AdditionalPublicationDocumentReference ? AdditionalPublicationDocumentReference[0]['cbc:DocumentTypeCode'] : null;
+						// const valuesDocumentTypeCode = cboDocumentTypeCode ? cboDocumentTypeCode[0] : null;
+
+						// if (valuesDocumentTypeCode) {
+						//     listURI = valuesDocumentTypeCode.$.listURI
+						// }
+
+						const cacTenderingProcess = contractFolderStatus['cac:TenderingProcess'];
+
+						const cbcUrgencyCode =
+							cacTenderingProcess && cacTenderingProcess[0]['cbc:UrgencyCode']
+								? cacTenderingProcess[0]['cbc:UrgencyCode'][0]._
+								: 'Sin dato';
+
+						const cbcProcedureCode =
+							cacTenderingProcess && cacTenderingProcess[0]['cbc:ProcedureCode']
+								? cacTenderingProcess[0]['cbc:ProcedureCode'][0]._
+								: 'Sin dato';
+
+						itemArray.ContractFolderStatusCode = cbcContractFolderStatusCode;
+						itemArray.Name = cbcName;
+						itemArray.TypeCode = cbcTypeCode;
+						itemArray.SubTypeCode = cbcSubTypeCode;
+						itemArray.TotalAmount = cbcTotalAmount;
+						itemArray.TaxExclusiveAmount = cbcTaxExclusiveAmount;
+						itemArray.DurationMeasure = durationMeasure;
+						itemArray.unitCode = unitCode;
+						// itemArray.listURI = listURI;
+						itemArray.ProcedureCode = cbcProcedureCode;
+						itemArray.UrgencyCode = cbcUrgencyCode;
+
+						if (cacTenderResult) {
+							const arrayTenderResult = [];
+							const cuantosArray = Object.keys(cacTenderResult).length;
+							for (let i = 0; i < cuantosArray; i++) {
+								let partyIdentification = 'Sin dato';
+								let partyName = 'Sin dato';
+
+								const cacWinningParty = cacTenderResult[i] ? cacTenderResult[i]['cac:WinningParty'] : null;
+								if (cacWinningParty) {
+									const cbcId = cacWinningParty[0]['cac:PartyIdentification']
+										? cacWinningParty[0]['cac:PartyIdentification'][0]['cbc:ID']
+										: null;
+									partyIdentification = cbcId ? cbcId[0]._ : 'Sin dato';
+
+									const cbcName = cacWinningParty[0]['cac:PartyName']
+										? cacWinningParty[0]['cac:PartyName'][0]['cbc:Name']
+										: null;
+									partyName = cbcName ? cbcName[0] : 'Sin dato';
+								}
+
+								const cacLegalMonetaryTotal = cacTenderResult[i]['cac:AwardedTenderedProject']
+									? cacTenderResult[i]['cac:AwardedTenderedProject'][0]['cac:LegalMonetaryTotal']
+									: null;
+								const cbcPayableAmount = cacLegalMonetaryTotal ? cacLegalMonetaryTotal[0]['cbc:PayableAmount'] : null;
+								const cbcTaxExclusiveAmount = cacLegalMonetaryTotal
+									? cacLegalMonetaryTotal[0]['cbc:TaxExclusiveAmount']
+									: null;
+
+								const taxExclusiveAmount = cbcTaxExclusiveAmount ? Math.trunc(cbcTaxExclusiveAmount[0]._) : 'Sin dato';
+								const payableAmount = cbcPayableAmount ? Math.trunc(cbcPayableAmount[0]._) : 'Sin dato';
+
+								const resultCode = cacTenderResult[i]['cbc:ResultCode']
+									? cacTenderResult[i]['cbc:ResultCode'][0]._
+									: 'Sin dato';
+								const awardDate = cacTenderResult[0]['cbc:AwardDate']
+									? cacTenderResult[0]['cbc:AwardDate'][0]
+									: 'Sin dato';
+								const receivedTenderQuantity = cacTenderResult[0]['cbc:ReceivedTenderQuantity']
+									? cacTenderResult[0]['cbc:ReceivedTenderQuantity'][0]
+									: 'Sin dato';
+
+								const item = {
+									ResultCode: resultCode,
+									AwardDate: awardDate,
+									ReceivedTenderQuantity: receivedTenderQuantity,
+									PartyIdentification: partyIdentification,
+									PartyName: partyName,
+									TaxExclusiveAmount: taxExclusiveAmount,
+									PayableAmount: payableAmount
+								};
+
+								arrayTenderResult.push(item);
+							}
+
+							itemArray.arrayTenderResult = arrayTenderResult;
+						}
+					}
+
+					arrayFinal.push(itemArray);
+				});
+		}
 	});
 
 	pathResults =
