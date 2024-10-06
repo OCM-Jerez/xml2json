@@ -1,12 +1,13 @@
 node index
-Pide mes a tratar, el que henos bajado los datos.
+Pide mes a tratar, el que hemos bajado los datos.
 Confirmar generación de ficheros.
 Creará los files del mes en D:\plataforma-contratacion-estado\src\assets\data
+¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ Por alguna razon, necesita tener los ficheros del mes anterior
 Mover los files del mes anterior a C:\Users\Usuario\OneDrive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\Copia seguridad assets data
 Dejar localeTextESPes.json y entesContratacion-data.ts
 
-En proyecto plataforma-contratacion-estado indice.js cambiar linea 14
-Cambiar fecha en footer
+En proyecto licitaciones generador-table.component.ts cambiar linea 9
+Cambiar fecha package.json
 
 Datos:
 https://www.hacienda.gob.es/es-ES/GobiernoAbierto/Datos%20Abiertos/Paginas/licitaciones_plataforma_contratacion.aspx
