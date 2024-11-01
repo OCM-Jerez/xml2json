@@ -321,7 +321,8 @@ ejecutaTodo();
 
 //#region Funciones secundarias
 function mergeJsonFinal() {
-	const appPath = 'D:/plataforma-contratacion-estado/src/assets/data';
+	// const appPath = 'D:/plataforma-contratacion-estado/src/assets/data';
+	const appPath = 'D:/licitaciones/src/assets/data';
 	// const obsoletosPath ='C:/Users/Usuario/OneDrive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Obsoletos';
 	// const intermediosPath = 'C:/Users/Usuario/OneDrive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Resultados contratos+licitaciones';
 	const month = commonInstance.getOldMonth(responseMonth);

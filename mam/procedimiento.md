@@ -1,7 +1,7 @@
 node index
 Pide mes a tratar, el que hemos bajado los datos.
 Confirmar generación de ficheros.
-Creará los files del mes en D:\plataforma-contratacion-estado\src\assets\data
+Creará los files del mes en D:\licitaciones\src\assets\data
 ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ Por alguna razon, necesita tener los ficheros del mes anterior
 Mover los files del mes anterior a C:\Users\Usuario\OneDrive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\Copia seguridad assets data
 Dejar localeTextESPes.json y entesContratacion-data.ts
