@@ -1,14 +1,3 @@
-node index
-Pide mes a tratar, el que hemos bajado los datos.
-Confirmar generación de ficheros.
-Creará los files del mes en D:\licitaciones\src\assets\data
-¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ Por alguna razon, necesita tener los ficheros del mes anterior
-Mover los files del mes anterior a C:\Users\Usuario\OneDrive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\Copia seguridad assets data
-Dejar localeTextESPes.json (EN NOVIEMBRE NO TENGO ESTE FICHERO entesContratacion-data.ts)
-
-En proyecto licitaciones generador-table.component.ts cambiar linea 9
-Cambiar fecha package.json
-
 Datos:
 https://www.hacienda.gob.es/es-ES/GobiernoAbierto/Datos%20Abiertos/Paginas/licitaciones_plataforma_contratacion.aspx
 
@@ -24,8 +13,31 @@ En estos ficheros estas las licitaciones que ha hecho la Junta de Andalucía. Bu
 Licitaciones
 Contratos menores.
 
-NUEVO AÑO
+Bajar ficheros de la pagina del Ministerio.
+Guardar en:
+C:\Users\Usuario\OneDrive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\licitaciones\2025
+C:\Users\Usuario\OneDrive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\contratos menores\2025
 
+node index
+Pide mes a tratar, el que hemos bajado los datos.
+Confirmar generación de ficheros.
+Creará los files del mes en D:\licitaciones\src\assets\data
+
+¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ Por alguna razon, necesita tener los ficheros del mes anterior !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Mover los files del mes anterior a C:\Users\Usuario\OneDrive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\Copia seguridad assets data
+Dejar localeTextESPes.json (EN NOVIEMBRE NO TENGO ESTE FICHERO entesContratacion-data.ts)
+
+En proyecto licitaciones generador-table.component.ts cambiar linea 9
+Cambiar fecha package.json
+
+ng build
+winSCP
+/con/
+Mover a E:/copia seguridad
+mover ficheros build
+
+NUEVO AÑO
 Cambiar en index.js y Y TODOS LOS DEMAS FICHEROS el año
 usart search & replace
 crear carpetas con nuevoAño
