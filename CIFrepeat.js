@@ -39,7 +39,7 @@ class CifRepeat {
 
 		const month = commonInstance.getOldMonth(monthSelected);
 		log('month', month);
-		const oldData = fs.readFileSync(`${pathApp}/todoAdjudicatarias${month}2024.json`);
+		const oldData = fs.readFileSync(`${pathApp}/todoAdjudicatarias${month}2025.json`);
 		const oldDataJson = JSON.parse(oldData);
 		const newAdjudicatarias = [];
 
@@ -101,9 +101,9 @@ class CifRepeat {
 			return 0;
 		});
 
-		commonInstance.createFile(`${pathApp}/todoAdjudicatarias${monthSelected}2024.json`, adjudicatarias);
-		commonInstance.createFile(`${pathApp}/todo${monthSelected}2024NoRepeatOkCIFOK.json`, dataInitial);
-		commonInstance.createFile(`${pathApp}/nuevasAdjudicatarias${monthSelected}2024.json`, newAdjudicatarias);
+		commonInstance.createFile(`${pathApp}/todoAdjudicatarias${monthSelected}2025.json`, adjudicatarias);
+		commonInstance.createFile(`${pathApp}/todo${monthSelected}2025NoRepeatOkCIFOK.json`, dataInitial);
+		commonInstance.createFile(`${pathApp}/nuevasAdjudicatarias${monthSelected}2025.json`, newAdjudicatarias);
 		// this.logFinal()
 	}
 
@@ -138,7 +138,7 @@ class CifRepeat {
 	}
 
 	logFinal(dataInitial, listRepeat, listRepeatMajor, listNoRepeat, monthSelected) {
-		const path = `C:/Users/Usuario/OneDrive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Tratados con CIFrepeat.js/2024/${monthSelected}`;
+		const path = `C:/Users/Usuario/OneDrive/OCM/Plataforma de contratacion del sector publico/Datos abiertos/Tratados con CIFrepeat.js/2025/${monthSelected}`;
 
 		const logFinal = {
 			'Total resultados iniciales:': dataInitial.length,
@@ -146,7 +146,7 @@ class CifRepeat {
 			'Total resultados repetidos más recientes': listRepeatMajor,
 			'Total resultados sin repeticiones': listNoRepeat
 		};
-		commonInstance.createFile(`${path}/logFinal${monthSelected}2024.json`, logFinal);
+		commonInstance.createFile(`${path}/logFinal${monthSelected}2025.json`, logFinal);
 	}
 }
 
