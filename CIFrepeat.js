@@ -39,7 +39,7 @@ class CifRepeat {
 
 		const month = commonInstance.getOldMonth(monthSelected);
 		log('month', month);
-		const oldData = fs.readFileSync(`${pathApp}/todoAdjudicatarias${month}2024.json`);
+		const oldData = fs.readFileSync(`${pathApp}/todoAdjudicatarias${month}2025.json`);
 		const oldDataJson = JSON.parse(oldData);
 		const newAdjudicatarias = [];
 
