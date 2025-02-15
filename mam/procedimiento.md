@@ -39,9 +39,17 @@ mover ficheros build
 
 NUEVO AÑO
 Cambiar en index.js y Y TODOS LOS DEMAS FICHEROS el año
-usart search & replace
+usar search & replace
+En Cifrepeat.js linea 42 hay que dejar el año anterior ya que buscara el 122024
+const oldData = fs.readFileSync(`${pathApp}/todoAdjudicatarias${month}2025.json`);
+Lo mismo en index.js linea 332
+const appPathFileData = path.join(appPath, `todo${month}2025NoRepeatOkCIFOK.json`);
+
+Despues de obtener los resultados de enero. CaMBIAR YA ESTAS DOS LINEAS AL AÑO ACTUAL
+
 crear carpetas con nuevoAño
-Crear carpetas resultado en
+Crear carpetas resultado en con subcarpetas por mes 01,02......
+Copiar y pegar en cada uno de estos directorios
 C:\Users\Usuario\OneDrive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\licitaciones\nuevoAño
 C:\Users\Usuario\OneDrive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\contratos menores\nuevoAño
 C:\Users\Usuario\OneDrive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\Tratados con searchRepeat.js\nuevoAño + CARPETAS DE MESES
