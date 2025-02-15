@@ -329,7 +329,7 @@ function mergeJsonFinal() {
 	// const month = '12';
 	console.log('month: ', month);
 
-	const appPathFileData = path.join(appPath, `todo${month}2025NoRepeatOkCIFOK.json`);
+	const appPathFileData = path.join(appPath, `todo${month}2024NoRepeatOkCIFOK.json`);
 	console.log('appPathFileData: ', appPathFileData);
 	// const obsoletosPathFileData = path.join(obsoletosPath, `todo${month}2023NoRepeatOkCIFOK.json`);
 	// const appPathFileAdjudicatarios = path.join(appPath, `todoAdjudicatarias${month}2023.json`);
