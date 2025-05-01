@@ -29,9 +29,12 @@ Mover los files del mes anterior
 De:
 D:\licitaciones\src\assets\data
 a
-C:\Users\Usuario\OneDrive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\Copia seguridad assets data
-
+0
 Dejar localeTextESPes.json (EN NOVIEMBRE NO TENGO ESTE FICHERO entesContratacion-data.ts)
+
+D:\ocm\src\assets\licitaciones-contratos-menores
+D:\ocm\src\app\pages\art15\licitaciones-contratos-menores\grid.ts
+Cambiar linea 14
 
 En proyecto licitaciones generador-table.component.ts cambiar linea 9
 Cambiar fecha package.json
