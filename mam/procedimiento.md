@@ -31,8 +31,9 @@ D:\ocm\src\assets\licitaciones-contratos-menores
 a
 C:\Users\Usuario\OneDrive\OCM\Plataforma de contratacion del sector publico\Datos abiertos\Copia seguridad assets data
 
-Mover de:
+Copiar de:
 D:\licitaciones\src\assets\data
+todo062025NoRepeatOkCIFOK.json
 a:
 D:\ocm\src\assets\licitaciones-contratos-menores
 
