@@ -42,9 +42,13 @@ Cambiar linea 14
 grid-agrupado-proveedor.ts
 Cambiar linea 11
 
+D:\ocm\src\app\pages\art15\licitaciones-contratos-menores\grid-agrupado-proveedor\grid.-agrupado-proveedor.ts
+cambiar lia 12
+
+Cambiar fecha package.json
+
 NO HACE FALTA
 En proyecto licitaciones generador-table.component.ts cambiar linea 9
-Cambiar fecha package.json
 
 ng build
 winSCP
