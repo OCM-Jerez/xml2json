@@ -1,3 +1,37 @@
+usar v2
+Em modo prueba graba todo en:
+D:\xml2json-v2\resultados_prueba
+
+Renombar todo072025NoRepeatOkCIFOK.json a licitacionesContratos.json
+Sustituir en En ocm uso licitacionesContratos.json
+No hay que cambiar nada en el codigo.
+
+#
+
+#
+
+#
+
+#
+
+#
+
+#
+
+#
+
+#
+
+#
+
+#
+
+#
+
+#
+
+#
+
 Datos:
 https://www.hacienda.gob.es/es-ES/GobiernoAbierto/Datos%20Abiertos/Paginas/licitaciones_plataforma_contratacion.aspx
 
